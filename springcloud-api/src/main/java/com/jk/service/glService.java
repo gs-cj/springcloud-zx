@@ -1,4 +1,4 @@
-package com.gs.service;
+package com.jk.service;
 
 public interface glService {
 }
