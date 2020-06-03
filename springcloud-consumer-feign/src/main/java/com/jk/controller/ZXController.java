@@ -1,10 +1,15 @@
 package com.jk.controller;
 
+import com.jk.service.glService;
+import jdk.nashorn.internal.ir.annotations.Reference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ZXController {
+    @Reference
+    private glService glService;
 
     //跳转首页
     @RequestMapping("/toMainn")
@@ -99,5 +104,12 @@ public class ZXController {
     @RequestMapping("/people")
     public String people(){
         return "people-in-zte";
+    }
+
+
+    //求span个数
+    @RequestMapping("/span")
+    public String spancount(){
+        return glService.spancount();
     }
 }
