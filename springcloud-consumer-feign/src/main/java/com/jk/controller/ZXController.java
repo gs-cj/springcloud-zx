@@ -1,15 +1,20 @@
 package com.jk.controller;
 
 import com.jk.service.glService;
-import jdk.nashorn.internal.ir.annotations.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ZXController {
-    @Reference
+    @Autowired
     private glService glService;
+    //测试
+    @GetMapping("/hello")
+    public String hello(){
+        return glService.hello();
+    }
 
     //跳转首页
     @RequestMapping("/toMainn")
@@ -110,6 +115,9 @@ public class ZXController {
     //求span个数
     @RequestMapping("/span")
     public String spancount(){
-        return glService.spancount();
+        System.out.println("555");
+        String ddd =  glService.spancount();
+        System.out.println(ddd);
+        return null;
     }
 }
