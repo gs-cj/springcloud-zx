@@ -1,0 +1,291 @@
+/*******************************
+    -------[=公用]-------
+********************************/
+.bg-grey {background-color: #f7fafc;}
+.bg-form {background-image: url("bg-form.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/bg-form.png*/;}
+/*******************************
+    -------[=登录]-------
+********************************/
+.box-login {padding: 20px 12px 20px 64px;display: block;background-color: #fff;overflow: hidden;-webkit-box-shadow: 0 0 20px rgba(0,0,0,.1);box-shadow: 0 0 20px rgba(0,0,0,.1);}
+.box-login a {position: relative;display: block;width: 50%;height: 670px;}
+.box-login a img {position: relative;display: block;top: 50%;left: 50%;
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.box-login .img-on,.box-login .img-on-m {display: none;}
+.box-login a:hover img {display: none;}
+.box-login a:hover img.img-on {display: block;}
+.fd-login {height: 80px;line-height: 80px;text-align: center;color: #494949;font-size: 14px;}
+/*******************************
+    -------[=社会招聘登录]-------
+********************************/
+.box-login.box2 {padding: 20px 12px;}
+.box-login.box2 .img {float: left;display: block;width: 42%;}
+.box-login.box2 .img img {display: block;width: 100%;}
+.box-login.box2 .box-form {margin-top: 0;padding-top: 128px;float: right;width: 55%;}
+.box-login.box2 .box-form .tit {padding-left: 17px;height: 1em;line-height: 1em;font-size: 22px;font-weight: normal;border-left: 7px solid #0588d1;}
+.box-login.box2 .box-form ul {margin-top: 54px;}
+.box-form li {padding-bottom: 15px;line-height: 34px;}
+.box-form li:after,.box-form li:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden; }
+.box-login.box2 .box-form li .p1 {padding-right: 16px;float: left;width: 80px;color: #666;font-size: 14px;text-align: right;}
+.box-login.box2 .box-form li .p2 {margin-left: 80px;}
+.box-form .cont-help {position: relative;padding-left: 20px;float: right;width: 92px;height: 34px;}
+.box-form .cont-help em {display: inline-block;width: 19px;height: 19px;background: url("ico-help.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-help.png*/ 0 0 no-repeat;vertical-align: middle;cursor: pointer;}
+.box-form .cont-help em:hover {background-position: 0 -19px;}
+.box-form .cont-help em:hover + .txt {display: block;}
+.box-form .cont-help .txt {position: absolute;top: 44px;right: 29px;padding: 8px 6px 10px;display: none;width: 150px;border: 1px solid #008fd5;border-radius: 5px;background-color: #f4f4f4;-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);box-shadow: 0 0 10px rgba(0, 0, 0, .1);color: #666;font-size: 12px;line-height: 1.67;z-index: 3;}
+.box-form .cont-help .txt:after {position: absolute;top: -6px;right: 27px;display: block;width: 10px;height: 6px;background-image: url("ico-triggle.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-triggle.png*/;content: '';}
+.box-form .cont-inp {margin-right: 92px;}
+.box-form .inp-form {padding-left: 14px;float: left;display: inline-block;background-color: #f4f4f4;border: 1px solid #d6d6d6;border-radius: 5px;line-height: 32px;color: #0588d1;}
+.box-form .inp-form:focus,.box-form .inp-form.on {border: 1px solid #008fd5;-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .1);box-shadow: 0 0 20px rgba(0, 0, 0, .1);}
+.g-btn-form-1 {display: inline-block;height: 48px;line-height: 48px;text-align: center;color: #fff;font-size: 18px;background-color: #0588d1;border-radius: 5px;}
+.g-btn-form-1:hover {opacity: .6;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=60)';}
+.g-btn-form-2 {display: inline-block;height: 48px;line-height: 46px;text-align: center;color: #0588d1;font-size: 18px;background-color: #fff;border-radius: 5px;border: 1px solid #0588d1;}
+.g-btn-form-2:hover {color: #fff;background-color: #0588d1;opacity: .6;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=60)';}
+.box-form .inp-form.inp7 {width: 100%;max-width: 360px;}
+.box-login.box2 .btn-forget-pwd {margin-left: 12px;color: #0588d1;}
+.box-login.box2 .btn-forget-pwd:hover {text-decoration: underline;}
+.box-form .inp-form.inp8 {width: 128px;}
+.box-login.box2 .img-vali {margin-left: 12px;float: left;display: block;height: 32px;line-height: 32px;color: #0588d1;font-size: 12px;}
+.box-login.box2 .img-vali img {margin-right: 5px;display: inline-block;height: 32px;vertical-align: middle;}
+.box-login.box2 .li-action {margin-top: 25px;}
+.box-login.box2 .btn-login {width: 160px;}
+.box-login.box2 .btn-regist {margin-left: 30px;width: 160px;}
+.box-login.box2 .box-partner {margin-top: 20px;font-size: 16px;line-height: 36px;}
+.box-login.box2 .box-partner a {margin-left: 20px;padding-top: 36px;display: inline-block;width: 36px;line-height: 30px;text-align: center;background-position: center top;background-repeat: no-repeat;background-size: 100% auto;font-size: 14px;vertical-align: top;}
+.box-login.box2 .box-partner a:hover {color: #0588d1;}
+.box-login.box2 .box-partner a.a1 {background-image: url("ico-qq.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-qq.png*/;}
+.box-login.box2 .box-partner a.a2 {background-image: url("ico-wb.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-wb.png*/;}
+/*******************************
+    -------[=社会招聘忘记密码]-------
+********************************/
+.box-login.box2 .tips {padding-top: 20px;height: 1em;line-height: 1em;color: #0588d1;}
+.box-login.box2 .btn-submit {width: 100%;max-width: 360px;}
+.box-login.box2 .btn-back {margin-top: 12px;width: 100%;max-width: 360px;}
+/*******************************
+    -------[=社会招聘注册]-------
+********************************/
+.box-login.box2 .btn-regist-2 {margin-top: 30px;width: 100%;max-width: 360px;}
+.box-login.box2 .txt-login {height: 22px;line-height: 22px;color: #666;font-size: 14px;text-align: center;}
+.box-login.box2 .txt-login a {color: #0588d1;}
+.box-login.box2 .txt-login a:hover {text-decoration: underline;}
+
+/*******************************
+    -------[=00.帐号信息]-------
+********************************/
+.banner-form {position: relative;}
+.banner-form .cont {position: absolute;bottom: 48px;left: 0;width: 100%;text-align: center;}
+.banner-form .cont .ico {margin: 0 auto 20px;display: block;width: 100px;height: 100px;background-position: center center;background-repeat: no-repeat;background-size: 100% 100%;}
+.banner-form .cont .ico.i1 {background-image: url("ico-form-1.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-form-1.png*/;}
+.banner-form .cont .ico.i2 {background-image: url("ico-form-2.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-form-2.png*/;}
+.banner-form .cont .ico.i3 {background-image: url("ico-form-3.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-form-3.png*/;}
+.banner-form .cont .txt {font-size: 34px;font-weight: lighter;color: #353535;font-style: italic;}
+.banner-form .cont .txt em {color: #008fd5;font-weight: lighter;font-style: italic;}
+.banner-form .cont strong {padding: 0 10px;font-family: 宋体;}
+.banner-form .cont .txt span {position: relative;}
+.banner-form .cont .txt span:before,.banner-form .cont .txt span:after {position: absolute;top: 50%;margin-top: -4px;display: block;width: 46px;height: 9px;content: '';}
+.banner-form .cont .txt span:before {left: -88px;background-image: url("txt-form-1.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/txt-form-1.png*/;}
+.banner-form .cont .txt span:after {right: -88px;background-image: url("txt-form-2.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/txt-form-2.png*/;}
+.wp-form {margin-bottom: 50px;z-index: 2;}
+.box-form {margin: 80px auto 0;width: 100%;max-width: 820px;}
+.box-form li {padding-bottom: 15px;line-height: 34px;}
+.box-form li:after,.box-form li:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden; }
+.box-form li .p1 {padding-right: 16px;float: left;width: 180px;color: #555;font-size: 14px;text-align: right;}
+.box-form li .p2 {margin-left: 180px;}
+.box-form .inp-form.inp1 {width: 100%;}
+.box-form .require {display: inline-block;width: 20px;height: 34px;background: url("ico-require.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-require.png*/ center 7px no-repeat;vertical-align: middle;}
+.box-form label.check {padding-right: 20px;color: #666;font-size: 14px;}
+.box-form label.check a {color: #008fd5;}
+.box-form label.check a:hover {text-decoration: underline;}
+.box-form .inp-check-1 {margin-top: -3px;margin-right: 6px;display: inline-block;width: 20px;height: 20px;background: url("ico-check-1.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-check-1.png*/ 0 0 no-repeat;vertical-align: middle;}
+.box-form .inp-check-1:checked {background-position: 0 -20px;}
+.box-form .btns {padding: 20px 0 100px;text-align: center;}
+.box-form .btns a {margin: 0 15px;display: inline-block;width: 161px;height: 29px;line-height: 29px;text-align: center;font-size: 12px;color: #666;border: 1px solid #d3d3d3;border-radius: 14px;}
+.box-form .btns a:hover {color: #fff;background-color: #008fd5;border: 1px solid #008fd5;}
+.box-form .btns a.a1 {color: #fff;background-color: #008fd5;border: 1px solid #008fd5;}
+.box-account .tips {padding-left: 28px;color: #666;}
+.box-account .tips em {color: #008fd5;}
+/*******************************
+    -------[=01.基本信息]-------
+********************************/
+.banner-form {height: 276px;background-position: center center;background-repeat: no-repeat;background-size: cover;}
+.box-form .tit-form {margin-bottom: 26px;height: 30px;line-height: 1em;color: #666;font-size: 16px;font-weight: normal;background: url("img-tit-form.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/img-tit-form.png*/ right 0 no-repeat;cursor: pointer;}
+.box-form .tit-form.on {color: #008fd5;background-position: right -30px;}
+.box-form ul.cont.hide {padding-bottom: 30px;display: none;}
+.box-form .inp-form.inp2 {margin-right: 16px;width: 134px;}
+.box-form .dd-menu {position: relative;margin-right: 16px;float: left;display: inline-block;width: 134px;cursor: pointer;}
+.box-form .cont-inp.c2 .dd-menu {width: 113px;}
+.box-form .inp-form.inp3 {width: 100%;background: url("ico-arrow-down-2.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-arrow-down-2.png*/ right 10px center no-repeat #f4f4f4;cursor: pointer;}
+.box-form .dd-menu .list {position: absolute !important;top: 46px;left: 0;padding: 5px 0;display: none;width: 100%;height: 234px;overflow: hidden;overflow-y: auto;border: 1px solid #008fd5;border-radius: 5px;background-color: #f4f4f4;z-index: 3;}
+.box-form .dd-menu .list::-webkit-scrollbar
+{
+-webkit-appearance: none;
+width: 6px;
+height: 0;
+}
+
+.box-form .dd-menu .list::-webkit-scrollbar-thumb
+{
+border-radius: 3px;
+border: 0;
+background-color: #008fd5;
+}
+.box-form .dd-menu .list a {display: block;width: 100%;height: 30px;line-height: 30px;text-align: center;color: #666;font-size: 14px;}
+.box-form .dd-menu .list a:hover {color: #fff;background-color: #008fd5;}
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail, .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {background-color: transparent !important;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background-color: #008fd5 !important;}
+.mCSB_outside + .mCSB_scrollTools {right: -5px !important;}
+.box-form .inp-form.inp4 {width: 380px;}
+.box-form .dd-menu.dd2 {width: 100%;max-width: 380px;}
+.box-form .inp-form.inp6 {height: 148px;resize: none;}
+.box-form .btns2 .p2 {text-align: center;}
+.box-form .btn-form-1 {margin: 0 15px;display: inline-block;width: 75px;height: 32px;line-height: 30px;text-align: center;font-size: 16px;border-radius: 5px;}
+.box-form .btn-form-1.btn1 {color: #fff;background-color: #008fd5;border: 1px solid #008fd5;}
+.box-form .btn-form-1.btn2 {color: #666;border: 1px solid #d6d6d6;background-color: transparent;}
+.box-form .btn-form-1.btn2:hover {color: #fff;border: 1px solid #008fd5;background-color: #008fd5;}
+.box-form .txt {padding-right: 16px;float: left;}
+.box-form .upfile {display: block;width: 180px;height: 180px;background: url("img-upfile.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/img-upfile.png*/ center center no-repeat #f4f4f4;border: 1px dashed #d6d6d6;border-radius: 5px;cursor: pointer;}
+.box-form .upfile input {display: none;}
+.box-form .btns3 {padding-top: 10px;}
+.box-form .btns3 a {margin: 0 5px;display: inline-block;width: 70px;height: 27px;line-height: 25px;text-align: center;border-radius: 5px;font-size: 12px;}
+.box-form .btns3 a.a1 {color: #fff;background-color: #008fd5;border: 1px solid #008fd5;}
+.box-form .btns3 a.a2 {color: #666;border: 1px solid #d6d6d6;}
+.box-form .btns3 a.a2:hover {color: #fff;background-color: #008fd5;border: 1px solid #008fd5;}
+
+.box-new .g-cont-inner-1 {display: none;}
+.box-form .li-half {position: relative;margin-bottom: 15px;float: left;width: 50%;/*border-bottom: 1px dotted #bcbcbc;*/}
+.box-form .li-half .btn-add {position: absolute;top: 0;right: 0;display: block;width: 34px;height: 34px;background: url("ico-add-more.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-add-more.png*/ center center no-repeat;}
+.box-form .li-half .btn-del {position: absolute;top: 0;right: 0;display: block;width: 34px;height: 34px;background: url("ico-del.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-del.png*/ center center no-repeat;}
+.box-form .li-half .cont-inp {margin-right: 40px;}
+li.done {margin-bottom: 40px;border-bottom: 1px dotted #bcbcbc;}
+li.done .cont-table {width: 100%;white-space: nowrap;overflow: hidden;overflow-x: auto;}
+li.done .cont-table::-webkit-scrollbar
+{
+-webkit-appearance: none;
+width: 0;
+height: 0;
+}
+
+li.done .cont-table::-webkit-scrollbar-thumb
+{
+border-radius: 8px;
+border: 3px solid #fff;
+background-color: rgba(0, 0, 0, .3);
+}
+li.done table {width: 820px;}
+li.done table th,li.done table td {height: 28px;text-align: center;}
+li.done table td {font-size: 12px;color: #666;line-height: 1.5;}
+li.done a {padding: 0 3px;}
+li.done .btn-mod {color: #008fd5;}
+li.done .btn-add {margin: 20px auto 0;padding-left: 30px;display: block;width: 86px;height: 20px;line-height: 20px;background: url("ico-add-2.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/images/ico-add-2.png*/ left center no-repeat;color: #0b8fcf;font-size: 12px;}
+
+@media only screen and (max-width: 1023px) {
+    .wp-inner-1 {margin: 20px auto 30px;}
+    /*******************************
+        -------[=表单]-------
+    ********************************/
+    .wp-form {margin-top: 20px;}
+    .banner-form .cont {top: 50%;margin-top: -56px;}
+    .banner-form .cont .ico {width: 60px;height: 60px;}
+    .banner-form .cont .txt {font-size: 22px;}
+
+    .box-login.box2 .btn-forget-pwd {margin-left: 0;display: block;float: left;width: 100%;}
+}
+@media only screen and (max-width: 959px) {
+    .wp-inner-1 {margin: 20px auto;}
+    /*.bg-grey {background-color: transparent;}
+    .box-login {-webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;}*/
+    /*******************************
+        -------[=表单]-------
+    ********************************/
+    .box-form .dd-menu {margin-right: 2%;width: 31%;}
+    .box-form .dd-menu.dd2 {margin-top: 5px;}
+    .box-form .txt {padding-left: 113px;display: block;width: 100%;}
+    .box-form .li-half .dd-menu {margin-right: 0;width: 100%;}
+
+    .box-login {padding: 20px 12px 0;}
+    .fd-login {height: 40px;line-height: 40px;font-size: 12px;}
+
+    .box-login.box2 .img {display: none;}
+    .box-login.box2 .box-form {padding-top: 0;padding-bottom: 100px;float: none;width: 100%;}
+    .box-login.box2 .box-form .tit {font-size: 18px;}
+}
+
+/*Common For Max 480*/
+@media only screen and (max-width: 768px) {
+    /*******************************
+        -------[=表单]-------
+    ********************************/
+    .box-form .inp-form.inp2 {width: 130px;}
+    .box-form .btns {padding: 20px 0 50px;}
+}   
+
+@media only screen and (max-width: 670px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    /*******************************
+        -------[=表单]-------
+    ********************************/
+    .box-form {margin: 30px auto 0;padding: 0 10px;}
+    .box-form li .p1 {padding-right: 0;float: none;width: 100%;text-align: left;line-height: 32px;}
+    .box-form li .p2 {margin-left: 0;}
+    .box-form .cont-help {padding-left: 0;width: 40px;}
+    .box-form .cont-help em {margin-left: 10px;}
+    .box-form .cont-help .txt {right: -3px;width: 300px;}
+    .box-form .cont-help .txt:after {right: 16px;}
+    .box-form .cont-inp {margin-right: 40px;}
+    .box-form label.check {font-size: 12px;}
+    .box-form .btns {padding: 0 0 20px;}
+    .box-form .btns a {margin: 0 auto 10px;display: block;font-size: 12px;}
+    .box-form .dd-menu {margin-right: 0;margin-bottom: 5px;margin-left: 0;width: 100%;}
+    .box-form .cont-inp.c2 .dd-menu {width: 100%;}
+    .box-form .inp-form.inp4 {width: 100%;}
+    .box-form .inp-form {margin-left: 0;}
+    .box-form .txt {margin-left: 0;padding-left: 0;text-align: center;}
+    .box-form .require {vertical-align: bottom;}
+    .box-form .cont-help {height: 38px;line-height: 38px;}
+    .box-form .li-half .btn-add {top: 34px;}
+    .box-form .li-half .btn-del {top: 34px;}
+
+    .box-login.box2 .btn-regist {margin-left: 20px;}
+    .g-btn-form-1 {height: 36px;line-height: 36px;font-size: 14px;}
+    .g-btn-form-2 {height: 36px;line-height: 34px;font-size: 14px;}
+
+    /*登录*/
+    .box-login a {margin: 20px 0 40px;float: none;width: 100%;height: 222px;}
+    .box-login a:hover img.img-on {display: none;}
+    .box-login a:hover img.img-on-m {display: block;}
+}
+@media only screen and (max-width: 479px) {
+    /*******************************
+        -------[=表单]-------
+    ********************************/
+    .banner-form {height: 138px;}
+    .banner-form .cont {margin-top: -27px;}
+    .banner-form .cont .ico {margin: 0 auto 8px;width: 40px;height: 40px;}
+    .banner-form .cont .txt {font-size: 18px;}
+    .banner-form .cont .txt span:before {left: -60px;}
+    .banner-form .cont .txt span:after {right: -60px;}
+    .box-form .inp-form.inp2 {margin-right: 0;margin-bottom: 5px;width: 100%;}
+    .box-form .dd-menu {margin-right: 0;margin-bottom: 5px;width: 100%;}
+    .box-form .inp-form.inp4 {width: 100%;}
+    .box-form .txt {margin-left: 0;text-align: center;}
+
+    .box-login.box2 .btn-login {width: 100px;}
+    .box-login.box2 .btn-regist {width: 100px;}
+    .box-login.box2 .img-vali {margin-top: 10px;margin-left: 0;width: 100%;}
+    .box-form .inp-form.inp8 {width: 100%;}
+}
+
+@media only screen and (max-width: 360px) {
+    .box-login.box2 .btn-login {width: 80px;}
+    .box-login.box2 .btn-regist {width: 80px;}
+
+}

@@ -1,0 +1,1262 @@
+/* CSS Document */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	font-family: "Lucida Grande" , Verdana, Lucida, Arial, Helvetica, "宋体" ,sans-serif;
+	font-size: 12px;
+	color: #2d2d2d;
+	background-color: #fff;
+}
+img
+{
+	border: 0;
+}
+a
+{
+	color: #2d2d2d;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #014DA1;
+	text-decoration: none;
+}
+.must
+{
+	color: #FF0000;
+}
+.tips
+{
+	color: #bababa;
+}
+#main
+{
+	width: 960px;
+	margin: 0 auto;
+}
+#top
+{
+	height: 91px;
+}
+#logo_nav
+{
+	height: 60px;
+}
+#logo
+{
+	width: 150px;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	text-align: center;
+}
+#nav
+{
+	float: right;
+	width: 300px;
+	text-align: right;
+	padding-right: 8px;
+	padding-top: 30px;
+}
+#nav a
+{
+	color: #014DA1;
+	text-decoration: none;
+}
+#menu
+{
+	height: 31px;
+	clear: both;
+}
+#menu_left
+{
+	height: 31px;
+	width: 4px;
+	background: url("menu_left.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/menu_left.gif*/ right top no-repeat;
+	float: left;
+}
+#menu_right
+{
+	height: 31px;
+	width: 4px;
+	background: url("menu_right.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/menu_right.gif*/ left top no-repeat;
+	float: left;
+}
+#menu_center
+{
+	height: 31px;
+	background: url("menu_center.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/menu_center.gif*/ left top repeat-x;
+	float: left;
+	width: 952px;
+}
+#menu_center a
+{
+	color: #fff;
+	text-decoration: none;
+}
+#menu_center ul
+{
+	list-style: none;
+	height: 31px;
+	float: left;
+	width: 750px;
+}
+#menu_center ul li
+{
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	width: 90px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+#menu_center ul li.sel
+{
+	font-weight: bold;
+	background: url("menu_sel_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/menu_sel_bg.gif*/ left top no-repeat;
+}
+#menu_center ul li.line
+{
+	width: 1px;
+	height: 31px;
+	background: url("line.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/line.gif*/ left top no-repeat;
+}
+.fast
+{
+	width: 147px;
+	float: right;
+	height: 31px;
+	margin-right: 13px;
+	_margin-right: 10px;
+	background: url("fast_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/fast_bg.gif*/ right 7px no-repeat;
+	cursor: pointer;
+}
+
+/*添加下拉层3月7日*/
+.dropDownHead
+{
+	width: 147px;
+	float: right;
+	height: 31px;
+	margin-right: 13px;
+	_margin-right: 10px;
+	background: url("dropDownHead.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/dropDownHead.gif*/ right 3px no-repeat;
+	z-index: 1001;
+}
+
+#drop_menu ul.dropDownFoot
+{
+	list-style: none;
+	position: absolute;
+	background: url("dropDownFoot.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/dropDownFoot.gif*/ left top no-repeat;
+	filter: alpha(opacity=90);
+	cursor: pointer;
+	z-index: 999;
+	margin-top: 29px;
+	height: 95px;
+	width: 147px;
+	padding-top: 10px;
+}
+#drop_menu ul.dropDownFoot li
+{
+	width: 147px;
+	clear: both;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	padding-left: 15px;
+}
+
+
+#menu_center #drop_menu a
+{
+	color: #fff;
+}
+
+#menu_center #drop_menu a:hover
+{
+	color: #FCA301;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*end*/
+
+#banner
+{
+	margin-top: 10px;
+	width: 958px;
+	height: 271px;
+	border: 1px solid #B6B6B6;
+	z-index: -1;
+}
+#search
+{
+	height: 39px;
+	width: 958px;
+	border-left: 1px solid #B6B6B6;
+	border-right: 1px solid #B6B6B6;
+	background: url("search_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/search_bg.gif*/ left top repeat-x;
+}
+.ser_job
+{
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	padding-left: 20px;
+}
+.txt_search
+{
+	width: 111px;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 2px;
+	border: 1px solid #AEAEAE;
+	margin-top: 8px; *margin-top:0;
+_margin-top:8px;
+}
+.ser_btn
+{
+	font-family: "Lucida Grande" , Verdana, Lucida, Arial, Helvetica, "宋体" ,sans-serif;
+	font-size: 12px;
+	width: 59px;
+	height: 24px;
+	line-height: 26px;
+	border: 0;
+	background: url("ser_btn_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/ser_btn_bg.gif*/ left top no-repeat;
+	color: #6A6A6A;
+	cursor: pointer;
+}
+a.light
+{
+	color: #024CA3;
+	text-decoration: none;
+}
+.more_job
+{
+	float: right;
+	width: 120px;
+	text-align: right;
+	padding-right: 10px;
+	height: 39px;
+	line-height: 39px;
+}
+
+#content
+{
+	height: 201px;
+	width: 958px;
+	border-left: 1px solid #B6B6B6;
+	border-right: 1px solid #B6B6B6;
+	background: url("content_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/content_bg.gif*/ left top repeat-x;
+}
+#copyright
+{
+	margin-top: 10px;
+	height: 30px;
+	clear: both;
+}
+#cp_link
+{
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	padding-left: 6px;
+}
+#cp
+{
+	height: 30px;
+	line-height: 30px;
+	float: right;
+	padding-right: 6px;
+}
+.clear
+{
+	clear: both;
+}
+#news_pic
+{
+	padding: 20px 0 0 20px;
+	width: 291px;
+	float: left;
+}
+#news_pic ul
+{
+	list-style: none;
+}
+#news_pic ul .pic
+{
+	width: 289px;
+	height: 120px;
+	border: 1px solid #C1C1C1;
+	float: left;
+}
+#news_pic ul .pic img
+{
+	padding: 1px;
+	cursor: pointer;
+}
+
+.ul_list .title_img
+{
+	height: 45px;
+	line-height: 45px;
+	background: url("t_login.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/t_login.gif*/ #F5F8FF left top no-repeat;
+	padding-left: 22px;
+	border-top: 1px solid #D3DEFE;
+	border-bottom: 1px solid #D3DEFE;
+}
+
+#news_pic ul .title
+{
+	float: left;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+#news_pic ul .change
+{
+	float: right;
+	width: 85px;
+	text-align: right;
+	margin-top: 5px;
+}
+.change ul
+{
+	list-style: none;
+	height: 30px;
+}
+.change ul li
+{
+	float: left;
+	width: 15px;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 3px;
+	text-align: center;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.change ul li.sel
+{
+	background: url("number_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/number_bg.gif*/ 3px top no-repeat;
+	color: #fff;
+	font-weight: bold;
+	padding-top: 1px;
+}
+#news
+{
+	width: 320px;
+	float: left;
+	margin: 20px 0 0 24px;
+}
+#news dl dt ul
+{
+	list-style: none;
+	height: 25px;
+	border-bottom: 1px dashed #C2C2C2;
+}
+#news dl dt ul li.title
+{
+	height: 20px;
+	line-height: 20px;
+	color: #3E4E5E;
+	float: left;
+	width: 100px;
+}
+#news dl dt ul li.title img
+{
+	vertical-align: middle;
+}
+#news dl dt ul li.more
+{
+	float: right;
+	text-align: right;
+	height: 20px;
+	line-height: 20px;
+	padding-right: 3px;
+}
+#news dl dd
+{
+	margin-top: 5px;
+	margin-left: 0;
+}
+#news dl dd ul
+{
+	list-style: none;
+	margin-left: 5px;
+}
+#news dl dd ul li
+{
+	height: 24px;
+	line-height: 24px;
+	background: url("li_pic.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/li_pic.gif*/ left 11px no-repeat;
+	padding-left: 10px;
+}
+
+#channel
+{
+	width: 268px;
+	height: 178px;
+	float: left;
+	padding: 10px 0 0 25px;
+	background: url("channel_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/channel_bg.gif*/ right bottom no-repeat;
+}
+#channel ul
+{
+	list-style: none;
+}
+#channel ul li
+{
+	width: 178px;
+	height: 56px;
+}
+#channel ul li.top
+{
+	padding-top: 5px;
+	_padding-top: 0;
+}
+#page_banner
+{
+	margin-top: 10px;
+	clear: both;
+	width: 960px;
+	height: 97px;
+}
+#page_content
+{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	float: left;
+	clear: both;
+	width: 960px;
+}
+.pg_menu
+{
+	width: 188px;
+	float: left;
+	border: 1px solid #D3DEFE;
+	background-color: #F5F8FF;
+}
+.pg_content
+{
+	width: 760px;
+	padding-left: 10px;
+	float: left;
+}
+.news
+{
+	width: 960px;
+}
+
+/*页面左侧菜单栏*/
+.left_menu
+{
+	margin: 3px 0 5px 7px;
+	list-style: none;
+	width: 168px;
+}
+.left_menu li
+{
+	height: 32px;
+	line-height: 32px;
+	background: url("l_m_line.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/l_m_line.gif*/ left bottom no-repeat;
+	padding-left: 20px;
+	cursor: pointer;
+}
+.left_menu li.selected
+{
+	background: url("selected_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/selected_bg.gif*/ left top no-repeat;
+	font-weight: bold;
+}
+.menu_search
+{
+	line-height: 35px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+}
+.txt_l_search
+{
+	border: 1px solid #D3DEFE;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	background-color: #fff;
+	width: 147px;
+	margin-top: 20px;
+	padding-left: 5px;
+}
+.txt_p_search
+{
+	border: 1px solid #D3DEFE;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	background-color: #fff;
+	width: 145px;
+	margin-top: 10px;
+	padding-left: 5px;
+}
+.input_tips
+{
+	color: #B5B5B5;
+}
+/*页面样式*/
+.pg_nav
+{
+	height: 25px;
+	line-height: 25px;
+	clear: both;
+	padding-left: 10px;
+}
+.page_list
+{
+	background-color: #fff;
+}
+.pd_20
+{
+	padding: 20px;
+}
+.pg_top
+{
+	margin-top: 15px;
+}
+.job_search
+{
+	height: 105px;
+	border: 1px solid #D3DEFE;
+	background-color: #F5F8FF;
+	float: left;
+	width: 758px;
+	margin-bottom: 10px;
+}
+.job_search div
+{
+	padding: 20px 0 20px 25px;
+}
+.job_detail
+{
+	border: 1px solid #D3DEFE;
+	list-style: none;
+	width: 758px;
+}
+.job_name
+{
+	height: 60px;
+	line-height: 60px;
+	background-color: #F5F8FF;
+	border-bottom: 1px solid #D3DEFE;
+	padding-left: 25px;
+	color: #2d2d2d;
+	font-size: 14px;
+	font-weight: bold;
+}
+.job_info
+{
+	padding: 0 10px;
+}
+.tb_list
+{
+	border: 0;
+	width: 100%;
+}
+.tb_list td
+{
+	height: 40px;
+	line-height: 30px;
+	vertical-align: middle;
+	border-bottom: 1px dashed #B8B8B8;
+	padding-left: 15px;
+}
+.tb_list td span
+{
+	font-weight: bold;
+}
+.tb_list td.apply
+{
+	border-bottom: 0;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+.tb_list .line td
+{
+	border-bottom: 1px solid #D3DEFE;
+}
+.tb_list .last td
+{
+	border-bottom: 0;
+}
+.tb_list td.info
+{
+	color: #696969;
+}
+.tb_list a
+{
+	color: #0062BD;
+	text-decoration: none;
+}
+.tb_list .tr_title td
+{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #D3DEFE;
+	color: #FF8500;
+}
+.tb_list .tr_page td
+{
+	height: 45px;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: 0;
+}
+.app_login
+{
+	height: 309px;
+	background: url("app_login_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/app_login_bg.gif*/ right 40px no-repeat;
+}
+.find_pw
+{
+	height: 290px;
+	background: url("find_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/find_bg.gif*/ right bottom no-repeat;
+}
+.modify_pw
+{
+	height: 290px;
+	background: url("modify_pw.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/modify_pw.gif*/ right bottom no-repeat;
+}
+.apply_btn
+{
+	width: 76px;
+	height: 25px;
+	background: url("apply.png")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/apply.png*/ left top no-repeat;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+	border: 0;
+	cursor: pointer;
+}
+
+.ul_list
+{
+	border: 1px solid #D3DEFE;
+	border-top: 0;
+	list-style: none;
+	width: 758px;
+}
+.ul_list .title
+{
+	height: 45px;
+	line-height: 45px;
+	background: url("titleItem.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/titleItem.gif*/ left top repeat-x;
+	font-weight: bold;
+	font-size: 18px;
+	color: #bebebe;
+	padding-left: 22px;
+}
+.ul_list .content
+{
+	padding: 0 10px;
+}
+.ul_list .ser_title
+{
+	color: #68696B;
+	background-color: #F5F8FF;
+	border-bottom: 1px solid #D3DEFE;
+	height: 28px;
+	line-height: 28px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.article
+{
+	border: 1px solid #D3DEFE;
+}
+.article .pad
+{
+	padding: 15px 0px;
+}
+
+.padM
+{
+	padding: 15px 8px;
+	margin-top: 42px;
+	_margin-top: 0;
+	_padding-top: 0; *margin-top:16px;
+
+}
+
+.pad p
+{
+	margin: 10px 0;
+	line-height: 30px;
+}
+.pad p.top
+{
+	margin-top: 0;
+}
+.ar_head
+{
+	text-align: center;
+	border-bottom: 1px dashed #CCCCCC;
+}
+.ar_title
+{
+	color: #F06500;
+}
+.ar_time
+{
+	color: #B4B4B4;
+}
+.ar_operate
+{
+	text-align: right;
+	height: 25px;
+	line-height: 25px;
+}
+.ar_operate img
+{
+	vertical-align: middle;
+}
+
+/*简历注册*/
+.tb_register
+{
+	border: 0;
+	width: 100%;
+	margin-top: 10px;
+}
+.review_top
+{
+	margin-top: 0;
+}
+.tb_register td
+{
+	height: 35px;
+	vertical-align: middle;
+}
+.tb_register .tr_title td
+{
+	height: 25px;
+	line-height: 25px;
+	padding-left: 8px;
+	border: 1px solid #D3D3D3;
+	background-color: #F6F6F6;
+}
+.tb_register .tr_line td
+{
+	border-bottom: 1px solid #D3D3D3;
+}
+.tb_register .tr_dash td
+{
+	border-bottom: 1px dashed #C4D2FF;
+}
+.tb_register .tr_dash td.no_btm
+{
+	border-bottom: 0;
+}
+.tb_register .tr_rv_title td
+{
+	border-bottom: 1px solid #C5D4FF;
+	font-weight: bold;
+}
+.rv_pic
+{
+	padding: 5px;
+	border: 1px solid #D3DEFE;
+}
+.rg_operate
+{
+	height: 30px;
+	text-align: center;
+	margin: 30px 0 10px 0;
+}
+.dv_title
+{
+	float: left;
+	font-weight: bold;
+}
+.dv_operate
+{
+	float: right;
+	padding-right: 10px;
+}
+
+.tb_register td.title
+{
+	text-align: right;
+}
+.tb_register td.title span
+{
+	color: #FF0000;
+}
+.rg_txt
+{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #C7C7C7;
+	padding-left: 5px;
+	width: 150px;
+}
+.rg_txt_litte
+{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #C7C7C7;
+	padding-left: 5px;
+	width: 50px;
+}
+.rg_txt_short
+{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #C7C7C7;
+	padding-left: 5px;
+	width: 100px;
+}
+.rg_txt_middle
+{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #C7C7C7;
+	padding-left: 5px;
+	width: 260px;
+}
+.rg_select_short
+{
+	width: 85px;
+}
+.rg_select_workplace
+{
+	width: 128px;
+}
+.rg_select_middle
+{
+	width: 155px;
+}
+.rg_select_long
+{
+	width: 200px;
+}
+.rg_check label
+{
+	margin-right: 30px;
+	padding: 2px;
+}
+.rg_check input
+{
+	padding: 10px;
+}
+.tb_register .tips
+{
+	color: #bababa;
+	margin-left: 5px;
+}
+.rg_txt_long
+{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #C7C7C7;
+	padding-left: 5px;
+	width: 350px;
+}
+
+.rg_btn
+{
+	font-family: "Lucida Grande" , Verdana, Lucida, Arial, Helvetica, "宋体" ,sans-serif;
+	font-size: 12px;
+	height: 25px;
+	line-height: 23px;
+	border: 1px solid #A6D0E6;
+	background: url("rg_btn.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/rg_btn.gif*/ left top repeat-x;
+	color: #2d2d2d;
+	cursor: pointer;
+	padding: 0 8px;
+}
+.cm_btn
+{
+	font-family: "Lucida Grande" , Verdana, Lucida, Arial, Helvetica, "宋体" ,sans-serif;
+	font-size: 12px;
+	height: 25px;
+	line-height: 23px;
+	border: 1px solid #CFCFCF;
+	background: url("cm_btn.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/cm_btn.gif*/ left top repeat-x;
+	color: #2d2d2d;
+	cursor: pointer;
+	padding: 0 8px;
+}
+.rg_home
+{
+	border: 0;
+	width: 100%;
+}
+.rg_home td
+{
+	text-align: center;
+	padding: 90px 0;
+}
+.rg_home td img
+{
+	cursor: pointer;
+}
+.rg_success
+{
+	list-style: none;
+	padding-left: 60px;
+	padding-top: 60px;
+	height: 230px;
+}
+.rg_success li.suc_img
+{
+	float: left;
+	width: 135px;
+	height: 135px;
+}
+li.suc_tip
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #6CC700;
+	padding-top: 15px;
+	padding-left: 150px;
+}
+li.suc_content_tip
+{
+	padding-top: 15px;
+	padding-left: 150px; *padding-left:15px;
+height:20px;
+font-size:18px;
+}
+li.suc_content
+{
+	padding-top: 15px;
+	padding-left: 150px; *padding-left:15px;
+height:20px;
+}
+li.suc_content span
+{
+	font-size: 18px;
+}
+.find_tips
+{
+	color: #696969;
+}
+.tooltip
+{
+	width: 18px;
+	height: 15px;
+}
+.rg_radioList_horizontal label
+{
+	padding-right: 10px;
+}
+/*简历预览*/
+.rv_resume
+{
+	width: 760px;
+	margin: 20px auto 0 auto;
+}
+.rv_content
+{
+	border: 1px solid #D3DEFE;
+	padding: 20px 15px;
+	margin-bottom: 30px;
+}
+.rv_title
+{
+	width: 723px;
+	height: 40px;
+	background: url("rv_title_bg.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/rv_title_bg.gif*/ left top no-repeat;
+}
+.rv_title div
+{
+	margin-top: 6px;
+	margin-left: 33px;
+	color: #004B97;
+	font-weight: bold;
+}
+/*标签样式*/
+.tab
+{
+	float: left;
+	width: 100%;
+}
+
+.tab ul
+{
+	height: 24px;
+	list-style: none;
+	padding-left: 15px;
+	margin-top: -47px;
+}
+
+.tab ul li
+{
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	margin-right: 2px;
+}
+
+.tab ul li.selected
+{
+	height: 24px;
+	width: 125px;
+	line-height: 24px;
+	background: url("selectTab1.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/selectTab1.gif*/ left top no-repeat;
+	color: #004C9A;
+	font-weight: bold;
+}
+
+.tab ul li.unselected
+{
+	height: 21px;
+	width: 125px;
+	line-height: 21px;
+	color: #024B98;
+	background: url("unSelectTab1.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/unSelectTab1.gif*/ left top no-repeat;
+	margin-top: 1px;
+}
+
+.tab_line
+{
+	background: url("lineTab.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/lineTab.gif*/ left bottom repeat-x;
+	height: 49px;
+	width: 100%;
+	margin-top: 10px;
+}
+/*标签样式结束*/
+
+/*修改简历*/
+.tb_registerM
+{
+	border: 0;
+	width: 100%;
+	margin-top: -10px;
+}
+.tb_registerM td
+{
+	height: 35px;
+	vertical-align: middle;
+}
+.tb_registerM .tr_title td
+{
+	height: 25px;
+	line-height: 25px;
+	padding-left: 8px;
+	border: 1px solid #D3D3D3;
+	background-color: #F6F6F6;
+}
+.tb_registerM .tr_line td
+{
+	border-bottom: 1px solid #D3D3D3;
+}
+.tb_registerM .tr_dash td
+{
+	border-bottom: 1px dashed #C4D2FF;
+}
+.tb_registerM .tr_dash td.no_btm
+{
+	border-bottom: 0;
+}
+.tb_registerM .tr_rv_title td
+{
+	border-bottom: 1px solid #C5D4FF;
+	font-weight: bold;
+}
+.tb_registerM td.title
+{
+	text-align: right;
+}
+.tb_registerM td.title span
+{
+	color: #FF0000;
+}
+
+/*翻页控件*/
+.page_number
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	margin: 3px;
+	padding-top: 3px;
+	text-align: center;
+	height: 30px;
+}
+.page_number A
+{
+	border: #C9D3DD 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	margin: 2px;
+	color: #004398;
+	padding-top: 2px;
+	text-decoration: none;
+}
+.page_number A:hover
+{
+	border: #C9D3DD 1px solid;
+	color: #FF0000;
+	text-decoration: underline;
+	background-color: #F4F4F6;
+}
+.page_number A:active
+{
+	border: #C9D3DD 1px solid;
+	color: #FF0000;
+	text-decoration: underline;
+	background-color: #F4F4F6;
+}
+.page_number .current
+{
+	border: 0;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+	padding-bottom: 2px;
+	margin: 2px;
+	color: #FF0000;
+	padding-top: 2px;
+}
+.page_number .disabled
+{
+	border: #C9D3DD 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	margin: 2px;
+	color: #ACA899;
+	padding-top: 2px;
+}
+
+/*常见问题*/
+.ul_list .askT
+{
+	width: 718px;
+	color: #666;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 38px;
+	padding-top: 10px;
+	background: url("icon03.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/icon03.gif*/ 22px 10px no-repeat;
+	white-space: normal;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: auto;
+}
+.ul_list .lineB
+{
+	width: 730px;
+	height: 1px;
+	margin-left: 15px;
+	border-bottom: 1px solid #D3DEFE;
+	margin-bottom: 10px;
+}
+.lineDivT
+{
+	width: 730px;
+	height: 1px;
+	margin-left: 15px;
+	border-bottom: 1px dashed #B7B7B7;
+}
+.ul_list .ar_operate
+{
+	width: 738px;
+	text-align: right;
+	height: 25px;
+	line-height: 25px;
+}
+.ul_list .ar_operate img
+{
+	vertical-align: middle;
+}
+
+.detailAnswer
+{
+	width: 100%;
+}
+
+.detailAnswer ul
+{
+	list-style: none;
+	padding: 15px 22px;
+}
+.detailAnswer ul li
+{
+	color: #666;
+}
+
+.detailAnswer ul li.answerT
+{
+	padding-left: 18px;
+	background: url("icon020.gif")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/images/icon020.gif*/ left top no-repeat;
+}
+
+.detailAnswer ul li.answerD
+{
+	padding-left: 18px;
+	white-space: normal;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: auto;
+}
+
+.ul_list .pageN
+{
+	width: 758px;
+	padding-bottom: 10px;
+}
+
+.tb_ask
+{
+	border: 0;
+	width: 238px;
+	margin-top: 10px;
+	margin-left: 176px;
+}
+
+.tb_ask td
+{
+	height: 35px;
+	vertical-align: middle;
+}
+.tb_ask .grayAsk
+{
+	color: #999;
+}
+.right-head
+{
+	height: 56px;
+	width: 942px;
+	background-image: url("ZTE_90_2015050000.png")/*tpa=http://job.zte.com.cn/SocietyRecruitFront/NewImages/ZTE_90_2015050000.png*/;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.head-title-p
+{
+	text-align: center;
+	color: #FFFFFF;
+	height: 56px;
+	line-height: 56px;
+	font-size: 24px;
+	letter-spacing: 10px;
+}
+.right-cont-arr
+{
+	width: 910px;
+	min-height: 475px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 1px #DDDDDD solid;
+	border-top: none;
+	background: #fff;
+	padding: 30px 20px 10px 10px;
+}

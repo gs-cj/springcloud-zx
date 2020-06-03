@@ -1,0 +1,108 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset=utf-8"utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="bootstrap2-1.css" tppabs="http://job.zte.com.cn/SocietyRecruitFront/NewCss/bootstrap2.css" />
+
+    <script src="jquery_2015050000.min-1.js" tppabs="http://job.zte.com.cn/SocietyRecruitFront/NewCss/jquery_2015050000.min.js"></script>
+
+    <link rel="stylesheet" href="home-1.css" tppabs="http://job.zte.com.cn/SocietyRecruitFront/NewCss/home.css" />
+
+    <script src="myself-1.js" tppabs="http://job.zte.com.cn/SocietyRecruitFront/NewCss/myself.js"></script>
+	
+	<script type="text/javascript">
+		window.onload=function(){
+            var obj=$("#login-user input");
+            //var obj=document.getElementsByTagName("input");
+            for(var i=0;i<obj.length;i++){
+                (function(){
+                    var index=i;
+                    obj[index].onkeydown=function(){
+                        if(window.event.keyCode==9){
+                            obj[index<obj.length-1?index+1:0].focus();
+                            return false;
+                        }
+                    };
+                })();
+            }
+        };
+	</script>
+</head>
+<!--[if IE 7]>
+        	<link rel="stylesheet" href="ie7-1.css" tppabs="http://job.zte.com.cn/SocietyRecruitFront/NewCss/ie7.css"  />
+        <![endif]-->
+<body>
+    <form name="form1" method="post" action="http://job.zte.com.cn/SocietyRecruitFront/UserInfo/Login.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAyNjYyNTI0Ng9kFgICAQ9kFgICBw8PFgIeCEltYWdlVXJsBThWYWxpZGF0YVBpYy5hc3B4P2lkPWVlZmYwMzEyLTg3MDYtNGZjNC04ZDQxLTEyNmMyYmIxNTAyYmRkZAQeSCDWX/xLip5D+MXcCoB8E6GU" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKF4cSzCgKl1bKzCQK1qbSRCwKok6eqCgKC3IeGDH+/bcfybzKDg6NoCl63PKwSj2Ay" />
+</div>
+    <div class="right-head">
+        <p class="head-title-p">
+            ÁôªÂΩï</p>
+    </div>
+    <div class="right-cont-arr" style="background: url(../NewImages/ZTE_login_2015050000.jpg) no-repeat;
+        min-height: 0px; height: 440px;">
+        <div class="login-box">
+            <div class="login-box-top">
+                <ul class="loign-box-top-ul">
+                    <li class="loign-box-top-active"><a target="_top" href="Index.aspx-type=1.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/Index.aspx?type=1">
+                        Ê†°Âõ≠ÊãõËÅò</a></li>
+                   
+                         <li class="loign-box-top-anone"><a target="_blank" href="javascript:if(confirm('http://zte.zhiye.com/Portal/Account/Login  \n\n∏√Œƒº˛Œﬁ∑®”√ Teleport Ultra œ¬‘ÿ, “ÚŒ™ À¸ «“ª∏ˆ”ÚªÚ¬∑æ∂Õ‚≤ø±ª…Ë÷√Œ™À¸µƒ∆Ù ºµÿ÷∑µƒµÿ÷∑°£  \n\nƒ„œÎ‘⁄∑˛ŒÒ∆˜…œ¥Úø™À¸?'))window.location='http://zte.zhiye.com/Portal/Account/Login'" tppabs="http://zte.zhiye.com/Portal/Account/Login">
+                        Á§æ‰ºöÊãõËÅò</a></li>
+                    <div class="clear-float">
+                    </div>
+                </ul>
+            </div>
+            <div class="login-box-main" id="login-box-user">
+                <div class="form-horizontal" id="login-user">
+                    <fieldset>
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">
+                            </label>
+                            <div class="controls">
+                                <input name="txtUserName" type="text" id="txtUserName" placeholder="Áî®Êà∑Âêç" />
+                                <span class="login-userinsert"><a target="_top" href="Register.html" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/Register.html">
+                                    Áî®Êà∑Ê≥®ÂÜå</a></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">
+                            </label>
+                            <div class="controls">
+                                <input name="txtPassword" type="password" id="txtPassword" placeholder="ÂØÜÁ†Å" />
+                                <span class="login-userinsert"><a href="FindPassword-1.aspx.htm" tppabs="http://job.zte.com.cn/SocietyRecruitFront/UserInfo/FindPassword.aspx">ÂøòËÆ∞ÂØÜÁ†Å?</a></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">
+                            </label>
+                            <div class="controls">
+                                <input name="txtVerifyNo" type="text" id="txtVerifyNo" placeholder="È™åËØÅÁ†Å" maxlength="4" style="width:200px" />
+                                <div class="login-yanzheng">
+                                    <img id="img1" src="ValidataPic.aspx-id=eeff0312-8706-4fc4-8d41-126c2bb1502b" tppabs="http://job.zte.com.cn/SocietyRecruitFront/UserInfo/ValidataPic.aspx?id=eeff0312-8706-4fc4-8d41-126c2bb1502b" style="border-width:0px;" /></div>
+                                <span class="login-replaceimg" style="display: none;">Êç¢‰∏ÄÂº†</span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">
+                            </label>
+                            <div class="controls">
+                                <input type="submit" name="btnLogin" value="ÁôªÂΩï" id="btnLogin" class="longin-btn1" style="width: 394px;" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

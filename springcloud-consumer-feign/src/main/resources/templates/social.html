@@ -1,0 +1,512 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>中兴通讯全球招聘门户-社会招聘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="cui.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/cui.css" />
+    <link rel="stylesheet" href="lib.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/lib.css" />
+    <link rel="stylesheet" href="style.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/style.css" />
+    <link rel="stylesheet" href="less.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/less.css">
+    <script type="text/javascript" src="jquery.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/jquery.js"></script>
+    <script type="text/javascript" src="lib.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/lib.js"></script>
+    <link rel="stylesheet" href="style-pp.css" tppabs="http://job.zte.com.cn/Asserts/JobOffers/css/style-pp.css" />
+</head>
+<body>
+    <!-- 头部 -->
+    
+
+<style>
+
+    @media only screen and (max-width: 1000px) {
+        #loginFrame {
+            display: none;
+        }
+    }
+</style>
+<script>
+    function commonSearch() {
+        var commonjobName = $.trim($("#commonjobName").val());
+        if (commonjobName != "") {
+            var url = "/recruitment-list";
+            window.location.href = url + "?jobname=" + encodeURIComponent(commonjobName);
+        }
+    }
+</script>
+
+<div class="header">
+    <div class="wp">
+        <a href="index.htm" tppabs="http://job.zte.com.cn/" class="logo">
+            <img src="logo.png-h=56&w=219.png" tppabs="https://res-www.zte.com.cn/mediares/JobOffers/Images/Common/logo.png?h=56&w=219" id="header_0_logo" />
+        </a>
+        <iframe src="Head.aspx.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/Head.aspx" style="height: 55px; float: right; margin-right: -100px; border: none; padding: 0px;" id="loginFrame"></iframe>
+        
+        <div class="so-box">
+            <input type="text" name="" id="commonjobName" class="txt" placeholder="请输入职位">
+            <input type="button" name="" id="Button1" class="btn" onclick="commonSearch();">
+        </div>
+        <ul id="nav">
+
+                    <li>
+                        <a href="../toMainn">首页</a>
+
+                    </li>
+
+                    <li>
+                        <a href="../toCmpus" >校园招聘</a>
+                        <div class="sub-box"><dl><dd><a href="/toCmpus" >应届生招聘</a></dd><dd><a href="intern-recruitment.htm" tppabs="http://job.zte.com.cn/intern-recruitment">实习生招聘</a></dd><dd><a href="javascript:if(confirm('http://challenge.zte.net/index.php  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://challenge.zte.net/index.php'" tppabs="http://challenge.zte.net/index.php">中兴大赛</a></dd><dd><a href="help-center.htm" tppabs="http://job.zte.com.cn/campus-recruitment/help-center">帮助中心</a></dd></dl><div class="con"><img src="menu-img001.jpg-h=172&w=455.jpg" tppabs="https://res-www.zte.com.cn/mediares/JobOffers/Images/Common/menu-img001.jpg?h=172&w=455" alt="" class="img"></div></div>
+                    </li>
+
+                    <li>
+                        <a href="../toSocial">社会招聘</a>
+
+                    </li>
+
+                    <li>
+                        <a href="../toInternational">留学生招聘</a>
+
+                    </li>
+
+                    <li>
+                        <a href="../toZte">走进中兴</a>
+
+                    </li>
+
+        </ul>
+        <div class="so-btn"></div>
+    </div>
+</div>
+
+    <!-- 头部 end -->
+
+    
+
+<div class="banner-inner">
+    <div class="sl-banner">
+    
+            <div class="item">
+                <a>
+                <img src="shehuizhaopin.jpg-h=465&w=1920.jpg" tppabs="https://res-www.zte.com.cn/mediares/JobOffers/Images/intoZTE/2020_campus/shehuizhaopin.jpg?h=465&w=1920" alt=""></a>
+            </div>
+        
+    </div>
+</div>
+
+
+    <!-- 内容 -->
+    <div class="main">
+        
+
+<script src="jquery.page.js" tppabs="http://job.zte.com.cn/Asserts/JobOffers/js/jquery.page.js"></script>
+<script>
+    $(document).ready(function () {
+        loadjobData(1);
+    })
+
+    function social_search()
+    {
+        window.location.href = "Index.aspx-url=-PositionManage-CommPositionSearch.aspx.htm"/*tpa=http://job.zte.com.cn/SocietyRecruitFront/Index/Index.aspx?url=/PositionManage/CommPositionSearch.aspx*/;
+    }
+
+    function pagePrev() {
+        var nowPageNum = $.trim($("http://job.zte.com.cn/.page .num .cur").text());
+        if (nowPageNum == "1") {
+            return;
+        }
+        else {
+            var pageIndex = parseInt(nowPageNum) - 1;
+            loadData(pageIndex);
+        }
+    }
+
+    function pageNext() {
+        var nowPageNum = $.trim($("http://job.zte.com.cn/.page .num .cur").text());
+        if (nowPageNum == "0") {
+            return;
+        }
+        else {
+            var pageIndex = parseInt(nowPageNum) + 1;
+            loadData(pageIndex);
+        }
+    }
+
+    function loadData(pageIndex) {
+        $.ajax({
+            type: "post",
+            url: "LatestAnnouncement.ashx"/*tpa=http://job.zte.com.cn/Extend/JobOffers/LatestAnnouncement.ashx*/,
+            data: { "action": "loadLatestAnnouncement", "pageIndex": pageIndex, "itemid": "{5CF50ACD-749D-41E7-A274-77C2B0293F65}" },
+            async: true,
+            cache: false,
+            dataType: "json",
+            success: function (data) {
+                if (!$.isEmptyObject(data)) {
+                    $("http://job.zte.com.cn/.page .num .cur").html(pageIndex);
+                    loadLatestAnnouncement(data);
+                }
+            }
+        })
+    }
+
+    function loadLatestAnnouncement(data) {
+        var html = "";
+        for (var index = 0; index < data.latestAnnouncementList.length; index++) {
+            html += "<li>\
+                       <a href=\"" + data.latestAnnouncementList[index].announcementUrl + "\">\
+                                <span class=\"r\">" + data.latestAnnouncementList[index].date + "</span>\
+                                <i class=\"dot\"></i>\
+                                <em>" + data.latestAnnouncementList[index].title + "</em>\
+                            </a>\
+                        </li>";
+        }
+
+        $(".col-r .pul-list").html(html);
+    }
+
+    function loadjobData(pageIndex) {
+        $.ajax({
+            type: "post",
+            url: "JobList.ashx"/*tpa=http://job.zte.com.cn/Extend/JobOffers/JobList.ashx*/,
+            data: { "action": "loadJobListForSocial", "pageIndex": pageIndex },
+            async: true,
+            cache: false,
+            dataType: "json",
+            success: function (data) {
+                if (!$.isEmptyObject(data)) {
+                    $(".pages1 .center").html("");
+                    if (data.pageCount > 1) {
+                        $(".pages1 .center").createPage({
+                            pageCount: data.pageCount,
+                            current: pageIndex,
+                            backFn: function (pageIndex) {
+                                loadjobData(pageIndex);
+                            }
+                        });
+                    }
+                    loadJobList(data);
+                }
+            }
+        })
+    }
+
+    function loadJobList(data) {
+        var html = "<table class=\"p-table1 p-table11\">\
+                    <tr>\
+                        <th>职位名称</th>\
+                        <th>工作经验</th>\
+                        <th>工作地点</th>\
+                        <th>更新时间</th>\
+                    </tr>";
+        for (var index = 0; index < data.jobList.length; index++) {
+
+            var ishot = "";
+            if (data.jobList[index].isHot == "1") {
+                ishot = "<span class=\"tag\">Hot</span>";
+            }
+            html += "<tr>\
+                     <td><a href=\""+ data.jobList[index].url + "\" target=\"_blank\">" + data.jobList[index].jobName + " " + ishot + "</a></td>\
+                      <td>" + data.jobList[index].workingLife + "</td>\
+                         <td>" + data.jobList[index].workingPlace + "</td>\
+                       <td><a href=\""+ data.jobList[index].url + "\" target=\"_blank\" class=\"more\">查看详情</a><span class=\"time\">" + data.jobList[index].date + "</span></td>\
+                    </tr>"
+        }
+
+        $(".p-table1box").html(html);
+
+        $('.p-table1 th:nth-child(1),.p-table1 td:nth-child(1)').css({ 'padding-left': '20px', 'text-align': 'left' });
+        $('.p-table1 th:last-child,.p-table1 td:last-child').css({ 'text-align': 'left' });
+    }
+</script>
+
+<div class="boxp-row-tip">
+    <div class="wp">
+        <div class="tit">
+            5G先锋  引领创新
+        </div>
+        <div class="info">
+            中兴通讯助力运营商构建大带宽、低时延、灵活分片、高可靠性、开放协同的OTN网络，为5G网络建设架桥铺路。光与无线完美结合将共同打造一个5G时代极速极致的万物互联世界。
+        </div>
+        <div class="c"></div>
+    </div>
+</div>
+<div class="wp">
+    <div class="boxp-search">
+        <h3 class="title">职位搜索</h3>
+        <div class="form">
+                <div class="line">
+                    <input type="text" name="" id="" placeholder="请选择招聘类型，在输入关键字" class="inpt">
+                    <input type="submit" value="搜索" class="btns" onclick="social_search();">
+                </div>
+                <p class="p">
+                    <span class="txt">热门城市：</span>
+                    <span class="list">
+                        <a href="javascript:void(0);" onclick="social_search();">北京</a>
+                        <a href="javascript:void(0);" onclick="social_search();">上海</a>
+                        <a href="javascript:void(0);" onclick="social_search();">广州</a>
+                        <a href="javascript:void(0);" onclick="social_search();">深圳</a>
+                        <a href="javascript:void(0);" onclick="social_search();">武汉</a>
+                    </span>
+                </p>
+                <div class="lastline">
+                    <p class="p">
+                        <span class="txt">职位分类：</span>
+                        <span class="list">
+                            <a href="javascript:void(0);" onclick="social_search();">产品研发</a>
+                            <a href="javascript:void(0);" onclick="social_search();">线下销售</a>
+                            <a href="javascript:void(0);" onclick="social_search();">软件技术</a>
+                            <a href="javascript:void(0);" onclick="social_search();">客服服务</a>
+                        </span>
+                    </p>
+                    <div class="tip">招聘问题 <a href="help-center-1.htm" tppabs="http://job.zte.com.cn/social-recruitment/help-center">帮助中心</a> 帮你解答疑惑</div>
+                </div>
+        </div>
+        <div class="c"></div>
+    </div>
+    <!-- !end 职位搜索 -->
+    <div class="p-table1box">
+    </div>
+    <!-- !end 表格 -->
+    <div class="pages pages1">
+        <div class="center">
+        </div>
+    </div>
+    <!-- !end 页码 -->
+</div>
+<div class="boxp-row-col12">
+    <div class="wp">
+        <h3 class="p-tit-1 center">最新公告</h3>
+        <div class="col-l">
+            <div class="showimg">
+                <a>
+                    <img id="main_0_latestAnnouncementImg" src="" />
+                    <p class="pos">
+                        <i class="dot"></i>
+                        承载网MKT急寻猛将
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="col-r">
+            <ul class="pul-list">
+                
+            </ul>
+            
+        </div>
+        <div class="c"></div>
+    </div>
+</div>
+<!-- !end 最新公告 -->
+<div class="wp">
+    <ul class="pul-list1">
+        
+                <li>
+                    <a href="../toEmployees">
+                        <div class="img">
+                            <img src="fulilili.jpg-h=277&w=482.jpg" tppabs="https://res-www.zte.com.cn/mediares/JobOffers/Images/intoZTE/index_banner/fulilili.jpg?h=277&w=482" alt="">
+                        </div>
+                    <p>员工福利</p>
+                   </a>
+                </li>
+            
+                <li>
+                    <a href="../toZhiye">
+                        <div class="img">
+                            <img src="fazhan.jpg-h=277&w=482.jpg" tppabs="https://res-www.zte.com.cn/mediares/JobOffers/Images/intoZTE/index_banner/fazhan.jpg?h=277&w=482" alt="">
+                        </div>
+                    <p>职业发展</p>
+                   </a>
+                </li>
+            
+    </ul>
+</div>
+
+    </div>
+    <!-- 内容 end -->
+
+    <!-- 底部 -->
+    
+
+<div class="footer">
+    <div class="fd-t">
+        <div class="wp">
+            
+                    <dl class='ft'>
+                        <dt>
+                            应届生招聘
+                        </dt>
+                        <dd>
+                            
+                                    <a href="recruitment-list.htm" tppabs="http://job.zte.com.cn/recruitment-list">招聘职位</a>
+                                
+                                    <a href="recruitment-trends.htm" tppabs="http://job.zte.com.cn/recruitment-trends">最新公告</a>
+                                
+                                    <a href="help-center.htm" tppabs="http://job.zte.com.cn/campus-recruitment/help-center">帮助中心</a>
+                                
+                                    <a href="javascript:if(confirm('http://challenge.zte.net/index.php  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://challenge.zte.net/index.php'" tppabs="http://challenge.zte.net/index.php">中兴大赛</a>
+                                
+                        </dd>
+                    </dl>
+                
+                    <dl class=''>
+                        <dt>
+                            实习生招聘
+                        </dt>
+                        <dd>
+                            
+                                    <a href="recruitment-list.htm" tppabs="http://job.zte.com.cn/recruitment-list">招聘职位</a>
+                                
+                                    <a>最新公告</a>
+                                
+                                    <a>帮助中心</a>
+                                
+                        </dd>
+                    </dl>
+                
+                    <dl class=''>
+                        <dt>
+                            留学生招聘
+                        </dt>
+                        <dd>
+                            
+                                    <a href="recruitment-list.htm" tppabs="http://job.zte.com.cn/recruitment-list">招聘职位</a>
+                                
+                                    <a>最新公告</a>
+                                
+                                    <a>宣讲会信息</a>
+                                
+                                    <a>招聘流程</a>
+                                
+                                    <a href="help-center.htm" tppabs="http://job.zte.com.cn/campus-recruitment/help-center">帮助中心</a>
+                                
+                        </dd>
+                    </dl>
+                
+                    <dl class=''>
+                        <dt>
+                            走进中兴
+                        </dt>
+                        <dd>
+                            
+                                    <a href="zte-profile.htm" tppabs="http://job.zte.com.cn/into-zte/zte-profile">中兴简介</a>
+                                
+                                    <a href="zte-culture.htm" tppabs="http://job.zte.com.cn/into-zte/zte-culture">中兴文化</a>
+                                
+                                    <a href="employee-welfare.htm" tppabs="http://job.zte.com.cn/into-zte/love-zte/employee-welfare">爱上中兴</a>
+                                
+                                    <a href="people-in-zte.htm" tppabs="http://job.zte.com.cn/into-zte/people-in-zte">人在中兴</a>
+                                
+                        </dd>
+                    </dl>
+                
+            <dl class="lt">
+                <dt>
+                    关注中兴
+                </dt>
+                <dd>
+                    
+                            <div class="wx">
+                                <img src="Unnamed_item_7.jpg-la=zh-CN.jpg" tppabs="https://res-www.zte.com.cn/mediares/JobOffers/Images/intoZTE/lily/Unnamed_item_7.jpg?la=zh-CN" alt="" />
+                                <p>
+                                    招聘微信
+                                </p>
+                            </div>
+                        
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="fd-b">
+        <div class="wp">
+            <p><div class="wp">
+<div class="copy">中兴通讯股份有限公司版权所有   &copy;2017</div>
+<div class="numb">粤ICP11108162号</div>
+<a class="fd-a" href="javascript:if(confirm('http://www.myzte.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.myzte.com/'" tppabs="http://www.myzte.com/">中兴商城</a>&nbsp;&nbsp;
+<a href="javascript:if(confirm('http://www.zte.com.cn/china  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.zte.com.cn/china'" tppabs="http://www.zte.com.cn/china" class="fd-a">中兴官网</a>&nbsp; <a href="javascript:if(confirm('http://euniv.zte.com.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://euniv.zte.com.cn/'" tppabs="http://euniv.zte.com.cn/" class="fd-a">中兴通讯学院</a>&nbsp; &nbsp;<a href="Privacy-Policy.htm" tppabs="http://job.zte.com.cn/Privacy-Policy" class="fd-a">隐私政策</a></div></p>
+            
+        </div>
+    </div>
+</div>
+
+    <!-- 底部 end -->
+
+    
+
+<!-- 手机导航触发按钮 -->
+<span class="menuBtn">
+    <em class="em1"></em>
+    <em class="em2"></em>
+    <em class="em3"></em>
+</span>
+<!-- 手机导航触发按钮 end -->
+
+<!-- 手机导航 -->
+<div id="aside">
+    <ul class="menu">
+        
+                <li>
+                    <a href="index.htm" tppabs="http://job.zte.com.cn/">首页</a>
+                    
+                </li>
+            
+                <li>
+                    <a href="campus-recruitment.htm" tppabs="http://job.zte.com.cn/campus-recruitment">校园招聘</a>
+                    <dl class="sub-box"><dd><a href="campus-recruitment.htm" tppabs="http://job.zte.com.cn/campus-recruitment">应届生招聘</a></dd><dd><a href="intern-recruitment.htm" tppabs="http://job.zte.com.cn/intern-recruitment">实习生招聘</a></dd><dd><a href="javascript:if(confirm('http://challenge.zte.net/index.php  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://challenge.zte.net/index.php'" tppabs="http://challenge.zte.net/index.php">中兴大赛</a></dd><dd><a href="help-center.htm" tppabs="http://job.zte.com.cn/campus-recruitment/help-center">帮助中心</a></dd></dl>
+                </li>
+            
+                <li>
+                    <a href="../toSocial">社会招聘</a>
+                    
+                </li>
+            
+                <li>
+                    <a href="international-student-recruit.htm" tppabs="http://job.zte.com.cn/international-student-recruit">留学生招聘</a>
+                    
+                </li>
+            
+                <li>
+                    <a href="zte-profile.htm" tppabs="http://job.zte.com.cn/into-zte/zte-profile">走进中兴</a>
+                    
+                </li>
+            
+    </ul>
+    <iframe src="MobileHead.aspx.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/MobileHead.aspx" style="border: none; padding: 0px;width: 100%;height: 80px;" id="loginMbFrame"></iframe>
+
+    
+</div>
+<!-- 手机导航 end -->
+
+
+
+    
+
+    <!-- 返回顶部 -->
+    <a href="javascript:;" class="goTop ani"></a>
+    <!-- 返回顶部 end -->
+
+    <link rel="stylesheet" href="slick.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/slick.css">
+    <script src="slick.min.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function ($) {
+            // banner
+            $('#banner').slick({
+                fade: true,
+                autoplay: true,
+                dots: false,
+                arrows: false,
+                zIndex: 3,
+                customPaging: function () {
+                    return '';
+                },
+            });
+
+        })
+    </script>
+    
+</body>
+</html>

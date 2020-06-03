@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="bootstrap2.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/bootstrap2.css" />
+    <link rel="stylesheet" href="cui-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/cui.css" />
+    <link rel="stylesheet" href="lib-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/lib.css" />
+    <link rel="stylesheet" href="style-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style.css" />
+    <link rel="stylesheet" href="style-hm.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style-hm.css" />
+    <link rel="stylesheet" href="less-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/less.css" />
+
+    <script src="jquery-1.4.2.min.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/JS/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="jquery_2015050000.min.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/jquery_2015050000.min.js"></script>
+
+    <link rel="stylesheet" href="home.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/home.css" />
+</head>
+<!--[if IE 7]>
+        	<link rel="stylesheet" href="ie7.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/ie7.css"  />
+        <![endif]-->
+
+<script language="javascript" type="text/javascript">
+    $(document).ready(function() {
+		 $('#nav li').hover(function() { 
+        $(this).find('.sub-box').stop().slideToggle();
+    });
+    });
+    
+    function commonSearch() {
+        var commonjobName = $.trim($("#commonjobName").val());
+        if (commonjobName != "") {
+            var url = "recruitment-list.htm"/*tpa=http://job.zte.com.cn/recruitment-list*/;
+            window.location.href = url + "?jobname=" + encodeURI(commonjobName);
+        }
+    };
+</script>
+
+<body>
+    <div class="body-container">
+        <div class="head-fix">
+            <!-- 头部 -->
+            <div class="header">
+                <div class="wp">
+                    <a href="index.htm" tppabs="http://job.zte.com.cn/" class="logo">
+                        <img src="logo.png" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/images/logo.png" alt="">
+                    </a>
+                    <iframe src="Head.aspx.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/Head.aspx" style="height: 60px; float: right; margin-right: -100px;"
+                        id="showhead"></iframe>
+                    <div class="so-box">
+                        <input type="text" name="" id="commonjobName" class="txt" placeholder="请输入职位">
+                        <input type="button" name="" id="Button1" class="btn" onclick="commonSearch();">
+                    </div>
+                    <ul id="nav">
+                        <li><a href="index.htm" tppabs="http://job.zte.com.cn/">首页</a></li>
+                        <li><a href="campus-recruitment.htm" tppabs="http://job.zte.com.cn/campus-recruitment">校园招聘</a>
+                            <div class="sub-box">
+                                <dl>
+                                    <dd>
+                                        <a href="campus-recruitment.htm" tppabs="http://job.zte.com.cn/campus-recruitment">应届生招聘</a></dd>
+                                    <dd>
+                                        <a href="intern-recruitment.htm" tppabs="http://job.zte.com.cn/intern-recruitment">实习生招聘</a></dd>
+                                    <dd>
+                                        <a href="javascript:if(confirm('http://challenge.zte.net/index.php  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://challenge.zte.net/index.php'" tppabs="http://challenge.zte.net/index.php">中兴大赛</a></dd>
+                                    <dd>
+                                        <a href="help-center.htm" tppabs="http://job.zte.com.cn/campus-recruitment/help-center">帮助中心</a></dd>
+                                </dl>
+                                <div class="con">
+                                    <img src="pic-07.jpg" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/images/pic-07.jpg" alt="" class="img">
+                                    <!--<div class="link">
+                                <a href="javascript:;">招聘流程</a>
+                                <a href="javascript:;">招聘问题</a>
+                            </div>-->
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="social-recruitment.htm" tppabs="http://job.zte.com.cn/social-recruitment">社会招聘</a> </li>
+                        <li><a href="international-student-recruit.htm" tppabs="http://job.zte.com.cn/international-student-recruit">留学生招聘</a></li>
+                        <li><a href="zte-profile.htm" tppabs="http://job.zte.com.cn/into-zte/zte-profile">走进中兴</a></li>
+                    </ul>
+                    <div class="so-btn">
+                    </div>
+                </div>
+            </div>
+            <!-- 头部 end -->
+        </div>
+        <div class="all-width all-height all-cont-head">
+            <div class="index-4-cont all-height all-width position-rel" id="cont-box">
+                <div class="all-width position-abs" style="z-index: 2;">
+                    <div>
+                        <img src="ZTE_a3_2015050000.jpg" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_a3_2015050000.jpg" height="117px"></div>
+                    <div id="index-cont-bg">
+                        <div class="center-width pd-40" id="reserve-pd40">
+                            <div class="reserve-head">
+                                中兴通讯应聘者隐私通知</div>
+                            <div class="reserve-box">
+                                <div class="reserve-content-lis">
+                                    <ul>
+                                        <li>
+                                            <h1 align="center" ><font face="微软雅黑">隐私政策</font></h1>
+                                            <br />
+                                            <p>
+                                                <b>
+                                                    <font face="微软雅黑">引言</font>
+                                                    </b>
+                                            </p>
+                                            <br />
+                                            <p>                                                中兴通讯股份有限公司及其子公司（以下简称“中兴通讯”，“我们”）尊重您的隐私，并严格遵守法律法规。希望您仔细阅读中兴通讯隐私政策（以下简称“本政策”），了解我们对个人信息的收集、使用、保存、共享和转让方式，以及我们为您提供的访问、更新、删除和保护这些信息的方式。 在您向中兴通讯提交个人信息之前，请仔细阅读并理解本政策，并经常访问以了解本政策的更新。<br />
+                                            </p>
+                                            <p>本政策适用于招聘工作中的校园招聘场景。<br />
+                                            </p>
+                                            <p>
+                                                本政策将帮助您了解以下内容：<br />
+                                            </p>
+                                            <p style="padding-left: 30px; text-indent: 0em;">
+                                                1、我们如何收集和使用您的个人信息<br />
+                                                2、我们如何使用 Cookie 和同类技术<br />
+                                                3、我们如何共享、转让、公开披露您的个人信息<br />
+                                                4、访问和管理您的个人信息<br />
+                                                5、我们如何保护和保存您的个人信息<br />
+                                                6、您的个人信息的保留期限<br />
+                                                7、您的个人信息如何跨境转移<br />
+                                                8、本政策如何更新<br />
+                                                9、如何联系我们<br />
+                                                如对本政策有任何问题，您可随时发送邮件至Privacy@zte.com.cn我们联系。<br />
+                                            </p>
+                                            <br />
+                                            <h6>
+                                                1、我们如何收集和使用您的个人信息</h6><br />
+                                            <p>
+                                        我们严格遵循合法、正当、必要的原则，仅收集实现招聘目的所必要的信息，并经个人信息主体同意。
+</p><p>										“个人信息”是指以电子或者其他方式记录的能够单独或者与其他信息结合识别出特定自然人身份或反映特定自然人活动情况的各种信息，如姓名、出生日期、身份证号、住址、通讯联系方式等。
+                                            </p>
+											<p>您在校园招聘场景中主动提供的个人信息有：</p>
+                                            <p>
+                                                1）您在注册账户时填写的信息<br/>
+	通过中兴通讯校招官方网站注册个人账户时，您需要提供您的邮箱信息。其次，您需要提供用户名、真实姓名、身份证或护照证件号、手机号及性别信息用以进一步完善信息。当您通过第三方账号（如Facebook、Twitter、微信账号）登录中兴通讯的招聘平台时，经用户授权，我们将从第三方服务器获取您的验证信息。<br/>
+                                            </p>
+											       <p>
+                                                2) 您在创建简历时填写的信息<br/>
+	您在中兴通讯校招网上创建个人简历时需要提供您的个人信息，包括您的姓名、住址、电话、邮箱、民族、政治面貌、婚姻状况、工作经验、教育背景、证书等。<br/>
+                                            </p>
+							 <p>   3) 您的面试/笔试成绩及第三方测评结果<br/>
+	根据您参与的校招环节，我们将获取您参加的由第三方服务商提供的性格测评结果、笔试或者视频面试的成绩。
+<br/>
+我们的部分岗位可能需要您提供特定的个人敏感信息来实现岗位匹配。若您选择不提供该类敏感个人信息，则可能无法正常选择某些特定岗位，但不影响您选择应聘其他岗位。若您主动提供您的个人敏感信息，即表示您同意我们按本政策所述目的和方式来处理您的个人敏感信息。<br/>
+                                            </p>
+											<p>我们在您参加校园招聘时获取的信息有：</p>
+											<p>1）访问服务信息<br/>
+	我们还会通过产品的信息收集功能记录您访问中兴相关服务时的一些行为信息，包括访问时间、搜索查询词条、网络身份标识信息、IP地址等。</p>
+											<p>2）设备信息<br/>
+当您通过移动终端访问招聘网站时，我们会收集您的设备信息。例如，设备型号、操作系统版本、唯一设备标识符等信息。</p>
+                                            <p>   
+                                                我们收集个人信息可能用于以下目的：
+                                            </p>
+                                            <p style="padding-left: 30px; text-indent: 0em;">
+                      ● 创建和管理您的帐户；<br />
+                 ● 为您或您的设备进行服务注册；<br />
+		● 分析访问服务数据，改善我们的招聘工作；<br />
+		  ● 为您提供考核结果，推动招聘流程有序进行；<br />
+         ● 提供您请求的服务或功能；<br />
+        ● 分析访问服务数据，改善招聘网站的使用体验；<br />
+                       ● 确保网站安全，帮助我们更好地了解网站的运行情况；<br />
+                                                ●用于校园招聘职位匹配、候选人资格审核、面试甄选及签约录用，例如与第三方合作提供员工性格测试工具，用于面试甄选；<br />
+                                                ● 签约入职后用于人事管理；<br />
+                                                ● 征得您同意的其他用途。<br />
+                                            </p>
+                                            <p>
+                                                当我们要将您的个人信息用于本政策未载明的其它目的时，或将信息用于不同于您事先同意的目的时，我们的产品或服务会事先征求您的同意，比如通过弹窗、加黑的字体等方式显示更新的内容，由您选择是否同意这种变更。您可以随时依法撤销这种同意，但这可能导致您使用产品或服务的功能受到限制。如果您对于用户画像用于面试甄选有任何疑问，可以按照本政策第9条联系我们。
+                                            </p><br />
+                                            <p>
+                                                您充分知晓，依据可适用的法律，以下情形中，我们收集、使用个人信息无需征得您的授权同意：</p>
+                                            <p style="padding-left: 30px; text-indent: 0em;">
+                                                1.与个人信息控制者履行法律法规规定的义务相关的；br />
+                                                2. 与国家安全、国防安全直接相关的；<br />
+                                                3. 与公共安全、公共卫生、重大公共利益直接相关的；<br />
+                                                4. 与犯罪侦查、起诉、审判和判决执行等直接相关的；<br />
+                                                5. 出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；<br />
+                                                6. 所涉及的个人信息是个人信息主体自行向社会公众公开的； <br />
+												7.从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道；<br/>
+												8.用于维护网站的安全稳定运行所必须的，例如发现、处置网站运行的故障；<br/>
+9.法律法规规定的其他情形。<br/>
+                                            </p><br />
+                       <h6>
+                                                2、我们如何使用 Cookie 和同类技术</h6><br />
+                                            <p>
+                               Cookie是一种可让网站服务器将数据存储于本地终端或从本地终端中读取数据的中立技术。Cookie文件存储了一些用户访问网站有关的信息。                Cookie通常被分类为“会话”Cookie或“持久”Cookie。 会话Cookie可以帮助您有效地浏览网站，跟踪您的页面到页面的进度，以便不要求您在当前访问期间重复提供信息，比如您在切换页面时不会清空您的购物车。会话Cookie存储在临时内存中，并在Web浏览器关闭时被删除。
+                                                持久性Cookie可以存储用户偏好，它们存储在您的设备上，重新启动浏览器时仍然有效。例如，我们使用持久性Cookie来记录您选择的语言和国家/地区、字体大小或其他设置。这可以使您在下次访问我们的网站时，不用重新配置。
+                                            </p>
+                                            <p>
+我们的网站使用Cookies和其他类似技术来区分您与我们网站的其他用户。这有助于我们在您浏览网站时，为您提供良好的体验，并允许我们改进我们的网站。
+大部分浏览器都有阻止Cookie的功能，您可以通过浏览器管理Cookie设置允许自己信息的网站启动Cookie功能，也可以禁止其他网站使用Cookie功能。当您允许网站使用Cookie功能时，我们将其存储在您的计算机或移动设备的内存或硬盘中，然后可以将其作为识别计算机或移动设备的标签。您也可以通过访问网站时更改设置禁止网站使用Cookie功能，但请注意，如果停用Cookie，您可能无法享受最佳的服务体验。如果您希望通过浏览器对Cookie进行管理，可以参考浏览器开发商的介绍或从互联网上进行查询。关于Cookie的更多信息，您也可以查看AboutCookies.org网站。                                            </p>
+                                            <p>
+                                                除 Cookie 外，我们还会在网站上使用网站信标和像素标签等其他同类技术。例如，我们向您邮箱发送的账号激活链接。可以通过上述技术跟踪此次点击，帮助我们了解您的产品和服务偏好并改善客户服务。网站信标通常是一种嵌入到网站或电子邮件中的透明图像。借助于电子邮件中的像素标签，我们能够获知电子邮件是否被打开。如果您不希望自己的活动以这种方式被追踪，则随时设置您的邮箱拒绝接收，或登录我们相关服务网站退订该邮件服务。
+                                            </p>
+                                            <p>
+                                                如果您的浏览器设置了 Do Not Track 功能，我们的服务网站会尊重您的选择。</p>
+                                            <p>
+                                                我们不会将Cookie用于如前所述之外的目的。</p><br />
+                                            <h6>
+                                                3、我们如何共享、转让、公开披露您的个人信息</h6><br />
+                                            <p>
+                                                为了保证您的个人信息安全，我们遵照最小化原则，在遵守适用的法律要求下，共享、转让或披露您的个人信息：<br />
+                                            </p>
+                                            <p style="padding-left: 30px; text-indent: 0em;">
+                                                a..经您事先同意，我们可能与第三方分享您的个人信息；<br />
+                                                b.基于业务需要，我们可能在中兴通讯和其子公司之间共享您的个人信息，以便为您提供及时的服务；<br />
+                                                c.在发生收购、兼并、重组、破产等变更时，如涉及到个人信息转让，我们会要求变更后的个人信息控制者继续履行中兴通讯承担的责任和义务。如变更个人信息使用目的时，应重新取得您的明示同意。<br />
+                                                d.我们认为披露符合任何适用的法律或响应法律程序的情况下，我们也可能向执法机关/政府机关提供信息；<br />
+                                            </p>
+                                            <p>
+                                                通常情况下，我们与经营人才管理平台的第三方服务提供商共享个人信息（例如姓名、手机号码），推进测评、面试等招聘工作，帮助企业引进先进人才，提升人才组织管理效能。与上述第三方分享您的信息，我们会与其签署严格的数据处理协议，采用加密、匿名化处理等手段保障您的信息安全。
+                                            </p><br />
+                                            <h6>
+                                                4、访问和管理您的个人信息</h6><br />
+                                            <p>
+您可以在整个招聘流程中，访问、修改和删除您提供的注册信息和其他个人信息。如果您向我们提交了个人信息，请确保这些信息的准确性，如果您的信息发生了变化，比如您的联系地址发生了变化，您有义务及时更新这些信息。
+                                                <br />
+                                            </p>
+                                            <p>
+                                                此外在适用的法律要求的情况下，您享有个人信息如下的权利：
+                                            </p>
+                                            <p style="padding-left: 30px; text-indent: 0em;">
+                                                (1)有权访问我们持有的您的个人信息；<br />
+                                                (2)更新或更正任何您的不准确的个人信息；<br />
+                                                (3)拒绝我们对您的个人信息的使用；<br />
+                                                (4)要求我们限制或删除您的个人信息;<br />
+                                                (5)要求我们转移您的数据。<br />
+                                                (6)选择在信息收集、使用和公开披露时个人信息的范围。<br />
+                                                在您访问、修改和删除相关信息时，我们可能会要求您提供书面请求并进行身份验证，以保证账号的安全。一般情况下，我们将不收取您的任何费用。但请您理解，由于技术局限、法律或监管要求，我们可能无法满足您的所有要求。如果您在访问和管理您的个人信息时有任何疑问，可以按照本政策第9条与我们联系，我们会在合理期限内答复您的请求。
+                                            </p><br />
+                                            <h6>
+                                                5、我们如何保护和保存您的个人信息</h6><br />
+                                            <p>
+                                                我们采用一系列安全保护措施来保护个人信息不被未经授权地访问、使用、披露、修改、损坏或丢失及其它的形式的非法处理。例如，我们通过加强个人信息在物理、管理和技术方面的安全保障措施，比如门禁系统、监控系统、加密、匿名或假名化、员工培训等措施。
+</p><p>
+												我们建立专门的安全管理制度、程序和组织保障信息安全。例如定期审核和更新信息管理制度，并通过第三方来检验我们的安全措施，以满足我们的业务需求、技术变更和监管要求。中兴通讯的中国总部及部分子公司已经通过了ISO 27001信息安全认证，来保证您的个人信息的安全性。
+                                            </p>                                           
+                                            <p>                                                您的个人信息一般保存在中华人民共和国境内。我们会在法律允许的情况下，保存您的个人信息，并在相关业务完成时，在不违反适用的法律法规情况下，及时删除您的个人信息。若发生个人信息泄露等安全事件，我们会启动应急预案，阻止安全事件扩大，并以推送通知、公告等形式告知您可对您产生重大风险的个人信息的丢失、滥用或篡改，以便您采取恰当措施，有效保护您的权利。
+                                            </p><br />
+                                            <h6>
+                                                6、您的个人信息的保留期限</h6><br />
+                                            <p>
+                                                一般而言，我们仅为实现目的所必须的最短时间保留您的个人信息。为满足任何法律、安全、报告或会计方面的要求，我们希望在岗位关闭周期结束后继续保留您的个人信息，以备将来其他岗位匹配需要。   </p><p>    
+岗位招聘结束后，我们希望可以将您的数据保留至我们的岗位招聘结束后，继续在我们的候选人数据库中保留12个月。因为我们无法评估岗位招聘结束的准确时间，我们将这个岗位关闭周期定义为从招聘开始时至某候选人接受该岗位录用机会时结束。当岗位关闭周期结束后，我们会将您的数据保存在我们的数据库中以备将来其他的岗位要求，但如果没有更新就不会超过12个月，那些不再保存的个人信息将会被安全有效地销毁或永久从IT系统内删除。
+                                            </p>
+                                          <br />
+                                            <h6>
+                                                7、您的个人信息如何跨境转移</h6><br />
+                                            <p>
+                                                一般情况下，您的个人信息存储于中华人民共和国境内，但也可能因面试考官工作地点变动，或者岗位调动等原因需要将您的个人信息转移到境外国家/地区。我们将依法及时告知您传输的目的地、接受者等信息，并采取措施确保符合本政策及所在地适用的法律要求，比如获得您的同意或签订必要的数据转移合同。
+                                            </p><br />
+                                            <h6>
+                                                8、本政策如何更新
+                                            </h6><br />
+                                            <p>
+本版本隐私政策更新于2019年8月6日。后续我们可能会不时更新本隐私政策。如果该隐私政策发生修订，我们会及时在官网发布最新版本。您同意定期访问这些网页以了解并查看任何此类修订。如果本政策有重大变更时，我们会提供更加显著的方式来通知您，比如邮件、短信、网站弹窗、显著位置提示等。重大变更是指本政策中承诺的、与个人信息处理有关的用户权利或义务的减少，以及个人信息处理目的和敏感个人信息类型的变化，公司的所有者结构发生变化，如收购、兼并、破产等。<p/><br/><p>
+在该种情况下，若您继续使用我们的服务，即表示同意经修订的隐私政策约束。
+                                            </p><br />
+                                            <h6>
+                                                9、如何联系我们</h6>
+                                            <p><br />           如果您对本隐私政策有任何疑问，或者有关于您的个人信息请求与咨询，您可以通过发送邮件至Privacy@zte.com.cn和我们联系，我们将在30天内答复。
+                                            </p>
+                                            <p>
+                                                收件人：中兴通讯数据保护合规部
+                                            </p>
+                                            <p>
+                                                地址：中国深圳市科技南路55号
+                                            </p>
+                                            <p>
+                                                邮编：518057
+                                            </p>
+                                            <p>
+                                                如果您对答复不满意或对我们处理个人信息的方式不满意，可以和当地的监管机构进行投诉或举报。
+                                            </p><br />
+                                            <p style="padding-left: 30px; text-indent: 0em;">
+                                                ● 中国监管机构：互联网信息办公室，<a href="javascript:if(confirm('http://www.cac.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.cac.gov.cn/'" tppabs="http://www.cac.gov.cn/">http://www.cac.gov.cn</a>或当地公安、工商等监管机构； <br />                                          
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reserve-content-foot">
+                                    <div class="reserve-content-foot-caozuo t71">
+                                        <a>
+                                            <img src="ZTE_a1_2015050000.png" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_a1_2015050000.png"><span onclick="location.href='#';">返回顶部</span></a></div>
+                                    <div class="reserve-content-foot-caozuo">
+                                        <a>
+                                            <img src="ZTE_a2_2015050000.png" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_a2_2015050000.png"><span onclick="window.close();">关闭</span></a></div>
+                                    <div class="clear-float">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-float">
+                        </div>
+                    </div>
+                    <iframe src="iframe-footer.html" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/iframe-footer.html" height="350" width="100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

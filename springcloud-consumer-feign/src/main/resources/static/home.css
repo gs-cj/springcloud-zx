@@ -1,0 +1,508 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline; font-family: "microsoft yahei"; }
+body { line-height: 1;font-family: "microsoft yahei";}
+table { border-collapse: collapse; border-spacing: 0; }
+object, :focus { outline: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section /* HTML 5 */ { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+a ,img { border: none; text-decoration: none; cursor: pointer; }
+ul{
+list-style: none;
+}
+input,button,textarea,select,optgroup,option{ font-size: 100%; font: inherit; }
+iframe{border: none; padding: 0px; margin: 0px;}
+
+/*分页部分*/
+.page_number A,.page_number span {
+padding: 6px 15px;
+font-size: 14px;
+color: #0087d1;
+BORDER: #C9D3DD 1px solid;
+}
+.page_number span a {
+padding:0px;
+font-size: 14px;
+color: #0087d1;
+BORDER:0;
+}
+.page_number span a:hover {
+padding:0px;
+font-size: 14px;
+color: #0087d1;
+BORDER:0;
+}
+.page_number input
+{
+	margin-top:5px;
+}
+.page_number input[type="submit"]
+{
+	margin-top:-3px;
+	margin-left:10px;
+}
+.page_number input[type="submit"] {
+	cursor: pointer;
+  -webkit-appearance: button;
+}
+.page_number A:hover, .page_number span {
+	BORDER: #C3A1DD 1px solid;
+}
+.page_number_div
+{
+	 width:100%;
+	 text-align:center
+}
+
+/*boot修改*/
+.caret{vertical-align: middle;border-top: 4px dashed;}
+/*方便属性*/
+.all-width{width: 100%;}
+.all-height{height: 100%;}
+.center-width {width: 1170px;margin: 0px auto;}
+ul li{ cursor: pointer;}
+.float-left {float: left;}
+.float-right {float: right;}
+.clear-float {clear: both;}
+.position-rel {position: relative;}
+.position-abs {position: absolute;}
+.show-block{display: block;}
+.an-duration2 {-webkit-animation-duration: 2s;animation-duration: 2s;}
+.an-duration3 {-webkit-animation-duration: 3s;animation-duration: 3s;}
+.an_delay1 {transition: all 3s ease;}
+
+.ml-20{margin-left: 20px;}
+.mt80{margin-top: 78px;}
+.pd-40 {padding: 40px 0px;}
+.bg-whtie {background-color: #FFFFFF;}
+.pb20 {padding-bottom: 20px;}
+.mt40 {margin-top: 40px;}
+.mb40 {margin-bottom: 40px;}
+.mt15 {margin-top: 15px;}
+.mt30 {margin-top: 30px;}
+.pb80 {padding-bottom: 80px;}
+.pb60{padding-bottom: 60px;}
+/*方便属性*/
+
+/*头部*/
+.head-fix {position: fixed;z-index: 3;top: 0px;height: 80px;width: 100%;background-color: #FFFFFF;}
+.cont-header {width: 1170px;margin: 0px auto;border-top: 1px solid #0086d1;position: relative;}
+.header-logo {padding: 14px 0px 14px 85px;}
+.header-menu {width: 920px;position: absolute; right: 0px;}
+.header-nav-menu li {text-align: center;float: left;color: #000000;line-height: 80px;font-size: 1.2em;display: block;height: 80px;width: 120px;cursor: pointer;font-size: 14px;}
+.header-nav-menu li a {color: #000000;display: block;height: 80px;width:100%}
+.header-nav-menu li  .dropdown-menu{width: 100%;min-width: 100%;margin-top: -2px;}
+.header-nav-menu li  .dropdown-menu li{min-width: 120px; color: #000000;height: 30px;line-height: 30px;display: block;}
+.header-nav-menu li  .dropdown-menu li a{width: 80px; color: #000000;height: 30px;line-height: 30px;display: block;}
+.header-nav-menu li:hover, .header-nav-menu li.hov{background-color: #0086d1;position: relative;}
+.header-nav-menu li:hover a, .header-nav-menu li.hov a{text-decoration: none;color: #FFFFFF;}
+.header-nav-menu li:hover  ul li a{color: #000000;}
+.text-color {color: #004ea1;}
+
+.head-fix-border{border-bottom: 1px solid #DDDDDD; }
+.index-buttton {margin-top: 27px;background-color: #0086d1;text-align: center;width: 80px;height: 24px;border-radius: 12px;color: #FFFFFF;line-height: 24px;font-size: 0.9em;cursor: pointer;border: none;}
+.index-buttton:hover{background-color: #000000;transition:all 1s ease;}
+#login-yes .header-people-items{height: 80px; line-height: 80px; font-size: 14px; text-align: center;width: 200px;position: relative;}
+.drop-menu-a{display: block; position: relative;width: 40%;float: right;text-align: center;margin-right: 10%;}
+.drop-menu{text-align: center;min-width: 40%;font-size: 12px; position: absolute;left: 96px;top: 52px;z-index: 4;}
+.header-wecome{width: 40%;display: block;text-align: center;float: left;margin-left: 10%;}
+#people-menu-a{height: 80px;line-height: 80px;display: block;}
+/*头部*/
+
+/*index内容*/
+
+/*baner内容*/
+.all-cont-head{margin-top: 80px;}
+#index-baner {height: 650px;width: 100%;margin: 0px auto;position: relative;clear: both;}
+#index-baner ul li, #commun-baner ul li {width: 100%;opacity: 0;position: absolute;height: 650px;}
+.spec_ol {height: 25px;width: 95px;background-color: #DDDDDD;display: block;position: absolute;border-radius: 25px;box-shadow: inset 0px 1px 1px burlywood;left: 50%;margin-left: -49px;bottom: 60px;opacity: 1;}
+#index-baner ol li, #commun-baner ol li {width: 15px;height: 15px;background-color: #FFFFFF;margin-left: 13px;border-radius: 15px;margin-top: 6px;float: left;list-style: none;}
+#index-baner ol .specrlie, #commun-baner ol .specrlie {width: 15px;height: 15px;border-radius: 15px;background-color: #0c6696;}
+#index-baner ul .show-block,#commun-baner ul .show-block{opacity: 1;transition: all 2s ease;filter: alpha(opacity=100); top: 0px;}
+/*baner内容*/
+
+/*index内容搜索部分iframe-index-search*/
+.four-cont-one {width: 712px;border-right: 1px solid #1536ff;background-color: #0086d1;height: 110px;}
+.four-cont-one-one .cont-seach {margin: 30px 0px 0px 50px;}
+.four-cont-two {padding: 0px 34px;}
+.four-cont-two {width: 389px;background-image: url("ZTE_77_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_77_2015050000.jpg*/;height: 110px;}
+.input-group-btn {position: relative;font-size: 0;white-space: nowrap;}
+.four-cont-two ul {margin-bottom: 0px;margin-top: 35px;}
+.four-cont-two ul li {float: left;display: block;color: #FFFFFF;font-size: 0.9em;margin-left: 20px;width: 160px;}
+#basic-addon1{display: block;float: left;border-radius: 6px;height: 46px;line-height: 46px;
+color: #555;text-align: center;background-color: #eee;;border-top-right-radius: 0;
+border-bottom-right-radius: 0;width: 50px;}
+#boot2-index-searcharr input[type=text]{height: 36px;border-radius: 0px;display: block;float: left;}
+#boot2-index-searcharr .cont-seach-btn{width: 90px;padding: 12px 10px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;font-size: 16px;display: block;float: left;border-right: none;}
+/*index内容搜索部分iframe-index-search*/
+#more-job {height: 40px;line-height: 40px;background-color: #FFFFFF;box-shadow: 1px 1px 1px #CCCCCC;margin-top: -2px;}
+#more-job ul {padding: 0px 40px;}
+#more-job ul li {float: left;color: #646464;display: block;font-size: 15px;width: auto;margin-left: 30px;line-height: 40px;}
+
+/*栏目三*/
+#index-cont-two {padding: 50px 0px 40px 0px;color: #FFFFFF;}
+#index-cont-two ul li:nth-child(1) {margin-left: 0px;}
+#index-cont-two ul li {margin-left: 27px;float: left;position: relative;overflow: hidden;z-index: 2;}
+.mengban {filter: alpha(opacity=10);opacity: 0.1;background-color: #000000;transform: translateY(-100%);top: 0px;left: 0px;}
+#index-cont-two ul li img {width: 372px;height: 165px;}
+.down-zindex {width: 100%;z-index: 2;text-align: center;top: 40%;transition: margin-top 1s ease;left: 0px;height: auto;}
+#index-cont-two .down-zindex .down-ul-menu {display: none;}
+#index-cont-two ul li .down-zindex-hover {margin-top: -30px;transition: margin-top 0.3s ease;}
+.down-zindex p {font-size: 1.4em;text-align: center;padding: 5px 0px 0px 0px;margin: 0px;cursor: pointer;}
+.down-zindex .down-second-p {font-size: 1em;}
+.colw-li {margin-left: 1%;width: 32%;position: relative;}
+.down-zindex p:nth-child(2) {font-size: 1em;}
+.li-second-p{font-size: 0.8em;}
+/*栏目三*/
+/*index内容*/
+
+/*校园招聘动态*/
+#index-cont-bg {width: 100%;background-image: url("ZTE_a1_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_a1_2015050000.jpg*/;}	
+
+/*左边部分*/
+.menu-arr-width {width: 213px;border-radius: 10px;}
+.left-menu-arr {border: 1px solid #DDDDDD;border-radius: 10px;padding-bottom: 25px;}
+.left-head {height: 56px;width: 211px;background-image: url("ZTE_4_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_4_2015050000.jpg*/;}
+.top-radiu-10 {border-radius: 10px 10px 0px 0px;}
+.head-title-p {text-align: center;color: #FFFFFF;height: 56px;line-height: 56px;font-size: 24px;letter-spacing: 10px;}
+#arr-cont-menu {border-bottom: 1px solid #dddddd;padding-bottom: 10px;}
+#arr-cont-menu ul li {padding: 12px 28px;font-size: 16px;display: block;clear: both;cursor: pointer; position: relative;}
+#arr-cont-menu ul li a{color: #000011;display: block;height:25px;line-height:25px;width: 155px;}
+#arr-cont-menu ul li:hover a{color: #00A0F8; text-decoration: none;}
+#arr-cont-menu ul li:hover, .spec-li {background-color: #f7f7f7;border-left: 1px solid #0086d1;color: #0086d1;/*margin-left: -1px;*/}
+.lis-marign {position: absolute; top: 12px; right: 20px;}
+.arr-seach {padding: 0px 20px;}
+.arr-seach-text {width: 169px;margin: 15px 0px;}
+.arr-seach-text input[type=text] {width: 157px;margin-bottom: 0px;font-family: "å¾®è½¯é›…é»‘";}
+.bigsearch {margin-left: 5px;color: #0086D1;border: none;background-color: #FFFFFF;font-size: 16px;font-family: "å¾®è½¯é›…é»‘";width: 80px;}
+.search {padding: 5px 20px;border: none;color: #FFFFFF;background-color: #0086D1;font-size: 16px;font-family: "å¾®è½¯é›…é»‘";}
+.iframe-left-content{height: 171px; width:211px}
+.iframe-left-search{height:86px; width:211px}
+.iframe-left-menu{width: 211px;height:90px;}
+/*左边部分*/
+
+/*右边部分*/
+.right-width {width: 922px;border: 5px;background-color: #FFFFFF;height: 100%;border-radius: 10px;}
+.right-head {height: 56px;width: 922px;background-image: url("ZTE_a90_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_a90_2015050000.png*/;border-top-right-radius: 10px;border-top-left-radius: 10px;}
+.category-arr {padding: 0px 20px 0px 10px;height: 440px;}
+.right-cont-arr {width: 890px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;border: 1px #DDDDDD solid;border-top:none;background: #fff;padding: 30px 15px 10px 15px;line-height: 24px;}
+.right-cont-arr p{ line-height:30px;}
+.login-box-category ul {padding: 0px 45px;}
+.login-box-category ul li {border-bottom: 1px dashed #333333;padding: 17px 10px 16px 10px;font-size: 16px;letter-spacing: 1px;}
+.login-box-category ul li a {color: #696969;}
+.login-box-category ul li a:hover {color: #0086D1;text-decoration: none;cursor: pointer;}
+.category-time {position: absolute;right: 0px;top: 0px;}
+.category-arr .pagination {padding: 30px 0px;margin: 0px auto;width: 241px;}	
+
+/*右边部分*/
+
+/*校园招聘动态*/
+
+/*FAQ*/
+
+.right-cont-cent {padding: 0;font-size: 14px;}
+#faq-items .panel {margin-bottom: 5px;}
+.panel {background-color: #fff;border: 1px solid #ddd;border-radius: 4px;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);box-shadow: 0 1px 1px rgba(0,0,0,.05);}
+.panel-danger {border-color: #ebccd1;}	
+#faq-items .panel-heading-color {color: #0086d1}	
+.panel-danger>.panel-heading {background-color: #f2dede;border-color: #ebccd1;}
+.panel-heading {padding: 10px 15px;border-bottom: 1px solid transparent;border-top-left-radius: 3px;border-top-right-radius: 3px;font-size: .9em;}
+#faq-items .panel-body {font-size: .8em;}
+#faq-items .panel-body-color {color: #646464;}
+.panel-body {padding: 15px;}
+#faq-items .panel-body-color ol li {margin-left: 65px;list-style-type: decimal;}
+.panel-body ol li {line-height: 20px;}
+#faq-items .panel-heading-color span {margin-right: 10px;}
+#faq-items .panel-body-color span:first-child {color: #0086d1;margin-right: 10px;}
+.faq-seach {width: 100%;margin: 0 auto;padding-top: 20px;}
+.faq-seach textarea {width:878px;height: 80px;}
+.rg_btn {color: #FFF;background-color: #0087d1;border-radius: 14px;height: 30px;border: none;box-shadow: 0 1px 1px #F2FBFF inset;padding: 3px 20px; }
+
+/*FAQ*/
+
+/*loign*/
+.login-box {width: 610px;height: 370px;margin: 0 auto;background: #fff;border-radius: 15px;}
+.login-box-top {height: 60px;}
+.loign-box-top-ul .loign-box-right-anone {border-top-right-radius: 0px;}
+.loign-box-top-ul li {float: left;width: 50%;display: block;border-top-right-radius: 15px;border-top-left-radius: 15px;}
+.loign-box-top-anone {background-color: #F5F5F5;}
+.loign-box-top-anone:hover {background-color: #DDDDDD;}
+
+.loign-box-top-ul .loign-box-right-anone a {margin: 0% 1% 0% 3%;}
+.loign-box-top-ul li a {display: block;text-align: center;width: 96%;line-height: 60px;font-size: 18px;letter-spacing: 2px;}
+.loign-box-top-anone a {color: #989898;}
+.loign-box-top-ul .loign-box-left-anone {border-top-left-radius: 0px;}
+.loign-box-top-ul .loign-box-left-anone a {margin: 0% 3% 0% 1%;}
+.loign-box-top-ul li a {display: block;text-align: center;width: 96%;line-height: 60px;font-size: 18px;letter-spacing: 2px;}
+.loign-box-top-active a {border-top: 2px solid #0086d1;color: #0086d1;}
+#login-box-user {width: 100%;margin-top: 40px;}
+.login-box-main {width: 410px;margin: 0 auto;margin-top: 30px;}
+#login-user .control-group {margin-bottom: 15px;}
+
+#login-user .control-label {width: 80px;}
+#login-user .controls {margin-left: 80px;padding-left: 0px;}
+#login-user .controls input[type="text"], #login-user .controls input[type="password"] {padding: 15px 14px;width: 366px;display: block;height: 16px;font-weight: bold;letter-spacing: 2px;float: left;}
+.login-userinsert {line-height: 44px;color: #0086D1;font-size: 16px;letter-spacing: 2px;display: block;float: left;margin-left: 10px;}
+#login-user .controls #inputyanzhen {width: 168px;display: block;float: left;}
+#login-user .controls input[type="text"], #login-user .controls input[type="password"] {padding: 15px 14px;width: 366px;display: block;height: 16px;font-weight: bold;letter-spacing: 2px;float: left;}
+.login-yanzheng {float: left;margin-left: 33px;padding-top: 10px;}
+.login-replaceimg {display: block;float: left;margin-left: 23px;padding-top: 15px;color: #0086D1;font-size: 16px}
+.longin-btn1 {width: 394px;background-color: #0086D1;color: #FFFFFF;height: 44px;line-height: 44px;border: none;border-radius: 5px;font-size: 18px;}
+
+/*loign*/
+
+/*findpassword*/
+.login-box-main {width: 410px;margin: 0 auto;margin-top: 30px;}
+.loign-box-main-head {padding: 10px 0px;font-size: 16px;}
+.login-box-main .loign-box-text {margin-bottom: 20px;}
+.login-box-main .alert-error {margin: 0px auto;margin-bottom: 20px;}
+.login-box-submit {padding: 10px 50px;background-color: #0086d1;color: #FFFFFF;border: none;border-radius: 5px;font-size: 16px;letter-spacing: 5px;font-weight: bold;margin: 0px auto;display: block;}
+/*findpassword*/
+
+/*userbook*/
+.reserve-head {background-image: url("ZTE_a6_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_a6_2015050000.jpg*/;height: 100px;width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;font-size: 35px;color: #FFFFFF;line-height: 100px;text-align: center;letter-spacing: 2px;}
+.reserve-box {border: 1px solid #DDDDDD;border-top: none;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;padding: 20px 30px 0px 30px;font-size: 1em;background-color: #FFFFFF;}
+.reserve-content-foot {padding: 20px 0px;position: relative;}
+.reserve-content-foot .t71 {right: 70px;}
+.reserve-content-foot-caozuo {position: absolute;top: 0px;right: 0px;height: 22px;line-height: 22px;color: #0086d1;}
+.reserve-content-foot-caozuo img {display: block;float: left;}
+.reserve-content-foot-caozuo span {height: 22px;line-height: 22px;margin-left: 5px;display: block;float: left;font-size: 14px;}
+.reserve-content-lis h6{line-height: 20px;font-size: 14px;}
+.reserve-content-lis  ul li{margin-bottom: 20px;}
+.reserve-content-lis  ul li p{text-indent: 2em; line-height: 30px; font-size: 13px;}
+/*userbook*/
+
+
+/*职位搜索*/
+.span4 {width: 280px;}
+.sech-reslut-p {padding: 15px 20px;font-size: 16px;background-color: #DDDDDD;text-align: center;border-radius: 5px;}	
+.table thead tr th {padding: 15px 0;text-align: center;background-color: #0088CC;color: #FFFFFF;}
+#seach-table .table tr, #seach-table .table tr td {border: none;}
+#seach-table table tr td {font-size: 0.9em;padding: 15px 0px;text-align: center;}
+.pagination{margin: 0px auto;}
+#seach-table table tr:hover td{background-color: #DDDDDD;}
+/*职位搜索*/
+
+/*相册*/
+.right-box-arr{min-height: 0px;background-color: #F1F1f1}
+.imgage-box-arr{}
+.image-box{background-color: #FFFFFF;margin-bottom: 30px;}
+.images-box-ul{padding: 0px 10px;}
+.images-box-ul li{float: left;width: 266px;margin-left: 18px;margin-bottom:18px;}
+.
+.images-box-li-arr{border: 1px solid #D1D1D1;width: 100%;}
+.image-box h3{font-size: 24px;color: #8f8f8f; text-align: center;}
+.image-box .clle-p{font-size: 16px;text-align: center;color: #8f8f8f; padding: 10px 0px 0px 0px;}
+.duan-line{display: block;height: 2px; background-color: #00A0F8;width: 60px;margin: 15px auto;}
+.images-box-ul li img{width: 100%;padding: 0px;margin: 0px; height: 180px;overflow: hidden;border: none;}
+.images-box-btn-arr{position: relative;text-align: center;}
+.images-box-btn-arr a:hover{ background-color: #00A0F8; color: #FFFFFF;text-decoration: none;}
+.images-box-btn-arr a{border-radius: 5px;padding: 8px 10px; background-color: #FFFFFF;border: 1px solid #DDDDDD; text-align: center;font-size: 14px;color: #333333;margin-top:10px;display: inline-block;}
+
+.images-box-btn-arr a.boximage-alook{color: #FFFFFF;background-color: #00A0F8;padding: 0px 32px;border: none;width: 56px;}
+/*相册*/
+
+/*员工故事*/
+.classify-box-menu{}
+.classify-box-menu li{float: left;display: block;width:412px;margin-left: 23px;margin-bottom: 23px;}
+.classify-box-arr-head{height: 50px;line-height: 50px;background-color: #70bccc; color: #FFFFFF;text-align: center;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.classify-box-images{position: relative;height: px;border: 1px solid #E5E5E5; border-top: none;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
+.classify-box-images img{width:158px;height: 175px;border-bottom-left-radius: 5px;vertical-align: middle;}
+.classify-images-text{position: absolute;right: 15px;top:20px;width: 220px;line-height: 20px; font-size: 14px;}
+.classify-box-images a{position: absolute;bottom: 10px;left: 172px;font-size: 13px;}
+.classify-images-text-more{background-color: #DDDDDD;display: inline-block;width: 15px;height: 15px;line-height: 15px;text-align: center;margin-right: 6px;}
+.ar_head{text-align: center;padding-bottom: 20px;}
+/*员工故事*/
+
+/*校园招聘*/
+#commun-baner {height: 472px;}
+#commun-baner{width: 100%;margin: 0px auto;position: relative;clear: both;}
+.commun-cont {clear: both;}
+.commun-menu {width: 800px;margin: 0 auto;}
+#commun-menu ul {margin: 0px;}
+#commun-menu ul li {width: 130px;text-align: center;float: left;position: relative;margin-right: 200px;padding: 50px 0px;}
+#commun-menu ul li p {font-size: 0.9em;margin-top: 15px;}
+ul li .center-sanjiao-one {bottom: -38px;}
+.center-sanjiao {width: 0;height: 0;border-left: 20px solid transparent;border-right: 20px solid transparent;border-top: 20px solid #FFFFFF;bottom: -20px;left: 45px;position: absolute;float: none;display: none;}
+#commun-menu ul li.last {margin-right: 0px;}
+.commun-cont-bg {background-color: #f3f7fa;}
+.commun-cont-one {display: none;padding: 20px 0px 5px 0px;}
+#commun-cont-par .show-block {display: block;}
+.commun-cont-bg .commun-cont-one p {text-align: center;}
+.commun-cont-p-one {margin-top: 20px;padding: 0px;font-size: 2em;margin-bottom: 5px;}
+.commun-cont-p-two {padding: 0px;font-size: 1.4em;margin-bottom: 20px;}
+.commun-cont-bg ul {margin: 0px;}
+.commun-cont-menu ul {display: block;}
+.commun-cont-bg ul {margin: 0px;}
+.commun-cont-menu ul li {width: 365px;float: left;position: relative;}
+.commun-cont-menu ul li:hover {border: 5px solid #1b99ba;/* transition: border 0.5s ease; */border-radius: 15px;box-shadow: 1px 1px 6px #636363;width: 355px;}
+.commun-cont-menu ul li:hover img {width: 355px;height: 186px;}
+.commun-cont-menu ul .spec-marign {margin: 0px 37px;}
+#img-box-menu ul li {width: 18px;height: 16px;float: left;padding: 0px 5px;}
+#img-box-menu ul li img {width: 18px;height: 16px;}
+.commun-img-box {border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.commun-img-box img {width: 365px;height: 196px;}
+.commun-img-box .box-text {height: 60px;background-color: #FFFFFF;width: 100%;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+.commun-img-box .box-text p {text-align: left;padding: 10px 0px 0px 0px;margin: 0px 0px 0px 10px;}
+.commun-cont-button {width: 155px;background-color: #1eaace;height: 46px;line-height: 46px;color: #FFFFFF;text-align: center;box-shadow: 1px 1px 5px #000000;border-radius: 23px;margin: 30px auto;font-size: 1.2em;cursor: pointer;}
+#img-box-menu {padding: 5px 18px 10px 18px;}
+
+.intern-search{height: 78px;width: 848px;margin: 40px auto;}
+input[type=text].intern-search-input{background: #458fe4;float: left;height: 78px;width: 505px;padding: 0px 30px;border: none;border-right: 2px solid #fff;color: #FFFFFF;font-size: 24px;}
+
+.intern-search-submit {background: #458fe4;float: left;height: 78px;width: 130px;padding: 22px 30px;border: none;}
+a.intern-search-more {color: #fff;background: #458fe4;float: right;padding: 30px 30px;text-align: center;font-weight: bold;font-size: 18px;}
+.commun-cont-bg {background-color: #f3f7fa;}
+.commun-cont-icons {padding-top: 140px;height: 380px;background: #f3f7fa;}
+.bg_green:hover, .bg_blue:hover, .bg_orange:hover {transform: translateY(-10%);transition: all 0.5s;}
+.bg_green {background: #1dbb90;}
+.bg_green:hover {background: #1ba982;}
+.bg_green .commun-cont-icon-title {background: #1ba982;}
+.commun-cont-icon-title {border-radius: 15px 15px 0px 0px;height: 70px;color: #fff;font-size: 24px;padding-top: 20px;}
+.commun-cont-icon {width: 370px;height: 260px;border-radius: 15px;text-align: center;float: left;margin-right: 29px;cursor: pointer;}
+.bg_blue {background: #1eaace;}
+.bg_blue:hover{background: #1b99ba;}
+.bg_blue .commun-cont-icon-title {background:#1b99ba;}
+.bg_orange {background: #fa7c2a;}
+.bg_orange:hover{background: #df722c;}
+.bg_orange .commun-cont-icon-title {background:#df722c;}
+.commun-cont-icon-img {margin-top: 20px;}
+.commun-cont-icon-last {margin-right: 0px;}
+.commun-cont-icon-content {color: #fff;}
+
+/*校园招聘*/
+
+/*实习生招聘*/
+.intern-banner {height: 385px;padding-top:215px;background:url("ZTE_93_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_93_2015050000.jpg*/ center center;width: 100%;}
+.intern-banner-zi {width: 430px;margin: 0 auto;text-align: center;color: #fff;}	
+.intern-banner-zi-h1 {font-size: 44px;font-weight: bold;}
+.intern-banner-zi-box {width: 260px;margin: 0 auto;margin-top: 25px;}
+a.intern-banner-zi-reg {font-size: 18px;padding: 10px 25px;color: #fff;border: 2px solid #458fe4;background: #458fe4;border-radius: 5px;float: left;}
+a.intern-banner-zi-log {font-size: 18px;color: #fff;padding: 10px 25px;border: 2px solid #fff;border-radius: 5px;float: right;}
+.intern-icon {width: 300px;position: relative;margin-right: 120px;float: left;height: 80px;margin-top: 40px;}
+.intern-icon-last {margin-right: 0px;}
+.abs {position: absolute;}
+.intern-icon-content {position: absolute;left: 50px;}
+.intern-icon-title {color: #458fe4;line-height: 20px;font-size: 18px;}
+.intern-icon-text {margin: 6px 0px;}
+.intern-icon-readmore {background: #458fe4;color: #fff;cursor: pointer;width: 90px;font-size: 14px;margin-left: 5px;}
+.bg_f3 {background: #f3f3f3;}
+.intern-category {height:380px;padding: 70px 0px;}
+.intern-category-s {float: left;width: 215px;margin-top: 30px;}
+.intern-category-s-title {font-size: 38px;}
+.intern-category-s-more {padding: 5px 15px;font-size: 24px;background: #458fe4;color: #fff;width: 130px;margin-top: 15px;text-align: center;cursor: pointer;}
+.fl {float: left;}
+.intern-category-item {float: left;border: 1px solid #e9e9e9;border-top: none;border-bottom: 2px solid #cacaca;width: 420px;height: 350px;margin-left: 25px;background: #fff;color: #aeaeae;text-align: left;padding: 15px;}
+.intern-category-item:hover {transform: translateY(-10%);transition: all 0.5s;color: #458fe4;}
+.intern-search-title {width: 350px;border-bottom: 5px solid #458fe4;padding-bottom: 20px;text-align: center;margin: 0 auto;margin-top: 35px;}
+.intern-search-title .zh {color: #000;font-size: 24px;}
+.intern-search-title .en {color: #818181;font-size: 24px;}
+.intern-search-item {width: 270px;height: 270px;float: left;margin-right: 30px;}
+.intern-search-item:hover {background: #666;opacity: 0.6;filter: alpha(opacity=60);cursor: pointer;transition: all 0.5s ease;}
+.intern-search-item-title {color: #fff;text-align: center;font-size: 24px;margin-top: 160px;}
+.intern-search-item-content {color: #fff;text-align: center;font-size: 24px;}
+.intern-search-item-last {margin-right: 0px;}
+/*实习生招聘*/
+
+/*社会招聘*/
+#po-button-more {top: 270px;left: 50%;margin-left: -90px;height: 50px;line-height: 50px;font-size: 1.2em;cursor: pointer;}
+#index-1-baner {background-image: url("ZTE_17_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_17_2015050000.jpg*/;}
+.header-baner {background-image: url("ZTE_9_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_9_2015050000.png*/;width: 100%;height: 700px;margin: 0px auto;}
+.bg-button-more {border: 2px solid #FFFFFF;color: #FFFFFF;width: 180px;height: 30px;line-height: 30px;text-align: center;}
+#po-baner-left {left: 150px;background-image: url("ZTE_18_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_18_2015050000.png*/;}
+#po-baner-right {right: 150px;background-image: url("ZTE_19_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_19_2015050000.png*/;}
+#baner-button-left {left: 400px;top: 500px;}
+.position-index {z-index: 2;cursor: pointer;}
+.baner-opac {background-color: #fefefe;border-radius: 25px;color: #333;opacity: 0.35;filter: alpha(opacity=35);}
+.position-index {height: 50px;text-align: center;line-height: 50px;width: 150px;font-size: 14px;}
+#po-baner-left, #po-baner-right {width: 212px;height: 123px;top: 240px;}
+#baner-button-right {right: 530px;top: 500px;}
+.baner-button {bottom: 90px;color: #FFFFFF;font-size: 1.4em;}
+.po-cont {padding: 60px 0px;height: 234px;}
+.po-cont-bg {background-color: #6aa5e9;}
+#index-1-pora ul li {float: left;height: 100%;cursor: pointer;}
+.po-pala-mes {top: 0px;padding: 50px 40px;color: #FFFFFF;}
+.show-none {display: none;}
+.po-pala-wit-border {width: 100px;height: 38px;border-bottom: 2px solid #FFFEEF;}
+.po-pala-mes p:first-of-type {font-size: 1.1em;padding: 10px 0px;margin: 0px;}
+.po-cont-para {width: 600px;-webkit-transform: skew(-20deg);-moz-transform: skew(-20deg);-o-transform: skew(-20deg);-ms-transform:skew(-20deg);transform: skew(-20deg);background: #FFFFFF;left: 0px;}
+.position-abs {position: absolute;}
+.spec-mes{padding: 40px 120px;color:#6aa5e9;}
+.po-pala-cont.po-pala-mes {top: 0px;padding: 50px 40px;color: #FFFFFF;}
+.po-pala-border {padding: 0px 100px 0px 0px;padding-bottom: 10px;border-bottom: 2px solid #6aa5e9;font-size: 1.3em;margin-bottom: 15px;color: #6aa5e9;}
+.po-pala-span {width: 200px;display: block;line-height: 25px;color: #6aa5e9;margin-left: 0px;}
+.she-search {background-image: url("ZTE_88_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_88_2015050000.jpg*/;width: 100%;height: 227px;margin: 0px 0px 80px 0px;background-size: cover;padding-top: 120px;}
+#society-search-text{height: 36px;}
+#society-search-btn{width: 150px;height: 46px;font-size: 16px;}
+.she-search-content {width: 1000px;margin: 0 auto;}
+.w850 {width: 850px;}
+.mr30 {margin-right: 30px;}
+.she-search-high {float: right;font-size: 18px;margin-top: 10px;margin-right: 30px;}
+.she-search-more {margin-top: 50px;color: #fff;}
+.she-search-more ul li {float: left;margin-right: 40px;font-size: 14px;}
+.she-search-more ul li.more {float: right;margin-right: 150px;}
+#po-pro-hire #hire-menu-one li{float: left;width: 33.3%;color: #464646;position: relative;font-size: 14px;}
+#po-pro-hire #hire-menu-one li img {display: block;background: #000;opacity: 0.35;filter: alpha(opacity=35);}
+#po-pro-hire #hire-menu-one li:hover img {display: block;background: #000;opacity: 1;filter: alpha(opacity=100);}
+#po-pro-hire #hire-menu-one li:hover .pro-li-menu {background: #458fe4;}
+.pro-li-menu {border: 1px solid #CCCCCC;border-top: none;background-color: #FFFFFF;}
+.li-menu-items {width: 100px;height: 65px;line-height: 65px;margin: 0px auto;text-align: center;}
+.menu-items-imgone{background-image: url("ZTE_28_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_28_2015050000.png*/;}
+.menu-items-imgtwo{background-image: url("ZTE_29_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_29_2015050000.png*/;}
+.menu-items-imgthr{background-image: url("ZTE_30_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_30_2015050000.png*/;}
+.menu-items-imgone,.menu-items-imgtwo,.menu-items-imgthr{position: absolute;top: 50%;margin-top: -9px;width: 19px;height: 18px;display: block;left: 0px; right: 30px;}
+.pro-img-cont{z-index: 3;top: 0px;}
+.pro-img-cont p{color: #FFFFFF;text-align: center;padding: 10px 0px 0px 0px;margin: 0px;}
+.pro-img-cont p:nth-child(1){padding:50px 0px 0px 0px;font-size: 0.6em;}
+.pro-img-cont p:nth-child(2){font-size: 1.2em;}
+.pro-img-cont p:nth-child(3){font-size: 0.5em;}
+.pro-img-cont p:nth-child(4){font-size: 1.2em;position: absolute;bottom: 50px;width: 100%;padding: 0px;}
+/*社会招聘*/
+
+/*尾部*/
+.new-foot {background-color: #000000;color: #FFFFFF;padding: 30px 0px 0px 0px;clear: both;}
+.new-foot-left{width: 460px;}
+.new-foot-right{width: 400px;}
+.new-foot-right ul li {float: left;}
+.new-foot-li-marign {margin: 0px 100px;}
+.new-foot-right ul li a {color: #FFFFFF;font-size: 12px;cursor: pointer;}
+.new-foot-marign {margin: 20px 0px;}
+.new-foot-text{ width: 310px; height: 83px;font-size:12px; line-height: 18px;}
+.new-foot-text1{height: 83px; line-height: 83px; font-size: 12px;}
+/*6.24流程政策*/
+.ar_time{margin-top: 10px;}
+.Custom_UnionStyle p{margin-top: 10px;line-height: 25px;}
+.Custom_UnionStyle{margin-bottom: 10px;}
+/*6.24流程政策*/
+
+
+/*6.24个人中心*/
+#head-img-clire {width: 70px;height: 70px;border-radius: 35px;}
+#head-img-clire img {width: 70px;height: 70px;border-radius: 35px;}
+#head-people {margin-top: 12px;margin-left: 15px;}
+#head-people p {line-height: 25px;font-size: 1em;height: 25px;}
+.arr-cont p {padding: 10px 0px;}
+/*6.24个人中心*/
+
+/*6.24出现错误*/  
+
+/*6.29推荐人才*/
+.tuijian-center-width{width: 600px;margin: 20px auto 0px;} 
+.tuijian-box{border: 1px solid #00A0F8;}
+.tuijian-title-box{background-color: #0087d1;color: #FFFFFF;height: 40px;line-height: 40px;font-size: 16px;padding-left: 20px;}
+.tuijian-cont-box{padding: 20px 0px 20px 20px;width: 500px;margin: 0px auto;}
+.tuijian-cont-box .tuijain-file{width: 220px;}
+.tuijian-btn-box {width: 120px;margin: 0px auto;}
+.tuijian-btn-box button{font-size: 14px;background-color: #00A0F8;}
+/*6.29推荐人才*/ 
+
+
+.new-foot{padding: 40px 0px 0px 0px;background-color: #126ba5;}
+.new-foot-text1{height: 35px; line-height: 35px; font-size: 12px; text-align: center; background-color: #0083d5;margin-top: 37px;}

@@ -1,0 +1,550 @@
+/*******************************
+    -------[=公用]-------
+********************************/
+
+
+.overlay{
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.55);
+}
+
+.m-pop{
+    position: fixed;
+    top: -100%;left: 50%;
+    width: 640px;z-index: 1001;
+    margin-left: -320px;
+    margin-top: -160px;
+    background-color: #fff;
+}
+.m-pop.open{top: 45%;}
+.m-pop video{
+    width: 100%;
+}
+.m-pop .close{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;right: 0;
+    cursor: pointer;
+    z-index: 1;
+    background: url("shut.jpg")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/shut.jpg*/ 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+/*
+-----------------[中兴招聘首页]--------------*/
+.m-txt1{
+    color: #666;
+    padding: 40px 0;
+    overflow: hidden;
+    background-color: #fafafc;
+}
+.m-txt1 .tit{
+    float: left;
+    width: 38%;
+    font-size: 30px;
+}
+.m-txt1 .txt{
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.55em;
+}
+
+.sl-list1{overflow: hidden;margin: 0 -20px;padding: 30px 0;}
+.sl-list1 li{float: left;width: 50%;}
+.sl-list1 .con{
+    display: block;
+    margin: 0 20px;
+}
+.sl-list1 .pic{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-top: 61%;
+}
+.sl-list1 .pic img{
+    position: absolute;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    display: block;
+}
+.sl-list1 .txt{
+    position: absolute;
+    left: 0;right: 0;
+    bottom: -50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(5,136,209,.47);
+}
+.sl-list1 .con:hover .txt{bottom: 0;}
+.sl-list1 h4{
+    height: 90px;
+    line-height: 90px;
+    font-size: 24px;
+    color: #555;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.sl-list1 h4 span{
+    display: inline-block;
+    padding-left: 80px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.sl-list1 .l1 h4 span{
+    background: url("ico-02.png")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/ico-02.png*/ left center no-repeat;
+    background-size: auto 40px;
+}
+.sl-list1 .l2 h4 span{
+    background: url("ico-04.png")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/ico-04.png*/ left center no-repeat;
+    background-size: auto 40px;
+}
+.sl-list1 .l1 .con:hover h4 span{
+    color: #0588d1;
+    background: url("ico-03.png")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/ico-03.png*/ left center no-repeat;
+    background-size: auto 40px;
+}
+.sl-list1 .l2 .con:hover h4 span{
+    color: #0588d1;
+    background: url("ico-05.png")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/ico-05.png*/ left center no-repeat;
+    background-size: auto 40px;
+}
+
+
+.row-a1{
+    overflow: hidden;
+    padding-top: 68px;
+    background-color: #fafafc;
+}
+
+.g-tit1{
+    position: relative;
+    font-size: 14px;
+    color: #666;
+    min-height: 460px;
+    width: 17%;
+    float: left;
+    padding-top: 15px;
+}
+
+.g-tit1 h4{
+    position: relative;
+    font-size: 30px;
+    color: #333;
+    line-height: 1em;
+    font-weight: normal;
+    white-space: nowrap;
+    margin-bottom: 60px;
+}
+.g-tit1 h4:after{
+    position: absolute;
+    content: '';
+    left: 0;bottom: -30px;
+    height: 2px;
+    width: 60px;
+    background-color: #0588d1;
+}
+.g-tit1 .bg{
+    position: absolute;
+    left: -60%;
+    bottom: 0;
+    width: 230%;
+    max-width: none;
+}
+
+.sl-list2{
+    width: 83%;
+    float: right;
+}
+.sl-list2 ul{margin-bottom: 75px; overflow: hidden;}
+.sl-list2 ul li{
+    float: left;
+    width: 50%;
+}
+.sl-list2 ul .con{
+    display: block;
+    margin-left: 40px;
+}
+.sl-list2 ul .pic{
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-top: 42%;
+}
+.sl-list2 ul .pic img{
+    position: absolute;
+    display: block;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+.sl-list2 ul .tit{
+    font-size: 16px;
+    height: 61px;
+    line-height: 60px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ceced0;
+}
+.sl-list2 ul .tit .date{
+    font-size: 14px;
+    float: right;
+    color: #929292;
+}
+.sl-list2 ul .tit h4{
+    color: #333;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.sl-list2 ul .txt{
+    font-size: 14px;
+    color: #666;
+    line-height: 2em;
+    height: 4em;
+    overflow: hidden;
+}
+.sl-list2 ul .con:hover .pic img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+.sl-list2 ul .con:hover .tit h4{color: #0588d1;}
+
+.g-more1{
+    display: block; 
+    width: 163px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto;
+    background-color: #0588d1;
+}
+.g-more1:hover{
+    color: #fff;
+    opacity: .8;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity= 80)';
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+.row-a2{
+    padding: 150px 0 100px;
+    overflow: hidden;
+    background: url("pic-05.jpg")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/pic-05.jpg*/ left 80px no-repeat;
+    background-size: 33% 450px;
+}
+
+.m-vedio-pic{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+.m-vedio-pic img{
+    display: block;
+    width: 100%;
+}
+.m-vedio-pic .bg{
+    position: absolute;
+    display: block;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    background: url("ico-07.png")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/ico-07.png*/ center center no-repeat;
+    background-size: 76px auto;
+}
+
+.m-txt2{
+    width: 42%;
+    float: right;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.m-txt2 h4{
+    position: relative;
+    font-size: 30px;
+    color: #333;
+    font-weight: normal;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+.m-txt2 h4:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 60px;
+    left: 0;bottom: -25px;
+    background-color: #0588d1;
+}
+.m-txt2 .txt{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7em;
+    height: 6.8em;
+    overflow: hidden;
+}
+.m-txt2 .con{overflow: hidden;margin-bottom: 40px;}
+.m-txt2 .desc{
+    float: left;
+    width: 50%;
+}
+.m-txt2 .desc h5{
+    font-size: 18px;
+    color: #666;
+    line-height: 1em;
+    margin-bottom: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.m-txt2 .desc p{font-size: 26px;color: #666;}
+.m-txt2 .desc p em{
+    font-size: 48px;
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.m-txt2 .desc p em,.m-txt2 .desc p span{display: inline-block;vertical-align: middle;}
+.m-txt2 .more{
+    float: right;
+    font-size: 18px;
+    color: #0989d0;
+}
+
+
+.box-award {padding: 45px 120px 0;}
+.box-award .item {padding-bottom: 20px;}
+.box-award .tit {color: #353535;font-size: 16px;font-weight: bold;}
+.box-award p {padding-bottom: 10px;color: #555;font-size: 14px;line-height: 1.56;}
+
+
+/*
+-----------------[走进中兴 中兴文化]--------------*/
+.box-culture {padding: 40px 60px;}
+.box-culture .tit-culture {height: 60px;line-height: 60px;color: #333;font-size: 20px;}
+.box-culture .section-1 div {padding: 20px 0 40px;text-align: center;}
+.box-culture .section-1 .img {display: inline-block;width: 80%;}
+.box-culture .section-1 .cont{text-align: right;}
+.box-culture .section-2 {color: #555;font-size: 16px;line-height: 1.75;}
+.box-culture .section-2 .tit {padding-left: 0;font-size: 14px;}
+.box-culture .section-2 .item {padding-bottom: 26px;}
+.box-culture .section-2 strong {padding-right: 5px;}
+.box-culture .section-2 p {padding-left: 20px;font-size: 12px;}
+.box-culture .section-3 .ul-list {margin: 10px 0 10px -98px;overflow: hidden;}
+.box-culture .section-3 .ul-list li {padding-left: 98px;float: left;width: 50%;}
+.box-culture .section-3 .ul-list img {display: block;width: 100%;}
+.box-culture .section-3 .ul-list .tit {margin-top: 5px;color: #555;font-size: 14px;line-height: 1.56;}
+.box-culture .section-3 .ul-list .info {height: 120px;overflow: hidden;overflow-y: auto;color: #555;font-size: 12px;line-height: 2;}
+.box-culture .section-4 .cont {color: #555;font-size: 12px;line-height: 1.75;}
+.box-culture .section-4 .cont p {padding-bottom: 30px;}
+
+
+/*
+-----------------[走进中兴 人在中兴]--------------*/
+.sl-list3{overflow: hidden;padding: 45px 45px 0;}
+.sl-list3 li{
+    float: left;
+    width: 33.3%;
+}
+.sl-list3 .con{
+    display: block;
+    margin: 0 25px 20px;
+    border-bottom: 1px solid #b7b7b7;
+}
+.sl-list3 .pic{
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    padding-top: 68%;
+}
+.sl-list3 .pic .bg{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    background: rgba(0,143,213,.85) url("ico-13.png")/*tpa=https://res-www.zte.com.cn/Asserts/JobOffers/images/ico-13.png*/ center center no-repeat;
+    background-size: 50px auto;
+    opacity: 0;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity= 0)';
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.sl-list3 .pic img{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+.sl-list3 .txt{
+    height: 96px;
+    overflow: hidden;
+}
+.sl-list3 h4{
+    font-size: 15px;
+    color: #353535;
+    line-height: 1em;
+    font-weight: normal;
+    margin: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.sl-list3 .date{font-size: 12px;color: #8b8b8b;}
+.sl-list3 .con:hover .pic img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+.sl-list3 .con:hover h4{color: #008fd5;}
+.sl-list3 .con:hover{border-color: #008fd5;}
+.sl-list3 .con:hover .pic .bg{
+    opacity: 1;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity= 100)';
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+/*
+-----------------[走进中兴 爱上中兴]--------------*/
+.m-infor1{
+    padding: 20px 60px 60px;
+    font-size: 14px;
+    color: #555;
+}
+.m-infor1 h5{
+    font-size: 18px;
+    color: #333;
+    margin: 30px 0 15px;
+}
+.m-infor1 .img{display: block;margin: 0 auto;}
+
+.m-infor1 p .ico{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 60px;
+}
+.m-infor1 .txt p{
+    margin-bottom: 15px;
+}
+/*
+-----------------[职业发展]--------------*/
+
+.m-infor1 .con{
+    overflow: hidden;
+}
+.m-infor1 .con .img1{
+    float: right;
+    width: 48%;
+    padding-top: 40px;
+}
+.m-infor1 .con .txt1{
+    float: left;
+    width: 48%;
+}
+.m-infor1 .img2{
+    display: block;
+    width: 80%;
+}
+
+
+/*
+-----------------[中兴简介]--------------*/
+
+.sl-list4{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 30px;
+}
+.sl-list4 .ico img{
+    display: block;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+.sl-list4 li{
+    display: inline-block;
+    margin: 0 30px 30px;
+}
+.sl-list4 h6{
+    font-size: 16px;
+    color: #666;
+    line-height: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.m-infor1 .con1{
+    overflow: hidden;
+    padding: 30px 0;
+}
+.m-infor1 .con1 .img2{
+    float: left;
+    width: 55%;
+}
+.m-infor1 .con1 .txt1{
+    float: right;
+    width: 35%;
+}
+.m-infor1 .con1 .txt1 h6{
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0 5px;
+}
+
+
+.g-btn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.g-btn a{
+    display: inline-block;
+    margin: 5px 14px;
+    padding: 0 30px;
+    font-size: 20px;
+    line-height: 48px;
+    border-radius: 48px;
+    background-color: #0588d1;
+    border: 1px solid #0588d1;
+    color: #fff;
+}
+.g-btn a:hover,.g-btn a.on{background-color: #fff;color: #0588d1;}
+
+.m-table{
+    padding: 30px 0;
+    text-align: center;
+}
+.m-table table{
+    width: 90%;
+    margin: 0 auto;
+}
+.m-table table td{border: 1px solid #15579c;}

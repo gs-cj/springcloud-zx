@@ -1,0 +1,39 @@
+/*//6.12修改*/ 
+#cont-box .intern-banner{height: 465px;}
+/*//6.12修改*/ 
+.intern-category{padding-bottom:0px;}
+.intern-search-input{width:505px;height:34px;}
+a.intern-search-more{height:34px;padding:22px 30px;}
+.commun-cont-menu ul li:hover{border: 5px solid #1b99ba;border-radius: 15px;width:355px}
+.commun-cont-menu ul li:hover img{width: 355px;}
+.input-group .form-control{width:670px;height:30px;}
+ .intern-banner{height:385px;}
+.intern-category{padding-bottom:70px;}
+/*//6.12修改*/ 
+#cont-box  .intern-search-input{width:505px;height:78px;}
+/*//6.12修改*/ 
+.ten-cont-seach input[type=text]{padding-top:15px;width:295px;height:26px; font-size:16px;}
+.index-3-baner-cont input[type=text]{width:260px;height:26px;padding:10px 15px 5px 15px;}
+.ten-cont-seach input[type=text]{padding-top:15px;width:295px;height:26px; font-size:16px;}
+.index-3-baner-cont input[type=text]{width:260px;height:26px;padding:10px 15px 5px 15px;}
+.four-cont-one .input-group-lg>.ie-group-addon{padding: 8px 10px;width: 28px;height: 30px;text-align: center;}
+.four-cont-one .input-group-lg>.ie-group-btn{}
+.four-cont-one .input-group-lg>.ie-group-btn .ie-btn{border-top: 1px solid #FFFFFF;border-bottom: 1px solid #FFFFFF;border-left: 1px solid #DDDDDD;height: 46px;width: 78px;}
+.four-cont-one .input-group-lg>.ie-group-addon,.four-cont-one .input-group-lg>.ie-group-btn{border: none;float: left;display: block;}
+.four-cont-one .input-group-lg>.ie-form-control{border: none;height: 26px;padding: 10px 16px;font-size: 18px;line-height: 1.3333333;width: 455px;float: left;}
+#index-cont-one .ie-four-cont-two{width: 389px;}
+/*//6.16修改*/ 
+.new-foot-left .new-foot-text,.new-foot-left .new-foot-text1{
+font-size: 10px;
+}
+/*//6.16修改*/ 
+#iframe-left-content{height: 191px; border: none;}
+#iframe-left-search{height: 110px; border: none;width: 213px;}
+
+/*//6.23修改*/
+#arr-search-iframe-box .iframe-left-menu{height: auto;}
+.all-cont-head #ie-mt80-box{padding-top: 80px;}
+
+#boot2-index-searcharr .ie7-btn{line-height: 19px;padding: 11px 10px;}
+
+#login-box-user #login-user .controls{margin-left: 0px;}

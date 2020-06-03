@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="text/javascript" src="jquery_2015050000.min.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/jquery_2015050000.min.js"></script>
+
+    <link rel="stylesheet" href="myself.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/myself.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap2.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/bootstrap2.css" />
+    <link rel="stylesheet" href="home.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/home.css" />
+    
+     <link rel="stylesheet" href="cui-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/cui.css" />
+    <link rel="stylesheet" href="lib-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/lib.css" />
+    <link rel="stylesheet" href="style-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style.css" />
+    <link rel="stylesheet" href="style-hm.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style-hm.css" />
+    <link rel="stylesheet" href="less-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/less.css"/>
+
+    <script src="jquery-1.4.2.min.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/JS/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js_2015050000.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/js_2015050000.js"></script>
+    <!--[if IE 7]>
+          <link rel="stylesheet" href="ie7.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/ie7.css"  />
+    <![endif]-->
+    <!--[if IE 8]>
+          <link rel="stylesheet" href="ie7.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/ie7.css"  />
+          <link rel="stylesheet" href="ie8.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/ie8.css"  />
+    <![endif]-->
+       <style type="text/css">
+       input[type='submit'],input[type='reset'],input[type='button'],input[type='radio'],input[type='checkbox'],select{-webkit-appearance: checkbox;}
+       .yingshi{font-size:14px;color:#000;}
+       .yingshi a{font-size:14px;color:#000;}  
+       .yingshi a:hover{font-size:14px;color:#0086d1;}  
+       </style>
+        <script type="text/javascript" >
+            $(document).ready(function() {
+                   
+	                $('#nav li').hover(function() { 
+                          $(this).find('.sub-box').stop().slideToggle();
+                    });
+                  
+                     
+                      $('#jiaruwm').css('color','#0086d1');
+                      $('#jiaruwm').attr("disabled",false);
+                      $('#jiaruwm').attr("href",'#');
+                      
+                     $('#jiaruwm_chk').click(function(){
+                        if($('#jiaruwm_chk').is(':checked')){
+                            $('#jiaruwm').css('color','');
+  
+                             $('#jiaruwm').attr("href",'http://zte.zhiye.com/Portal/Account/Register');
+                        }else{
+                            $('#jiaruwm').css('color','#0086d1');
+                            $('#jiaruwm').attr("href",'#');
+                            
+                        }
+                     });
+                    
+            });
+    
+    function commonSearch() {
+        var commonjobName = $.trim($("#commonjobName").val());
+        if (commonjobName != "") {
+            var url = "recruitment-list.htm"/*tpa=http://job.zte.com.cn/recruitment-list*/;
+            window.location.href = url + "?jobname=" + encodeURI(commonjobName);
+        }
+    };
+</script>
+</head>
+
+        
+
+<body>
+    <div class="body-container">
+        <div class="head-fix">
+             <!-- å¤´éƒ¨ -->
+    <div class="header">
+        <div class="wp">
+            <a href="index.htm" tppabs="http://job.zte.com.cn/" class="logo">
+                <img src="logo.png" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/images/logo.png" alt="">
+            </a>
+             
+               <iframe src="Head.aspx.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/Head.aspx" style=" height:60px; float: right;margin-right: -100px;" id="showhead"></iframe>
+             
+              <div class="so-box">
+                <input type="text" name="" id="commonjobName" class="txt" placeholder="è¯·è¾“å…¥èŒä½">
+                <input type="button" name="" id="Button1" class="btn" onclick="commonSearch();">
+            </div>
+           <ul id="nav">
+                <li><a href="index.htm" tppabs="http://job.zte.com.cn/">é¦–é¡µ</a></li>
+                <li>
+                    <a href="campus-recruitment.htm" tppabs="http://job.zte.com.cn/campus-recruitment">æ ¡å›­æ‹›è˜</a>
+                    <div class="sub-box">
+                        <dl>
+                            <dd><a href="campus-recruitment.htm" tppabs="http://job.zte.com.cn/campus-recruitment">åº”å±Šç”Ÿæ‹›è˜</a></dd>
+                            <dd><a href="intern-recruitment.htm" tppabs="http://job.zte.com.cn/intern-recruitment">å®ä¹ ç”Ÿæ‹›è˜</a></dd>
+                            <dd><a href="javascript:if(confirm('http://challenge.zte.net/index.php  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://challenge.zte.net/index.php'" tppabs="http://challenge.zte.net/index.php">ä¸­å…´å¤§èµ›</a></dd>
+                            <dd><a href="help-center.htm" tppabs="http://job.zte.com.cn/campus-recruitment/help-center">å¸®åŠ©ä¸­å¿ƒ</a></dd>
+                        </dl>
+                        <div class="con">
+                            <img src="pic-07.jpg" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/images/pic-07.jpg" alt="" class="img">
+                            <!--<div class="link">
+                                <a href="javascript:;">æ‹›è˜æµç¨‹</a>
+                                <a href="javascript:;">æ‹›è˜é—®é¢˜</a>
+                            </div>-->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="social-recruitment.htm" tppabs="http://job.zte.com.cn/social-recruitment">ç¤¾ä¼šæ‹›è˜</a>
+                    
+                </li>
+                <li><a href="international-student-recruit.htm" tppabs="http://job.zte.com.cn/international-student-recruit">ç•™å­¦ç”Ÿæ‹›è˜</a></li>
+                <li><a href="zte-profile.htm" tppabs="http://job.zte.com.cn/into-zte/zte-profile">èµ°è¿›ä¸­å…´</a></li>
+            </ul>
+            <div class="so-btn"></div>
+        </div>
+    </div>
+    <!-- å¤´éƒ¨ end -->
+        </div>
+        <div class="all-width all-height all-cont-head">
+            <div class="index-4-cont all-height all-width position-rel" id="cont-box" style="height: 773px;">
+                <div class="index-4-cont all-height all-width position-fix" id="imge-box" style="height: 773px;">
+                </div>
+                <div class="all-width position-abs" style="z-index: 2;">
+                    <div id="divMiddle" class="center-width insert-top">
+                        <div id="index-4-insert">
+                            <div style="height: 630px; margin-bottom: 40px;">
+                                <div class="float-left index-4-cont-gre index-4-cont-width index-4-cont-hei">
+                                    <div class="insert-head">
+                                        <span class="glyphicon glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp; <span>æ‚¨çš„ä½ç½®:&nbsp;&nbsp;é¦–é¡µ>ç”¨æˆ·æ³¨å†Œ</span>
+                                    </div>
+                                    <div class="insert-cont" style="line-height: 1.2;">
+                                        <div class="insert-cont-img">
+                                            <img src="ZTE_48_2015050000.png" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_48_2015050000.png"></div>
+                                        <h2>
+                                            æ ¡å›­æ‹›è˜</h2>
+                                        <p>
+                                            CAMPUS RECRUITING</p>
+                                        <p>
+                                            å¦‚æœä½ å³å°†èµ°å‡ºè±¡ç‰™å¡”ï¼Œå¿ƒæ€€æ¢¦æƒ³ï¼Œå¹¶æœ‰å¿—äºæ°‘æ—é€šè®¯ä¼ä¸šçš„å´›èµ·</p>
+                                        <p>
+                                            å–„äºå­¦ä¹ ï¼Œä¸”ç§¯æå‘ä¸Š</p>
+                                        <div style="margin-top: 20px;">
+                                            <a class="btn btn-large btn-primary" href="javascript:if(confirm('https://bmtucportal.zte.com.cn/uc/signup?source=10004&lang=zh_CN&backurl=http://job.zte.com.cn/ZTE.Graduate.Web/index/Back.aspx  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://bmtucportal.zte.com.cn/uc/signup?source=10004&lang=zh_CN&backurl=http://job.zte.com.cn/ZTE.Graduate.Web/index/Back.aspx'" tppabs="https://bmtucportal.zte.com.cn/uc/signup?source=10004&lang=zh_CN&backurl=http://job.zte.com.cn/ZTE.Graduate.Web/index/Back.aspx">è¯·åŠ å…¥æˆ‘ä»¬ã€‹</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="float-left index-4-cont-blue index-4-cont-width index-4-cont-hei">
+                                    <div class="insert-cont" style="line-height: 1.2;">
+                                        <div class="insert-cont-img insert-cont-img2">
+                                            <img src="ZTE_49_2015050000.png" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_49_2015050000.png"></div>
+                                        <h2>ç¤¾ä¼šæ‹›è˜</h2>
+                                        <p>SOCIAL RECRUITING</p>
+                                        <p>å¦‚æœä½ åªæœ‰ä¸°å¯Œçš„å·¥ä½œç»éªŒï¼Œå¸Œæœ›æå‡è‡ªå·±çš„èŒä¸šä»·å€¼ï¼Œå¹¶ä¸æˆ‘ä»¬</p>
+                                        <p>æœ‰å…±åŒçš„ä»·å€¼è§‚ï¼šæ¿€æƒ…ï¼Œè¯šä¿¡ï¼Œè¿½æ±‚å“è¶Š</p>
+                                        
+                                         <p class="yingshi">
+                                            <input id="jiaruwm_chk" name="jiaruwm_chk" type=checkbox />
+                                            æˆ‘å·²é˜…è¯»å¹¶åŒæ„ä¸­å…´å…¬å¸ç”¨æˆ·<a href="privacy.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/privacy.htm" target="_blank">ã€Šéšç§æ”¿ç­–ã€‹</a>
+                                         </p>
+                                        <div style="margin-top: 20px;">
+                                            <a id="jiaruwm" name="jiaruwm" class="btn btn-large btn-primary" href="javascript:if(confirm('http://zte.zhiye.com/Portal/Account/Register  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://zte.zhiye.com/Portal/Account/Register'" tppabs="http://zte.zhiye.com/Portal/Account/Register">è¯·åŠ å…¥æˆ‘ä»¬ã€‹</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear-float">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe src="iframe-footer.html" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/iframe-footer.html" height="350" width="100%" scrolling="no" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

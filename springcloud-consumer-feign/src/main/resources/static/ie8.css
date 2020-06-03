@@ -1,0 +1,10 @@
+.col-sm-10 {
+width: 83%;
+}
+ .col-sm-10 select{
+ 	margin-left: 0px;
+
+ }
+ .col-sm-10 .rg_btn{
+		padding: 3px 20px;
+	}

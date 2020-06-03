@@ -1,0 +1,1725 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline; font-size: 100%; font: inherit; -webkit-text-size-adjust: none; font-family: "微软雅黑"; }
+body { line-height: 1; font-family: "微软雅黑";font-size: 0.8em;}
+table { border-collapse: collapse; border-spacing: 0; }
+object, :focus { outline: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+a img { border: none; text-decoration: none; cursor: pointer; color: #000000;}
+ul{
+	list-style: none;
+}
+input,button,textarea,select,optgroup,option{ font-size: 100%;}
+/************开始***************/
+
+/**********初始化属**************/
+ input[type="radio"],input[type="checkbox"]
+        {
+            margin: -4px 10px 0px 13px;
+            height:35px;
+        }
+	.float-left{
+		float: left;
+	}
+	.float-right{
+		float: right;
+	}
+	.float-none{
+		float: none;
+	}
+	.show-block{
+		display: block;
+	}
+	.show-none{
+		display: none;
+	}
+	.clear-float{
+		clear: both;
+	}
+	.text-color{
+		color:#004ea1;
+	}
+	.text-color-a{
+		color:#000000;
+	}
+	.text-color-b{
+		color:#FFFFFF;
+	}
+	.center-width{
+		width: 1170px;
+		margin: 0px auto;
+	}
+	.all-height{
+		height: 100%;
+	}
+	.all-width{
+		width: 100%;
+	}
+	.position-abs{
+		position: absolute;
+	}
+	.position-rel{
+		position: relative;
+	}
+	.index-4-cont-width{
+		width: 50%;
+	}
+	.delete-marign{
+		margin-left: 0px;
+	}
+	.position-fix{
+		position: fixed;
+	}
+	.an_delay1{transition: all 3s ease;}
+	.an-duration3{-webkit-animation-duration:3s;animation-duration:3s;}
+	.an-duration2{-webkit-animation-duration:2s;animation-duration:2s;}
+/**********初始化属**************/
+
+/************共有属性***************/
+	.body-container{
+		border-top: 2px solid ;
+	}
+	.cont-header{
+		max-width: 1170px;
+		margin: 0px auto;
+	}
+	.header-logo{
+		padding: 20px 0px 20px 85px;
+	}
+	.index-buttton{
+		margin-top: 27px;
+		background-color: #0086d1 ;
+		text-align: center;
+		width: 80px;
+		height: 24px;
+		border-radius: 12px;
+		color: #FFFFFF;
+		line-height: 24px;
+		font-size: 0.9em;
+		cursor: pointer;
+		border: none;
+	}
+	.header-menu {
+		width: 800px;
+	}
+	.header-menu ul{	
+		margin-bottom: 0px;
+	}
+	.header-menu ul li{
+		text-align: center;
+		float: left;
+		color: #000000;
+		line-height: 80px;
+		display: block;
+		height: 80px;
+		width: 120px;
+	}
+	.header-menu ul li:hover a,.header-menu ul li a:hover{
+		color: #FFFFFF;
+	}
+	.header-menu ul li span{
+		font-size: 0.8em;
+	}
+	 ul li a:hover{
+		text-decoration: none;
+		cursor: pointer;
+	}
+	ul li{
+		cursor: pointer;
+	}
+	ul li a{
+		color: #000000;
+		cursor: pointer;
+	}
+	.index-footer{
+		height: 190px;
+		background-color: #000000;
+		clear: both;
+	}
+	#idnex-footer-menu ul li{
+		float: left;
+		margin-left: 170px;
+		padding: 40px 0px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	#idnex-footer-menu ul li p{
+		padding: 5px 0px 0px 0px;
+		margin: 0px;
+		cursor: pointer;
+	}
+	.po-cont{
+		padding: 60px 0px;
+		height: 354px;
+	}
+	.po-cont-bg{
+		background-color: #6aa5e9;
+	}
+	#index-1-pora ul li{
+		float: left;
+		height: 100%;
+		cursor: pointer;
+	}
+	.po-cont-para{
+		width: 600px;
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+		-o-transform: skew(-20deg);
+		-ms-transform: skew(-20deg);
+		transform: skew(-20deg);
+		background: #FFFFFF;
+		left: 0px;
+		}
+	.po-pala-mes{
+		top: 0px;
+		padding: 50px 40px;
+		color: #FFFFFF;
+	}
+	.spec-mes{
+		padding: 50px 120px;
+		color: #6aa5e9 ;
+	}
+	.po-pala-mes a:hover{
+		text-decoration: none;
+	}
+	.po-pala-mes p:first-of-type{
+		font-size: 1.1em;
+		padding: 10px 0px;
+		margin: 0px;
+	}
+	.po-pala-span{
+		width: 200px;display: block;
+		line-height: 25px;
+	}
+	.po-pala-border{
+		padding: 0px 100px 0px 0px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid #6aa5e9;
+		font-size: 1.3em;
+	}
+	.po-pala-wit-border{
+		width: 100px;
+		height: 38px;
+		border-bottom: 2px solid #FFFEEF;
+	}
+	.po-pala-mes p:first-of-type{
+		margin: 0px;
+	}
+	.index-footer{
+		height: 190px;
+		background-color: #000000;
+		clear: both;
+		margin-top: 40px;
+	}
+	#idnex-footer-menu ul li{
+		float: left;
+		margin-left: 170px;
+		padding: 40px 0px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	#idnex-footer-menu ul li p{
+		padding: 5px 0px 0px 0px;
+		margin: 0px;
+		cursor: pointer;
+	}
+	.footer-top{
+		top: 70px;
+	}
+	.step-sec-footer{
+		position: fixed;
+		bottom: 0px;
+	}
+	.head-fix{
+		position: fixed;
+		z-index: 3;
+		top: 0px; 
+		height: 80px; 
+		width: 100%; 
+		background-color: #FFFFFF; 
+	
+	}
+	.head-fix-border{
+		border-bottom: 1px solid #DDDDDD; 
+	}
+/*********************************/
+/**************step共用属性********/
+#imge-box{
+	height: 892px;
+	z-index: 1;
+}
+#step-one-body #cont-box{
+	height: 892px;
+}
+#step-two-body #imge-box,#step-tr-body #imge-box{
+	height: 100%;
+}
+	.all-cont-head{
+		margin-top: 78px; 
+	}
+	.index-4-cont{
+		width: 100%;
+		background-image: url("ZTE_52_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_52_2015050000.png*/;
+		
+	}
+	.insert-top{
+		padding: 40px 0px 0px 0px;
+	}
+ #index-4-insert .insert-four-page{
+	height: 640px;
+}
+	#index-4-insert .insert-page {
+		padding: 20px 85px 20px 85px;
+		background-color: #FFFFFF;
+		border-radius: 5px;
+	}
+	.header-menu button:hover{
+		background-color:#024084;
+		transition: all 0.5s ease; 
+	}
+	#index-4-insert .insert-page .insert-head {
+		padding: 0px;
+		color: #0086d1;
+	}
+	#index-4-insert .insert-page .insert-menu {
+		background-color: #fafafa;
+		padding: 15px 0px;
+	}
+	.insert-menu-cirle {
+		width: 76px;
+		height: 76px;
+		border-radius: 38px;
+		text-align: center;
+		line-height: 76px;
+		font-size: 2em;
+		overflow: hidden;
+	}
+	.insert-bg-wite {
+		background-color: #FFFFFF;
+	}
+	.insert-menu-color-wite {
+		color: #FFFFFF;
+	}
+	.insert-bg-blue {
+		background-color: #0086d1;
+	}
+	.float-left {
+		float: left;
+	}
+	#index-4-insert .insert-page .insert-menu ul{
+		margin: 0px;
+		padding: 0px 8px;
+	}
+	#index-4-insert .insert-page .insert-menu ul li {
+		float: left;
+		color: #787878;
+		width: 20%;
+		font-size: 14px;
+	}
+	.insert-menu-text{
+		height: 76px;
+		line-height: 76px;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	#index-4-insert .insert-page .insert-menu ul .li-none-marign{
+		margin-left: 0px;
+	}
+	.insert-menu-text-color {
+		color: #0086d1;
+	}
+	.insert-form {
+		clear: both;
+		padding: 15px 100px 0 100px;
+	}
+	.myself-form{
+		padding: 20px 0px 0px 0px;
+	}
+	.rg-first {
+		margin-left: 30px;
+	}
+	.rg-sec {
+		margin-left: 30px;
+	}
+	.rg_btn {
+		color: #FFFFFF;
+		background-color: #0087d1;
+		border-radius: 5px;
+		height: 30px;
+		border: none;
+		box-shadow: 0px 1px 1px #F2FBFF inset;
+		padding: 3px 20px;
+	}
+	.rg_btn:hover{
+		background-color:#024084;
+		transition: all 0.5s ease; 
+	}
+	
+	/*index-menu-属性*/
+	#index-4-menu {
+		margin-top: 20px;
+		overflow: hidden;
+	}
+	#index-4-menu ul li {
+		float: left;
+		width: 292px;
+		color: #464646;
+		position: relative;
+	}
+	.pro-li-index {
+		border: none;
+		background-color: #6aa5e9;
+	}
+	.pro-li-menu, .pro-li-index {
+		height: 65px;
+	}
+	.li-menu-items {
+		width: 100px;
+		height: 65px;
+		line-height: 65px;
+		margin: 0px auto;
+		text-align: center;
+	}
+	.text-color-b {
+		color: #FFFFFF;
+	}
+	#index-4-menu ul li img {
+		width: 100%;
+		height: 280px;
+	}
+	#index-4-menu ul li:hover .mengban{
+		opacity: 0.3;
+		filter: alpha(opacity=30); 
+		transform: translateY(0);
+		transition: transform 0.3s, opacity 0.5s;
+	}
+	#index-4-menu ul li .mengban{
+		filter: alpha(opacity=0); 
+		opacity:0;
+		background-color: #000000;
+		transform: translateY(-100%);
+		top: 0px;
+		left: 0px;
+		height: 280px;
+		width: 100%;
+	}
+	 #index-4-menu ul li .pro-img-cont {
+		z-index: 3;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 320px;
+	}
+	 #index-4-menu ul li .li-menu-items span {
+		position: absolute;
+		top: 50%;
+		margin-top: -9px;
+		width: 19px;
+		height: 18px;
+		display: block;
+	}
+
+	.form-horizontal .controls input[type=text],.form-horizontal .controls input[type=password],.form-horizontal select,#step-2-form textarea{
+		/*padding: 14px 10px;*/
+		width:95%;
+	}
+	.pro-li-menu {
+		border: 1px solid #CCCCCC;
+		border-top: none;
+		background-color: #FFFFFF;
+		height: 65px;
+	}
+	.pro-img-cont {
+		z-index: 3;
+		top: 0px;
+		left: 0px;
+	}
+	.pro-img-cont p {
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 0px 0px 0px;
+		margin: 0px;
+	}
+	 #index-4-menu .pro-img-cont img {
+		width: 40px;
+		height: 40px;
+		margin: 50px 130px 0px 130px;
+	}
+	/*结束*/
+	
+	.form-child-tiele {
+		color: #FFFFFF;
+		height: 36px;
+		line-height: 36px;
+		background-color: #CCCCCC;
+		padding-left: 28px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+/*********************************/
+
+/*************step1***************/
+	#chkLicense, #xuke {
+		float: left;
+	}
+/*********************************/
+/*************step2***************/
+	#step-2-form textarea {
+		resize: none;
+	}
+	#step-2-form  #form1{
+		border: 1px solid #DDDDDD;
+	}
+	#step-2-form  .index-6-form-menu{
+		padding: 20px 0px;
+		
+	}
+	#step-2-form  .index-6-form-menu .form-menu-cont {
+		padding: 0px 24px;
+
+	}
+	#step-2-form #form1  .index-6-form-menu .form-child-menu .show-block{
+		display: block;
+	}
+	#step-2-form  .index-6-form-menu .form-child-menu .form-child-cont{
+		display: none;
+	
+	}
+	#step-2-form  .index-6-form-menu .form-child-menu .form-child-cont, .menu-tc-foot {
+		padding-top: 20px;
+
+	}
+	#zhedie{
+		cursor: pointer;
+	}
+	#zhedie:hover{
+		color: #0086d1;
+	}
+	#step-2-form #zhedie .show-block{
+		display: block;
+	}
+/*********************************/
+/*************step3***************/
+	#step-3-form .form-menu-tec {
+		margin-left: 0;
+		padding-top: 0px;
+		width: 100%;
+		border: 1px solid #DDDDDD;
+	}
+	#step-3-form .form-horizontal .control-label {
+		width: 130px;
+}
+
+	#step-3-form .form-horizontal .controls {
+		margin-left: 150px;
+	}
+	#step-3-form .form-horizontal .controls .span2,#stud-step-arr .form-horizontal .controls .span2{
+		width: 100px;
+	}
+	#step-3-form .form-horizontal .controls span{
+		padding: 0px 5px;
+	}
+	#step-3-form .form-horizontal .controls #txtSpecialtyDetail{
+		width: 46%;
+	}
+	
+	#step-3-form .form-horizontal .controls input[type=text],#step-3-form .form-horizontal .controls textarea{
+		width: 80%;
+		resize: none;
+	}
+	#step-3-form .form-horizontal .controls a img{
+		width: 214px;
+		height: 150px;
+	}
+	#step-3-form .spec-colsm{
+		margin-left: 30px;
+	}
+	.row-cneter .rg_btn{
+		clear: both;
+		width: 160px;
+		margin: 0px auto;
+		display: block;
+		margin-bottom: 15px;
+	}
+	#step-3-form .row{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#step-3-form .row .col-md-new{
+		padding-left: 0px;
+		padding-right: 0px;
+		width: auto;
+		float: left;
+
+	}
+	#step-3-form .row .col-md-new .form-control{
+		width: auto;
+		float: left;
+	}
+	#step-3-form .menu-tec-cont{
+		/*padding-left: 76px;*/
+	}
+	#step-3-form .row .col-md-new .col-md-span{
+		float: left;
+		display: block;
+		height: 34px;
+		line-height: 34px;
+		padding: 0px 10px;
+	}
+	#step-3-form .row .col-md-new .spec-md{
+		padding: 0px 0px 0px 10px;
+	}
+	#step-3-form hr{
+		height:1px;border:none;border-top:1px solid #DDDDDD;display:block;
+		margin: 20px auto 30px auto;
+	}
+	#chkDate{
+		margin-left: 5px;
+	}
+	.form-keep{
+		clear: both;
+		padding-bottom: 20px;
+	}
+	.spec-form-keep{
+		clear: both;
+		padding-bottom: 30px;
+	}
+	.keep-center{
+		width: 211px;
+		margin: 0px auto;
+		
+	}
+	.form-keep .rg_btn{
+		display: block;
+		width: 120px;
+		margin: 0px auto;
+		padding: 3px 0px;
+		text-align: center;
+	}
+	.form-keep .keep-center .rg_btn{
+		float: left;
+		margin-left: 10px;
+	}
+/*********************************/
+/*************step4***************/
+	#step-4-form p {
+		padding: 20px 0px 0px 0px;
+		width: 100%;
+		text-align: center;
+		font-size: 2em;
+		line-height: 2.5em;
+	}
+	#step-4-form div {
+		padding: 12px 0px 0px 0px;
+	}
+	#step-4-form span {
+		font-size: 1.2em;
+	}
+	#step-4-form, #step-4-form a, #step-4-form p {
+		padding: 50px 0px 0px 0px;
+		width: 100%;
+		text-align: center;
+	}
+	#step-4-form a {
+		padding: 10px 0px 0px 0px;
+		font-size: 1.2em;
+		color: #337ab7;
+	}
+	
+/*********************************/
+/*************index-11-13共共有属性***************/
+	.sec-head {
+height: 200px;
+width: 100%;
+background-image: url("ZTE_54_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_54_2015050000.png*/;
+}
+
+	.sec-head p {
+font-size: 3em;
+color: #FFFFFF;
+font-weight: bold;
+text-align: center;
+line-height: 200px;
+height: 200px;
+}
+	.sev-cont {
+margin-top: 18px;
+height: auto;
+}
+	.sevcont-left {
+width: 386px;
+height: auto;
+color: #FFFFFF;
+}
+.witemengban {
+background-color: #FFFFFF;
+opacity: 0.3;
+position: absolute;
+top: 0;
+width: 100%;
+height: 715px;
+filter: alpha(opacity=30); 
+}
+.alignleft {
+padding: 0px 30px;
+}
+.sevclire {
+width: 120px;
+height: 120px;
+border-radius: 60px;
+background-color: #FFFFFF;
+margin: 0px auto;
+margin-top:40px;
+}
+.sevclire img {
+width: 120px;
+height: 120px;
+border-radius: 60px;
+width: 120px;
+}
+#sevname {
+padding: 10px 0px;
+margin: 0px;
+text-align: center;
+font-size: 1.2em;
+}
+.sevcont-left p {
+text-align: center;
+margin: 0px;
+padding: 0px 12px;
+}
+.sevleft-menu ul li {
+float: left;
+height: 60px;
+line-height: 20px;
+width: 33.33%;
+}
+.sevleft-menu ul li:hover{
+	color: #0086d1;
+}
+.sevleft-menu ul .li-border {
+border-right: 1px solid #FFFFFF;
+border-left: 1px solid #FFFFFF;
+}
+.sevleft-menu ul li p {
+padding: 10px 0px 0px 0px;
+}
+.sevleft-menu ul li .sev-li-p-one{
+font-size: 2.5em;	
+}
+.sevleft-menu ul li .sev-li-p-two{
+font-size: 1em;	
+}
+.sevleft-cont {
+padding: 20px 30px;
+font-size: 1em;
+}
+.sevleft-cont ul li {
+border-bottom: 1px solid #ecd0d5;
+padding: 14px 0px;
+}
+.sevleft-cont ul li a {
+font-size: 1.15em;
+color: #FFFFFF;
+line-height: 0.8em;
+font-size: 0.9em;
+}
+
+.sevleft-cont ul li span {
+margin-right: 10px;
+}
+.sevcont-right {
+width: 772px;
+}
+.sev-right-cont {
+z-index: 2;
+width: 100%;
+}
+.sev-right-cont .right-cont-head {
+background-color: #0086d1;
+padding: 15px 20px;
+color: #FFFFFF;
+}
+#index-8-cont-head .result-p {
+padding: 10px 20px 0px 20px;
+font-size: 1.4em;
+margin: 0px;
+}
+.sev-right-cont .right-cont-head a {
+color: #FFFFFF;
+}
+.seach-head a{
+	cursor: pointer;
+}
+.seach-head a:hover{
+}
+.right-cont-cent {
+padding: 40px 20px 0px 20px;
+}
+.right-cont-cent ul{
+	margin-right: 0px;
+}
+#table-ul{
+	margin-right: 0px;
+}
+#seach-table table {
+width: 100%;
+margin-bottom: 0px;
+}
+#seach-table .table  tr ,#seach-table .table  tr td{
+	border: none;
+}
+#seach-table .table  .odd{
+	background-color:#ecd0d5;
+}
+#seach-table .table  .even{
+	background-color:#FFFFFF;
+}
+
+#seach-table table tr:first-child{
+color: #0086d1;
+}
+
+#seach-table table tr td {
+font-size: 0.9em;
+padding: 15px 0px;
+text-align: center;
+}
+.right-cont-cent {
+padding: 40px 20px 0px 20px;
+}
+/*********************************/
+
+/*****************index-11****************/
+#seach-menu {
+width: 400px;
+margin: 0px auto;
+}
+#seach-menu li {
+float: left;
+margin-left: 28px;
+padding: 30px 0px;
+display: block;
+}
+#seach-menu li:first-child {
+margin-left: 0px;
+}
+#seach-menu li a {
+color: #FFFFFF;
+}
+#seach-menu li a:hover{
+color: #0086d1;
+}
+/*********************************/
+
+/*****************index-11****************/
+
+#faq-items .panel {
+margin-bottom: 5px;
+}
+#faq-items .panel-heading-color {
+color: #0086d1;
+}
+#faq-items .panel-body-color {
+color: #646464;
+}
+#faq-items .panel-body-color span:first-child{
+color: #0086d1;
+margin-right: 10px;
+}
+#faq-items .panel-heading-color span {
+margin-right: 10px;
+}
+.panel-body {
+padding: 15px;
+}
+#faq-items .panel-body-color ol li {
+margin-left: 65px;
+list-style-type: decimal;
+}
+.faq-seach {
+width: 100%;
+margin: 0px auto;
+padding-top: 20px;
+}
+.faq-seach-left {
+width: 652px;
+}
+.faq-seach textarea {
+width: 100%;
+height: 80px;
+padding-left: 5px;
+color: #646464;
+border: 0;
+resize: none;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+.faq-seach-right {
+width: 80px;
+height: 80px;
+box-shadow: 0px 1px 1px #646464 inset;
+}
+.bule-bsumit {
+width: 100%;
+background-color: #FFFFFF;
+border: none;
+border-radius: 0px;
+height: 80px;
+position: absolute;
+}
+#button-span {
+width: 40px;
+left: 50%;
+margin-left: -20px;
+top: 50%;
+margin-top: -20px;
+font-size: 2em;
+text-align: center;
+height: 40px;
+color: #0086d1;
+background-image: url("search_icon_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/search_icon_2015050000.png*/;
+display: block;
+position: absolute;
+background-repeat: no-repeat;
+
+
+}
+.faq-seach-left #txtQuestion{
+	border-radius: 0px;
+}
+.faq-seach-right .bule-bsumit{
+	padding: 0px;
+	position: absolute;
+	background-color: #0086d1;
+	top: -1px;
+}
+/*********************************/
+/**************index-4******************/
+.index-4-cont-hei {
+height: 621px;
+}
+.insert-head {
+padding: 15px 0px;
+padding-left: 60px;
+}
+.index-4-cont-gre .insert-head {
+color: #FFFFFF;
+}
+.index-4-cont-gre {
+	background-color: #65c6bb;
+}
+.insert-cont{
+color: #FFFFFF;
+text-align: center;
+}
+.insert-cont-img {
+margin: 40px 0px;
+height:169px;
+}
+.insert-cont-img2{
+	height:219px;
+}
+ .index-4-cont-blue {
+background-color: #6aa5e9;
+}
+.index-4-cont-width {
+width: 50%;
+}
+.insert-cont p{
+	text-align: center;
+	font-size: 1.1em;
+}
+.insert-cont .in-co-ti-p{
+	font-size: 2.2em;
+}
+.insert-cont .in-co-p-tw{
+	font-size: 1.5em;
+}
+.insert-cont a{
+	cursor: pointer;
+	font-size: 1.4em;
+}
+.insert-cont a:hover{
+	color: #0086d1;
+}
+
+/*********************************/
+ 
+/***************个人中心******************/
+
+.right-cent-title {
+height: 50px;
+background-color: #FFFFFF;
+font-size: 1em;
+line-height: 50px;
+padding: 0px 28px;
+font-weight: bold;
+}
+.sev-right-cont .right-cont-head #cont-head-menu p {
+margin: 0px;
+padding: 10px 0px 0px 0px;
+font-size: 30px;
+}
+#head-menu-ul{
+	width: 300px;
+}
+#head-menu-ul li {
+float: left;
+margin-left: 20px;
+width: 80px;
+text-align: center;
+}
+#head-menu-ul li:hover .sev-menu-clire{
+	background-color: #003366;
+}
+#head-menu-ul .sev-menu-clire {
+width: 26px;
+height: 26px;
+border-radius: 13px;
+background-color:#D0D0D0;
+color: #0086d1;
+text-align: center;
+font-size: 1.3em;
+margin: 0px auto;
+text-align: center;
+position: relative;
+}
+.right-cent-title-bg {
+background-color: #f2dfdd;
+}
+.cnet-table {
+	clear: both;
+padding: 0px 0px 0 28px;
+}
+.cnet-table table{
+	margin-bottom: 5px;
+}
+.cent-none{display: none;}
+/*.cnet-table table tr {
+border-bottom: 1px solid #ecd0d5;
+}
+.cnet-table table tr {
+width: 100%;
+}
+.cnet-table table tr td {
+padding: 15px 0px;
+font-weight: bold;
+}*/
+.cnet-table table tr {
+border:none;
+font-size: 14px;
+}
+.cnet-table table tr {
+width: 100%;
+}
+.cnet-table table tr td {
+	border-top: none;
+	 color:#666;
+	 font-size:12px;
+}
+#table-ul li .cnet-table table tr td{
+	font-size: 0.8em;
+}
+.cnet-table table .table-image {
+width: 130px;
+background-color: #FFFFFF;
+position: relative;
+}
+.cnet-table table .table-image img {
+width: 130px;
+}
+/*********************************/
+/*************index-20*************/
+#pass-table .changepass{
+	width: 500px;
+	margin: 0px auto;
+}
+#pass-table .changepass .pass-row{
+	width: 500px;
+	clear: both;
+	margin-top: 20px;
+}
+#pass-table .changepass .pass-row .float-right{
+	width: 420px;
+	text-align: left;
+}
+#pass-table .changepass .pass-row input{
+	width: 420px;
+}
+#pass-table .changepass .pass-row input[type=submit]{
+	clear: both;
+	display: block;
+	width: 80px;
+	margin: 0px auto;
+}
+#pass-table .changepass .pass-row .form-control {
+	display: block;
+	width: 100%;
+	height: 20px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height:20px;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#pass-table .changepass .pass-row .form-horizontal .control-label {
+padding-top: 7px;
+margin-bottom: 0;
+text-align: right;
+float: none;
+}
+#logo-form .changepass  .form-horizontal .control-label {
+}
+.logo-a{
+	margin-left: 20px;
+}
+.changepass .form-horizontal .controls input[type=text], .changepass .form-horizontal .controls input[type=password]{
+	width: 320px;
+}
+#pass-table .changepass .pass-row label {
+display: inline-block;
+max-width: 100%;
+margin-bottom: 5px;
+font-weight: 700;
+float: none;
+height: 34px;
+line-height: 34px;
+}
+/*********************************/
+
+/**************self*******************/
+.click-span{
+	display: block;
+	float: right;
+	height:14px;
+	width: 25px;
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	right: 20px;
+}
+.click-up-span{
+	background-image: url("ZTE_57_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_57_2015050000.png*/;
+}
+.click-down-span{
+	background-image: url("ZTE_56_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_56_2015050000.png*/;
+}
+/*********************************/
+.mt15{margin-top: 15px;}
+.right-color{
+	font-size: 1.5em;
+	margin-left: 180px;
+}
+.icon-cent{
+	left: 6px;
+	top: 5px;
+	position: absolute;
+}
+.boot2-up-text{
+	font-size: ;
+}
+.myself-yulan{
+	height: 280px;
+	background-image: url("ZTE_58_2015050000.jpg")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_58_2015050000.jpg*/;
+	text-align: center;
+	color: #FFFFFF;
+	
+}
+.myself-yulan p{
+	text-align: center;
+	font-size: 4em;
+	line-height: 280px;
+	height: 280px;
+}
+.yulan-cont{
+	width: 775px;
+	margin: 40px auto;
+}
+.yulan-cont-head{
+	padding: 10px 40px 15px 40px;
+}
+.yulan-cont-cont{
+	padding: 10px;
+	border: 1px solid #339eda;
+}
+.yulan-head-left{
+	width: 91px;
+	height: 60px;
+	float: left;
+}
+.yulan-head-right:hover .sev-menu-clire{
+	background-color: #0462a1;
+}
+.yulan-head-right{
+width: 80px;
+height: 60px;
+float: right;
+position: relative;
+text-align: center;
+}
+.yulan-head-right .yulan-head-a{
+	height: 60px;
+	display: block;
+	margin-top: 48px;
+	text-decoration: none;
+}
+.yulan-head-right:hover  .yulan-head-a{
+	color: #0462A1;
+}
+.yulan-head-right .sev-menu-clire {
+width: 26px;
+height: 26px;
+border-radius: 13px;
+background-color:#339eda;
+color: #0086d1;
+text-align: center;
+font-size: 1.3em;
+margin: 0px auto;
+text-align: center;
+position:absolute;
+top: 50%;
+margin-top: -13px;
+left: 50%;
+margin-left: -13px;
+}
+.yulan-arr-title{
+	width: 715px;
+	padding: 0px 20px;
+	height: 100px;
+	background-color: #339EDA;
+}
+.arr-title-left {
+	height: 100px;
+	width: 300px;
+	position: relative;
+}
+.arr-title-cont{
+	line-height: 30px;
+	padding-top: 15px;
+	font-size: 30px;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 10px;
+}
+.arr-title-cont a{
+	font-size: 15px;
+	color: #FFFFFF;
+}
+.arr-title-img {
+	height: 100px;
+	width: 217px;
+	position: relative;
+}
+.arr-title-img img{
+	height: 37px;
+	width: 217px;
+	position: absolute;
+	bottom: 10px;
+	display: block;
+}
+.yulan-arr-cont{
+	margin-top: 15px;
+}
+.yulan-arr-cont{
+	
+}
+.yulan-arr-cont .arr-cont-title{
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 0px 20px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #339EDA;
+	color: #FFFFFF;
+}
+.yulan-arr-cont .cnet-table{
+	padding: 0px;
+
+}
+.yulan-arr-cont .cnet-table table tr{
+	
+}
+.yulan-arr-cont .cnet-table table tr td{
+	border-top:none;
+	border-bottom: 1px solid #c1e2f4;
+	padding: 12px 0px;
+
+}
+.yulan-arr-cont .cnet-table table tr td:first-child{
+	padding-left: 20px;
+}
+.yulan-arr-cont .cnet-table table tr .td-weight{
+	font-weight: normal;
+}
+.new-arr{
+	margin-top:40px;
+	margin-bottom: 30px;
+}
+.new-arr .new-head-left{
+	height: 100px;
+	width: 200px;
+	text-align:center;
+}
+.new-arr .new-head-right{
+	height: 100px;
+	background-color: #339EDA;
+	width: 870px;
+	padding: 0px 50px;
+	line-height: 100px;
+	font-size: 30px;
+	color: #FFFFFF
+}
+.new-arr .new-head-right .new-time{
+	font-size: 16px;
+}
+.new-cont{
+	width: 930px;
+	height: 370px;
+	background-color: #e9e9e9;
+	padding: 150px 120px;
+}
+.new-cont .new-cont-p{
+	padding-top: 20px;
+	line-height: 40px;
+	text-spacing: 2em;
+	padding-left: 24px;
+}
+.new-cont-adrss{
+	text-align: right;padding-top: 10px;
+	line-height: 40px;
+	
+}
+.new-foot{
+	height: 200px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.new-foot-cont{
+	padding: 30px 0px 0px 0px;
+	margin-top: 40px;
+}
+.new-foot-left{
+	width: 460px;
+}
+.new-foot-right{
+	width: 710px;
+	width: 400px;
+}
+.new-foot-right ul{}
+.new-foot-right ul li{float: left;}
+.new-foot-right ul li a{
+	color: #FFFFFF;
+	font-size: 12px
+}
+.new-foot-marign{
+	margin: 20px 0px;
+}
+.new-foot-li-marign{
+	margin: 0px 100px;
+}
+#yuyue-table{
+	width: 732px;
+	padding-top: 0px;
+}
+#yuyue-table .cnet-table{
+	padding: 0px;
+}
+#yuyue-table .cnet-table table tr{
+	border: none;
+}
+#yuyue-table .cnet-table table .spec-tr td{
+	padding: 10px 0px 10px 20px;
+}
+#yuyue-table .cnet-table table .spec-tr td select{
+	margin-bottom: 0px;
+}
+#go-time{
+	height: 30px;
+	line-height: 30px;
+	color: #000000;
+}
+#yuyue-table .cnet-table table tr td{
+	border-top: none;
+	border-bottom: 1px solid #ecd0d5;border: ;
+}
+#yuyue-table .cnet-table table tr td .td-num{
+	background-color: #0086d1;
+	width: 50px;
+	text-align:center;
+	color: #FFFFFF;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 8px;
+}
+#yuyue-table .cnet-table table tr td:first-child{
+	padding-left: 20px;
+}
+.cnet-table table tr td .select-a{
+	color: #0086d1;
+	margin-left: 10px;
+	text-decoration: none;
+}
+#yuyue-table .cnet-table table tr td.warm-td{
+	padding-left: 0px;
+}
+#yuyue-table .cnet-table #table-2 tr{
+	border: none;
+}
+#yuyue-table .cnet-table #table-2 tr td{
+	border: none;
+}
+#yuyue-head{
+	width: 772px;
+	padding:15px 0px 0px 0px;
+}
+#yuyue-head .yuyue-seah-pad{
+	width: 732px;
+	padding: 0px 20px 15px 20px;
+}
+#yuyue-head .yuyue-seah-top{
+	width: 732px;
+	padding: 15px 20px;
+	border-top: 1px solid #FFFFFF;
+}
+.yuyue-seach-bg{
+	width: 103px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-image: url("ZTE_62_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_62_2015050000.png*/;
+}
+.yuyueleft{
+	height: 38px;
+}
+.yuyueleft h3{
+	font-weight: normal;
+	margin: 0px;
+}
+.yuyue-seach-bg:hover{
+	background-image: url("ZTE_63_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_63_2015050000.png*/;
+	color: #0086d1;
+}
+#change-ul{
+	margin-bottom: 0px;
+}
+#step-2-form .tab-content #form1{
+	border-top:none;
+}
+#tab1 .controls select,#step-2-form-menu .controls select{
+	/*width:556px;*/
+	width: 528px;
+}
+ #tab2 .controls .span2 {
+width: 100px;
+}
+ #tab2 .controls .span3{
+ 	width: 220px;
+ }
+ #tab2 .controls #txtSpecialtyDetail{
+ 	width: 206px;
+ }
+#tab2 .controls input[type=text],#tab2 .controls textarea{
+	width: 544px;
+}
+#tab2 .controls a img {
+width: 214px;
+height: 150px;
+}
+#seach-zhiwei{
+	padding: 15px 0px;
+}
+.seach-zhiwei-pad{
+	padding: 0px 20px 15px 20px;
+}
+.seach-bg{
+	background-color: #FFFFFF;
+}
+.seach-delete,.seach-submit{
+	width: 40px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	margin-left: 1px;
+	background-color: #FFFFFF;
+	display: block;
+	position: relative;
+	float: left;
+}
+.seach-delete .img-seach-delete,.seach-submit .img-seach-submit{
+	position: absolute;
+	display: block;
+	top: 50%;
+	left:50% ;
+}
+.img-seach-submit{
+	height: 21px;
+	width: 22px;
+	background-image: url("ZTE_64_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_64_2015050000.png*/;
+	margin-left: -11px;
+	margin-top: -10px;
+}
+.seach-submit:hover,.seach-delete:hover{
+	background-color: #003366;
+}
+.seach-submit:hover .img-seach-submit{
+	background-image: url("ZTE_65_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_65_2015050000.png*/;
+}
+.img-seach-delete{
+	height: 19px;
+	width: 14px;
+	background-image: url("ZTE_66_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_66_2015050000.png*/;
+	margin-top: -10px;
+	margin-left: -7px;
+}
+.seach-delete:hover .img-seach-delete{
+	background-image: url("ZTE_67_2015050000.png")/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/NewImages/ZTE_67_2015050000.png*/;
+}
+.seach-li ul{
+	margin: 0px;
+	border-top: 2px solid #c2a7bb;
+	border-bottom: 2px solid #c2a7bb;
+	height: 109px;
+}
+.sev-right-cont .right-cont-head .seach-submit-text{
+	width: 81px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #FFFFFF;
+	display: block;
+	float: left;
+	margin-left: 1px;
+	text-align: center;
+	color:#0086d1;
+}
+.sev-right-cont .right-cont-head .seach-submit-text:hover{
+	color: #FFFFFF;
+	background-color: #003366;
+}
+.seach-li ul li{
+	padding:18px 0px;	
+	float: left;
+	height: 65px;
+	display: block;
+}
+.seach-li ul li .seach-input{
+	height: 15px;
+	border-radius:0px;
+	margin-bottom: 0px;
+	width: 144px;
+}
+.sech-reslut-p{
+	padding: 15px 20px 0px 20px;
+	font-size:1.5em;
+	margin: 0px;
+	clear: both;
+}
+#seach-table table tr:hover{
+	color: #0086d1;
+}
+#zhiwei-new{
+	border: 1px solid #339EDA;
+}
+#zhiwei-new .cnet-table{
+	padding:1px 15px 0px 15px;
+}
+.zhiwei-head-p{
+	padding: 30px 28px;
+	background-color: #D9EDF7;
+	font-size: 1.2em;
+}
+#zhiwei-new table tr{
+	border: none;
+}
+#zhiwei-new table tr:hover{
+	background-color:#6aa5e9;
+	color: #FFFFFF;
+}
+#zhiwei-new table tr td{
+	border-top: none;
+	border-bottom:1px dashed #DDDDDD;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+#zhiwei-new table tr td:first-child{
+	padding-left: 28px;
+	padding-right: 40px;
+	width: 80px;
+	font-weight: bold;
+	font-size: 1em;
+}
+#zhiwei-new table tr td ol{
+	padding-left:20px;
+	list-style-type: decimal;
+}
+#zhiwei-new table tr td ol li{
+	line-height: 30px;
+	list-style-type: decimal;	
+}
+#stud-mysel-arr .cnet-table table tr{
+	border: none;
+}
+#stud-mysel-arr .cnet-table table tr td{
+	border-top:none;
+	border-bottom: 1px solid #c1e2f4;
+	padding: 12px 0px;
+
+}
+#stud-xiugai-arr .form-child-menu .cnet-table{
+	padding: 0px;
+}
+#stud-xiugai-arr  .form-child-menu .cnet-table tr{
+	border:none;
+}
+#stud-xiugai-arr  .form-child-menu .cnet-table tr td{
+	border-top:none;
+	border-bottom: 1px solid #DDDDDD;
+}
+#stud-xiugai-arr  .spec-form-keep{
+	padding: 15px 0px;
+	border-top: 1px solid #339EDA;
+}
+#zhiwei-new .cnet-table table tr:hover{
+	color: #000000;
+	background-color: #EDF2F8;
+}
+/************6.8在step****************/
+#step-2-form-menu .controls .steps-2-smaign{
+	margin:8px 0px 0px 8px;
+}
+#step-2-form-menu .controls .steps-2-smaign2{
+	margin:10px 0px 0px 8px;
+	cursor:pointer;
+	color:#1A68FB;
+}
+#step-2-form-menu .controls .step-seach-input{
+	display: block;
+	width: 488px;
+	float: left;
+}
+#step-3-form .controls .span2 {
+width: 100px;
+}
+#step-3-form .controls .span3,#stud-xiugai-arr  .controls select,#stud-step-arr .controls select {
+width: 220px;
+}
+#stud-xiugai-arr #form1 .controls .span3{
+	width: 220px;
+}
+#school-step-1{
+	height: 589px;
+}
+#stud-xiugai-arr #form1{
+	border: 1px solid #DDDDDD;
+}
+#stud-xiugai-arr  .controls select{
+	
+}
+#stud-step-arr .controls textarea{
+	width: 95%;
+}
+#stud-step-arr .cnet-table,.form-child-menu .cnet-table{
+	padding: 0px 0px 10px 0px;
+}
+#stud-step-arr .cnet-table table tr{
+	border: none;
+}
+#stud-step-arr .cnet-table table tr td{
+	border-bottom: 1px dashed #DDDDDD;
+}
+#stud-step-arr .cnet-table table tr.fontweight{
+	font-weight: bold;
+}
+#stud-step-arr .cnet-table table tr td:first-child{
+	padding-left: 28px;
+}
+#stud-step-arr .cnet-table table tr td:last-child{
+	padding-right: 28px;
+}
+#stud-step-arr form{
+	border:1px solid #DDDDDD
+}
+#stud-step-arr .spec-span3{
+	width: 166px;
+}
+.red-star{
+	color:red;
+}
+.img-menu{
+	display: block;
+	float: left;
+}
+.sev-seach {
+padding: 20px 0px;
+border-bottom: 1px solid #ecd0d5;
+}
+.sev-seach-submit {
+width: 180px;
+margin: 0px auto;
+}
+.sev-seach input[type=text]{
+width: 314px;
+background-color: #FFFFFF;
+border: none;
+box-shadow: 0px 1px 2px #DDDDDD inset;
+height: 30px;
+color: #DDDDDD;
+
+}
+.sev-seach input[type=submit]{
+width: 80px;
+background-color: #FFFFFF;
+color: #0086d1;
+border: none;
+height: 30px;
+line-height: 30px;
+text-align: center;
+font-weight: bold;
+margin: 10px 5px 0px 5px;
+}
+.sev-seach input[type=submit]:hover{
+	color: #FFFFFF;
+	background-color: #0086d1;
+}
+.caozuo-a{
+	margin:5px 0px 0px 5px;
+}
+a.light{
+	color: #024CA3;
+	text-decoration: none;
+}
+.icon-eye-marign{
+	margin-top: 4px;
+}
+.head-title-size{
+	font-size: 0.9em;
+}
+
+
+
+/********/
+.mt20{margin-top:20px;}
+
+/*6.29改正问题*/
+.controls input[type=radio],.radio-arr input[type=checkbox]{height: 35px;display: block;float: left; margin-right: 3px;}
+.controls label{display: block; float: left;line-height: 28px; }
+textarea{resize:none;}
+/*6.29改正问题*/ 

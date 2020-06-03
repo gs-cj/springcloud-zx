@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv=Content-Type content='text/html; charset=utf-8'>
+<link rel="stylesheet" href="bootstrap2.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/bootstrap2.css" /><link rel="stylesheet" href="home.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/home.css" /><link rel="stylesheet" href="cui-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/cui.css" /><link rel="stylesheet" href="lib-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/lib.css" /><link rel="stylesheet" href="style-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style.css" /><link rel="stylesheet" href="style-hm.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style-hm.css" /><link rel="stylesheet" href="less-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/less.css" />
+    
+    <script type="text/javascript" src="jquery-1.4.2.min.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/JS/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function() {
+		 
+     $('.a-member').hover(function() {
+        $('.box-member').stop().toggle();
+    });
+     $("#grzx").click(function(){
+   
+     window.parent.location.href="Index.aspx.htm"/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/Index/Index.aspx*/;
+    });
+    })
+    
+    function getChromeVersion() {    
+    var arr = navigator.userAgent.split(' '); 
+    var chromeVersion = '';
+    var MinVers=parseFloat(63);  
+    for(var i=0;i < arr.length;i++){
+        if(/chrome/i.test(arr[i]))
+        chromeVersion = arr[i]
+    }
+    if(chromeVersion){ //是chrome浏览器，获取版本号
+     var vers= parseFloat(chromeVersion.split('/')[1]);    
+       
+     if( vers < MinVers)
+      {
+        alert('推荐使用Google Chrome浏览器 '+MinVers+'及以上版本打开中兴通讯招聘网！');
+      }     
+    }
+    else {
+       alert('推荐使用Google Chrome浏览器 '+MinVers+'及以上版本打开中兴通讯招聘网！');
+    }
+    }
+    function RediectPage(){ 
+    getChromeVersion();
+            window.open("Index.aspx-type=1.htm"/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/Index/Index.aspx?type=1*/);
+//            try{
+//                 if (window.parent != null  && window.parent.dialogArguments != null && window.parent.dialogArguments.length > 0 )
+//                 {
+//                   window.parent.close();
+//                 }
+//                 else if (window.opener != null )
+//                 {
+//                    window.opener.top.location.href='Index.aspx-type=1.htm'/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/Index/Index.aspx?type=1*/;
+//                    window.close();
+//                 }
+//                 else
+//                 {
+//                   window.top.location.href='Index.aspx-type=1.htm'/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/Index/Index.aspx?type=1*/;
+//                 }
+//            }
+//            catch(ex){
+//               window.top.location.href='Index.aspx-type=1.htm'/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/Index/Index.aspx?type=1*/;
+//            }
+
+    }
+    function RediectRegisterPage(){ 
+    getChromeVersion();
+            window.open("Register.html"/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/Index/Register.html*/);
+
+    }
+    
+    </script>
+     
+<title>
+
+</title></head>
+<body style="padding:0;background-color: transparent; margin-top:30px;">
+    <form name="form1" method="post" action="Head.aspx-__EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE=-wEPDwULLTEyNTExODI3MTQPZBYCAgMPZBYCAgMPFgIeB1Zpc2libGVoZGSTdxW9kAUx6oohg6tQYqLEKc8IOA==&__EVENTVALIDATION=-wEWAgLextiWDwLyzvO1BIzqFxvm1L-pYpOuh-oMfLcXRlYa.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/Index/Head.aspx?__EVENTTARGET=&__EVENTARGUMENT=&__VIEWSTATE=/wEPDwULLTEyNTExODI3MTQPZBYCAgMPZBYCAgMPFgIeB1Zpc2libGVoZGSTdxW9kAUx6oohg6tQYqLEKc8IOA==&__EVENTVALIDATION=/wEWAgLextiWDwLyzvO1BIzqFxvm1L/pYpOuh/oMfLcXRlYa" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNTExODI3MTQPZBYCAgMPZBYCAgMPFgIeB1Zpc2libGVoZGSTdxW9kAUx6oohg6tQYqLEKc8IOA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgLextiWDwLyzvO1BIzqFxvm1L/pYpOuh/oMfLcXRlYa" />
+</div>  
+    <div class="m-a1" style="display:block;float:left; margin-top: 2px;">
+     <div id="spanLogin" style="float:left;">
+                
+                <a onclick="RediectPage()" class="s1">登录</a>
+                <a onclick="RediectRegisterPage()" class="s1" >注册</a>
+                </div>
+                
+                <a href="" class="s1 lg" style="margin-top:3px;">简体中文</a>
+         <a id="lbExit" href="javascript:__doPostBack('lbExit','')" style="display: none;">退出</a>
+          
+        </div>
+    </form>
+</body>
+</html>

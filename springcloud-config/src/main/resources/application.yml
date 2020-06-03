@@ -1,0 +1,24 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: glht-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gs-cj/config.git
+          search-paths: /
+          username: gs-cj
+          password: zhiweiziji0720
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/1907_gs?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8090/eureka

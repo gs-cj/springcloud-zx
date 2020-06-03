@@ -1,0 +1,1496 @@
+
+/*******************************
+    -------[=公用]-------
+********************************/
+.p-btn-1{
+    text-align: center;
+}
+.p-btn-1 a{
+    display: inline-block;
+    margin: 5px 14px;
+    padding: 0 30px;
+    font-size: 20px;
+    line-height: 48px;
+    border-radius: 48px;
+    background-color: #0588d1;
+    border: 1px solid #0588d1;
+    color: #fff;
+}
+.p-btn-1 a:hover,.p-btn-1 a.on{background-color: #fff;color: #0588d1;}
+.p-tit-1{
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: normal;
+    color: #333;
+}
+.p-tit-1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #0588d1;
+}
+.p-tit-1.center{text-align: center;}
+.p-tit-1.center:after{
+    left: 50%;
+    margin-left: -30px;
+}
+.p-tit-2{
+    font-size: 26px;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    color: #353535;
+}
+.p-tit-2 span{
+    position: relative;
+}
+.p-tit-2 em{
+    font-weight: lighter;
+    font-style: italic;
+    color: #0588d1;
+}
+.p-tit-2 strong{
+    padding: 0 10px;
+    font-family: 宋体;
+}
+.p-tit-2 span:after,.p-tit-2 span:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    width: 34px;
+    height: 7px;
+}
+.p-tit-2 span:after{
+    left: -70px;
+    background-image: url("imgp-2.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-2.png*/;
+}
+.p-tit-2 span:before{
+    right: -70px;
+    background-image: url("imgp-3.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-3.png*/;
+}
+.bgc-grey{background-color: #f8f8f8;}
+.bgc-white{background-color: #fff;}
+/*******************************
+    -------[=招聘动态]-------
+********************************/
+.boxp-recruit{
+    overflow: hidden;
+    margin-bottom: 100px;
+    padding: 10px 23px 75px;
+}
+.boxp-recruit .list{
+    padding-bottom: 60px;
+}
+.boxp-recruit .list a{
+    position: relative;
+    display: block;
+    padding: 0 15px 0 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+.boxp-recruit .list .more{
+    float: right;
+    padding: 22px 0 22px 15px;
+}
+.boxp-recruit .list .tit{
+    display: block;
+    padding: 22px 0;
+}
+.boxp-recruit .list .tag{
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    width: 41px;
+    height: 26px;
+    font-size: 14px;
+    font-family: 'Arial';
+    text-align: center;
+    background: url("icop-add1.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/icop-add1.png*/ center center no-repeat;
+    color: #fff;
+}
+.boxp-recruit .list .li1{
+    padding-top: 20px;
+}
+.boxp-recruit .list .li1 a{
+    border: 1px solid #ccc;
+}
+.boxp-recruit .list a:hover{color: #0588d1;border-color: #0588d1;}
+.boxp-recruit .list a:hover .tag{background-image: url("icop-add1on.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/icop-add1on.png*/;}
+
+.boxp-recruit_cont{
+    margin-bottom: 160px;
+    padding: 35px 30px;
+}
+.boxp-recruit_cont .title{
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px dotted #d3d3d3;
+    color: #757575;
+}
+.boxp-recruit_cont .title h1{
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #353535;
+}
+.boxp-recruit_cont .cont{
+    padding-bottom: 80px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555;
+}
+.boxp-recruit_cont .cont h5{
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #353535;
+}
+.boxp-recruit_cont .cont h6{
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 18px;
+}
+/*******************************
+    -------[=留学生招聘]-------
+********************************/
+.boxp-row-list{
+    padding: 40px 0 70px;
+    background-color: #f7f7f7;
+}
+.boxp-row-list .pul{
+    overflow: hidden;
+    margin-top: 40px;
+    border: 1px solid #dfdfdf;
+    border-right: 0;
+}
+.boxp-row-list .pul li{
+    position: relative;
+    float: left;
+    padding-top: 74px;
+    width: 25%;
+    height: 270px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    background-color: #eee;
+}
+.boxp-row-list .pul .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: none;
+}
+.boxp-row-list .pul .img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(9,137,208,.85);
+    background-color: #0989d0 /9;
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=85)';
+}
+.boxp-row-list .pul .cont{
+    position: relative;
+    z-index: 10;
+}
+.boxp-row-list .pul .title{
+    padding-top: 90px;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #666;
+}
+.boxp-row-list .pul .li1 .title{background-image: url("imgp-li1.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li1.png*/;}
+.boxp-row-list .pul .li2 .title{background-image: url("imgp-li2.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li2.png*/;}
+.boxp-row-list .pul .li3 .title{background-image: url("imgp-li3.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li3.png*/;}
+.boxp-row-list .pul .li4 .title{background-image: url("imgp-li4.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li4.png*/;}
+.boxp-row-list .pul .info{
+    padding: 15px 0;
+    color: #fff;
+    display: none;
+}
+.boxp-row-list .pul .info span{
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+.boxp-row-list .pul .info .mark{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    vertical-align: middle;
+    background-color: rgba(255,255,255,.6);
+    background-color: #fff /9;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=60)';
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}
+.boxp-row-list .pul .more{
+    color: #eee;
+    display: none;
+}
+.boxp-row-list .pul .li1:hover .title{background-image: url("imgp-li1on.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li1on.png*/;}
+.boxp-row-list .pul .li2:hover .title{background-image: url("imgp-li2on.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li2on.png*/;}
+.boxp-row-list .pul .li3:hover .title{background-image: url("imgp-li3on.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li3on.png*/;}
+.boxp-row-list .pul .li4:hover .title{background-image: url("imgp-li4on.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-li4on.png*/;}
+.boxp-row-list .pul li:hover{
+    padding-top: 15px;
+} 
+.boxp-row-list .pul li:hover .img,
+.boxp-row-list .pul li:hover .info,
+.boxp-row-list .pul li:hover .more{
+    display: block;
+}
+.boxp-row-list .pul li:hover .title{color: #fff;}
+
+.boxp-row-col2{
+    padding: 50px 0;
+}
+.boxp-row-col2 .col-l{
+    width: 54%;
+}
+.boxp-row-col2 .col-r{
+    width: 42%;
+}
+.boxp-row-col2 .p-tit-1{
+    margin-bottom: 25px;
+}
+.boxp-row-col2 .showad,
+.boxp-row-col2 .showad img{
+    display: block;
+    width: 100%;
+}
+.pul-list{
+    padding-bottom: 13px;
+}
+.pul-list a{
+    display: block;
+    overflow: hidden;
+    padding: 11px 15px;
+    line-height: 1;
+    font-size: 16px;
+    border-bottom: 1px solid #b2b2b2;
+    color: #666;
+}
+.pul-list .r{
+    padding-left: 15px;
+}
+.pul-list .dot{
+    float: left;
+    display: block;
+    margin:  6px 16px 0 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #a3a3a3;
+}
+.pul-list em{
+    display: block;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pul-list a:hover{color: #0588d1;}
+.pul-list a:hover .dot{background-color: #0588d1;}
+.page{
+    overflow: hidden;
+}
+.page .btn{
+    float: right;
+    padding-right: 15px;
+}
+.page .btn a{
+    display: inline-block;
+    margin-left: 15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #999;
+}
+.page .prev{
+    background-image: url("imgp-arrleft.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-arrleft.png*/;
+}
+.page .next{
+    background-image: url("imgp-arrright.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-arrright.png*/;
+}
+.page .num{
+    overflow: hidden;
+    font-size: 24px;
+    color: #999;
+}
+.page .num .cur{
+    font-size: 28px;
+    line-height: 38px;
+    color: #0588d1;
+}
+.page .btn a:hover{background-color: #0588d1;}
+
+.boxp-row-flow{
+    padding: 50px 0 70px;
+}
+.boxp-row-flow .cont{
+    margin-top: 35px;
+    padding: 28px 20px 0;
+    background-color: #f9f9f9;
+}
+.boxp-row-flow .cont_mob{display: none;}
+.boxp-row-flow .title{
+    overflow: hidden;
+}
+.boxp-row-flow .title-h6{
+    position: relative;
+    float: left;
+    margin-bottom: 35px;
+    padding-left: 13px;
+    width: 50%;
+    font-weight: normal;
+    font-size: 18px;
+    color: #0588d1;
+}
+.boxp-row-flow .title-h6:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 3px;
+    height: 20px;
+    background-color: #0588d1;
+}
+.boxp-row-flow .list{
+    overflow: hidden;
+}
+.boxp-row-flow .list1{
+    display: none;
+}
+.boxp-row-flow .list .li{
+    float: left;
+    width: 50%;
+}
+.boxp-row-flow .item{
+    overflow: hidden;
+    padding-bottom: 45px;
+}
+.boxp-row-flow .item > img{
+    display: inline-block;
+    height: 28px;
+    vertical-align: middle;
+}
+.boxp-row-flow .item .num{
+    display: inline-block;
+    padding-left: 5px;
+    line-height: 36px;
+    color: #999;
+    vertical-align: middle;
+}
+.boxp-row-flow .item .tit{
+    display: inline-block;
+    color: #0588d1;
+    vertical-align: middle;
+}
+.boxp-row-flow .item .tit img{
+    width: 40px;
+    margin-right: 5px;
+}
+.boxp-row-flow .item .info{
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #666;
+}
+
+.boxp-row-tip{
+    padding: 45px 0;
+    background-color: #fafafc;
+    color: #666;
+}
+.boxp-row-tip .wp{
+    position: relative;
+}
+.boxp-row-tip .tit{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -22px;
+    font-size: 30px;
+}
+.boxp-row-tip .info{
+    float: right;
+    width: 61%;
+    font-size: 16px;
+}
+
+.boxp-search{
+    margin: 50px 0 60px;
+    padding: 30px 35px 15px;
+    border: 1px solid #eaeaea;
+    box-shadow:0  4px 10px rgba(230,230,230,.75);
+}
+.boxp-search .title{
+    position: relative;
+    float: left;
+    padding-bottom: 10px;
+    font-weight: normal;
+    width: 20%;
+    font-size: 24px;
+    color: #333;
+}
+.boxp-search .title:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 85px;
+    height: 1px;
+    background-color: #0588d1;
+}
+.boxp-search .form{
+    overflow: hidden;
+}
+.boxp-search .form .line{
+    position: relative;
+    /*margin-bottom: 20px;*/
+    width: 82%;
+}
+.boxp-search .form .inpt{
+    display: block;
+    padding: 0 90px 0 60px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    background: #fff url("imgp-so.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-so.png*/ 15px 50% no-repeat;
+}
+.boxp-search .form .btns{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #0588d1;
+    color: #fff;
+}
+.boxp-search .form .p{
+    color: #0588d1;
+}
+.boxp-search .form .lastline{
+    overflow: hidden;
+    padding-top: 10px;
+}
+.boxp-search .form .lastline .p{
+    float: left;
+}
+.boxp-search .form .p span.txt{
+    float: left;
+    display: block;
+    width: 74px;
+}
+.boxp-search .form .p span.list {
+    margin-left: 74px;
+    display: block;
+}
+.boxp-search .form .p a{
+    display: inline-block;
+    margin-right: 20px;
+    color: #666;
+}
+.boxp-search .form .p a:hover{color: #0588d1;}
+.boxp-search .form .tip{
+    padding-right: 40px;
+    float: right;
+    color: #666;
+}
+.boxp-search .form .tip a{
+    color: #0588d1;
+    text-decoration: underline;
+}
+.boxp-search .form .tip a:hover{text-decoration: none;}
+.p-table1box{
+    margin-bottom: 35px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.p-table1{
+    width: 100%;
+    /*min-width: 660px;*/
+    /*white-space: nowrap;*/
+}
+.p-table1 th{
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: normal;
+    background-color: #fafafc;
+    color: #333;
+}
+.p-table1 th:first-child{width: 30%;}
+.p-table1 td{
+    overflow: hidden;
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 1px dotted #999;
+    color: #666;
+}
+.p-table1 .tag{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 5px;
+    line-height: 20px;
+    border-radius: 2px;
+    background-color: #0588d1;
+    color: #fff;
+}
+.p-table1 .more{
+    float: right;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.pages1{
+    padding-bottom: 60px;
+    text-align: right;
+}
+.pages1 .center{
+    text-align: center;
+} 
+
+.boxp-row-col12{
+    padding: 35px 0 60px;
+    background-color: #fafafc;
+}
+.boxp-row-col12 .col-l,
+.boxp-row-col12 .col-r{
+    width: 49%;
+}
+.boxp-row-col12 .p-tit-1{
+    margin-bottom: 50px;
+}
+.boxp-row-col12 .pul-list a{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.boxp-row-col12 .showimg a{
+    position: relative;
+    display: block;
+    padding-top: 45.7%;
+}
+.boxp-row-col12 .showimg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.boxp-row-col12 .showimg .pos{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    padding: 7px 12px;
+    color: #fff;
+}
+.boxp-row-col12 .showimg .dot{
+    display: inline-block;
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    vertical-align: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.pul-list1{
+    overflow: hidden;
+    margin: 40px 0 65px -35px;
+}
+.pul-list1 li{
+    float: left;
+    width: 50%;
+}
+.pul-list1 a{
+    display: block;
+    margin-left: 35px;
+    font-size: 24px;
+    text-align: center;
+}
+.pul-list1 .img{
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 57.5%;
+}
+.pul-list1 .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pul-list1 a:hover{color: #0588d1;}
+
+.boxp-helpcent{
+    padding: 70px 0 130px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.1);
+}
+.boxp-helpcent .title{
+    padding: 20px 0;
+    background-color: #fcfcfc;
+}
+.boxp-helpcent .cont{
+    padding: 20px 45px 50px;
+    border: 1px solid #dfdfdf;
+}
+.boxp-helpcent .cont-tit{
+    position: relative;
+}
+.boxp-helpcent .ct-tit{
+    position: relative;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    line-height: 45px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    text-shadow: 0px 1px 1px rgba(0,104,154,.4);
+    background-color: #0b8fcf;
+    color: #fff;
+    cursor: pointer;
+}
+.boxp-helpcent .ct-tit:after,
+.boxp-helpcent .ct-tit:before{
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.boxp-helpcent .ct-tit:before{
+    top: 50%;
+    right: 25px;
+    margin-top: -4px;
+    width: 14px;
+    height: 8px;
+    background-image: url("imgp-bgadd3.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-bgadd3.png*/;
+}
+.boxp-helpcent .ct-tit:after{
+    top: 0;
+    right: 0;
+    width: 104px;
+    height: 45px;
+    background-image: url("imgp-bgadd4.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-bgadd4.png*/;
+}
+.boxp-helpcent .ct-cont{
+    position: absolute;
+    top: 42px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 0 34px;
+    border: 1px solid #0b8fcf;
+    border-top: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #fff;
+    display: none;
+}
+.boxp-helpcent .ct-cont .line{
+    line-height: 48px;
+}
+.boxp-helpcent .ct-cont .all{
+    border-bottom: 1px dashed #e5e5e5;
+}
+.boxp-helpcent .ct-cont a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 33px;
+    border: 1px solid #fff;
+    color: #666;
+}
+.boxp-helpcent .ct-cont .all a.on{
+    color: #0b8fcf;
+}
+.boxp-helpcent .ct-cont .btns a.on{
+    background: url("icop-close.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/icop-close.png*/ right top no-repeat;
+    color: #0b8fcf;
+    border-color: #0b8fcf;
+}
+.boxp-helpcent .cont-list{
+    padding-bottom: 25px;
+}
+.boxp-helpcent .cont-list li{
+    margin-bottom: 15px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}
+.boxp-helpcent .cont-list .tit{
+    overflow: hidden;
+    padding: 15px 0;
+    line-height: 25px;
+    color: #353535;
+    cursor: pointer;
+}
+.boxp-helpcent .cont-list .tag{
+    float: right;
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+    background: url("imgp-bgadd1.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-bgadd1.png*/ 0 0 no-repeat;
+}
+.boxp-helpcent .cont-list .img{
+    float: left;
+    margin: 6px 5px 0 0;
+}
+.boxp-helpcent .cont-list .em{
+    display: block;
+    overflow: hidden;
+}
+.boxp-helpcent .cont-list .tit .em{
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.boxp-helpcent .cont-list .txt{
+    overflow: hidden;
+    padding: 0 40px 25px 0;
+    font-size: 12px;
+    line-height: 2;
+    color: #555;
+    display: none;
+}
+.boxp-helpcent .cont-list li.on{
+    margin-bottom: 20px;
+    box-shadow: 0 18px 26px rgba(0,0,0,.1);
+}
+.boxp-helpcent .cont-list li.on .tit{color: #0b8fcf;}
+.boxp-helpcent .cont-list li.on .tag{
+    background-image: url("imgp-bgadd2.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-bgadd2.png*/;
+}
+.boxp-helpcent .btn-more{
+    display: block;
+    font-size: 13px;
+    line-height: 57px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #0b8fcf;
+}
+.boxp-helpcent .btn-more:hover{
+    border-color: #0b8fcf;
+    background-color: #0b8fcf;
+    color: #fff;
+}
+
+.boxp-jobdelt .alljobs{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.boxp-jobdelt .alljobs .tit{
+    padding: 40px 0;
+    font-size: 24px;
+    line-height: 65px;
+    color: #333;
+}
+.boxp-jobdelt .alljobs .tit b{
+    display: inline-block;
+    vertical-align: -13px;
+    padding-left: 70px;
+    font-size: 60px;
+    color: #0588d1;
+}
+.alljobs-list{
+    margin-bottom: 10px;
+    padding: 12px 0 0 20px;
+}
+.alljobs-list .tit{
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.alljobs-list .tit em{
+    display: inline-block;
+    vertical-align: -4px;
+    padding-left: 10px;
+    font-size: 30px;
+    color: #0588d1;
+}
+.alljobs-list .list{
+    text-align: center;
+    overflow: hidden;
+}
+.alljobs-list .list a{
+    display: inline-block;
+    margin: 0 13px 20px 13px;
+    padding-top: 25px;
+    width: 150px;
+    height: 110px;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 4px 6px rgba(242,242,242,.75);
+}
+.alljobs-list .list em{
+    display: block;
+    font-size: 18px;
+    color: #666;
+}
+.alljobs-list .list b{
+    display: block;
+    font-size: 30px;
+    color: #333;
+}
+.alljobs-list .list a:hover{
+    border-color: #0588d1;
+    box-shadow: 0 4px 6px rgba(5,136,209,.14);
+}
+.box-bgc{
+    margin-bottom: 90px;
+    padding: 20px 35px 0;
+}
+.boxp-jobdelt .filter{
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+.boxp-jobdelt .filter .line{
+    overflow: hidden;
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 1.8;
+    border-bottom: 1px dotted #999;
+    color: #333;
+}
+.boxp-jobdelt .filter .line em{
+    float: left;
+    margin-right: 15px;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.boxp-jobdelt .filter .line1 em{background-image: url("imgp-4.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-4.png*/;}
+.boxp-jobdelt .filter .line2 em{background-image: url("imgp-5.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-5.png*/;}
+.boxp-jobdelt .filter .line p{
+    overflow: hidden;
+}
+.boxp-jobdelt .filter .line a{
+    display: inline-block;
+    margin-right: 30px;
+}
+.boxp-jobdelt .filter .inpbox{
+    overflow: hidden;
+    padding: 22px 0;
+}
+.boxp-jobdelt .filter .inpbox .box{
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    width: 49%;
+}
+.boxp-jobdelt .filter .inpt{
+    display: block;
+    padding: 0 100px 0 50px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: url("imgp-so.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-so.png*/ 10px 50% no-repeat;
+}
+.boxp-jobdelt .filter .btns{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #0588d1;
+    color: #fff;
+}
+.boxp-jobdelt .filter .inpbox .other{
+    overflow: hidden;
+    padding-top: 14px;
+    font-size: 16px;
+    color: #666;
+}
+.boxp-jobdelt .filter .inpbox span{
+    margin-right: 7px;
+}
+.boxp-jobdelt .filter .inpbox a{
+    display: inline-block;
+    margin-right: 10px;
+    color: #666;
+}
+.boxp-jobdelt .cont{
+    margin-bottom: 110px;
+    font-size: 16px;
+    color: #666;
+}
+.boxp-jobdelt .cont-tit{
+    padding: 27px 20px 30px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.boxp-jobdelt .cont-tit .title{
+    overflow: hidden;
+    padding-bottom: 18px;
+    line-height: 36px;
+}
+.boxp-jobdelt .cont-tit .goback{
+    float: right;
+    font-size: 18px;
+}
+.boxp-jobdelt .cont-tit .tag{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 1.5;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #6e6e6e;
+}
+.boxp-jobdelt .cont-tit .tag-blue{
+    background-color: #0588d1;
+}
+.boxp-jobdelt .cont-tit .info{
+    overflow: hidden;
+    margin-left: -40px;
+    font-size: 16px;
+}
+.boxp-jobdelt .cont-tit .info p{
+    float: left;
+    margin-left: 40px;
+}
+.boxp-jobdelt .cont-tit .info span{
+    padding-right: 7px;
+    color: #959595;
+}
+.boxp-jobdelt .cont-tit .info em{
+    color: #555;
+}
+.boxp-jobdelt .cont .tith3{
+    font-weight: normal;
+    font-size: 24px;
+    color: #0588d1;
+}
+.boxp-jobdelt .cont-txt{
+    padding: 0 20px 40px 20px;
+}
+.boxp-jobdelt .cont-txt .tith3{
+    padding: 25px 0;
+}
+.boxp-jobdelt .bdb{border-bottom: 1px solid #e8e8e8;}
+.boxp-jobdelt .cont-txt .txt{
+    line-height: 2;
+}
+.boxp-jobdelt .share{
+    overflow: hidden;
+    padding: 0 20px 60px 20px;
+    font-size: 16px;
+    color: #666;
+}
+.boxp-jobdelt .share span{
+    float: left;
+    margin-right: 5px;
+    line-height: 42px;
+}
+.boxp-jobdelt .bdsharebuttonbox{
+    float: left;
+}
+.boxp-jobdelt .bdshare-button-style0-32 a{
+    margin: 0 6px 0 0;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+}
+.boxp-jobdelt .bdshare-button-style0-32 .bds_sqq{
+    background-image: url("imgp-sha1.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-sha1.png*/;
+    background-position: center center;
+}
+.boxp-jobdelt .bdshare-button-style0-32 .bds_weixin{
+    background-image: url("imgp-sha2.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-sha2.png*/;
+    background-position: center center;
+}
+.boxp-jobdelt .bdshare-button-style0-32 .bds_linkedin{
+    background-image: url("imgp-sha3.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-sha3.png*/;
+    background-position: center center;
+}
+.boxp-jobdelt .bdshare-button-style0-32 .bds_tsina{
+    background-image: url("imgp-sha4.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-sha4.png*/;
+    background-position: center center;
+}
+.boxp-jobdelt .p-btn-1{
+    padding-bottom: 80px;
+}
+.boxp-jobdelt .p-btn-1 a{
+    border-width: 2px;
+}
+
+.boxp-table{
+    overflow: hidden;
+    overflow-x: auto;
+    padding-top: 45px;
+    display: none;
+}
+.boxp-table .p-tit-1{
+    margin-bottom: 50px;
+}
+.pdl-list1{
+    min-width: 550px;
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 1px solid #0588d1;
+    background-color: #fbfbfb;
+}
+.pdl-list1 dt{
+    margin-bottom: 15px;
+    padding: 0 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background: #0588d1 url("imgp-time.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-time.png*/ 15px 50% no-repeat;
+    color: #fff;
+}
+.pdl-list1 dd{
+    padding: 0 20px;
+}
+.pdl-list1 .line{
+    overflow: hidden;
+    padding: 12px 0;
+    border-bottom: 1px dotted #9c9c9c;
+}
+.pdl-list1 .line .l{
+    width: 50%;
+    display: block;
+}
+.pdl-list1 .line .sp2{
+    display: inline-block;
+    padding-left: 20px;
+    width: 120px;
+}
+.pdl-list1 .line .sp3{
+    padding-right: 8px;
+}
+.pdl-list1 .page1{
+    overflow: hidden;
+}
+.pdl-list1 .page1 .btn{
+    float: left;
+    font-size: 0;
+}
+.pdl-list1 .page1 .btn a{
+    display: inline-block;
+    width: 15px;
+    height: 40px;
+}
+.pdl-list1 .page1 .prev{
+    background: url("imgp-arr1l.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-arr1l.png*/ left center no-repeat;
+}
+.pdl-list1 .page1 .next{
+    background: url("imgp-arr1r.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-arr1r.png*/ right center no-repeat;
+}
+.pdl-list1 .num{
+    float: right;
+    font-size: 16px;
+    line-height: 40px;
+    color: #666;
+}
+
+.boxp-map-tit{
+    margin-top: 40px;
+}
+.boxp-map{
+    position: relative;
+    margin-bottom: 70px;
+}
+.boxp-map .tip{
+    font-size: 12px;
+    text-align: center;
+}
+.boxp-map .box{
+    position: relative;
+    z-index: 3;
+}
+.boxp-map .img{
+    display: block;
+    width: 100%;
+}
+.boxp-map .pos{
+    position: absolute;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+}
+.boxp-map .pos1{
+    left:63%;
+    top: 47%;
+}
+.boxp-map .pos2{
+    left: 72%;
+    top: 36%;
+}
+.boxp-map .pos3{
+    left: 53%;
+    top: 58%;
+}
+.boxp-map .pos4{
+    left: 86%;
+    top: 53%;
+}
+.boxp-map .pos5{
+    left: 71%;
+    top: 74%;
+}
+.boxp-map .pos6{
+    left: 80%;
+    top: 50%;
+}
+.boxp-map .pos .dot{
+    position: relative;
+    display: inline-block;
+    margin-right: 3px;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px dashed #54aee0;
+    -o-transition: border-style .5s,opcity .5s;
+    -ms-transition: border-style .5s,opcity .5s;
+    -moz-transition: border-style .5s,opcity .5s;
+    -webkit-transition: border-style .5s,opcity .5s;
+    transition: border-style .5s,opcity .5s;
+    -webkit-animation: str0 1.5s linear infinite;
+    -o-animation: str0 1.5s linear infinite;
+    animation: str0 1.5s linear infinite;
+}
+.boxp-map .pos .dot span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #0588d1;
+}
+.boxp-map .pos .dot:after,
+.boxp-map .pos .dot:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border: 1px solid #0588d1;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+}
+.boxp-map .pos .dot:after{
+    -webkit-animation: str1 1.5s linear infinite;
+    -o-animation: str1 1.5s linear infinite;
+    animation: str1 1.5s linear infinite;
+}
+.boxp-map .pos .dot:before{
+    -webkit-animation: str2 1.5s linear infinite;
+    -o-animation: str2 1.5s linear infinite;
+    animation: str2 1.5s linear infinite;
+}
+.pop_cont{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    z-index: 10;
+    width: 380px;
+    border-radius: 5px;
+    border: 1px solid #0588d1;
+    background-color: #fbfbfb;
+    display: none;
+}
+.pop_cont .title{
+    padding: 0 20px;
+    line-height: 57px;
+    font-size: 18px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #0588d1;
+    color: #fff;
+}
+.pop_cont .title span{
+    display: inline-block;
+    padding-left: 30px;
+    background: url("imgp-6.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/imgp-6.png*/ left center no-repeat;
+}
+.pop_cont .cont{
+    padding: 0px 20px 10px;
+    height: 315px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail, .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {background-color: transparent !important;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background-color: #008fd5 !important;}
+.mCSB_outside + .mCSB_scrollTools {right: -5px !important;}
+.pop_cont .cont li{
+    overflow: hidden;
+    padding: 12px;
+    display: block;
+    border-bottom: 1px dotted #9c9c9c;
+}
+.pop_cont .cont .tit{
+    float: left;
+    display: block;
+    padding-top: 10px;
+    width: 110px;
+}
+.pop_cont .cont .info{
+    display: block;
+    overflow: hidden;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+
+
+
+.boxp-jobdelt .filter a:hover,
+.boxp-jobdelt .filter a.on,
+.boxp-jobdelt .cont-tit .goback:hover,
+.pdl-list1 .line .l:hover,
+.alljobs-list .list a:hover em,
+.alljobs-list .list a:hover b,
+.p-table1 tr:hover td,
+.p-table1 tr:hover a,
+.p-table1 a:hover{color: #008fd5;}
+.boxp-search .form .inpt::-webkit-input-placeholder,.boxp-jobdelt .filter .inpt::-webkit-input-placeholder {color: #999;}
+.boxp-search .form .inpt::-moz-placeholder,.boxp-jobdelt .filter .inpt::-moz-placeholder {color: #999; }
+.boxp-search .form .inpt::-ms-input-placeholder,.boxp-jobdelt .filter .inpt::-ms-input-placeholder {color: #999;}
+@-webkit-keyframes str0{
+    0% {
+        border-style: dashed;
+        opacity: 1;
+    }
+    50% {
+        border-style: solid;
+        opacity: 0;
+    }
+    100% {
+        border-style: dashed;
+        opacity: 1;
+    }
+}
+@keyframes str0{
+    0% {
+        border-style: dashed;
+        opacity: 1;
+    }
+    50% {
+        border-style: solid;
+        opacity: 0;
+    }
+    100% {
+        border-style: dashed;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes str1{
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+}
+@keyframes str1{
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes str2{
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+@keyframes str2{
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+
+/*弹窗*/
+.box-info-none {position: fixed;top: 50%;left: 50%;padding-top: 30px;width: 94%;max-width: 436px;height: 300px;background-color: #fff;border-radius: 10px;box-shadow: 0 0 20px rgba(0,0,0,.5);z-index: 100;
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.box-info-none em {margin: 0 auto;display: block;width: 70px;height: 70px;background-image: url("ico-error.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/ico-error.png*/;background-size: 100% 100%;}
+.box-info-none .txt {padding: 30px 0 40px;text-align: center;}
+.box-info-none .txt .p1 {height: 1em;line-height: 1em;color: #cd3333;font-size: 24px;}
+.box-info-none .txt .p2 {margin-top: 20px;height: 1em;line-height: 1em;color: #555;}
+.box-info-none .btn-close {margin: 0 auto;display: block;width: 136px;height: 46px;line-height: 44px;text-align: center;color: #0588d1;border: 1px solid #0588d1;border-radius: 4px;}
+.box-info-none .btn-close:hover {color: #fff;background-color: #0588d1;}
+
+/*错误提示*/
+.td-tips {padding-left: 0 !important;text-align: center !important;border-bottom: 1px solid #999 !important;}
+.error {padding: 10px 0 10px 30px;width: 100%;color: #f00;background: url("ico-error.png")/*tpa=http://job.zte.com.cn/Asserts/JobOffers/images/ico-error.png*/ left center no-repeat;background-size: auto 20px;}
+
+@media only screen and (max-width: 1000px) {
+    .boxp-row-flow .list .li,.boxp-jobdelt .filter .inpbox .box,
+    .pdl-list1 .line .l,.boxp-row-flow .title-h6{float: none;width: 100%;}
+    .boxp-row-flow .cont_pc{display: none;}
+    .boxp-row-flow .cont_mob{display: block;}
+    .boxp-recruit .list .tag{top: 0;}
+}  
+
+@media only screen and (max-width: 959px) {
+    .boxp-row-list .pul li{width: 50%;}
+    .boxp-row-list .pul .li1,.boxp-row-list .pul .li2{border-bottom: 1px solid #dfdfdf;}
+    .boxp-row-col2 .col-l,.boxp-row-col2 .col-r,.boxp-row-col12 .col-l, .boxp-row-col12 .col-r{float: none;width: 100%;}
+    .boxp-row-col2 .col-l{padding-bottom: 35px;}
+    .boxp-row-col12 .col-l{padding-bottom: 15px;}
+    .boxp-search{padding: 20px 10px;}
+    .boxp-search .form .tip,.boxp-search .form .lastline .p{float: none;}
+    .boxp-search .form .tip{padding-top: 10px;}
+}  
+
+@media only screen and (max-width: 768px) {
+    .banner-inn{height: 300px;}
+    .banner-inn .txt{font-size: 36px;}
+    .boxp-row-tip .tit{font-size: 23px;}
+    .boxp-helpcent{padding: 40px 0;}
+    .boxp-helpcent .cont{padding: 20px 10px;}
+    .boxp-helpcent .cont-list li{padding: 0 8px;}
+    .boxp-jobdelt .cont-tit .goback{float: none;}
+    .pop_cont{position: static;margin: 10px auto;}
+    .box-bgc{margin-bottom: 40px;padding: 20px 10px 0;}
+    .box-info-none em {width: 50px;height: 50px;}
+    .box-info-none .txt .p1 {font-size: 20px;}
+}  
+
+@media only screen and (max-width: 660px) {
+    .p-table11 tr th:nth-child(2),
+    .p-table11 tr th:nth-child(4),
+    .p-table11 tr td:nth-child(2),
+    .p-table11 tr td:nth-child(4),
+    .p-table12 tr th:nth-child(3),
+    .p-table12 tr td:nth-child(3){display: none;}
+    .p-table1 th:first-child{width: auto;}
+}
+
+@media only screen and (max-width: 600px) {
+    .boxp-recruit{padding: 10px 10px 30px;margin-bottom: 40px;}
+    .boxp-recruit .list{padding-bottom: 30px;}
+    .boxp-recruit .list .more{display: none;}
+    .pages .num{display: none;}
+    .boxp-recruit_cont{margin-bottom: 40px;padding: 20px 10px;}
+    .boxp-row-tip .tit{position: static;text-align: center;}
+    .boxp-row-tip .info{float: none;width: 100%;padding-top: 10px;}
+    .boxp-search .title{float: none;width: 100%;margin-bottom: 15px;}
+    .boxp-search .form .line{width: 100%;}
+    .boxp-search .form .inpt{padding: 0 60px 0 30px;background-position: 1px 50%;}
+    .boxp-search .form .btns{width: 55px;}
+    .boxp-jobdelt .cont{margin-bottom: 40px;}
+    .boxp-jobdelt .filter,.boxp-jobdelt .cont-tit,.boxp-jobdelt .cont-txt,.boxp-jobdelt .share{padding-left: 10px;padding-right: 10px;}
+    .boxp-jobdelt .p-btn-1{padding-bottom: 30px;}
+    .boxp-jobdelt .alljobs .tit{padding: 20px 0;line-height: 45px;}
+    .boxp-jobdelt .alljobs .tit b{vertical-align: -6px;padding-left: 10px;font-size: 40px;}
+    .boxp-map .pos2{left: 56%;top: 38%;}
+    .boxp-map .pos3{left: 72%;top: 22%;}
+    .boxp-map .pos4{left: 74%;}
+    .boxp-map .pos5{left: 59%;}
+
+    .alljobs-list {padding-left: 0;}
+    .alljobs-list .tit {padding-left: 10px;}
+    .alljobs-list .list a {margin: 0 1.6666% 20px;float: left;width: 30%;}
+}  
+
+@media only screen and (max-width: 479px) {
+    .pul-list1 li{float: none;width: 100%;}
+    .pul-list .r{display: none;}
+    .pul-list1 li{padding-bottom: 10px;}
+    .boxp-jobdelt .filter .line em{display: block;margin-bottom: 7px;float: none;}
+    .boxp-jobdelt .filter .line a{margin-right: 10px;}
+}  
+
+@media only screen and (max-width: 390px) {
+    .pop_cont{width: 100%;}    
+    .pop_cont .cont{padding: 0 8px 10px;}
+    .pop_cont .cont a{padding: 12px 5px;}
+
+    .alljobs-list .list a {padding-top: 16px;height: 90px;}
+    .alljobs-list .list em {font-size: 14px;}
+}  

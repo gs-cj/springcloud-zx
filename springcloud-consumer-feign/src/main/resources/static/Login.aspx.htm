@@ -1,0 +1,123 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv=Content-Type content='text/html; charset=utf-8'>
+<title>
+	ç”¨æˆ·ç™»å½• - ä¸­å…´é€šè®¯æ‹›è˜é—¨æˆ·
+</title>
+
+    <script type="text/javascript" src="jquery-1.4.2.min.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/JS/jquery-1.4.2.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap2.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/bootstrap2.css" /><link rel="stylesheet" href="home.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/home.css" /><link rel="stylesheet" href="cui-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/cui.css" /><link rel="stylesheet" href="lib-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/lib.css" /><link rel="stylesheet" href="style-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style.css" /><link rel="stylesheet" href="style-hm.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/style-hm.css" /><link rel="stylesheet" href="less-1.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/CSS/less.css" />
+
+    <script type="text/javascript" src="myself.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/myself.js"></script>
+
+    <script src="jquery.share.js" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/JS/jquery.share.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function validateLoginForm()
+        {
+            if(!$("#txtLoginName").requireText({prompt:true,focus:true,exp:/^[^\n]{1,50}$/,message:"è¯·è¾“å…¥æ­£ç¡®çš„ç”¨æˆ·å"}) 
+                || !$("#txtPassword").requireText({prompt:true,focus:true,exp:/^[^\n]{6,15}$/,message:"è¯·è¾“å…¥6-15ä½å¯†ç "}))
+            {
+                return false;
+            }
+           
+            return true;
+        }
+        
+        window.onload=function(){
+            var obj=$("#login-user input");
+            //var obj=document.getElementsByTagName("input");
+            for(var i=0;i<obj.length;i++){
+                (function(){
+                    var index=i;
+                    obj[index].onkeydown=function(){
+                        if(window.event.keyCode==9){
+                            obj[index<obj.length-1?index+1:0].focus();
+                            return false;
+                        }
+                    };
+                })();
+            }
+        };
+        function zhuce(){
+       window.parent.location.href="Register.aspx.htm"/*tpa=http://job.zte.com.cn/ZTE.Graduate.Web/UserInfo/Register.aspx*/;
+        }
+    </script>
+
+</head>
+<!--[if IE 7]>
+        	<link rel="stylesheet" href="ie7.css" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/NewCss/ie7.css"  />
+        <![endif]-->
+<body class="bg-grey">
+   <!-- å†…å®¹ -->
+    <div class="main">
+        <div class="wp">
+            <div class="sitemap">
+                <a href="javascript:if(confirm('http://job.zte.com.cn/404?path=/404  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://job.zte.com.cn/404?path=/404'" tppabs="http://job.zte.com.cn/newjob/cn/">é¦–é¡µ</a>&nbsp;&gt;&nbsp;<span>ç”¨æˆ·ç™»å½•</span>
+            </div>
+            <!-- !end é¢åŒ…å±‘å¯¼èˆª -->
+            <div class="box-login box2" style="display:block; float:left; width:1000px;">
+                <div class="img" style="display:block;">
+                    <img src="img-login-4.png" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/images/img-login-4.png" id="leftimage" style="display:block;" />
+                </div>
+                <div class="box-form" style="float:right;">
+                    <h2 class="tit">ç™»å½•</h2>
+                    <ul>
+                    <form name="form1" method="post" action="http://job.zte.com.cn/ZTE.Graduate.Web/UserInfo/Login.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExMjk5OTk2MDQPZBYCAgUPZBYCAgcPDxYCHghJbWFnZVVybAU0Q2FwdGNoYS5hc3B4P2lkPTY4MjgwNDI4LTIyMzYtNDk3ZC04OWNiLWQ2NzRjZWJkYjBhM2RkZGo3LMe2+s00ibACO3gjDgZ9yLZz" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKvz7uxCgKpwK/OBgK1qbSRCwKok6eqCgKC3IeGDGZKX5ZpwQYiJbOMWP+VyQNP1G+A" />
+</div>
+                        <div class="login-box-main" id="login-box-user">
+                    <div class="form-horizontal" id="login-user">
+                        <fieldset>
+                         <li>
+                            <div class="p1" for="inputEmail">ç”¨æˆ·å</div>
+                            <div class="p2">
+                                <input name="txtLoginName" type="text" id="txtLoginName" class="inp-form inp7" placeholder="è¯·è¾“å…¥ç”µå­é‚®ç®±" style="height:34px;" />
+                            </div>
+                        </li> 
+                         <li>
+                            <div class="p1">å¯†ç </div>
+                            <div class="p2">
+                                <input name="txtPassword" type="password" id="txtPassword" class="inp-form inp7" style="height:34px;" />
+                                <a href="FindPassword.aspx.htm" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/UserInfo/FindPassword.aspx" class="btn-forget-pwd" style="float:left; margin-top:10px; height:20px;">å¿˜è®°å¯†ç ?</a>
+                            </div>
+                        </li> 
+                         <li>
+                            <div class="p1">éªŒè¯ç </div>
+                            <div class="p2">
+                                 <input name="txtVerifyNo" type="text" id="txtVerifyNo" class="inp-form inp8" style="height:34px;" />
+                                 <div class="login-yanzheng">
+                                        <img id="img1" src="Captcha.aspx-id=68280428-2236-497d-89cb-d674cebdb0a3" tppabs="http://job.zte.com.cn/ZTE.Graduate.Web/UserInfo/Captcha.aspx?id=68280428-2236-497d-89cb-d674cebdb0a3" style="border-width:0px;" /></div>
+                                    
+                            </div>
+                        </li> 
+                         <li class="li-action">
+                            <div class="p1"></div>
+                            <div class="p2">
+                               <input type="submit" name="btnLogin" value="ç™»å½•" onclick="return validateLoginForm();" id="btnLogin" class="g-btn-form-1 btn-login ani" style="float:left;" />
+                                <a href="#" class="g-btn-form-2 btn-regist ani" style="float:left; height:48px;" onclick="zhuce()">æ³¨å†Œ</a>
+                            </div>
+                        </li> 
+                        </fieldset>
+                    </div>
+                </div>
+                </form>
+                    </ul>
+                    <!-- <div class="box-partner">
+                        ç¬¬ä¸‰æ–¹ç™»å½•ï¼š<a href="" class="a1">QQ</a><a href="" class="a2">å¾®åš</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- å†…å®¹ end -->
+    </body>
+</html>
