@@ -1,5 +1,6 @@
 package com.jk.controller;
 
+import com.jk.model.AreaBean;
 import com.jk.model.ProfeBean;
 import com.jk.model.RelevantBean;
 import com.jk.service.glService;
@@ -139,5 +140,12 @@ public class ZXController {
     @ResponseBody
     public List<ProfeBean>findProfession(){
         return glService.findProfession();
+    }
+
+    //查看工作地点
+    @RequestMapping("/findArea")
+    @ResponseBody
+    public List<AreaBean>findArea(){
+        return glService.findArea();
     }
 }

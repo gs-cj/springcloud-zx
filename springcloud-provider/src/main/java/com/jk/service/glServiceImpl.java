@@ -1,6 +1,7 @@
 package com.jk.service;
 
 import com.jk.mapper.glMapper;
+import com.jk.model.AreaBean;
 import com.jk.model.ProfeBean;
 import com.jk.model.RelevantBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +43,12 @@ public class glServiceImpl implements glService {
     @Override
     public List<ProfeBean> findProfession() {
         return glMapper.findProfession();
+    }
+
+    @RequestMapping("/findArea")
+    @ResponseBody
+    @Override
+    public List<AreaBean> findArea() {
+        return glMapper.findArea();
     }
 }

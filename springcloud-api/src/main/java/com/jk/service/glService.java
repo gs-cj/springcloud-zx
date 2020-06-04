@@ -1,5 +1,6 @@
 package com.jk.service;
 
+import com.jk.model.AreaBean;
 import com.jk.model.ProfeBean;
 import com.jk.model.RelevantBean;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -31,4 +32,8 @@ public interface glService {
     @RequestMapping("/findProfession")
     @ResponseBody
     List<ProfeBean> findProfession();
+
+    @RequestMapping("/findArea")
+    @ResponseBody
+    List<AreaBean> findArea();
 }

@@ -1,5 +1,6 @@
 package com.jk.mapper;
 
+import com.jk.model.AreaBean;
 import com.jk.model.ProfeBean;
 import com.jk.model.RelevantBean;
 import org.apache.ibatis.annotations.Mapper;
@@ -21,4 +22,7 @@ public interface glMapper {
 
     @Select("select * from t_profession")
     List<ProfeBean> findProfession();
+
+    @Select("select * from t_workplace")
+    List<AreaBean> findArea();
 }
