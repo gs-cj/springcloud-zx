@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class ZXController {
@@ -112,12 +114,4 @@ public class ZXController {
     }
 
 
-    //求span个数
-    @RequestMapping("/span")
-    public String spancount(){
-        System.out.println("555");
-        String ddd =  glService.spancount();
-        System.out.println(ddd);
-        return null;
-    }
 }
