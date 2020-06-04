@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="lib.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/lib.css" />
     <link rel="stylesheet" href="style.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/style.css" />
     <link rel="stylesheet" href="less.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/less.css">
-    <script type="text/javascript" src="jquery.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/jquery.js"></script>
+
     <script type="text/javascript" src="lib.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/lib.js"></script>
     <link rel="stylesheet" href="style-pp.css" tppabs="http://job.zte.com.cn/Asserts/JobOffers/css/style-pp.css" />
 <style>
@@ -256,17 +256,18 @@
         <div class="list" id="jobType">
 
 
-                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{571F1D11-1712-4166-AF37-8F8AFE5C5639}"><em>
-                        应届生职位
-                    </em><b></b></a>
+<!--                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{571F1D11-1712-4166-AF37-8F8AFE5C5639}"><em>-->
+<!--                        应届生职位-->
+<!--                    </em><b></b></a>-->
 
-                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{AA7710B8-FE4F-4BEA-A7E5-5F3BAB6C9090}"><em>
-                        实习生职位
-                    </em><b></b></a>
+<!--                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{AA7710B8-FE4F-4BEA-A7E5-5F3BAB6C9090}"><em>-->
+<!--                        实习生职位-->
+<!--                    </em><b></b></a>-->
 
-                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{BB708854-FED8-49D2-A4BA-E4022C429176}"><em>
-                        留学生职位
-                    </em><b></b></a>
+<!--                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{BB708854-FED8-49D2-A4BA-E4022C429176}"><em>-->
+<!--                        留学生职位-->
+<!--                    </em><b></b></a>-->
+
 
         </div>
     </div>
@@ -276,23 +277,25 @@
                 <div class="line line1">
                     <em>职位类别</em>
                     <p id="positionType">
-                        <a href="javascript:void(0);" onclick="jobCategory(this);" class="on" data-id="0">全部分类</a>
-                        
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{7DDD236B-D7DE-4355-BA87-5AA6F735DFE7}">
-                                    研发类
-                                </a>
-                            
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{5552A423-90D8-4547-BC50-4D3F497D75AF}">
-                                    营销类
-                                </a>
-                            
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{CE9CC923-135E-4DA9-AD81-CC3B2EF62064}">
-                                    运营支撑
-                                </a>
-                            
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{ED15A14A-3EC9-4C21-BEC2-E5027ED5A8D5}">
-                                    供应链
-                                </a>
+<!--                                 <a href="javascript:void(0);" onclick="jobCategory(this);" class="on" data-id="0">-->
+<!--                                   全部分类-->
+<!--                                 </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{7DDD236B-D7DE-4355-BA87-5AA6F735DFE7}">-->
+<!--                                    研发类-->
+<!--                                </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{5552A423-90D8-4547-BC50-4D3F497D75AF}">-->
+<!--                                    营销类-->
+<!--                                </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{CE9CC923-135E-4DA9-AD81-CC3B2EF62064}">-->
+<!--                                    运营支撑-->
+<!--                                </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{ED15A14A-3EC9-4C21-BEC2-E5027ED5A8D5}">-->
+<!--                                    供应链-->
+<!--                                </a>-->
                             
                     </p>
                 </div>
@@ -443,7 +446,7 @@
                                 
                         </dd>
                     </dl>
-                
+
                     <dl class=''>
                         <dt>
                             实习生招聘
@@ -582,24 +585,38 @@
 
     <link rel="stylesheet" href="slick.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/slick.css">
     <script src="slick.min.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/slick.min.js"></script>
-    <script>
-        $(document).ready(function ($) {
-            // banner
-            $('#banner').slick({
-                fade: true,
-                autoplay: true,
-                dots: false,
-                arrows: false,
-                zIndex: 3,
-                customPaging: function () {
-                    return '';
-                },
-            });
+    <script type="text/javascript" src="jquery-1.8.0.js"></script>
 
-        })
-    </script>
+<!--    <script>-->
+<!--        $(document).ready(function ($) {-->
+<!--            // banner-->
+<!--            $('#banner').slick({-->
+<!--                fade: true,-->
+<!--                autoplay: true,-->
+<!--                dots: false,-->
+<!--                arrows: false,-->
+<!--                zIndex: 3,-->
+<!--                customPaging: function () {-->
+<!--                    return '';-->
+<!--                },-->
+<!--            });-->
+
+<!--        })-->
+<!--    </script>-->
         <script>
         $(function(){
+
+            //查看相关职位
+            findRelevant();
+            //查看相关职位个数
+            findRelevantCount();
+            //查看职位分类
+
+            findProfession();
+
+            //查看工作地点
+            findArea();
+
             // 表格
             $('.p-table1 th:nth-child(1),.p-table1 td:nth-child(1)').css({'padding-left': '20px','text-align': 'left'});
             $('.p-table1 th:last-child,.p-table1 td:last-child').css({'text-align': 'left'});
@@ -611,6 +628,60 @@
         })
 
 
+        //查看相关职位个数
+        function findRelevantCount() {
+            $.ajax({
+                url: "../findRelevantCount",
+                success:function (data) {
+                    for (var i=0;i<data.length;i++){
+                     //   alert(data)
+                    }
+
+                }
+            })
+        }
+
+        //查询相关职位
+         function findRelevant() {
+             $.ajax({
+                 url: "../findRelevant",
+                 success:function (data) {
+                     var tr = "<a href=\"javascript:void(0);\" onclick=\"jobType(this);\"><em>";
+                     var td = "</em><b></b></a>";
+                     var th = "";
+                     for(var i=0;i<data.length;i++){
+                        th += tr+ data[i].type+ td;
+                     }
+
+                     $("#jobType").html(th);
+                 },
+
+
+             })
+         }
+         
+         //查询职位分类
+            function findProfession() {
+                $.ajax({
+                    url: "../findProfession",
+                    success:function (data) {
+
+                        var tr = "<a href=\"javascript:void(0);\" onclick=\"jobCategory(this);\">";
+                        var td = "</a>";
+                        var th = "";
+                        for(var i=0;i<data.length;i++){
+                            th += tr+ data[i].name+ td;
+                        }
+
+                       // alert(th);
+                      $("#positionType").html(th);
+                    },
+
+
+                })
+            }
+
+            //查看工作地点
     </script>
 
 

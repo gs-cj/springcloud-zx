@@ -1,5 +1,7 @@
 package com.jk.controller;
 
+import com.jk.model.ProfeBean;
+import com.jk.model.RelevantBean;
 import com.jk.service.glService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @Controller
 public class ZXController {
@@ -114,4 +118,26 @@ public class ZXController {
     }
 
 
+
+    //查看相关职位个数findRelevantCount
+    @RequestMapping("findRelevantCount")
+    @ResponseBody
+    public String findRelevantCount(){
+        return glService.findRelevantCount();
+    }
+
+
+    //查看相关职位
+    @RequestMapping("/findRelevant")
+    @ResponseBody
+    public List<RelevantBean> findRelevantww(){
+        return glService.findRelevant();
+    }
+
+    //查看职位分类
+    @RequestMapping("/findProfession")
+    @ResponseBody
+    public List<ProfeBean>findProfession(){
+        return glService.findProfession();
+    }
 }

@@ -1,10 +1,14 @@
 package com.jk.service;
 
 import com.jk.mapper.glMapper;
+import com.jk.model.ProfeBean;
+import com.jk.model.RelevantBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 public class glServiceImpl implements glService {
@@ -17,5 +21,26 @@ public class glServiceImpl implements glService {
     @Override
     public String hello() {
         return "访问";
+    }
+
+    @RequestMapping("/findRelevantCount")
+    @ResponseBody
+    @Override
+    public String findRelevantCount() {
+        return glMapper.findRelevantCount();
+    }
+
+    @RequestMapping("/findRelevant")
+    @ResponseBody
+    @Override
+    public List<RelevantBean> findRelevant() {
+        return glMapper.findRelevant();
+    }
+
+    @RequestMapping("/findProfession")
+    @ResponseBody
+    @Override
+    public List<ProfeBean> findProfession() {
+        return glMapper.findProfession();
     }
 }
