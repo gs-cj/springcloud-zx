@@ -7,9 +7,11 @@ import java.io.Serializable;
 @Data
 public class JobBean implements Serializable {
     private Integer id;
-    private String name;
+    private Integer job_id;
+    private Integer relevant_id ;
+    private Integer profession_id ;
+    private String date;
     private String area;
-    private String data;
 
     public Integer getId() {
         return id;
@@ -19,12 +21,36 @@ public class JobBean implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Integer getJob_id() {
+        return job_id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setJob_id(Integer job_id) {
+        this.job_id = job_id;
+    }
+
+    public Integer getRelevant_id() {
+        return relevant_id;
+    }
+
+    public void setRelevant_id(Integer relevant_id) {
+        this.relevant_id = relevant_id;
+    }
+
+    public Integer getProfession_id() {
+        return profession_id;
+    }
+
+    public void setProfession_id(Integer profession_id) {
+        this.profession_id = profession_id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getArea() {
@@ -33,13 +59,5 @@ public class JobBean implements Serializable {
 
     public void setArea(String area) {
         this.area = area;
-    }
-
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
     }
 }
