@@ -1,9 +1,6 @@
 package com.jk.service;
 
-import com.jk.model.AreaBean;
-import com.jk.model.JobbBean;
-import com.jk.model.ProfeBean;
-import com.jk.model.RelevantBean;
+import com.jk.model.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,4 +37,18 @@ public interface glService {
     @RequestMapping("/findJob")
     @ResponseBody
     List<JobbBean> findJob();
+
+
+    @RequestMapping("/findProfessionn")
+    @ResponseBody
+    List<ProfeBean> findProfessionn();
+
+
+    @RequestMapping("/countjob")
+    @ResponseBody
+    String countjob();
+
+    @RequestMapping("/findSheJobName")
+    @ResponseBody
+    List<ReceuBean> findSheJobName();
 }

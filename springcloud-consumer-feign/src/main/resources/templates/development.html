@@ -256,7 +256,7 @@
 
 
     <div class="alljobs-list bgc-white">
-        <div class="tit">相关职位 : <em></em></div>
+        <div class="tit">相关职位 : <font id="countjob" color="red" size="6"></font><em></em></div>
         <div class="list" id="jobType">
 
 
@@ -413,7 +413,6 @@
 
                 <div id = "jobnamee" class="table"></div>
 
-            </div>
         </div>
         <!-- !end 表格 -->
 
@@ -617,7 +616,6 @@
             //查看相关职位个数
             findRelevantCount();
             //查看职位分类
-
             findProfession();
 
             //查看工作地点
@@ -626,6 +624,8 @@
             //查看职位名称
             findJob();
 
+            //查询相关职位个数
+            findJobCount();
 
             // 表格
             $('.p-table1 th:nth-child(1),.p-table1 td:nth-child(1)').css({'padding-left': '20px','text-align': 'left'});
@@ -730,6 +730,19 @@
         //     autoclose: true,//选中自动关闭
         //     todayBtn: true//显示今日按钮
         // });
+
+
+        //查询相关职位个数
+        function findJobCount() {
+
+            $.ajax({
+                url: "../countjob",
+                success:function (data) {
+
+                            $("#countjob").html(data);
+                }
+            })
+        }
     </script>
 
 

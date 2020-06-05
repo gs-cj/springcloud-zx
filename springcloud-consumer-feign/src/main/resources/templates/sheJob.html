@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <base href="<%=basePath%>">
-
+    <meta charset="UTF-8">
+    <title>Title</title>
     <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap.css}">
     <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap-table.css}">
     <link rel="stylesheet" th:href="@{/js/bootstrap.css}">
     <link rel="stylesheet" th:href="@{/js/bootstrap-table.css}">
-
-    <title>Title</title>
 </head>
 <body>
+
 <div class="container">
 
 
     <table class="table table-hover">
         <tr>
             <th>职位名称</th>
+            <th>工作经验</th>
             <th>工作地点</th>
             <th>更新时间</th>
             <th>   </th>
         </tr>
         <tr th:each="list:${list}">
-            <td th:text="${list.jobname}"></td>
-            <td th:text="${list.area}"></td>
-            <td th:text="${list.date}"></td>
+            <td th:text="${list.jobtitle}"></td>
+            <td th:text="${list.undergo}"></td>
+            <td th:text="${list.jobarea}"></td>
+            <td th:text="${list.jobdate}"></td>
 
         </tr>
     </table>
 </div>
-
 </body>
 </html>

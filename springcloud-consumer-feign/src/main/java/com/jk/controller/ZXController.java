@@ -1,9 +1,6 @@
 package com.jk.controller;
 
-import com.jk.model.AreaBean;
-import com.jk.model.ProfeBean;
-import com.jk.model.JobbBean;
-import com.jk.model.RelevantBean;
+import com.jk.model.*;
 import com.jk.service.glService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -143,6 +140,13 @@ public class ZXController {
         return glService.findProfession();
     }
 
+    //社会招聘查看职位分类
+    @RequestMapping("/findProfessionn")
+    @ResponseBody
+    public List<ProfeBean>findProfessionn(){
+        return glService.findProfessionn();
+    }
+
     //查看工作地点
     @RequestMapping("/findArea")
     @ResponseBody
@@ -158,8 +162,26 @@ public class ZXController {
 
         ModelAndView show = new ModelAndView();
         show.addObject("list",list);
-
         show.setViewName("show");
         return show;
+    }
+
+    //查看职位个数
+    @RequestMapping("countjob")
+    @ResponseBody
+    public String countjob(){
+        return glService.countjob();
+    }
+
+    //查看社会招聘职位
+    @RequestMapping("findSheJobName")
+    @ResponseBody
+    public ModelAndView findSheJobName(){
+        ModelAndView model = new ModelAndView("sheJob");
+        List<ReceuBean>list =   glService.findSheJobName();
+
+        model.addObject("list",list);
+        return model;
+
     }
 }

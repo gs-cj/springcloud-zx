@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="less.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/less.css">
     <script type="text/javascript" src="jquery.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/jquery.js"></script>
 
-    <script type="text/javascript" src="jquery-1.8.0.js"></script>
     <script type="text/javascript" src="lib.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/lib.js"></script>
     <link rel="stylesheet" href="style-pp.css" tppabs="http://job.zte.com.cn/Asserts/JobOffers/css/style-pp.css" />
 </head>
@@ -247,22 +246,22 @@
                 </div>
                 <p class="p">
                     <span class="txt">热门城市：</span>
-                    <span class="list">
-                        <a href="javascript:void(0);" onclick="social_search();">北京</a>
-                        <a href="javascript:void(0);" onclick="social_search();">上海</a>
-                        <a href="javascript:void(0);" onclick="social_search();">广州</a>
-                        <a href="javascript:void(0);" onclick="social_search();">深圳</a>
-                        <a href="javascript:void(0);" onclick="social_search();">武汉</a>
+                    <span class="list" id = "cityy">
+<!--                        <a href="javascript:void(0);" onclick="social_search();">北京</a>-->
+<!--                        <a href="javascript:void(0);" onclick="social_search();">上海</a>-->
+<!--                        <a href="javascript:void(0);" onclick="social_search();">广州</a>-->
+<!--                        <a href="javascript:void(0);" onclick="social_search();">深圳</a>-->
+<!--                        <a href="javascript:void(0);" onclick="social_search();">武汉</a>-->
                     </span>
                 </p>
                 <div class="lastline">
                     <p class="p">
                         <span class="txt">职位分类：</span>
-                        <span class="list">
-                            <a href="javascript:void(0);" onclick="social_search();">产品研发</a>
-                            <a href="javascript:void(0);" onclick="social_search();">线下销售</a>
-                            <a href="javascript:void(0);" onclick="social_search();">软件技术</a>
-                            <a href="javascript:void(0);" onclick="social_search();">客服服务</a>
+                        <span class="list" id = "professionn">
+<!--                            <a href="javascript:void(0);" onclick="social_search();">产品研发</a>-->
+<!--                            <a href="javascript:void(0);" onclick="social_search();">线下销售</a>-->
+<!--                            <a href="javascript:void(0);" onclick="social_search();">软件技术</a>-->
+<!--                            <a href="javascript:void(0);" onclick="social_search();">客服服务</a>-->
                         </span>
                     </p>
                     <div class="tip">招聘问题 <a href="help-center-1.htm" tppabs="http://job.zte.com.cn/social-recruitment/help-center">帮助中心</a> 帮你解答疑惑</div>
@@ -271,7 +270,8 @@
         <div class="c"></div>
     </div>
     <!-- !end 职位搜索 -->
-    <div class="p-table1box">
+    <div class="p-table1box" id="jobnamee">
+        <input type="text" value="2">
     </div>
     <!-- !end 表格 -->
     <div class="pages pages1">
@@ -491,25 +491,96 @@
     <a href="javascript:;" class="goTop ani"></a>
     <!-- 返回顶部 end -->
 
+    <script type="text/javascript" src="jquery-1.8.0.js"></script>
+
     <link rel="stylesheet" href="slick.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/slick.css">
     <script src="slick.min.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/slick.min.js"></script>
-    <script>
-        $(document).ready(function ($) {
+<!--    <script>-->
+<!--        $(document).ready(function ($) {-->
 
-            // banner
-            $('#banner').slick({
-                fade: true,
-                autoplay: true,
-                dots: false,
-                arrows: false,
-                zIndex: 3,
-                customPaging: function () {
-                    return '';
-                },
-            });
+<!--            // banner-->
+<!--            $('#banner').slick({-->
+<!--                fade: true,-->
+<!--                autoplay: true,-->
+<!--                dots: false,-->
+<!--                arrows: false,-->
+<!--                zIndex: 3,-->
+<!--                customPaging: function () {-->
+<!--                    return '';-->
+<!--                },-->
+<!--            });-->
 
-        })
-    </script>
+<!--        })-->
 
+<!--      -->
+<!--    </script>-->
+
+        <script>
+            $(function () {
+                //查看工作地点
+                     findArea();
+
+                //查看职位分类
+                findProfession();
+
+                //社会招聘查看名称
+                findJobName();
+            })
+            //查看工作地点
+            function findArea() {
+                $.ajax({
+                    url: "../findArea",
+                    success:function (data) {
+                        var tr = "<a href=\"javascript:void(0);\" onclick=\'jobCity(this);\'> ";
+                        var tt = "";
+                        var td = "</a>";
+                        var th = "";
+                        for(var i=0;i<data.length;i++){
+
+                            tt = data[i].jobid
+                            th += tr +data[i].areaname+ td;
+                        }
+
+                        //alert(tt);
+                        $("#cityy").html(th);
+                    },
+
+
+                })
+            }
+            //查询职位分类
+            function findProfession() {
+                $.ajax({
+                    url: "../findProfessionn",
+                    success:function (data) {
+
+                        var tr = "<a href=\"javascript:void(0);\" onclick=\"jobCategory(this);\">";
+                        var td = "</a>";
+                        var th = "";
+                        for(var i=0;i<data.length;i++){
+                            th += tr+ data[i].name+ td;
+                        }
+
+                        // alert(th);
+                        $("#professionn").html(th);
+                    },
+
+
+                })
+            }
+
+            //社会招聘查看名称
+            function findJobName(){
+                $.ajax({
+                    url: "../findSheJobName",
+                    success:function (data) {
+
+                        // alert(data)
+                        $("#jobnamee").html(data);
+                    }
+                })
+            }
+
+        </script>
 </body>
 </html>

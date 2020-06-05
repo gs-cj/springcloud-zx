@@ -1,10 +1,7 @@
 package com.jk.service;
 
 import com.jk.mapper.glMapper;
-import com.jk.model.AreaBean;
-import com.jk.model.JobbBean;
-import com.jk.model.ProfeBean;
-import com.jk.model.RelevantBean;
+import com.jk.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -57,6 +54,27 @@ public class glServiceImpl implements glService {
     @Override
     public List<JobbBean> findJob() {
         return glMapper.findJob();
+    }
+
+    @RequestMapping("/findProfessionn")
+    @ResponseBody
+    @Override
+    public List<ProfeBean> findProfessionn() {
+        return glMapper.findProfessionn();
+    }
+
+    @RequestMapping("/countjob")
+    @ResponseBody
+    @Override
+    public String countjob() {
+        return glMapper.countjob();
+    }
+
+    @RequestMapping("/findSheJobName")
+    @ResponseBody
+    @Override
+    public List<ReceuBean> findSheJobName() {
+        return glMapper.findSheJobName();
     }
 
 

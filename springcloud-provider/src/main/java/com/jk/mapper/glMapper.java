@@ -1,9 +1,6 @@
 package com.jk.mapper;
 
-import com.jk.model.AreaBean;
-import com.jk.model.JobbBean;
-import com.jk.model.ProfeBean;
-import com.jk.model.RelevantBean;
+import com.jk.model.*;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -22,20 +19,26 @@ public interface glMapper {
     @Select("select * from t_relevant")
     List<RelevantBean> findRelevant();
 
-    @Select("select * from t_profession")
+    @Select("select * from t_profession  where type=1 or type = 0 ")
     List<ProfeBean> findProfession();
 
     @Select("select * from t_workplace")
     List<AreaBean> findArea();
 
-    @Select("select count(1) from t_job  ")
-    int findJobCount(HashMap<String, Object> params);
-
     @Select("SELECT * from t_jobb")
     List<JobbBean> findJob();
+
+    @Select("select * from t_profession  where type=2 or type = 0 ")
+    List<ProfeBean> findProfessionn();
+
+    @Select("select count(1) from t_jobb")
+    String countjob();
+
+
+    @Select("SELECT * from t_recruitment")
+    List<ReceuBean> findSheJobName();
 
 //    @Select("SELECT * from t_job limit 2,1")
 //    List<JobBean> findJobList(Integer page, Integer rows, JobBean jobBean);
 
-    //List<JobBean> findJobList(HashMap<String, Object> params);
 }

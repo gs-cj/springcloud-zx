@@ -3,19 +3,19 @@ package com.jk.model;
 import java.io.Serializable;
 
 public class JobbBean implements Serializable {
-    private Integer id;
+    private Integer jobid;
     private String jobname;
     private String area;
     private String date;
     private Integer relevantid;
     private Integer professionid;
 
-    public Integer getId() {
-        return id;
+    public Integer getJobid() {
+        return jobid;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setJobid(Integer jobid) {
+        this.jobid = jobid;
     }
 
     public String getJobname() {
