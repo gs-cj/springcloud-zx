@@ -15,10 +15,14 @@
     <link rel="stylesheet" href="lib.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/lib.css" />
     <link rel="stylesheet" href="style.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/style.css" />
     <link rel="stylesheet" href="less.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/less.css">
-
     <script type="text/javascript" src="lib.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/lib.js"></script>
     <link rel="stylesheet" href="style-pp.css" tppabs="http://job.zte.com.cn/Asserts/JobOffers/css/style-pp.css" />
-<style>
+
+    <script src="../js/jquery.min.js"></script>
+
+
+
+    <style>
    body{
     background-color: #f8f8f8;
     }
@@ -406,7 +410,9 @@
         </div>
         <div id="job-Div">
             <div class="p-table1box">
-                
+
+                <div id = "jobnamee" class="table"></div>
+
             </div>
         </div>
         <!-- !end 表格 -->
@@ -617,6 +623,10 @@
             //查看工作地点
             findArea();
 
+            //查看职位名称
+            findJob();
+
+
             // 表格
             $('.p-table1 th:nth-child(1),.p-table1 td:nth-child(1)').css({'padding-left': '20px','text-align': 'left'});
             $('.p-table1 th:last-child,.p-table1 td:last-child').css({'text-align': 'left'});
@@ -700,7 +710,26 @@
 
                 })
             }
-            
+
+            //查看职位
+            function findJob() {
+
+            $.ajax({
+                   url: "../findJob",
+                    success:function (data) {
+                        $("#jobnamee").html(data);
+                   }
+                })
+            }
+
+        // $('.date').datetimepicker({
+        //     language: 'zh-CN',//显示中文
+        //     format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        //     minView: "month",//设置只显示到月份
+        //     initialDate: new Date(),//初始化当前日期
+        //     autoclose: true,//选中自动关闭
+        //     todayBtn: true//显示今日按钮
+        // });
     </script>
 
 

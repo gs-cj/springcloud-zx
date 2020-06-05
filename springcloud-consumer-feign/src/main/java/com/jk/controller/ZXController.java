@@ -2,16 +2,17 @@ package com.jk.controller;
 
 import com.jk.model.AreaBean;
 import com.jk.model.ProfeBean;
+import com.jk.model.JobbBean;
 import com.jk.model.RelevantBean;
 import com.jk.service.glService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class ZXController {
@@ -146,6 +147,19 @@ public class ZXController {
     @RequestMapping("/findArea")
     @ResponseBody
     public List<AreaBean>findArea(){
+
         return glService.findArea();
+    }
+
+    //查看职位
+    @RequestMapping("/findJob")
+    public ModelAndView findJob(){
+       List<JobbBean>list = glService.findJob();
+
+        ModelAndView show = new ModelAndView();
+        show.addObject("list",list);
+
+        show.setViewName("show");
+        return show;
     }
 }

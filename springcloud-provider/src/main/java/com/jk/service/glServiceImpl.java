@@ -2,11 +2,11 @@ package com.jk.service;
 
 import com.jk.mapper.glMapper;
 import com.jk.model.AreaBean;
+import com.jk.model.JobbBean;
 import com.jk.model.ProfeBean;
 import com.jk.model.RelevantBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -51,4 +51,13 @@ public class glServiceImpl implements glService {
     public List<AreaBean> findArea() {
         return glMapper.findArea();
     }
+
+    @RequestMapping("/findJob")
+    @ResponseBody
+    @Override
+    public List<JobbBean> findJob() {
+        return glMapper.findJob();
+    }
+
+
 }

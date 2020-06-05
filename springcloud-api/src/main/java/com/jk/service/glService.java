@@ -1,10 +1,10 @@
 package com.jk.service;
 
 import com.jk.model.AreaBean;
+import com.jk.model.JobbBean;
 import com.jk.model.ProfeBean;
 import com.jk.model.RelevantBean;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -36,4 +36,8 @@ public interface glService {
     @RequestMapping("/findArea")
     @ResponseBody
     List<AreaBean> findArea();
+
+    @RequestMapping("/findJob")
+    @ResponseBody
+    List<JobbBean> findJob();
 }

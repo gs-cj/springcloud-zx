@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base href="<%=basePath%>">
+
+    <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap-table.css}">
+    <link rel="stylesheet" th:href="@{/js/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/js/bootstrap-table.css}">
+
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+
+    <a th:href="@{/toAdd}" class="btn btn-info">新增</a>
+
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>职位名称</th>
+            <th>工作地点</th>
+            <th>更新时间</th>
+            <th>   </th>
+        </tr>
+        <tr th:each="list:${list}">
+            <td></td>
+            <td th:text="${list.jobname}"></td>
+            <td th:text="${list.area}"></td>
+            <td th:text="${list.date}"></td>
+
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
