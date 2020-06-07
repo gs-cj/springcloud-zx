@@ -201,8 +201,20 @@ public class ZXController {
     @RequestMapping("/finareaid")
     @ResponseBody
     public ModelAndView finareaid(@RequestParam("id")Integer id){
+
         ModelAndView view = new ModelAndView();
         List<ReceuBean>list = glService.finareaid(id);
+        view.addObject("list", list);
+        view.setViewName("sheJobb");
+        return view;
+    }
+    @RequestMapping("/finareaidd")
+    @ResponseBody
+    public ModelAndView finareaidd(@RequestParam("proid")Integer proid){
+
+        System.out.println(proid + "---------------");
+        ModelAndView view = new ModelAndView();
+        List<ReceuBean>list = glService.finareaidd(proid);
         view.addObject("list", list);
         view.setViewName("sheJobb");
         return view;

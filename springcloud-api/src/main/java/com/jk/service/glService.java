@@ -57,4 +57,8 @@ public interface glService {
     @RequestMapping("/finareaid")
     @ResponseBody
     List<ReceuBean> finareaid(@RequestParam("id") Integer id);
+
+    @RequestMapping("/finareaidd")
+    @ResponseBody
+    List<ReceuBean> finareaidd(@RequestParam("proid") Integer proid);
 }

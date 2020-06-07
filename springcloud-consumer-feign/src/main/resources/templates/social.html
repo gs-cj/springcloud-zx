@@ -559,12 +559,11 @@
                         var td = "</a>";
                         var th = "";
                         for(var i=0;i<data.length;i++){
-                            var  tr = "<a onclick=\'jobCityy("+data[i].name+");\'> ";
+                            var  tr = "<a onclick=\'jobCityy("+data[i].id+");\'> ";
 
                             th += tr+ data[i].name+ td;
                         }
 
-                        // alert(th);
                         $("#professionn").html(th);
                     },
 
@@ -587,17 +586,24 @@
 
             //根据地址条查
             function jobCity(areaid,proid) {
-                alert(areaid +"---------" + proid);
                 $.ajax({
                     url :"../finareaid",
-                    data:{id:areaid,proid:proid},
+                    data:{id:areaid},
                     success:function (data) {
                         $("#jobnamee").html(data);
                     }
                 })
             }
+
+            //根据职业条查
             function jobCityy(proid) {
-                alert( proid);
+                $.ajax({
+                    url :"../finareaidd",
+                    data:{proid:proid},
+                    success:function (data) {
+                        $("#jobnamee").html(data);
+                    }
+                })
 
             }
         </script>

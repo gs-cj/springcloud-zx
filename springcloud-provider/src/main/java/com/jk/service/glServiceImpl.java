@@ -87,8 +87,14 @@ public class glServiceImpl implements glService {
     @ResponseBody
     @Override
     public List<ReceuBean> finareaid(@RequestParam("id") Integer id) {
-        System.out.println(id + "------------------------------------");
         return glMapper.finareaid(id);
+    }
+
+    @RequestMapping("/finareaidd")
+    @ResponseBody
+    @Override
+    public List<ReceuBean> finareaidd(@RequestParam("proid") Integer proid) {
+        return glMapper.finareaidd(proid);
     }
 
 

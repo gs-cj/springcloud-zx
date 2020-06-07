@@ -52,6 +52,16 @@ public interface glMapper {
             " </script>" )
     List<ReceuBean> finareaid(@RequestParam("id") Integer id);
 
+
+    @Select("<script> " +
+            "select * from t_recruitment " +
+            "where 1=1" +
+            " <if test = '#{proid} != null'>" +
+            " and professid = #{proid}" +
+            " </if>" +
+            " </script>" )
+    List<ReceuBean> finareaidd(@RequestParam("proid") Integer proid);
+
 //    @Select("<script> " +
 //            "SELECT * FROM `1908_course`" +
 //            " WHERE 1=1 " +
