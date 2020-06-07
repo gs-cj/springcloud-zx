@@ -177,6 +177,7 @@ public class ZXController {
     @RequestMapping("findSheJobName")
     @ResponseBody
     public ModelAndView findSheJobName(){
+     //   ModelAndView model = new ModelAndView("sheJob");
         ModelAndView model = new ModelAndView("sheJob");
         List<ReceuBean>list =   glService.findSheJobName();
 
@@ -184,4 +185,27 @@ public class ZXController {
         return model;
 
     }
+
+    //查看职位详情
+    @RequestMapping("/findjobbid")
+    @ResponseBody
+    public ModelAndView findjobbid(@RequestParam Integer id){
+        ModelAndView details = new ModelAndView("details");
+        ReceuBean receu = glService.findSheJobNamee(id);
+        details.addObject("receu",receu);
+
+        return details;
+    }
+
+    //职位名称条查
+    @RequestMapping("/finareaid")
+    @ResponseBody
+    public ModelAndView finareaid(@RequestParam("id")Integer id){
+        ModelAndView view = new ModelAndView();
+        List<ReceuBean>list = glService.finareaid(id);
+        view.addObject("list", list);
+        view.setViewName("sheJobb");
+        return view;
+    }
+
 }

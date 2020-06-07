@@ -77,5 +77,19 @@ public class glServiceImpl implements glService {
         return glMapper.findSheJobName();
     }
 
+    @RequestMapping("/findjobbid")
+    @ResponseBody
+    public ReceuBean findSheJobNamee(Integer id) {
+        return glMapper.findSheJobNamee(id);
+    }
+
+    @RequestMapping("/finareaid")
+    @ResponseBody
+    @Override
+    public List<ReceuBean> finareaid(@RequestParam("id") Integer id) {
+        System.out.println(id + "------------------------------------");
+        return glMapper.finareaid(id);
+    }
+
 
 }

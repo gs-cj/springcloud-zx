@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <script th:src="@{/js/jquery.min1.10.2.js}" src="../static/js/jquery.min1.10.2.js"></script>
+    <link th:href="@{/js/bootstrap3/css/bootstrap.css}" href="../static/js/bootstrap3/css/bootstrap.css"
+          rel="stylesheet"/>
+    <link th:href="@{/js/bootstrap-table/bootstrap-table.css}" href="../static/js/bootstrap-table/bootstrap-table.css"
+          rel="stylesheet"/>
+    <script th:src="@{/js/bootstrap-table/bootstrap-table.js}"
+            src="../static/js/bootstrap-table/bootstrap-table.js"></script>
+    <script th:src="@{/js/bootstrap-table/locale/bootstrap-table-zh-CN.js}"
+            src="../static/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script th:src="@{/js/bootstrap3/js/bootstrap.js}" src="../static/js/bootstrap3/js/bootstrap.js"></script>
+    <script th:src="@{/js/bootstrap-bootbox/bootbox.js}" src="../static/js/bootstrap-bootbox/bootbox.js"></script>
+</head>
+<body>
+
+
+<table id="dataGrid"></table>
+</body>
+
+<script th:inline="javascript" type="text/javascript">
+
+    $(function () {
+
+        //加载数据
+        testjob();
+    })
+
+    function testjob() {
+        $("#musicTable").bootstrapTable({
+            url:'../testjob',
+            pagination:true,
+            toolbar:'#toolbar',
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+            pageList:[5, 10, 20, 50],//分页组件
+            pageNumber:1,
+            pageSize:5,//默认每页条数
+            method:'post',
+            contentType:'application/x-www-form-urlencoded',//post请求按照表单方式
+            clickToSelect: true, //是否启用点击选中行
+            striped:true,//斑马线
+            queryParams:function(){
+                return {
+                    page:this.pageNumber,
+                    rows:this.pageSize,
+                };
+            },
+            columns:[
+                {checkbox:true},
+                {field:'id',title:'音乐名'},
+                // {field:'author',title:'作者'},
+                // {field:'img',title:'专辑封面',formatter:function(value){
+                //         return '<img width="50px" height="50px" src="'+value+'"/>'
+                //     }},
+                // {field:'createTime',title:'创建时间'},
+                // {field:'typeName',title:'类型'},
+                // {field:'price',title:'价格'},
+                // {field:'cz',title:'操作',formatter:function(value,row,index){
+                //         return '<a href="javascript:editMusic('+row.id+');">修改</a>'
+                //     }},
+            ]
+        })
+    }
+</script>
+</html>

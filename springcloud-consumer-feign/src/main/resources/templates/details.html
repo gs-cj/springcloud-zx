@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap-table.css}">
+    <link rel="stylesheet" th:href="@{/js/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/js/bootstrap-table.css}">
+</head>
+<body>
+
+<div class="table-responsive">
+
+
+    <table class="table text-nowrap">
+        <thead>
+
+        <tr th:each="list:${receu}">
+            <td>招聘职位</td>
+            <td th:text="${list.jobtitle}"></td>
+        </tr>
+        <tr th:each="list:${receu}">
+            <td>工作地点</td>
+            <td th:text="${list.jobarea}"></td>
+        </tr>
+        <tr th:each="list:${receu}">
+            <td>招聘人数</td>
+            <td th:text="${list.undergo}"></td>
+        </tr>
+        <tr th:each="list:${receu}">
+            <td>发布日期</td>
+            <td th:text="${list.startdate}"></td>
+        </tr>
+        <tr th:each="list:${receu}">
+            <td>截止日期</td>
+            <td th:text="${list.enddate}"></td>
+        </tr>
+        <tr th:each="list:${receu}">
+            <td>主要职责</td>
+            <td th:text="${list.duty}"></td>
+        </tr>
+        <tr th:each="list:${receu}">
+            <td>任职要求</td>
+            <td th:text="${list.claim}"></td>
+        </tr>
+
+        <tr>
+            <td >
+                <button onclick="jobApplication()" type="button" class="btn btn-info">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    申请职位
+                </button>
+            </td>
+<!--            <td >-->
+<!--                <button onclick="closee()" type="button" class="btn btn-info">-->
+<!--                    <i class="glyphicon glyphicon-plus"></i>-->
+<!--                    返回-->
+<!--                </button>-->
+<!--            </td>-->
+        </tr>
+
+
+    </table>
+</div>
+</body>
+<script>
+
+    function jobApplication() {
+        alert(555);
+    }
+    function closee() {
+       $.ajax({
+            url:"../toSocial",
+           success:function () {
+               alert("返回成功")
+           }
+        })
+    }//    @Select("<script> " +
+
+</script>
+
+</html>
+
+

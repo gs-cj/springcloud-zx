@@ -531,17 +531,19 @@
                 $.ajax({
                     url: "../findArea",
                     success:function (data) {
-                        var tr = "<a href=\"javascript:void(0);\" onclick=\'jobCity(this);\'> ";
                         var tt = "";
                         var td = "</a>";
                         var th = "";
-                        for(var i=0;i<data.length;i++){
+                  //  var tr = "<a href=\"javascript:void(0);\" onclick=\'jobCity(this);\'> ";
 
-                            tt = data[i].jobid
+                        var ty = "";
+                        for(var i=0;i<data.length;i++){
+                            var  tr = "<a onclick=\'jobCity("+data[i].areaid+");\'> ";
+                            tt = data[i].areaid
                             th += tr +data[i].areaname+ td;
+
                         }
 
-                        //alert(tt);
                         $("#cityy").html(th);
                     },
 
@@ -554,10 +556,11 @@
                     url: "../findProfessionn",
                     success:function (data) {
 
-                        var tr = "<a href=\"javascript:void(0);\" onclick=\"jobCategory(this);\">";
                         var td = "</a>";
                         var th = "";
                         for(var i=0;i<data.length;i++){
+                            var  tr = "<a onclick=\'jobCityy("+data[i].name+");\'> ";
+
                             th += tr+ data[i].name+ td;
                         }
 
@@ -581,6 +584,22 @@
                 })
             }
 
+
+            //根据地址条查
+            function jobCity(areaid,proid) {
+                alert(areaid +"---------" + proid);
+                $.ajax({
+                    url :"../finareaid",
+                    data:{id:areaid,proid:proid},
+                    success:function (data) {
+                        $("#jobnamee").html(data);
+                    }
+                })
+            }
+            function jobCityy(proid) {
+                alert( proid);
+
+            }
         </script>
 </body>
 </html>

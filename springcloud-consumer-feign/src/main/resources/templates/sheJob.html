@@ -10,25 +10,42 @@
 </head>
 <body>
 
-<div class="container">
+<div class="table-responsive">
 
 
-    <table class="table table-hover">
-        <tr>
-            <th>职位名称</th>
-            <th>工作经验</th>
-            <th>工作地点</th>
-            <th>更新时间</th>
-            <th>   </th>
-        </tr>
-        <tr th:each="list:${list}">
-            <td th:text="${list.jobtitle}"></td>
-            <td th:text="${list.undergo}"></td>
-            <td th:text="${list.jobarea}"></td>
-            <td th:text="${list.jobdate}"></td>
+    <table class="table text-nowrap">
+        <thead>
+            <tr>
+                <th>职位名称</th>
+                <th>职位名称</th>
+                <th>工作经验</th>
+                <th>工作地点</th>
+                <th>更新时间</th>
+                <th>   </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="list:${list}">
+                <td th:text="${list.id}"></td>
+                <td th:text="${list.jobtitle}"></td>
+                <td th:text="${list.undergo}"></td>
+                <td th:text="${list.jobarea}"></td>
+                <td th:text="${list.jobdate}"></td>
+                <td >
+                 <!--   <a  href = "javaScript:findjobbid(userId=${list.id})">查看详情</a>-->
+                    <a th:href="@{/findjobbid(id=${list.id})}">查看详情<</a>
+                </td>
+            </tr>
 
-        </tr>
+        </tbody>
     </table>
 </div>
 </body>
+
+<script>
+    $(function () {
+    })
+
+
+</script>
 </html>

@@ -1,6 +1,8 @@
 package com.jk.model;
 
-public class ReceuBean {
+import java.io.Serializable;
+
+public class ReceuBean implements Serializable {
     private Integer id;
     private String jobtitle;
     private String undergo;

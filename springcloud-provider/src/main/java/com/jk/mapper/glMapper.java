@@ -3,6 +3,7 @@ package com.jk.mapper;
 import com.jk.model.*;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.HashMap;
 import java.util.List;
@@ -38,6 +39,26 @@ public interface glMapper {
     @Select("SELECT * from t_recruitment")
     List<ReceuBean> findSheJobName();
 
+
+    @Select("SELECT * from t_recruitment where id = #{value}")
+    ReceuBean findSheJobNamee(@RequestParam Integer id);
+
+    @Select("<script> " +
+            "select * from t_recruitment " +
+            "where 1=1" +
+            " <if test = '#{id} != null'>" +
+            " and workid = #{id}" +
+            " </if>" +
+            " </script>" )
+    List<ReceuBean> finareaid(@RequestParam("id") Integer id);
+
+//    @Select("<script> " +
+//            "SELECT * FROM `1908_course`" +
+//            " WHERE 1=1 " +
+//            "<if test='coursetitle != null and coursetitle.length > 0'> " +
+//            "and coursetitle like concat('%',#{coursetitle},'%') " +
+//            "</if>"  +
+//            "</script>")
 //    @Select("SELECT * from t_job limit 2,1")
 //    List<JobBean> findJobList(Integer page, Integer rows, JobBean jobBean);
 
