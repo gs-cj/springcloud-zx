@@ -1,10 +1,12 @@
 package com.jk.controller;
 
+import com.jk.model.MessageBean;
 import com.jk.service.glService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class ZXController {
@@ -110,6 +112,25 @@ public class ZXController {
     public String people(){
         return "people-in-zte";
     }
+
+
+    @RequestMapping("savaMessage")
+    @ResponseBody
+    public void savaMessage(MessageBean messageBean){
+        glService.savaMessage(messageBean);
+    }
+
+
+    @RequestMapping("/tolvli")
+    public String tolvli(){
+        return "lvli";
+    }
+
+    @RequestMapping("/tonydq")
+    public String tonydq(){
+        return "zhiwei";
+    }
+
 
 
     //求span个数

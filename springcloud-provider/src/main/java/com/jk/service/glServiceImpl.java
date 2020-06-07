@@ -1,14 +1,14 @@
 package com.jk.service;
 
 import com.jk.mapper.glMapper;
+import com.jk.model.MessageBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class glServiceImpl implements glService {
     @Autowired
-    private glMapper glMapper;
+    private glMapper glmapper;
 
 
     @Override
@@ -21,5 +21,12 @@ public class glServiceImpl implements glService {
     @Override
     public String hello() {
         return "访问";
+    }
+
+    @RequestMapping("/savaMessage")
+    @ResponseBody
+    @Override
+    public void savaMessage(@RequestBody MessageBean messageBean) {
+        glmapper.savaMessage(messageBean);
     }
 }

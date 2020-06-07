@@ -1,0 +1,1295 @@
+<!DOCTYPE html><!-- saved from url=(0059)http://zte.zhiye.com/Portal/Resume/ResumeItem?jid=350345684 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>申请职位</title>
+    <script type="text/javascript">
+        try {
+            top.location.hostname;
+            if (top.location.hostname != window.location.hostname) {
+                top.location.href = window.location.href;
+
+            }
+            if(window.location.host == 'campus.hikvision.com' || window.location.host == 'grcbank.zhiye.com'){
+                window.hikvision = true;
+            }
+        }
+        catch (e) {
+            top.location.href = window.location.href;
+        }
+    </script>
+
+    <!--通用样式Css和脚本-->
+    <script type="text/javascript">var $bs_vars={'st':'//stc.beisen.com/','version':'2019.10.21.001','constSite':'//const.italent.cn'};function vstr(str) {
+         if (typeof ($bs_vars) == 'undefine')
+             return str;
+         var result = str;
+         for (var v in $bs_vars) {
+             var regex = new RegExp('\\$\\{' + v.toString() + '\\}|\\{' + v.toString() + '\\}', 'igm');
+             result = result.replace(regex, $bs_vars[v]);
+         }
+         return result;
+     };</script>
+    <!--引用静态文件:requirejs-->
+<script type="text/javascript" src="../files/require.js.ia"></script>
+    <!--引用静态文件:skin_default-->
+<link href="../files/common.css" rel="stylesheet" type="text/css"><link href="../files/templateform.css" rel="stylesheet" type="text/css"><link href="../files/controls.css" rel="stylesheet" type="text/css"><link href="../files/default.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="../files/base_new.js.ia"></script><script type="text/javascript" src="../files/widgetnew.js.ia"></script><script type="text/javascript" src="../files/common.js.ia"></script><script type="text/javascript" src="../files/bsdialog.js.ia"></script><script type="text/javascript" src="../files/common.js(1).ia"></script><script type="text/javascript" src="../files/controls.js.ia"></script><script type="text/javascript" src="../files/underscore.js.ia"></script><script type="text/javascript" src="../files/school-select-v2.js.ia"></script><link href="../files/school-select-v2.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="../files/structured-data-select.js.ia"></script><link href="../files/structured-data-select.css" rel="stylesheet" type="text/css">
+    <!--引用静态文件:skin_new_css-->
+<link href="../files/main.css" rel="stylesheet" type="text/css">
+    <!--引用静态文件:new_dialog_js-->
+<script type="text/javascript" src="../files/dialog_js.js.ia"></script>
+    <!--引用静态文件:tripledesjs-->
+<script type="text/javascript" src="../files/tripledes.js.ia"></script>
+    <!--引用静态文件:control_js-->
+<script type="text/javascript" src="../files/industry-select.js.ia"></script>
+    <!--引用静态文件:control_css-->
+<link href="../files/industrySelect.css" rel="stylesheet" type="text/css">
+    <!--产品头部CSS和脚本-->
+    <script src="../files/wdatepicker.js.ia"></script>
+    <link href="../files/wdatepicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+       //mobileUrl rewrite
+       function goPAGE() {
+		    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+          var appSrcMetas = document.getElementsByName('mobileUrl');
+			      if(appSrcMetas.length > 0) {
+		       		  window.location.href = appSrcMetas[0].getAttribute("content");
+			      }
+		    }
+		  }
+      goPAGE();
+
+       //opsapi
+       window.PERF_START=new Date;
+       function _splash(page, uid, tid, pid){
+        uid =  uid || 0;  // 这里是用户ID
+        tid =  tid || 0;   // 这里是租户ID
+        pid =  pid || 'unknown';  // 这里是项目标识
+        var now = new Date;
+        var start = window.PERF_START || now;
+        var diff = now - start;
+        var rand = Math.round(Math.random()*1000000);
+        var url= document.location.protocol+'//'+document.location.host+'/opsapi/AddLog?appName='+pid+'&label=%5Bsplash%5D%20'+page+'&uid='+uid+'&tid='+tid+'&time='+diff+'&type=1&sid='+rand+'&step=0';
+        var img = new Image;
+        img.src = url;
+    }
+    </script>
+    <!--引用静态文件:front_css-->
+<link href="../files/front.css" rel="stylesheet" type="text/css">
+
+
+    <style type="text/css">
+        .checkbox_list {
+            float: left;
+            width: 450px;
+        }
+
+        .form_container ul li span.start_date {
+            width: 80px;
+        }
+
+        .form_container ul li span.end_date {
+            width: 70px;
+        }
+
+        .dl_logo img {
+            width: auto !important;
+            height: 40px !important;
+            margin: 16px 0 0 30px !important;
+        }
+
+    </style>
+
+    
+
+    <!--<script type="text/javascript" id="user-info-header">
+        window["foreignMobileRegex"] = "^\\+?(00){1,2}(9[976]\\d|8[987530]\\d|6[987]\\d|5[90]\\d|42\\d|3[875]\\d|2[98654321]\\d|9[8543210]|8[421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)\\d{1,14}$|^09\\d{8,20}$";
+        window["foreignMobileRegex"] || (window["foreignMobileRegex"] = "^\\+?(00){1,2}(9[976]\\d|8[987530]\\d|6[987]\\d|5[90]\\d|42\\d|3[875]\\d|2[98654321]\\d|9[8543210]|8[421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)\\d{1,14}$");
+        window["mobileRegexStr"] = /^13[0-9]\d{8}$|^14[5-9]\d{8}$|^15[0-3]\d{8}$|^15[5-9]\d{8}$|^16[5-7]\d{8}$|^17[0-8]\d{8}$|^18[\d]{9}$|^19[1,7,8,9]\d{8}$/;
+        var makeUserInfo = function (resp) {
+            var self = this;
+            var userInfoKey = 'userInfo';
+            self[userInfoKey] = {};
+            self[userInfoKey].name = resp.Model.Email;
+            self[userInfoKey].shortName = (self[userInfoKey].name && self[userInfoKey].name.length > 20) ? self[userInfoKey].name.substring(0, 20) : self[userInfoKey].name;
+            self[userInfoKey].isLogin = resp.Success;
+            self[userInfoKey].firstLogin = resp.Model.ThFirstLogin;
+            self[userInfoKey].mobile = resp.Model.Mobile;
+            self[userInfoKey].mbToken = resp.Model.MbToken;
+            return self[userInfoKey]
+        }
+
+        /*$.ajax({
+            url: '/User/Account/GetUserLoginInfo?v=' + Math.random()
+            , data: {}
+            , async: false
+            , type: 'post'
+            , success: function (resp) {
+                //配置用户基本信息
+                makeUserInfo.apply(window, [resp]);
+            }//success
+            , error: function () {
+                throw new Error('ERROR: get user info')
+            }
+        });//ajax*/
+
+       /* $(document).ready(function () {
+
+            var isApplyDetail = "False".toLowerCase() == 'true' ? true : false;
+            //先获取用户的基本信息，这里的ajax是同步等待
+            if (!isApplyDetail) {
+                var userInfo = window.userInfo;
+                var detailView = $(".dl_rightit .isApplyDetail");
+                var loginView = $(".dl_rightit .isLogin");
+                var unLoginView = $(".dl_rightit .unLogin");
+                detailView.show();
+                //头部对外公开的口，可以修改用户名
+                window.loginHeaderView = {
+                    userNameText: function (text) {
+                        var shortText = text && text.length > 20 ? text.substring(0, 20) : text;
+                        loginView.find('.userShortName').text(userInfo.mobile ? userInfo.mobile : shortText);
+                        loginView.find('#topUserEmail').attr('title', text);
+                    }
+                };
+                if (!!userInfo && userInfo.isLogin) {
+                    loginView.show();
+                    loginView.find('.userShortName').text(userInfo.mobile ? userInfo.mobile : userInfo.shortName);
+                    loginView.find('#topUserEmail').attr('title', userInfo.name);
+                    loginView.find('#topUserMbToken').attr('title', userInfo.mbToken);
+                }
+                else {
+                    unLoginView.show();
+                }
+            }
+        })
+
+        var UserPrompt = function (options) {
+            this.paramMap = {
+                targetSelector: 'targetSelector'
+                , promptText: 'promptText'
+            }
+            this.floater = {
+                tag: options[this.paramMap.targetSelector]
+                , position: {}
+                , size: {}
+            };
+            this.promptText = '您尚未设置密码，请点这里修改吧！';//options[this.paramMap.promptText] || '';
+            this.ui = {
+                close: ".user-prompt-closeBtn"
+            };
+            this.initialize();
+        };
+        UserPrompt.prototype = {
+            initialize: function () {
+                var self = this;
+                if ($(self.floater.tag).length < 1) return;
+
+                self.getFloater();
+                self.makeView();
+                self.attachCss()
+                self.aliveUi();
+                self.bindEvents();
+            }
+            , render: function () {
+                var self = this;
+                self.$el.appendTo($('body'));
+            }
+            , show: function () {
+                var self = this;
+                if ($(self.floater.tag).length < 1) return;
+                //控制所有子页面的show，如果用户第一次登陆才可以show
+                //这里没有在子页面去判断是否show是因为单价太高，一共有3个子页面，不好维护
+                if (window.userInfo.firstLogin) self.render();
+            }
+            , hide: function () {
+                var self = this;
+                $el.remove();
+            }
+            , getFloater: function () {
+                var self = this;
+                self.floater.tag = $(self.floater.tag) || $('body');
+                self.floater.position = self.floater.tag.position();
+                self.floater.size = {
+                    'height': self.floater.tag.height()
+                    , 'width': self.floater.tag.width()
+                }
+            }
+            , makeView: function () {
+                var self = this;
+                self.$el = $("<div class='user-prompt-user-firstIn'>" +
+                    "<div class='user-prompt-action-container'>" +
+                    "<span class='user-prompt-closeBtn' title='close'></span>" +
+                    "</div>" +
+                    "<div class='user-prompt-content'>" + self.promptText + "</div>" +
+                    "</div>");
+            }
+            , attachCss: function () {
+                var self = this;
+                //这里的0.9和4是写死的数，为了调整位置
+                self.$el.css({
+                    'top': (self.floater.position.top + self.floater.size.height) + 'px' // + 15
+                    , 'left': (self.floater.position.left - self.floater.size.width / 4) + 'px'//+ self.floater.size.width / 2
+                });
+            }
+            , aliveUi: function () {
+                var self = this;
+                var aliveUi = {};
+                $.each(self.ui, function (key, value) {
+                    aliveUi[key] = self.$el.find(value) || null;
+                });
+                self.ui = aliveUi;
+            }
+            , bindEvents: function () {
+                var self = this;
+                self.ui.close.bind('click', function () {
+                    self.$el.remove()
+                })
+            }
+        };
+*/
+
+    </script>-->
+</head>
+<body>
+
+    <div class="bs_deliver">
+        <div class="dl_header_border">
+            <div class="dl_header clearfix">
+                <div class="dl_logo">
+                    <img id="logoImg" class="header-logo-img" src="../files/22371900_medias_logo.png" style="width: 282.027px; height: 80px;">
+                </div>
+                <div class="dl_rightit">
+
+                    <div class="isApplyDetail" style="">
+
+                        <div class="isLogin" style="">
+                            <span id="topUserEmail" class="pad3" title="d019b442-f557-44ab-bfd2-d7b3e5b80d5c@zhiye.com"><span class="userShortName">131****1312</span><span class="i18n">，欢迎您！</span></span>
+                            <span id="topUserMbToken" class="pad3" title="CFEGKLHJMLN" style="display: none"></span>
+                            <span class="pad3"><a href="http://job.zte.com.cn/" class="i18n">招聘首页</a></span>
+                            <em class="dl_header_line dl_padtb05">|</em>
+                            <span class="isUserCenter" style="display: none">
+
+                                <span class="pad3"><a href="http://zte.zhiye.com/Portal/Apply/Index" class="i18n">个人中心</a></span>
+                                <em class="dl_header_line dl_padtb05">|</em>
+
+                            </span>
+                            <span class="pad3"><a href="http://zte.zhiye.com/Portal/Account/Logout" class="i18n">退出</a></span>
+                        </div>
+
+                        <div class="unLogin" style="display: none">
+                            <span class="pad3"><a href="http://job.zte.com.cn/" class="i18n">招聘首页</a></span>
+                            <em class="dl_header_line dl_padtb05">|</em>
+                            <span class="pad3"><a href="http://zte.zhiye.com/Portal/Account/Login" class="i18n">登录</a></span>
+                            <em class="dl_header_line dl_padtb05">|</em>
+                            <span class="pad3"><a href="http://zte.zhiye.com/Portal/Account/Register" class="i18n">注册</a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dl_content dl_gray_bg">
+            <!---->
+            <!--申请职位 s-->
+            
+
+
+            <!--申请职位 e-->
+            <!--我的简历 s-->
+            <!--简历内容 s-->
+            
+    <style type="text/css">
+        .code {
+            clear: both;
+            padding-left: 80px;
+        }
+
+            .code .code_add {
+                text-decoration: none;
+                margin-left: 0;
+            }
+
+            .code a.code_add:hover {
+                text-decoration: underline;
+            }
+
+        .form_container .form_part ul.code_list {
+            padding-left: 0;
+        }
+
+        .form_container li a.code_del {
+            text-decoration: none;
+            padding-left: 40px;
+        }
+
+            .form_container li a.code_del:hover {
+                text-decoration: underline;
+            }
+
+        .code_type {
+            width: 180px;
+        }
+
+        .code_dialog {
+            padding: 30px 40px;
+        }
+
+        div.code_dialog_btn {
+            margin-top: 0;
+            height: 32px;
+        }
+
+        span.code_error_pop {
+            margin-top: 5px;
+            width: auto;
+            height: 20px;
+            visibility: hidden;
+        }
+
+        .code_dialog #btnClse {
+            margin-left: 50px;
+        }
+
+        .code_dialog .dl_dialog_btn {
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+
+        .code_type_outer {
+            text-align: center;
+        }
+
+        .code_dialog a.dl_btn_grey1 span {
+            padding: 0 16px 0 0;
+        }
+
+        .code_dialog a.dl_btn_grey1 {
+            padding-left: 16px;
+        }
+
+        .code_title {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .invalid_link {
+            font-size: 18px;
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 80px;
+        }
+
+        div.com_select li.hover ul {
+            overflow: visible;
+        }
+
+        #simplemodal-overlay {
+            background: #000;
+        }
+
+        .modal-pop__mengceng {
+            background: #000;
+            opacity: 0.5;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        .modal-pop__container {
+            width: 500px;
+            height: 212px;
+            background: #fff;
+            box-shadow: 0 5px 20px 0 rgba(0,0,0,0.30);
+            border-radius: 5px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -106px;
+            margin-left: -240px;
+        }
+
+        .modal-pop__header {
+            background: #F0F2F5;
+            height: 44px;
+            line-height: 44px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #0A131A;
+            padding-left: 20px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .modal-pop__content .form-option {
+            margin: 44px 0px 25px 47px;
+            position: relative;
+            height: 53px;
+        }
+
+            .modal-pop__content .form-option .require-icon {
+                color: #FF475A;
+                font-size: 18px;
+                font-weight: bold;
+                vertical-align: middle;
+                margin-right: 2px;
+                display: inline-block;
+                margin-top: 3px;
+            }
+
+            .modal-pop__content .form-option label {
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #565E66;
+                line-height: 22px;
+                margin-right: 3px;
+            }
+
+            .modal-pop__content .form-option input {
+                width: 300px;
+                height: 30px;
+                background: #FFFFFF;
+                border: 1px solid #E6E8EB;
+                padding-left: 10px;
+                padding-right: 20px;
+                border-radius: 3px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .modal-pop__content .form-option .ul_select {
+                position: absolute;
+                border: 1px solid #eee;
+                width: 330px;
+                left: 73px;
+                max-height: 290px;
+                background: #fff;
+                border-radius: 3px;
+                overflow: auto;
+                display: none;
+            }
+
+                .modal-pop__content .form-option .ul_select li {
+                    height: 28px;
+                    line-height: 28px;
+                    cursor: pointer;
+                    padding-left: 10px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+            .modal-pop__content .form-option ul li:hover {
+                background: rgb(133, 194, 255, 0.1);
+            }
+
+            .modal-pop__content .form-option .redBorder {
+                border-color: red;
+            }
+
+            .modal-pop__content .form-option .modal_pop_error {
+                font-size: 12px;
+                display: none;
+                color: red;
+                margin: 2px 0px 0px 75px;
+            }
+
+        .modal-pop__content .btn-sure {
+            width: 88px;
+            height: 32px;
+            background: #1D86F0;
+            border-radius: 3px;
+            border: none;
+            margin: 0 auto;
+            display: block;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .modal-pop__content .arrow-icon {
+            position: absolute;
+            right: 46px;
+            top: 9px;
+            width: 28px;
+            height: 16px;
+            background-size: 28px 16px;
+            display: inline-block;
+            background: url("/Styles/images/upDowpIcon.png")
+        }
+        /** 手机号校验 隐藏默认校验提示 否则提示两*/
+        input[name="RecruitmentPortalPersonProfile_Mobile"] + .new_pop_error, .phone_error + .new_pop_error {
+
+        {
+            display: none !important;
+        }
+
+        .phone_error {
+            background: url("files/err.png") no-repeat 0 1px;
+            padding-left: 18px;
+            color: #000;
+            font-size: 12px;
+        }
+    </style>
+
+    
+    <div class="dl_liucheng dl_top_table">
+        <h3 class="applypos">
+            <span class="i18n" style="font-weight: bold;">申请职位：</span><span class="dl_positionname" style="font-weight: bold;"><strong style="font-weight: bold;">射频资深算法专家</strong> </span>
+            
+        </h3>
+        <table align="center" class="dl_top_ico">
+            <tbody><tr>
+                <td align="center">
+                    <ul class="dl_picliu">
+                        
+                        <li class="basic" onclick="BSGlobal.navigate(0);" style="cursor: pointer;"><a href="javascript:void(0);" onclick="BSGlobal.navigate(0);"><span class="dl_grey3">1<span class="i18n">基本信息</span></span></a></li>
+                        
+                        <li class="greyarrow"></li>
+                        
+                        <li class="greyprofile" onclick="BSGlobal.navigate(1);" style="cursor: pointer;"><a href="javascript:void(0);" onclick="BSGlobal.navigate(1);"><span class="dl_grey2">2<span class="i18n">个人履历</span></span></a></li>
+                        
+                        <li class="greyarrow"></li>
+                        
+                        <li class="greyfile" onclick="BSGlobal.navigate(2);" style="cursor: pointer;"><a href="javascript:void(0);" onclick="BSGlobal.navigate(2);"><span class="dl_grey2">3<span class="i18n">附件/简历</span></span></a></li>
+                        
+                        <li class="greyarrow"></li>
+                        
+                        <li class="greysubmit" onclick="BSGlobal.navigate(4);" style="cursor: pointer;"><a href="javascript:void(0);" onclick="BSGlobal.navigate(4);"><span class="dl_grey2">4<span class="i18n">预览/提交</span></span></a></li>
+                        
+                    </ul>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+
+    <div>
+        
+<style type="text/css">
+  *html .dl_myleftform .form_container{ width: 490px;overflow: hidden}
+  *html .dl_myleftform .form_container .form_part .columntwo ul{ width: 360px;overflow: hidden;}
+  *html .dl_myleftform .form_container ul li{ width: 360px;overflow: hidden}
+  /* .dl_myleftform .form_container li label{width: 100px}*/
+*html .dl_myleftform .form_container ul li span.preview_text{ width: 220px;overflow: hidden;}
+*html .dl_myleftform .form_container ul li textarea.textarea{ width: 200px;}
+*html .form_container li span.desc
+{
+    
+	margin-right:-3px;
+	position:relative;
+}
+   .redBorder,.form_container li textarea.redBorder,
+    .form_part li input.redBorder{border: red 1px solid;}
+   /** 手机号校验 隐藏默认校验提示 否则提示两*/
+    input[name="RecruitmentPortalPersonProfile_Mobile"] + .new_pop_error, .phone_error + .new_pop_error{
+        display: none !important;
+    }
+    .phone_error{
+    background: url("/files/err.png") no-repeat 0 1px;
+    padding-left: 18px;
+    color: #000;
+    font-size: 12px;
+    }
+
+</style>
+
+<div class="dl_bacwrap dl_new_error_wrap">
+    <div class="mainwrap">
+
+        
+            
+    
+        <br>
+                <h3 class="dl_bigtit">
+            <span class="dl_postit i18n">基本信息</span>
+            <span class="dl_padl20"></span>
+        </h3>
+        <br>
+        
+        <a name="个人信息"></a>
+        <div class="dl_greyline_bg">
+            <span class="dl_menutit">个人信息</span>
+        </div>
+        <form method="post" id="formadd" name="f81216aa-2f66-481d-a5ad-ea10b6cf6fbf" class="formPart" enctype="multipart/form-data" action="http://zte.zhiye.com/Portal/Resume/ResumeItem">
+            <div class="clearfix">
+                <div class="dl_myleftform">
+                    <input type="hidden" name="oId" id="Hidden1" value="">
+                    <input type="hidden" name="jId" id="Hidden4" value="350345684">
+                    <input type="hidden" name="mId" id="Hidden5" value="0">
+                    <input type="hidden" name="stepId" id="Hidden2" value="1">
+               
+                 <input type="hidden" name="_metaObjID" value="NDc0NjFhMzktMTg2My00YzM3LTlmOTgtY2ZkN2UyOTFlNmQ0LDhiYzYzYjNlLWQ2M2QtNDE2Yi04YzFmLTk5MDcyMjgyZWUzZiw2NDU3Y2Q2Ny1iNjQyLTQwYTktOTM1Ni01MDU3NzYyMDVlYjg=">
+                 
+                 <input type="hidden" name="_objectDataID" value="NDc0NjFhMzktMTg2My00YzM3LTlmOTgtY2ZkN2UyOTFlNmQ0JCw4YmM2M2IzZS1kNjNkLTQxNmItOGMxZi05OTA3MjI4MmVlM2YkLDY0NTdjZDY3LWI2NDItNDBhOS05MzU2LTUwNTc3NjIwNWViOCQ=">
+                 <input name="_viewName" type="hidden" value="UGVyc29uUHJvZmlsZVZpZXc="><input name="_version" type="hidden" value="MjAxOTA4MjEwNTA5NTQwMjcy"><input name="_formIndex" type="hidden" value="1"><div class="form_container" id="RecruitmentPortal.PersonProfile">
+
+ <h2 class="form_title">
+<strong>个人信息</strong>
+<span class="tab"></span>
+</h2>
+ <div class="form_part">
+<div class="form_part_container columnone">
+<ul>
+<li><label class="current label_required">姓名：</label>
+<input class="{required:true,messages:&quot;请填写姓名&quot;} mul_input" name="name" id="4c037148-140a-4c2b-b87a-b97609215d7011" value="">
+<span class="desc"></span>
+</li>
+<li><label class="current label_required">性别：</label>
+<div class="radio_list">
+<input type="radio" name="sex" value="0">
+<label class="radio_label i18n">男</label>
+<input type="radio" name="sex" value="1">
+<label class="radio_label i18n">女</label>
+</div>
+</li>
+<li><label class="current label_required">出生日期：</label>
+<input isreadonlybyadd="false" isreadonlybyedit="false" class="mul_input Wdate" name="dateofbirth" id="436ab7a4-67a1-4819-a238-d5d34eb0717611" value="">
+<span class="desc">出生日期需与身份证上一致</span>
+</li>
+<li><label class="current label_required">婚姻状况：</label>
+    <select name="maritalstatus" id="RecruitmentPortalPersonProfile_extWedState01_223719_912026373" isreadonlybyadd="false" isreadonlybyedit="false" class="dropdownlist mul_select">
+        <option value="" class="i18n">请选择</option>
+        <option value="1" title="未婚">未婚</option>
+        <option value="2" title="已婚">已婚</option>      </select>      </li>
+<li><label class="current label_required">国籍：</label>
+<input class="{required:true,messages:&#39;请填写国籍&#39;} mul_input " name="nationality" id="2cdb88a4-c5d9-42e9-826d-45662a42b3e611" value="">
+</li>
+<li><label class="current label_required">邮箱：</label>
+<input class="{required:true,messages:&quot;请填写邮箱&quot;} mul_input" name="mailbox" id="67a5c587-4f90-4ae7-819f-eb3dba9ea39911" value="">
+<span class="desc"></span>
+</li>
+<li><label class="current label_required">手机号：</label>
+<select id="phoneTypeSel">
+    <option value="chn">大陆手机号</option>
+    <option value="global">非大陆手机号</option>
+</select>
+    <input class="{required:true,messages:&#39;请填写手机号&#39;} mul_input " name="cellphonenumber" id="acb9b67f-9643-41fb-a7fe-5ff8d742ccdf11" value="13125501312" style="background: rgb(255, 255, 255);">
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+ <div class="form_part">
+<div class="form_part_container columntwo">
+<ul>
+<li><label>通讯地址：</label>
+<input name="contactaddress" id="e53b979b-3aa0-4142-9620-139cdebdb06b11" value="">
+</li>
+<li><label>邮政编码：</label>
+<input name="postalcode" id="1d7031cc-aeec-4bc2-aad6-584960152f1c11" value="">
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+                </div>
+
+                
+                <div id="imgContainer" class="dl_myrightfile" style="display: none;">
+                    <img id="idPhoto" style="width:120px;height:140px;" src="../files/upfile.jpg">
+                    
+                    <br>
+                    
+                    <a class="blue i18n" id="idPhotoUploadBtn" href="http://zte.zhiye.com/Portal/Resume/ResumeItem?jid=350345684###">上传照片</a>
+                    <span id="idPhotoerrinfo" class="new_pop_error" style="display:none;"></span>
+                    <ul id="idPhotowarninfo" class="warninfo">
+                       
+                    </ul>
+                </div>
+                
+            </div>
+        
+        
+        <a name="求职意向"></a>
+        <div class="dl_greyline_bg">
+            <span class="dl_menutit">求职意向</span>
+        </div>
+            <div class="clearfix">
+                <div class="dl_myleftform">
+                    <input type="hidden" name="oId" id="Hidden1" value="">
+                    <input type="hidden" name="jId" id="Hidden4" value="350345684">
+                    <input type="hidden" name="mId" id="Hidden5" value="1">
+                    <input type="hidden" name="stepId" id="Hidden2" value="1">
+               <input name="_viewName" type="hidden" value="T2JqZWN0aXZlVmlldw=="><input name="_version" type="hidden" value="MjAxOTA4MjEwNTA5NTQwNDI4"><input name="_formIndex" type="hidden" value="12"><div class="form_container" id="RecruitmentPortal.Objective">
+<h2 class="form_title">
+<strong>求职意向</strong>
+<span class="tab"></span>
+</h2>
+ <div class="form_part">
+<div class="form_part_container columnone">
+<ul>
+<li><label class="current">现工作城市：</label>
+<input type="text"  name="workingcityid">
+</li>
+<li><label class="current label_required">期望工作城市：</label>
+<input name="RecruitmentPortalObjective_ExpectWorkCity_txt" id="bdb0be18-1b30-4001-817e-34807ab4d94b1212_txt" value="" readonly="">
+<input type="hidden"  id="bdb0be18-1b30-4001-817e-34807ab4d94b1212" name="expectedcityofwork" class="{required:true,messages:&#39;请填写期望工作城市&#39;}">
+</li>
+<li><label>现从事行业：</label>
+<input class="mul_input industry" name="RecruitmentPortalObjective_EngagedIndustry_txt" id="ef3f9faf-97c6-432b-9c6b-0b0b66c5c4271212_txt" value="">
+<input type="hidden" id="ef3f9faf-97c6-432b-9c6b-0b0b66c5c4271212" name="nowengagedinindustry">
+</li>
+<li><label>现从事职业：</label>
+<input type="text"  name="presentoccupation">
+</li>
+<li><label>期望月薪(税前)：</label>
+<select name="expectedsalary" id="RecruitmentPortalObjective_ExpectSalary" class="mul_select">
+<option value="" class="i18n">请选择</option>
+<option class="i18n" value="1">1000以下</option>
+<option class="i18n" value="2">1000～2000</option>
+<option class="i18n" value="3">2001～4000</option>
+<option class="i18n" value="4">4001～6000</option>
+<option class="i18n" value="5">6001～8000</option>
+<option class="i18n" value="6">8001～10000</option>
+<option class="i18n" value="7">10001～15000</option>
+<option class="i18n" value="8">15001～25000</option>
+<option class="i18n" value="9">25000～30000</option>
+<option class="i18n" value="11">30000～50000</option>
+<option class="i18n" value="12">50000～70000</option>
+<option class="i18n" value="13">70000～100000</option>
+<option class="i18n" value="14">100000以上</option>
+<option class="i18n" value="10">面议</option>
+</select>
+</li>
+<li><label>到岗时间：</label>
+<select name="arrivaltime" id="RecruitmentPortalObjective_EntrantDate" class="mul_select">
+<option value="" class="i18n">请选择</option>
+<option class="i18n" value="1">一周内</option>
+<option class="i18n" value="2">一个月内</option>
+<option class="i18n" value="3">三个月内</option>
+<option class="i18n" value="4">三个月以上</option>
+<option class="i18n" value="5">面议</option>
+</select>
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+                </div>
+
+                
+            </div>
+        
+        
+        <a name="附加信息"></a>
+        <div class="dl_greyline_bg">
+            <span class="dl_menutit">附加信息</span>
+        </div>
+            <div class="clearfix">
+                <div class="dl_myleftform">
+                    <input type="hidden" name="oId" id="Hidden1" value="">
+                    <input type="hidden" name="jId" id="Hidden4" value="350345684">
+                    <input type="hidden" name="mId" id="Hidden5" value="13">
+                    <input type="hidden" name="stepId" id="Hidden2" value="1">
+               <input name="_viewName" type="hidden" value="QWRkaXRpb25hbEluZm9WaWV3"><input name="_version" type="hidden" value="MjAxOTA4MjEwNTA5NTQwNTk1"><input name="_formIndex" type="hidden" value="133"><div class="form_container" id="RecruitmentPortal.AdditionalInfo">
+<h2 class="form_title">
+<strong>附加信息</strong>
+<span class="tab"></span>
+</h2>
+ <div class="form_part">
+<div class="form_part_container columnone">
+<ul>
+<li><label>兴趣爱好：</label>
+<textarea class="textarea mul_textarea" rows="6" name="hobbiesandinterests" cols="60"></textarea>
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+                </div>
+
+                
+            </div>
+       </form>
+        
+        
+        <div class="dl_bd_btm"></div>
+        <div class="dl_subbtn dl_htline32">
+            <span class="dl_btn_lev dl_ft14_grey dl_padr10"><a name="btnCancel" href="http://zte.zhiye.com/Portal/Resume/ResumeItem?jid=350345684#this"><b class="i18n">取消</b></a></span>
+            <a href="javaScript:sava()" class="dl_btn_grey1"><span class="i18n">保存并下一步</span></a>
+           
+        </div>
+          <div class="error_show" style="text-align:center;padding-top:10px;display:none"><span class="new_pop_error i18n" style="width:auto;font-weight:bold">部分内容未填写完整，请完善。</span></div>
+
+    </div>
+</div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    function sava(){
+
+        $.ajax({
+            url:'../savaMessage',
+            type:'post',
+            data:$("#formadd").serialize(),
+            success:function(data){
+                alert(123)
+               location.href="../tolvli";
+            }
+        })
+
+    }
+
+
+    $(function () {
+        BSGlobal.data = {
+            r: '',
+            jId: '350345684',
+            sId: '0',
+            source: '',
+            myJobApplyCount: '0',
+            viewName: 'ResumePersonProfile',
+            redirectUrl: '/Portal/Resume/ResumeItem',
+            saveUrl: '/Portal/Resume/SaveResumeItems',
+            uploadUrl: '/Portal/Resume/UploadAttach',
+            zpDetailUrl: '/zpdetail/350345684',
+            myCollectUrl: '/Portal/Apply/MyCollect',
+            myApplyUrl: '/Portal/Apply/Index',
+            fileUrl: '/Portal/Resume/ResumePhoto',
+            pageId: '',
+            idType: '',
+            personId: '',
+            traceid: '',
+            storeDbId: '',
+            formId: '',
+            isImport: '',
+            nextStep: '1',
+            preStep: '0',
+            IsApplyEdit: false
+            
+        };
+    });
+
+    window.setAreasData = function (data) {
+        window.Areas = data;
+    }
+    window.setJobCategoryData = function (data) {
+        window.JobCategory = data;
+    }
+</script>
+<!--引用静态文件:dataInitFunc,HangYe,AreaJson,NewAreaJson,AreasJson,JobCategoryJson-->
+
+   <script type="text/javascript"> function setAJson(data){ window.Ajson=data; } function setNewAJson(data){ window.NewAjson=data; } function setMJson(data){ window.Mjson=data; } </script>
+   <script type="text/javascript" src="../files/hangye"></script><script type="text/javascript" src="../files/Areas"></script><script type="text/javascript" src="../files/AreasValueFormat"></script><script type="text/javascript" src="../files/Areas(1)"></script><script type="text/javascript" src="../files/JobCategory"></script>
+    </div>
+    
+    <div class="modal-pop" style="display: none;">
+        <div class="modal-pop__mengceng"></div>
+        <div class="modal-pop__container">
+            <div class="modal-pop__header">
+                <div class="modal-pop__title">选择面试站点</div>
+            </div>
+            <div class="modal-pop__content">
+                <div class="form-option columnone">
+                    <label><span class="require-icon">*</span>面试站点</label>
+                    <input type="text" placeholder="请选择" id="siteId">
+                    <ul class="ul_select">
+                        <li class="tooltip" id="">请选择</li>
+                    </ul>
+                    <span class="arrow-icon"></span>
+                    <p class="modal_pop_error">请选择面试站点</p>
+                </div>
+                <button class="btn-sure">确定</button>
+            </div>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        $(function () {
+            // 弹层操作
+            // 是否展示蒙层
+            var href = window.location.href
+            var isHaveId = href.indexOf("RecommendJobAdid") !== -1
+            var isHaveFlag = href.indexOf("Flag") !== -1
+            var jobid = isHaveId && isHaveFlag && href.split("RecommendJobAdid=")[1].split("&")[0]
+            var step = href.indexOf("stepId") !== -1 && href.split("stepId=")[1].split("&")[0]
+            var chooseId = ''
+            if (step !== "0" || !isHaveId || !isHaveFlag || jobid == "0") {
+                return false
+            }
+
+            //获取面试站点数据
+            $.ajax({
+                url: '/Portal/Resume/GetStationList?jobAdId=' + jobid
+                , data: {}
+                , async: false
+                , type: 'get'
+                , success: function (resp) {
+                    if (resp.length > 0) {
+                        $(".modal-pop").show()
+                        //配置用户基本信息
+                        resp.forEach(function (item) {
+                            var tempLi = "<li id=" + item.StationId + " class='tooltip' title=" + item.StationName + ">" + item.StationName + "</li>"
+                            $(".ul_select").append(tempLi)
+                        })
+                    }
+                }//success
+                , error: function () {
+                    throw new Error('ERROR: get user info')
+                }
+            });//ajax
+
+            // 下拉框展示
+            $(".modal-pop").click(function (e) {
+                if (e.target.nodeName == "INPUT") {
+                    $("#siteId").blur();
+                    $(".ul_select").show();
+                } else {
+                    $(".ul_select").hide();
+                }
+            })
+
+            $(".ul_select").on("click", "li", function (event) {
+                var chooseText = $(event.target).text()
+                chooseId = $(event.target).attr("id")
+                $("#siteId").val(chooseText)
+                $(".ul_select").hide()
+                // 必填提示去掉
+                if (chooseId !== "") {
+                    $("#siteId").removeClass("redBorder")
+                    $(".modal_pop_error").hide()
+                }
+            })
+            // 关闭按钮
+            $(".btn-sure").click(function () {
+                if ($("#siteId").val() == "请选择" || $("#siteId").val() == "") {
+                    $("#siteId").addClass("redBorder")
+                    $(".modal_pop_error").show()
+                } else {
+
+                    var personid = href.split("PersonId=")[1].split("&")[0]
+                    $.ajax({
+                        url: '/Portal/Resume/ChangePersonIdStation'
+                        , data: {
+                            personId: personid,
+                            jobAdId: jobid,
+                            stationId: chooseId
+                        }
+                        , async: false
+                        , type: 'post'
+                        , success: function (resp) {
+                            $(".modal-pop").hide()
+                        }//success
+                        , error: function () {
+                            throw new Error('ERROR: get user info')
+                        }
+                    });//ajax
+                }
+            })
+
+        })
+    </script>
+
+
+            <!--简历内容 e-->
+        </div>
+        <div class="dl_footer">
+            
+
+<p>©2020&nbsp;中兴通讯&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.beian.miit.gov.cn/" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; color: #AAAAAA;">京ICP备05051632号-16</a>&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020454" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; color: #AAAAAA;"><img src="../files/beian.png" style="float: left;">京公网安备 11010802020454号</a> &nbsp;&nbsp;帮助热线：4006506886</p>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">(function(){var formName='f81216aa-2f66-481d-a5ad-ea10b6cf6fbf';var formIndexID='1';$.validator.setDefaults({ignore:''});$.validator.messages.maxlength=$.validator.format("长度不能超过{0}");$("#f81216aa-2f66-481d-a5ad-ea10b6cf6fbf").validate({rules:{'RecruitmentPortalPersonProfile_Name':{required:true,'RecruitmentPortalPersonProfile_Name_CmsLengthMix30_1048855263':true},'RecruitmentPortalPersonProfile_gender':{required:true,'RecruitmentPortalPersonProfile_gender_NotEmpty_1048855263':true},'RecruitmentPortalPersonProfile_Birthday':{required:true,'RecruitmentPortalPersonProfile_Birthday_DateTimeValidator_1048855263':true},'RecruitmentPortalPersonProfile_extWedState01_223719_912026373':{required:true},'RecruitmentPortalPersonProfile_Nationality':{required:true,'RecruitmentPortalPersonProfile_Nationality_CmsResumeLength20_1048855263':true},'RecruitmentPortalPersonProfile_email':{required:true,'RecruitmentPortalPersonProfile_email_RecruitmentPortal_resumeEmailRule_1048855263':true},'RecruitmentPortalPersonProfile_Mobile':{required:true,'RecruitmentPortalPersonProfile_Mobile_CmsResumeCellPhone_1048855263':true},'RecruitmentPortalPersonProfile_Address':{maxlength:100,'RecruitmentPortalPersonProfile_Address_CmsResumeLength100_1048855263':true},'RecruitmentPortalPersonProfile_ZipCode':{'RecruitmentPortalPersonProfile_ZipCode_CmsResumeZipCode_1048855263':true}}});jQuery("#436ab7a4-67a1-4819-a238-d5d34eb0717611").click(function(){var options = {dateFmt: "yyyy/MM/dd"}; if(window.BSGlobal && BSGlobal.SiteLanguage=="en"){options.lang = "en"; }; if(typeof(WdatePicker) !== 'undefined') {WdatePicker(options);}});$(function(){
+var error="限30个字符";
+if(window.BSGlobal && window.BSGlobal.SiteLanguage=="en")
+error="Limit "+"30"+" characters";
+jQuery.validator.addMethod("RecruitmentPortalPersonProfile_Name_CmsLengthMix30_1048855263",function(v,e){
+jQuery.validator.messages.RecruitmentPortalPersonProfile_Name_CmsLengthMix30_1048855263=error;
+return (v.length<=30)},error);
+});jQuery.validator.addMethod("RecruitmentPortalPersonProfile_gender_NotEmpty_1048855263",function(v,e){return v!=''},"输入不允许为空");jQuery.validator.addMethod("RecruitmentPortalPersonProfile_Birthday_DateTimeValidator_1048855263",function(v,e){return (/^$|^\d{4}\/\d{1,2}\/\d{1,2}$/gi).test(v)},"日期格式不正确");$(function(){
+var error="限20个字符";
+if(window.BSGlobal && window.BSGlobal.SiteLanguage=="en")
+error="Limit "+"20"+" characters";
+jQuery.validator.addMethod("RecruitmentPortalPersonProfile_Nationality_CmsResumeLength20_1048855263",function(v,e){
+jQuery.validator.messages.RecruitmentPortalPersonProfile_Nationality_CmsResumeLength20_1048855263=error;
+return (v.length<=20)},error);
+});jQuery.validator.addMethod("RecruitmentPortalPersonProfile_email_RecruitmentPortal_resumeEmailRule_1048855263",function(v,e){return (/^$|^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/).test(v)},"格式有误");$(function(){
+var error="格式有误";
+if(window.BSGlobal && window.BSGlobal.SiteLanguage=="en"){error="Error Type"}
+jQuery.validator.addMethod("RecruitmentPortalPersonProfile_Mobile_CmsResumeCellPhone_1048855263",function(v,e){
+jQuery.validator.messages.RecruitmentPortalPersonProfile_Mobile_CmsResumeCellPhone_1048855263=error;
+return /^$|^\d{1,13}$/g.test(v.replace(/(^\s*)|(\s*$)/g,""))},error);
+});$(function(){
+var error="限100个字符";
+if(window.BSGlobal && window.BSGlobal.SiteLanguage=="en")
+error="Limit "+"100"+" characters";
+jQuery.validator.addMethod("RecruitmentPortalPersonProfile_Address_CmsResumeLength100_1048855263",function(v,e){
+jQuery.validator.messages.RecruitmentPortalPersonProfile_Address_CmsResumeLength100_1048855263=error;
+return (v.length<=100)},error);
+});jQuery.validator.addMethod("RecruitmentPortalPersonProfile_ZipCode_CmsResumeZipCode_1048855263",function(v,e){return (/^$|^[0-9]{6}$/g).test(v)},"格式有误");})();</script>
+    <script type="text/javascript">(function(){var formName='89cbb6d4-8712-455f-99ab-ad916ff29d83';var formIndexID='12';$.validator.setDefaults({ignore:''});$.validator.messages.maxlength=$.validator.format("长度不能超过{0}");$("#89cbb6d4-8712-455f-99ab-ad916ff29d83").validate({rules:{'RecruitmentPortalObjective_CurrWorkCity':{required:true},'RecruitmentPortalObjective_ExpectWorkCity':{required:true}}});$("#bdb0be18-1b30-4001-817e-34807ab4d94b1212"+"_txt").click(function(){if(false){$(this).basSelect({valHost:"#bdb0be18-1b30-4001-817e-34807ab4d94b1212",type:"checkbox",data:"NewAjson",title:"选择地区",max:40,map:{text:"v",id:"k",children:"c"},depth:2})}else{$(this).basSelect({valHost:"#bdb0be18-1b30-4001-817e-34807ab4d94b1212",type:"checkbox",data:"NewAjson",title:"选择地区",max:10,map:{text:"v",id:"k",children:"c"}})}});jQuery("#ef3f9faf-97c6-432b-9c6b-0b0b66c5c4271212"+"_txt").structruedDataSelect({
+                    type: "hangye",
+                    maxSelected: 1,
+                    popTitle: "选择行业"
+                });})();</script>
+    <script type="text/javascript">(function(){var formName='f8acbd49-c12c-4aec-9975-0729a922602a';var formIndexID='133';$.validator.setDefaults({ignore:''});$.validator.messages.maxlength=$.validator.format("长度不能超过{0}");$("#f8acbd49-c12c-4aec-9975-0729a922602a").validate({rules:{'RecruitmentPortalAdditionalInfo_Interest':{'RecruitmentPortalAdditionalInfo_Interest_CmsLength4000_1434120152':true}}});$(function(){
+var error="限4000个字符";
+if(window.BSGlobal && window.BSGlobal.SiteLanguage=="en")
+error="Limit "+"4000"+" characters";
+jQuery.validator.addMethod("RecruitmentPortalAdditionalInfo_Interest_CmsLength4000_1434120152",function(v,e){
+jQuery.validator.messages.RecruitmentPortalAdditionalInfo_Interest_CmsLength4000_1434120152=error;
+return (v.length<=4000)},error);
+});})();</script>
+    <script type="text/javascript">_splash('zhiye_resumeitem',0,223719,'new_zhiye_com');</script>
+
+    <script type="text/javascript">
+        function navigate(jId, step) {
+            location.href = "/Portal/Resume/ResumeItem?jid=" + jId + "&stepId=" + step;
+        }
+    </script>
+
+    <script type="text/javascript">$(function(){document.title=window.i18n.apply_job_title;window.location.href.indexOf("traceid")!==-1&&$("#topUserEmail").siblings().hide();window.BSGlobal&&window.BSGlobal.SiteLanguage=="en"&&jQuery.extend(jQuery.validator.messages,{required:"Required",remote:"请指定一个不重复的值",email:"请输入正确格式的电子邮件",url:"请输入合法的网址",date:"请输入合法的日期",dateISO:"请输入合法的日期 (ISO).",number:"请输入合法的数字",digits:"只能输入整数",creditcard:"请输入合法的信用卡号",equalTo:"请再次输入相同的值",accept:"请输入拥有合法后缀名的字符串",maxlength:jQuery.validator.format("允许的最大长度为 {0} 个字符"),minlength:jQuery.validator.format("允许的最小长度为 {0} 个字符"),rangelength:jQuery.validator.format("允许的长度为{0}和{1}之间"),range:jQuery.validator.format("请输入介于 {0} 和 {1} 之间的值"),max:jQuery.validator.format("请输入一个最大为 {0} 的值"),min:jQuery.validator.format("请输入一个最小为 {0} 的值")});BSGlobal.resumeDetailPage=function(pro,data){this.pro=pro||"beisen";this.data=data||{};this.init=function(){this.initPage()};this.init.apply(this,arguments)};BSGlobal.showDialog=function(options){var msg=options.message,okBtnText=options.okText?options.okText:window.i18n.ok,closeBtnText=options.closeText?options.closeText:window.i18n.cancel,showOkBtn=options.showOk?options.showOk:true,showCloseBtn=options.showClose?options.showClose:true,html=['<div class="dl_dialog1">','\t<div class="dl_dialog_wrap">','       <div class="dl_dialog_icoqa"><span>'+msg+"</span></div>",'\t<div class="dl_dialog_btn">',showOkBtn?' <a href="javascript:void(0);" class="dl_btn_grey1" id="btnOk" ><span>'+okBtnText+"</span></a>":"",showCloseBtn?'\t<a href="javascript:void(0);" class="dl_btn_grey1 dl_mglft10 simplemodal-close"  id="btnClse"><span>'+closeBtnText+"</span></a>":"","\t\t<div>","\t</div>","</div>"].join(""),option={containerCss:{backgroundColor:"transparent",borderColor:"transparent",padding:0},onShow:function(){$("#btnOk").unbind();$("#btnOk").click(function(){options.okFn&&options.okFn.apply(this)});options.closeFn&&$("#btnClse").click(function(){options.closeFn&&options.closeFn.apply(this)})}};$.modal(html,option)};BSGlobal.doNavigate=function(step){var url=BSGlobal.detaildata.navigateUrl+"?jid="+BSGlobal.detaildata.jId+"&stepId="+step;if(BSGlobal.detaildata.sId&&BSGlobal.detaildata.sId!="")url+="&sId="+BSGlobal.detaildata.sId;if(BSGlobal.detaildata.source&&BSGlobal.detaildata.source!="")url+="&source="+BSGlobal.detaildata.source;if(BSGlobal.detaildata.pageId&&BSGlobal.detaildata.pageId!="")url+="&pId="+BSGlobal.detaildata.pageId;if(BSGlobal.detaildata.isImport&&BSGlobal.detaildata.isImport!="")url+="&isImport="+BSGlobal.detaildata.isImport;if(BSGlobal.detaildata.idType&&BSGlobal.detaildata.idType!="")url+="&idType="+BSGlobal.detaildata.idType;if(BSGlobal.detaildata.personId&&BSGlobal.detaildata.personId!="")url+="&personId="+BSGlobal.detaildata.personId;if(BSGlobal.detaildata.traceid&&BSGlobal.detaildata.traceid!="")url+="&traceid="+BSGlobal.detaildata.traceid;if(BSGlobal.detaildata.storeDbId&&BSGlobal.detaildata.storeDbId!="")url+="&storeDbId="+BSGlobal.detaildata.storeDbId;if(BSGlobal.data.formId&&BSGlobal.data.formId!="")url+="&formId="+BSGlobal.data.formId;if(BSGlobal.detaildata.r&&BSGlobal.data.r!="")url+="&r="+BSGlobal.data.r;if(BSGlobal.detaildata.IsApplyEdit)url+="&isApplyEdit="+BSGlobal.data.IsApplyEdit;location.href=url};BSGlobal.navigate=function(step){if(window.valuechanged){var opt={message:window.i18n.if_del_msg_tip,okText:"继续填写",closeText:"不保存",okFn:function(){$.modal.close()},closeFn:function(){$.modal.close();BSGlobal.doNavigate(step)}};BSGlobal.showDialog(opt)}else BSGlobal.doNavigate(step)};BSGlobal.resumeDetailPage.prototype={initPage:function(){;function checkNum(){var selectVal=$("#RecruitmentPortalPersonProfile_CertificateType").val(),that=$("input[name=RecruitmentPortalPersonProfile_CertificateNumber]");if(that.val()){num=that.val().replace(/\s/g,"");selectVal==1&&num.length>0&&$.ajax({type:"post",url:"/Portal/Resume/CheckIdentityCardNumber",data:{icn:num},success:function(resp){that.parent().find(".new_pop_error").remove();var maxhas="",typeString="",resumeMsg="",targetEmail="",randomEmail="";if(resp&&resp.result=="failure"){if(resp&&resp.code===402){that.parent().append("<span for='7612c66c-a23a-40ed-a9dc-46b86036f03f11' class='new_pop_error' style='width:auto;'>"+resp.message+"</span>");return}if(resp&&resp.data&&resp.data.sceneCode===1001){console.log(3);resumeMsg=resp.message;var typeName={1:"手机：",2:"邮箱：",3:"微信：",4:"Q  Q：",5:"微博："},phoneType=resp.data.bindNames[1]?"<p>"+typeName[1]+resp.data.bindNames[1]+"</p>":"",emailType=resp.data.bindNames[2]?"<p>"+typeName[2]+resp.data.bindNames[2]+"</p>":"",weichatType=resp.data.bindNames[3]?"<p>"+typeName[3]+resp.data.bindNames[3]+"</p>":"",qqType=resp.data.bindNames[4]?"<p>"+typeName[4]+resp.data.bindNames[4]+"</p>":"",blogType=resp.data.bindNames[5]?"<p>"+typeName[5]+resp.data.bindNames[5]+"</p>":"";typeString=phoneType+emailType+weichatType+qqType+blogType;maxhas=['<div class="dl_dialog1">','<div class="dl_dialog_wrap">','<div class="dl_dialog_icowarn">'+resumeMsg+"</div>",'<div style="padding-left:20px;padding-top:10px;">'+typeString+"</div>",'<div style="padding-left:20px;padding-top:10px;display:none;">若您是该账号的主人，您可以通过手机号直接登录，未关联手机号也可以在PC端用其他方式进行登录。</div>','<div class="dl_dialog_btn">','<a href="javascript:void(0);" class="dl_btn_grey1 ok" id="toLogin" style="margin-right:10px;"><span>前往登录</span></a>','<a href="javascript:void(0);" class="dl_btn_grey1 ok" id="cancelBtn"><span>',"取消","</span></a>","        <div>","    </div>","</div>"].join("")}else if(resp&&resp.data&&resp.data.sceneCode===1002){resumeMsg=resp.message;targetEmail=resp.data.targetEmail;randomEmail=resp.data.randomEmail;maxhas=['<div class="dl_dialog1">','<div class="dl_dialog_wrap">','<div class="dl_dialog_icowarn" style="word-wrap:break-word;word-break:break-all;padding-left:18px;">您的身份证号已被其他账号占用，若您是该账号的主人，您可以通过该账号关联的邮箱找回密码，找回后请尽快修改账号和密码。</div>','<div style="padding-left:20px;padding-top:10px;">关联邮箱如下：</div>','<div style="padding-left:20px;padding-top:10px;">'+targetEmail+"</div>",'<div class="dl_dialog_btn">','<a href="javascript:void(0);" class="dl_btn_grey1 ok" id="okbtn2" style="margin-right:10px;"><span>发送找回邮件</span></a>','<a href="javascript:void(0);" class="dl_btn_grey1 ok" id="cancelBtn"><span>',"取消","</span></a>","        <div>","    </div>","</div>"].join("")}else if(resp&&!resp.data){resumeMsg=resp.message;maxhas=['<div class="dl_dialog1">','<div class="dl_dialog_wrap">','<div class="dl_dialog_icowarn" style="wrod-wrap:break-word;word-break:break-all">'+resumeMsg+"</div>",'<div style="padding-left:20px;padding-top:10px;">如找回账号密码，请拨打<span style="font-weight:bolder;font-size:16px;vertical-align:middle">400-650-6886</span><div>','<div class="dl_dialog_btn">','<a href="javascript:void(0);" class="dl_btn_grey1 ok" id="cancelBtn"><span>',"确定","</span></a>","        <div>","    </div>","</div>"].join("")}$.modal(maxhas,{containerCss:{backgroundColor:"transparent",borderColor:"transparent",padding:0,width:"360px"},onShow:function(){$("#toLogin").click(function(){window.location.href="/Portal/Account/Logout"});$("#okbtn2").click(function(){$.ajax({url:"/Portal/Resume/CheckIdentityCardNumberForEmail",success:function(resp){$.modal.close();if(resp.result=="success")var sendSuccessMsg="找回密码邮件已发送至"+targetEmail+"邮箱请尽快登录查看账号名和密码。";else if(resp.Code=="700")var sendSuccessMsg="今日邮件找回密码次数超限，无法发送找回密码邮件。1日内最多发送3次，次日自动解锁。";else var sendSuccessMsg="您的身份证号已被账号<br/>"+randomEmail+"占用。<p style='margin-top:10px;'>如找回账号密码，请拨打<b>400-650-6886</b></p>";var maxhas=['<div class="dl_dialog1">','    <div class="dl_dialog_wrap">','       <div class="dl_dialog_icowarn"><span style="word-wrap : break-word">'+sendSuccessMsg+"</span></div>",'    <div class="dl_dialog_btn">',' <a href="javascript:void(0);" class="dl_btn_grey1 ok" id="okbtn3"><span>确定</span></a>',"        <div>","    </div>","</div>"].join("");$.modal(maxhas,{containerCss:{backgroundColor:"transparent",borderColor:"transparent",padding:0,width:"360px"},onShow:function(){$("#okbtn3").click(function(){$.modal.close()})}})},error:function(){}})});$("#cancelBtn").click(function(){$.modal.close()})}})}},error:function(){}})}}$("input[name=RecruitmentPortalPersonProfile_CertificateNumber]").blur(checkNum);$("#RecruitmentPortalPersonProfile_CertificateType").change(function(){var num=$("input[name=RecruitmentPortalPersonProfile_CertificateNumber]");num.val()&&num.val("");num.parent().find("span.new_pop_error").hide()});this.activityCode();this.phoneNumExtraValid();this.setUserMobile()},activityCode:function(){var hideInput=$("input[name=RecruitmentPortalAttachments_ActivityCode]");hideInput.parent().find("label").css("width","auto");hideInput.hide();var codelist="<div class='code'><a href='javascript:void(0);' class='code_add'>添加</a><ul class='code_list'></ul></div>";hideInput.parent().append(codelist);if(hideInput.val()){var codes=hideInput.val().split(",");$.each(codes,function(key,item){var str="<li><span id='"+item+"'>"+item+"</span><a  href='javascript:void(0);' class='code_del'>删除</a></li>";$(".code_list").append(str)})}$(".code_del").live("click",function(){var code=$(this).prev().attr("id"),codes=hideInput.val().split(",");$(this).parent().remove();codes.splice($.inArray(code,codes),1);hideInput.val(codes.join(","))});$(".code_add").live("click",function(){var msg="123",okBtnText="",closeBtnText="取消",showOkBtn=true,showCloseBtn=true,title=$("input[name=RecruitmentPortalAttachments_ActivityCode]").prev().text();title=title.substring(0,title.length-1);var html=['<div class="dl_dialog1 code_dialog">','\t<div class="dl_dialog_wrap">','<div class="code_title">添加'+title+'</div>       <div class="code_type_outer"><input type="text" class="code_type" placeholder="请输入'+title+'"/></div>','<span class="new_pop_error code_error_pop" ></span>','\t<div class="dl_dialog_btn code_dialog_btn">',showOkBtn?' <a href="javascript:void(0);" class="dl_btn_grey1" id="btnOk" ><span>'+okBtnText+"</span></a>":"",showCloseBtn?'\t<a href="javascript:void(0);" class="dl_btn_grey1 dl_mglft10 simplemodal-close"  id="btnClse"><span>'+closeBtnText+"</span></a>":"","\t\t<div>","\t</div>","</div>"].join(""),option={containerCss:{backgroundColor:"transparent",borderColor:"transparent",padding:0},onShow:function(){$("#btnOk").unbind();$("#btnOk").click(function(){var num=$(".code_type").val().replace(/\s/g,""),node=$("span.code_error_pop");node.css("visibility","hidden");if(num.length>0){if(/\s/.test($.trim($(".code_type").val()))){node.css("visibility","inherit");node.text(title+"格式不正确");return}$.ajax({type:"get",url:"/Portal/Resume/CheckActivityCode",data:{newcode:num,allcodes:hideInput.val()},success:function(resp){if(resp.result=="failure"){node.css("visibility","inherit");if(resp.errorcode==1)node.text("输入"+title+"错误");else node.text(title+"已存在")}else{$.modal.close();var str="<li><span id='"+num+"'>"+num+"</span><a  href='javascript:void(0);' class='code_del'>删除</a></li>";$(".code_list").append(str);var codes=hideInput.val();if(hideInput.val().replace(/\s/g,"").length>0)codes=codes.split(",");else codes=[];codes.push(num);hideInput.val(codes.join(","))}},error:function(){}})}else{node.css("visibility","inherit");node.text(title+"不能为空")}});$("#btnClse").click(function(){})}};$.modal(html,option);$(".code_dialog ").parents("#simplemodal-container").css("width","auto")})},setUserMobile:function(){$("input[name='RecruitmentPortalPersonProfile_Mobile']").css("background","#fff");var mobile="",mbToken=$("#topUserMbToken").attr("title"),reg=/^((13|14|15|17|18)[0-9]{1}\d{8})$|^19[8,9]\d{8}$|^16[6]\d{8}$/;if(mbToken.length>0)for(i=0;i<mbToken.length;i++)mobile+=mbToken.charCodeAt(i)-66-i;var mobileInput=$("input[name='RecruitmentPortalPersonProfile_Mobile']");if($("input[name='RecruitmentPortalPersonProfile_Mobile']").length>0){mobileInput.val()==="0"&&$("input[name='RecruitmentPortalPersonProfile_Mobile']").val("");if(mobileInput.val()==="")mobile.length!==0&&$("input[name='RecruitmentPortalPersonProfile_Mobile']").val(mobile);if(mobileInput.val()!=="")if(window.location.href.indexOf("PersonId")!==-1){$("input[name='RecruitmentPortalPersonProfile_Mobile']").prop("disabled","disabled");$("input[name='RecruitmentPortalPersonProfile_Mobile']").css("background","rgb(235, 235, 228)");$("#phoneTypeSel").prop("disabled","disabled");$("#phoneTypeSel").css("background","rgb(235, 235, 228)")}}},phoneNumExtraValid:function(){var phoneInput=$("input[name=RecruitmentPortalPersonProfile_Mobile]");if(phoneInput.length==0)return;function inputChange(){}phoneInput.bind("keyup",inputChange);function blurPhoneHandle(){var phoneInput=$("input[name=RecruitmentPortalPersonProfile_Mobile]"),phoneValue=phoneInput.val(),validInterPhone=(new RegExp(window.foreignMobileRegex)).test(phoneValue),reg=/^(00852|852)(5|6|9)\d{7}$/,phoneSlect=$("#phoneTypeSel").val(),phoneValidate=true;if(phoneValue==""){if($(".phone_error").length==0){var phoneErrorDom='<span class="phone_error">必填</span>';phoneInput.after(phoneErrorDom)}else{$(".phone_error").text("必填");$(".phone_error").show()}return false}if(phoneSlect=="chn"){if(!window.mobileRegexStr.test(phoneValue))phoneValidate=false}else if(phoneSlect=="global"){if(!validInterPhone)phoneValidate=false}else if(phoneSlect=="hong_kong")if(!reg.test(phoneValue))phoneValidate=false;if(phoneValidate){$(".phone_error").hide();phoneInput.removeClass("new_pop_error redBorder");$("#phoneTypeSel").removeClass("redBorder")}else{if($(".phone_error").length==0){var phoneErrorDom='<span class="phone_error">手机号格式错误</span>';phoneInput.after(phoneErrorDom)}else{$(".phone_error").text("手机号格式错误");$(".phone_error").show()}phoneInput.addClass("new_pop_error")}}phoneInput.on("keyup blur",blurPhoneHandle);var reg=/^(00852|852)(5|6|9)\d{7}$/,phoneValue=phoneInput.val(),foreignRegex=(new RegExp(window.foreignMobileRegex)).test(phoneValue),innerRegex=window.mobileRegexStr.test(phoneValue);if(window.BSGlobal.TenantId==109392||window.BSGlobal.TenantId==100102){var sel='<select id="phoneTypeSel"><option value="chn">'+window.i18n.china_tel+'</option><option value="global">'+window.i18n.other_tel+'</option><option value="hong_kong">'+window.i18n.hong_kong+"</option></select>";if(parseInt(phoneValue))if(reg.test(parseInt(phoneValue))){sel='<select id="phoneTypeSel"><option value="chn">'+window.i18n.china_tel+'</option><option value="global">'+window.i18n.other_tel+'</option><option value="hong_kong" selected>'+window.i18n.hong_kong+"</option></select>";phoneInput.unbind("keyup")}else if(foreignRegex)var sel='<select id="phoneTypeSel"><option value="chn">'+window.i18n.china_tel+'</option><option value="global" selected>'+window.i18n.other_tel+'</option><option value="hong_kong">'+window.i18n.hong_kong+"</option></select>"}else{var sel='<select id="phoneTypeSel"><option value="chn">'+window.i18n.china_tel+'</option><option value="global">'+window.i18n.other_tel+"</option></select>";if(phoneValue!==""&&foreignRegex){sel='<select id="phoneTypeSel"><option value="chn">'+window.i18n.china_tel+'</option><option value="global" selected>'+window.i18n.other_tel+"</option></select>";phoneInput.unbind("keyup")}}phoneInput.before(sel);var defaultRule=phoneInput.rules();if(phoneInput.val()!=""&&!parseInt(phoneInput.val())||!/^\d{0,11}$/.test(parseInt(phoneInput.val())))phoneInput.rules("remove");else{phoneInput.rules("remove");phoneInput.rules("add",defaultRule)}var paramMap={},param=location.search.substring(1).split("&");for(i=0;i<param.length;i++){var temp=param[i].split("="),key=temp[0],val=temp[1];paramMap[key]=val}if(paramMap.IsApplyEdit=="True")$("#phoneTypeSel").prop("disabled",true).css("background","#EBEBE4");else $("#phoneTypeSel").change(function(){var val=$(this).val();phoneInput.val("");if(val=="global"){phoneInput.rules("remove");phoneInput.unbind("keyup")}else if(val=="chn"){phoneInput.rules("remove");phoneInput.rules("add",defaultRule);phoneInput.bind("keyup",inputChange)}else if(val=="hong_kong"){phoneInput.rules("remove");phoneInput.rules("add",defaultRule);phoneInput.bind("keyup",inputChange)}})}}})</script>
+
+    <script type="text/javascript">
+        
+        $(function () {
+            BSGlobal.detaildata = {
+                r: '',
+                jId: '350345684',
+                sId: '0',
+                pageId: '',
+                source: '',
+                pageId: '',
+                isImport: '',
+                idType: '',
+                personId: '',
+                storeDbId: '',
+                formId: '',
+                traceid:'',
+                navigateUrl: '/Portal/Resume/ResumeItem',
+                IsApplyEdit: false,
+                ManualInputSchool: true
+                };
+            BSGlobal.resumeDetai = new BSGlobal.resumeDetailPage("CmsPortal", BSGlobal.detaildata);
+            var email = $("input[name=RecruitmentPortalPersonProfile_email]");
+            if (BSGlobal.detaildata.idType > 0 && email.val() != "")
+                //                $("input[name=RecruitmentPortalPersonProfile_email]").attr("disabled", "disabled");
+                $("input[name=RecruitmentPortalPersonProfile_email]").prop('readonly', true).css('background-color', '#ebebe4');
+            $("input[name=RecruitmentPortalPersonProfile_email]").attr("value", $("input[name=RecruitmentPortalPersonProfile_email]").val());
+            $("input[name=RecruitmentPortalPersonProfile_Mobile]").attr("value", $("input[name=RecruitmentPortalPersonProfile_Mobile]").val());
+        });
+    </script>
+
+    
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".applypos span").css({ "font-weight": "bold" })
+            if (window.location.href.indexOf("traceid") !== -1) {
+                $(".applypos span").css({ "font-weight": "bold" })
+                $(".applypos strong").css({ "color": "#0095FF", "cursor": "pointer" })
+                $("#cancelBtn").click(function () {
+                    $.modal.close()
+                })
+                $('.applypos strong').click(function () {
+                    var htmlSuccess = ['<div class="dl_dialog1" style="border:1px solid #E9EDF0;box-shadow: 0 0 0 #fff;border-radius:3px;position:relative;padding-top:30px;" id="framewrapper">',
+                        '<div style ="overflow-y:scroll; max-height:450px;">',
+                        '<iframe  id="jobDetailFrame" src=" " scrolling="no"  style="width:100%;overflow-y:scroll"></iframe>',
+                        '</div>',
+                        '<div id="cancelRecDetail" style="cursor:pointer"></div>',
+                        '<div class="loading" style="position:absolute;top:50%;left:50%;margin-left:-10px;">加载中...</div>',
+                        '</div>'].join("");
+                    $.modal(htmlSuccess, {
+                        containerCss: {
+                            backgroundColor: "transparent",
+                            borderColor: "transparent",
+                            width: '840px',
+                            padding: 0
+                        },
+                        onShow: function () {
+                            var recjobid
+                            var Mymodel = document.getElementById("jobDetailFrame");
+                            window.location.href.split("&").forEach(function (item) {
+                                if (item.indexOf('jId') !== -1 || item.indexOf('jid') !== -1) {
+                                    recjobid = item.split('=')[1]
+                                }
+                            })
+                            Mymodel.src = '//' + window.location.hostname + '/wrecommenddetail/' + recjobid
+                            Mymodel.onload = function () {
+                                var height = $("#jobDetailFrame").contents().find(".bs-module").height();
+                                var halfheight = height > 500 ? "-250px" : -(height / 2 + 20) + 'px'
+                                $("#jobDetailFrame").height(height)
+                                $("#simplemodal-container").css({ 'top': '50%', "margin-top": halfheight })
+                                $("#simplemodal-overlay").css({ 'background': '#000' })
+                                $('.loading').hide()
+                                setTimeout(function () {
+                                    var height = $("#jobDetailFrame").contents().find(".bs-module").height();
+                                    var halfheight = height > 500 ? "-250px" : -(height / 2 + 20) + 'px'
+                                    $("#jobDetailFrame").height(height)
+                                    $("#simplemodal-container").css({ 'top': '50%', "margin-top": halfheight })
+                                    $("#simplemodal-overlay").css({ 'background': '#000' })
+                                    $('.loading').hide()
+                                }, 1000)
+
+                            }
+                            $("#cancelRecDetail").click(function () {
+                                $.modal.close()
+                            })
+                        },
+                        onClose: function () {
+                            $.modal.close();
+                        }
+                    });
+
+                })
+            }
+
+                
+            if (window.location.host.toLowerCase() == 'pecc.zhiye.com') {
+
+                var certificateType = $("#RecruitmentPortalPersonProfile_CertificateType");
+                if (certificateType.length) {
+                    //先选择option是为了使用所选option的验证规则
+                    certificateType.val('1');
+                    $.each(certificateType.find('option'), function (state, child) {
+                            
+                        if ($(child).val() != "1") $(child).remove()
+                    });
+                }
+
+                var phone = $("#phoneTypeSel");
+                if (phone.length) {
+                    phone.val("chn");
+                    $.each(phone.find('option'), function (state, child) {
+                            
+                            if ($(child).val() != "chn") $(child).remove()
+                        });
+                }
+            }
+
+            if (window.BSGlobal && window.BSGlobal.SiteLanguage == "en") {
+                var i18nSource = {
+                    "Gender": {
+                        "男": "male",
+                        "女": "female"
+                    },
+                    "Highest Degree": {
+                        "无": "None",
+                        "学士": "bachelor's",
+                        "双学士": "Double bachelors",
+                        "硕士": "Master",
+                        "博士": "PHD"
+                    },
+                    "Degree": {
+                        "无": "None",
+                        "学士": "bachelor's",
+                        "双学士": "Double bachelors",
+                        "硕士": "Master",
+                        "博士": "PHD"
+                    }
+                }
+
+                $.each(i18nSource, function (itemLabel) {
+                    var itemValue = $($(".rsminfocnt_rlrw label:contains('" + itemLabel + "')")).next();
+                    for (var i = 0; i < itemValue.length; i++) {
+                        itemValue.eq(i).text(this[itemValue.eq(i).text()]);
+                    }
+                });
+                for (var i = 0; i < $(".datespan").length; i++) {
+                    var text = $(".datespan")[i].innerHTML;
+                    if (text.indexOf("至今") > 0) {
+                        var str = text.substring(0, text.indexOf("至"));
+                        $(".datespan")[i].innerHTML = str + "Today";
+                    }
+                }
+            }
+
+        });
+    </script>
+    <style type="text/css">
+        #framewrapper ::-webkit-scrollbar { /*滚动条整体样式*/
+            width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+
+        #framewrapper ::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+        }
+
+        #framewrapper ::-webkit-scrollbar-track { /*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px #fff;
+            border-radius: 0;
+            background: #fff;
+        }
+    </style>
+
+<script language="javascript" type="text/javascript">
+    (function () {
+        BSGlobal.TenantId = 223719;
+        BSGlobal.SiteLanguage ='cn';
+        // BSGlobal.SiteLanguage ='cn';
+        // BSGlobal.SiteLanguage ='en';
+
+
+
+    })();
+
+
+
+    function SetCss() {
+        var win = window.location.href;
+        if (win.indexOf("Apply") != -1) {
+            $("#myapply a").addClass("current");
+        }
+        else if (win.indexOf("ResumeItem") != -1) {
+            $("#myresume a").addClass("current");
+        }
+        else if (win.indexOf("EditPwd") != -1) {
+            $("#changepwd a").addClass("current");
+        }
+    }
+    SetCss();
+
+    $(function () {
+        DrawImage($("#logoImg"), '350', '80');
+        //setInterval(function () {
+        //    try {
+        //        DrawImage($("#logoImg"), '350', '80');
+        //    } catch (e) {
+        //    }
+        //}, 100);
+    });
+
+    function DrawImage(ImgD, FitWidth, FitHeight) {
+        var image = new Image();
+
+        image.src = $(ImgD).attr("src");
+
+        if (image.width > 0 && image.height > 0) {
+            if (image.width / image.height >= FitWidth / FitHeight) {
+                if (image.width > FitWidth) {
+                    $(ImgD).css("width", FitWidth);
+                    $(ImgD).css("height", (image.height * FitWidth) / image.width);
+                } else {
+                    $(ImgD).css("width", image.width);
+                    $(ImgD).css("height", image.height);
+                }
+            } else {
+                if (image.height > FitHeight) {
+                    $(ImgD).css("height", FitHeight);
+                    $(ImgD).css("width", (image.width * FitHeight) / image.height);
+                } else {
+                    $(ImgD).css("width", image.width);
+                    $(ImgD).css("height", image.height);
+                }
+            }
+            $(ImgD).show();
+        }
+    }
+</script>
+
