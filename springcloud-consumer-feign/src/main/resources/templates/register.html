@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://www.imooc.com/user/newsignup -->
+<html  lang="en"  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Document Title -->
+    <meta charset="utf-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/common-less.css" type="text/css">
+    <link rel="stylesheet" href="css/moco.min.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/loginsign-less.css">
+    <link rel="stylesheet" href="css/poplogin-less.css" type="text/css">
+    <style type="text/css">
+        #main{
+            margin-top: 140px;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap3/css/bootstrap.css">
+    <script src="../js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap-treeview/bootstrap-treeview.min.css">
+    <script src="../js/bootStrap-addTabs/bootstrap.addtabs.js"></script>
+    <link rel="stylesheet" href="../js/bootStrap-addTabs/bootstrap.addtabs.css">
+
+    <link rel="stylesheet" href="../js/bootstrap-table/bootstrap-table.css">
+    <script src="../js/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+</head>
+<body>
+
+<div id="main">
+    <div class="login-wrap">
+        <div id="signup" class="rl-modal  rl-model-signup">
+            <div class="rl-modal-header">
+                <h1>
+                    <span data-fromto="signup:signin" class="xa-showSignin"><a href="/toLogin">登录</a></span>
+                    <span class="active-title">注册</span>
+                </h1>
+            </div>
+            <div class="rl-modal-body js-modal-body js-registerWrap">
+                <form id="signup-form pr">
+                    <div class="rlf-group pr">
+                        <input type="text" value="" maxlength="37"  id="username" name="username" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入用户名">
+                        <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入账户"></p>
+                    </div>
+                    <div class="rlf-group  pr">
+                        <!--密码可见或隐藏-->
+                        <!--<a href="javascript:void(0)" hidefocus="true" class="proclaim-btn js-proclaim imv2-visibility_off is-pwd" tabindex="-1"></a>-->
+                        <input type="password"  id="userpassword" name="userpassword" data-validate="require-password" class="ipt ipt-pwd js-loginPassword js-pass-pwd" placeholder="请输入密码" maxlength="20" autocomplete="off">
+                        <p class="rlf-tip-wrap errorHint color-red "></p>
+                    </div>
+
+                    <div class="rlf-group pr">
+                        <input type="text" value="" maxlength="37"  id="phone" name="phone" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请绑定手机号">
+                        <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请绑定手机号"></p>
+                    </div>
+
+                    <div class="rlf-group clearfix">
+                        <a  href="JavaScript:reg()"><input type="button" value="注册" hidefocus="true" class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="vright">
+    <img draggable="false" class="moco-emoji" alt="©" src="images/a9.png"> 2020 imooc.com All Rights Reserved  京ICP备 13046642号
+</div>
+</body>
+<script>
+
+    function reg() {
+
+        $.ajax({
+            url:"/reg",
+            type:"post",
+            data:{username:$("#username").val(),userpassword:$("#userpassword").val(),phone:$("#phone").val()},
+            success:function (data) {
+                if (data.cod==5){
+                    alert("用户已存在");
+                    location.href="/toRegister";
+
+                }else {
+                    alert("注册成功,请登录");
+                    location.href="/toLogin";
+                }
+
+            }
+        })
+    }
+</script>>
+
+</html>
