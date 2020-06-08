@@ -2,12 +2,17 @@ package com.jk.controller;
 
 import com.jk.model.*;
 import com.jk.service.glService;
+import com.jk.util.CheckImgUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -219,5 +224,89 @@ public class ZXController {
         view.setViewName("sheJobb");
         return view;
     }
+
+    /*进入登录页面*/
+    @RequestMapping("/toLogin")
+    public String toLogin() {
+        return "login";
+    }
+
+    /*进入注册页面*/
+    @GetMapping("/toRegister")
+    public String toRegister() {
+
+        return "register";
+    }
+
+    /*登录成功进入主页*/
+    @GetMapping("/toMain")
+    public String toMain3() {
+
+        return "main";
+    }
+
+
+    @RequestMapping("getCode")
+    //验证码
+    public void getCode(HttpServletRequest request, HttpServletResponse response) {
+
+        CheckImgUtil.buildCheckImg(request, response);
+    }
+
+    //登录
+    @RequestMapping("/success")
+    @ResponseBody
+    public HashMap successful(String username, String userpassword, String code, HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        String realCode = request.getSession().getAttribute("checkcode").toString().toLowerCase();
+
+        HashMap<String, Object> mape = new HashMap<>();
+
+        UserModel loginName = glService.Succ(username);//userService.Succ(username);
+        if (realCode.equals(code.toLowerCase())) {
+            if (loginName != null) {
+                if (loginName.getUserpassword().equals(userpassword)) {
+                    mape.put("cd", 1);
+                    mape.put("msg", "登录成功");
+                    request.getSession().setAttribute("username", loginName.getUsername());
+
+                } else {
+                    mape.put("cd", 2);
+                    mape.put("msg", "密码错误");
+                }
+            } else {
+                mape.put("cd", 3);
+                mape.put("msg", "用户名错误");
+            }
+        } else {
+            mape.put("cd", 4);
+            mape.put("msg", "验证码错误");
+        }
+
+        return mape;
+    }
+
+    //注册
+    @RequestMapping(value = {"/reg","/reg1"})
+    @ResponseBody
+    public HashMap reg(UserModel user) {
+        UserModel reuser = glService.reg(user.getUsername());
+        HashMap<String, Object> msg = new HashMap<>();
+        if (reuser != null) {
+            msg.put("cod", 5);
+            msg.put("msg", "用户已存在");
+        } else {
+
+            glService.addUser(user);
+        }
+        return msg;
+    }
+
+    /*跳转到手机号验证*/
+    @RequestMapping("/shoujidenglu")
+    public String shoujidenglu() {
+        return "shoujidenglu";
+    }
+
 
 }
