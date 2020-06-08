@@ -645,8 +645,7 @@
 </div>
 </li>
 <li><label class="current label_required">出生日期：</label>
-<input isreadonlybyadd="false" isreadonlybyedit="false" class="mul_input Wdate" name="dateofbirth" id="436ab7a4-67a1-4819-a238-d5d34eb0717611" value="">
-<span class="desc">出生日期需与身份证上一致</span>
+<input isreadonlybyadd="false" isreadonlybyedit="false" type="date" class="mul_input Wdate" name="dateofbirth" id="436ab7a4-67a1-4819-a238-d5d34eb0717611" value="">
 </li>
 <li><label class="current label_required">婚姻状况：</label>
     <select name="maritalstatus" id="RecruitmentPortalPersonProfile_extWedState01_223719_912026373" isreadonlybyadd="false" isreadonlybyedit="false" class="dropdownlist mul_select">
@@ -833,7 +832,6 @@
             type:'post',
             data:$("#formadd").serialize(),
             success:function(data){
-                alert(123)
                location.href="../tolvli";
             }
         })
