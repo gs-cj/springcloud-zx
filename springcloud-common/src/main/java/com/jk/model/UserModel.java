@@ -1,4 +1,4 @@
-package com.ed.model;
+package com.jk.model;
 
 import lombok.Data;
 

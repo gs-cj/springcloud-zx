@@ -97,5 +97,32 @@ public class glServiceImpl implements glService {
         return glMapper.finareaidd(proid);
     }
 
+    @Override
+    @RequestMapping("/success")
+    @ResponseBody
+    public UserModel Succ(@RequestParam("username") String username) {
+        return glMapper.Succ(username);
+    }
+
+    @Override
+    @RequestMapping("/reg")
+    @ResponseBody
+    public UserModel reg( @RequestParam("username") String username) {
+        return glMapper.reg(username);
+    }
+
+    @RequestMapping("/reg1")
+    @ResponseBody
+    public void addUser(@RequestBody UserModel user) {
+glMapper.addUser(user);
+    }
+
+    @Override
+    @RequestMapping("/phoneLogin")
+    @ResponseBody
+    public UserModel fingName(@RequestParam String phone) {
+        return glMapper.fingName(phone);
+    }
+
 
 }

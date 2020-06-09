@@ -61,4 +61,20 @@ public interface glService {
     @RequestMapping("/finareaidd")
     @ResponseBody
     List<ReceuBean> finareaidd(@RequestParam("proid") Integer proid);
+
+    @RequestMapping("/success")
+    @ResponseBody
+    UserModel Succ(@RequestParam("username") String username);
+
+    @RequestMapping("/reg")
+    @ResponseBody
+    UserModel reg(@RequestParam("username") String username);
+
+    @RequestMapping("/reg1")
+    @ResponseBody
+    void addUser(UserModel user);
+
+    @RequestMapping("/phoneLogin")
+    @ResponseBody
+    UserModel fingName(@RequestParam String phone);
 }

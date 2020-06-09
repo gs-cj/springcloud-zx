@@ -1,4 +1,4 @@
-package com.ed.util;
+package com.jk.util;
 
 import java.security.MessageDigest;
 

@@ -1,9 +1,11 @@
-package com.ed.util;
-import java.util.List;
+package com.jk.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.List;
+
 public class JsonUtils {
 	// 定义jackson对象
     private static final ObjectMapper MAPPER = new ObjectMapper();
