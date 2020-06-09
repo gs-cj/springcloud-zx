@@ -1,32 +1,110 @@
 package com.jk.service;
 
 import com.jk.mapper.glMapper;
-import com.jk.model.MessageBean;
+import com.jk.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-public class glServiceImpl implements glService {
+import java.util.ArrayList;
+import java.util.List;
+
+@Controller
+public class glServiceImpl implements GlService {
     @Autowired
-    private glMapper glmapper;
+    private glMapper glMapper;
 
 
-    @Override
-    public String spancount() {
-        return null;
-    }
-
-    @GetMapping("/hello")
+    @RequestMapping("/findRelevantCount")
     @ResponseBody
     @Override
-    public String hello() {
-        return "访问";
+    public String findRelevantCount() {
+        return glMapper.findRelevantCount();
     }
 
-    @RequestMapping("/savaMessage")
+    @RequestMapping("/findRelevant")
     @ResponseBody
     @Override
-    public void savaMessage(@RequestBody MessageBean messageBean) {
-        glmapper.savaMessage(messageBean);
+    public List<RelevantBean> findRelevant() {
+        return glMapper.findRelevant();
     }
+
+    @RequestMapping("/findProfession")
+    @ResponseBody
+    @Override
+    public List<ProfeBean> findProfession() {
+        return glMapper.findProfession();
+    }
+
+    @RequestMapping("/findArea")
+    @ResponseBody
+    @Override
+    public List<AreaBean> findArea() {
+        return glMapper.findArea();
+    }
+
+    @RequestMapping("/findJob")
+    @ResponseBody
+    @Override
+    public List<JobbBean> findJob() {
+        return glMapper.findJob();
+    }
+
+    @RequestMapping("/findProfessionn")
+    @ResponseBody
+    @Override
+    public List<ProfeBean> findProfessionn() {
+        return glMapper.findProfessionn();
+    }
+
+    @RequestMapping("/countjob")
+    @ResponseBody
+    @Override
+    public String countjob() {
+        return glMapper.countjob();
+    }
+
+    @RequestMapping("/findSheJobName")
+    @ResponseBody
+    @Override
+    public List<ReceuBean> findSheJobName() {
+        return glMapper.findSheJobName();
+    }
+
+    @RequestMapping("/findjobbid")
+    @ResponseBody
+    public ReceuBean findSheJobNamee(Integer id) {
+        return glMapper.findSheJobNamee(id);
+    }
+
+    @RequestMapping("/finareaid")
+    @ResponseBody
+    @Override
+    public List<ReceuBean> finareaid(@RequestParam("id") Integer id) {
+        return glMapper.finareaid(id);
+    }
+
+    @RequestMapping("/findnamelist")
+    @ResponseBody
+    @Override
+    public List<MessageBean> findNameList() {
+        return glMapper.findNameList();
+    }
+
+    @RequestMapping("/finareaidd")
+    @ResponseBody
+    @Override
+    public List<ReceuBean> finareaidd(@RequestParam("proid") Integer proid) {
+        return glMapper.finareaidd(proid);
+    }
+
+    @RequestMapping("/savammeoid")
+    @ResponseBody
+    @Override
+    public void savammeoid(@RequestParam("mid")Integer mid, @RequestParam("oid")Integer oid) {
+
+        glMapper.savammeoid(mid,oid);
+
+    }
+
 }

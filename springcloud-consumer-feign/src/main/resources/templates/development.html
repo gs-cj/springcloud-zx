@@ -15,10 +15,14 @@
     <link rel="stylesheet" href="lib.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/lib.css" />
     <link rel="stylesheet" href="style.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/style.css" />
     <link rel="stylesheet" href="less.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/less.css">
-    <script type="text/javascript" src="jquery.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/jquery.js"></script>
     <script type="text/javascript" src="lib.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/lib.js"></script>
     <link rel="stylesheet" href="style-pp.css" tppabs="http://job.zte.com.cn/Asserts/JobOffers/css/style-pp.css" />
-<style>
+
+    <script src="../js/jquery.min.js"></script>
+
+
+
+    <style>
    body{
     background-color: #f8f8f8;
     }
@@ -252,21 +256,22 @@
 
 
     <div class="alljobs-list bgc-white">
-        <div class="tit">相关职位 : <em></em></div>
+        <div class="tit">相关职位 : <font id="countjob" color="red" size="6"></font><em></em></div>
         <div class="list" id="jobType">
 
 
-                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{571F1D11-1712-4166-AF37-8F8AFE5C5639}"><em>
-                        应届生职位
-                    </em><b></b></a>
+<!--                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{571F1D11-1712-4166-AF37-8F8AFE5C5639}"><em>-->
+<!--                        应届生职位-->
+<!--                    </em><b></b></a>-->
 
-                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{AA7710B8-FE4F-4BEA-A7E5-5F3BAB6C9090}"><em>
-                        实习生职位
-                    </em><b></b></a>
+<!--                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{AA7710B8-FE4F-4BEA-A7E5-5F3BAB6C9090}"><em>-->
+<!--                        实习生职位-->
+<!--                    </em><b></b></a>-->
 
-                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{BB708854-FED8-49D2-A4BA-E4022C429176}"><em>
-                        留学生职位
-                    </em><b></b></a>
+<!--                    <a href="javascript:void(0);" onclick="jobType(this);" data-id="{BB708854-FED8-49D2-A4BA-E4022C429176}"><em>-->
+<!--                        留学生职位-->
+<!--                    </em><b></b></a>-->
+
 
         </div>
     </div>
@@ -276,120 +281,122 @@
                 <div class="line line1">
                     <em>职位类别</em>
                     <p id="positionType">
-                        <a href="javascript:void(0);" onclick="jobCategory(this);" class="on" data-id="0">全部分类</a>
-                        
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{7DDD236B-D7DE-4355-BA87-5AA6F735DFE7}">
-                                    研发类
-                                </a>
-                            
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{5552A423-90D8-4547-BC50-4D3F497D75AF}">
-                                    营销类
-                                </a>
-                            
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{CE9CC923-135E-4DA9-AD81-CC3B2EF62064}">
-                                    运营支撑
-                                </a>
-                            
-                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{ED15A14A-3EC9-4C21-BEC2-E5027ED5A8D5}">
-                                    供应链
-                                </a>
+<!--                                 <a href="javascript:void(0);" onclick="jobCategory(this);" class="on" data-id="0">-->
+<!--                                   全部分类-->
+<!--                                 </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{7DDD236B-D7DE-4355-BA87-5AA6F735DFE7}">-->
+<!--                                    研发类-->
+<!--                                </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{5552A423-90D8-4547-BC50-4D3F497D75AF}">-->
+<!--                                    营销类-->
+<!--                                </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{CE9CC923-135E-4DA9-AD81-CC3B2EF62064}">-->
+<!--                                    运营支撑-->
+<!--                                </a>-->
+
+<!--                                <a href="javascript:void(0);" onclick="jobCategory(this);" data-id="{ED15A14A-3EC9-4C21-BEC2-E5027ED5A8D5}">-->
+<!--                                    供应链-->
+<!--                                </a>-->
                             
                     </p>
                 </div>
                 <div class="line line2">
                     <em>工作地点</em>
                     <p id="city">
-                        <a href="javascript:void(0);" onclick="jobCity(this);" class="on" data-id="0">不限地点</a>
-                        
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{B90F8E7A-42D5-4E8A-BA37-5824A0148916}">
-                                    北京
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{2A63185F-C370-4423-8B1E-23DBCCB5B817}">
-                                    长沙
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{4C35B1C7-8C44-4E4B-94D2-91394412F9E0}">
-                                    重庆
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{046A31FC-82DC-41E4-91A7-EEE6D04E5EA9}">
-                                    广州
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{9829429A-22FE-43A3-BD7E-8F5EEB76F072}">
-                                    河源
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{9AE7B58E-850A-4B3A-8C66-B385F1514D27}">
-                                    香港
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{52675107-6650-49D0-A1A6-A912A7EB1BF9}">
-                                    福建
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{94D59947-79D6-4790-8732-CF44E29327C7}">
-                                    成都
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{F9B32FA6-07F4-4122-A541-0E7E6A72E127}">
-                                    南京
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{D1117B8F-0C1E-40E3-A8D7-06BFFEBC458A}">
-                                    三亚
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{9E1C0E9F-B4AB-4953-8602-DA2A7AD91A2B}">
-                                    上海
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{036ED7E1-E572-4239-A58E-0DCCB9960064}">
-                                    深圳
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{3504ADD3-1B32-4FB0-A021-B373F798FE85}">
-                                    天津
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{06307B5C-D680-4CBA-B73E-4153404DEE03}">
-                                    武汉
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{DBB6773F-13FA-4CA6-A20F-6FB7484D46FC}">
-                                    西安
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{81DE1237-4F11-4782-B6A8-C6352693A33F}">
-                                    燕郊
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{2679562A-113F-4A96-A51B-CEF7BD0B2775}">
-                                    国内办事处
-                                </a>
-                            
-                                
-                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{B9B0421F-6996-41A2-8AB3-D612C34E7807}">
-                                    海外
-                                </a>
+<!--                        <a href="javascript:void(0);" onclick="jobCity(this);" class="on" data-id="0">不限地点</a>-->
+<!--                        -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{B90F8E7A-42D5-4E8A-BA37-5824A0148916}">-->
+<!--                                    北京-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{2A63185F-C370-4423-8B1E-23DBCCB5B817}">-->
+<!--                                    长沙-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{4C35B1C7-8C44-4E4B-94D2-91394412F9E0}">-->
+<!--                                    重庆-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{046A31FC-82DC-41E4-91A7-EEE6D04E5EA9}">-->
+<!--                                    广州-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{9829429A-22FE-43A3-BD7E-8F5EEB76F072}">-->
+<!--                                    河源-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{9AE7B58E-850A-4B3A-8C66-B385F1514D27}">-->
+<!--                                    香港-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{52675107-6650-49D0-A1A6-A912A7EB1BF9}">-->
+<!--                                    福建-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{94D59947-79D6-4790-8732-CF44E29327C7}">-->
+<!--                                    成都-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{F9B32FA6-07F4-4122-A541-0E7E6A72E127}">-->
+<!--                                    南京-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{D1117B8F-0C1E-40E3-A8D7-06BFFEBC458A}">-->
+<!--                                    三亚-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{9E1C0E9F-B4AB-4953-8602-DA2A7AD91A2B}">-->
+<!--                                    上海-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{036ED7E1-E572-4239-A58E-0DCCB9960064}">-->
+<!--                                    深圳-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{3504ADD3-1B32-4FB0-A021-B373F798FE85}">-->
+<!--                                    天津-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{06307B5C-D680-4CBA-B73E-4153404DEE03}">-->
+<!--                                    武汉-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{DBB6773F-13FA-4CA6-A20F-6FB7484D46FC}">-->
+<!--                                    西安-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{81DE1237-4F11-4782-B6A8-C6352693A33F}">-->
+<!--                                    燕郊-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{2679562A-113F-4A96-A51B-CEF7BD0B2775}">-->
+<!--                                    国内办事处-->
+<!--                                </a>-->
+<!--                            -->
+<!--                                -->
+<!--                                <a href="javascript:void(0);" onclick="jobCity(this);" data-id="{B9B0421F-6996-41A2-8AB3-D612C34E7807}">-->
+<!--                                    海外-->
+<!--                                </a>-->
                             
                     </p>
                 </div>
@@ -403,8 +410,9 @@
         </div>
         <div id="job-Div">
             <div class="p-table1box">
-                
-            </div>
+
+                <div id = "jobnamee" class="table"></div>
+
         </div>
         <!-- !end 表格 -->
 
@@ -443,7 +451,7 @@
                                 
                         </dd>
                     </dl>
-                
+
                     <dl class=''>
                         <dt>
                             实习生招聘
@@ -582,24 +590,43 @@
 
     <link rel="stylesheet" href="slick.css" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/css/slick.css">
     <script src="slick.min.js" tppabs="https://res-www.zte.com.cn/Asserts/JobOffers/js/slick.min.js"></script>
-    <script>
-        $(document).ready(function ($) {
-            // banner
-            $('#banner').slick({
-                fade: true,
-                autoplay: true,
-                dots: false,
-                arrows: false,
-                zIndex: 3,
-                customPaging: function () {
-                    return '';
-                },
-            });
+    <script type="text/javascript" src="jquery-1.8.0.js"></script>
 
-        })
-    </script>
+<!--    <script>-->
+<!--        $(document).ready(function ($) {-->
+<!--            // banner-->
+<!--            $('#banner').slick({-->
+<!--                fade: true,-->
+<!--                autoplay: true,-->
+<!--                dots: false,-->
+<!--                arrows: false,-->
+<!--                zIndex: 3,-->
+<!--                customPaging: function () {-->
+<!--                    return '';-->
+<!--                },-->
+<!--            });-->
+
+<!--        })-->
+<!--    </script>-->
         <script>
         $(function(){
+
+            //查看相关职位
+            findRelevant();
+            //查看相关职位个数
+            findRelevantCount();
+            //查看职位分类
+            findProfession();
+
+            //查看工作地点
+            findArea();
+
+            //查看职位名称
+            findJob();
+
+            //查询相关职位个数
+            findJobCount();
+
             // 表格
             $('.p-table1 th:nth-child(1),.p-table1 td:nth-child(1)').css({'padding-left': '20px','text-align': 'left'});
             $('.p-table1 th:last-child,.p-table1 td:last-child').css({'text-align': 'left'});
@@ -611,6 +638,111 @@
         })
 
 
+        //查看相关职位个数
+        function findRelevantCount() {
+            $.ajax({
+                url: "../findRelevantCount",
+                success:function (data) {
+                    for (var i=0;i<data.length;i++){
+                     //   alert(data)
+                    }
+
+                }
+            })
+        }
+
+        //查询相关职位
+         function findRelevant() {
+             $.ajax({
+                 url: "../findRelevant",
+                 success:function (data) {
+                     var tr = "<a href=\"javascript:void(0);\" onclick=\"jobType(this);\"><em>";
+                     var td = "</em><b></b></a>";
+                     var th = "";
+                     for(var i=0;i<data.length;i++){
+                        th += tr+ data[i].type+ td;
+                     }
+
+                     $("#jobType").html(th);
+                 },
+
+
+             })
+         }
+         
+         //查询职位分类
+            function findProfession() {
+                $.ajax({
+                    url: "../findProfession",
+                    success:function (data) {
+
+                        var tr = "<a href=\"javascript:void(0);\" onclick=\"jobCategory(this);\">";
+                        var td = "</a>";
+                        var th = "";
+                        for(var i=0;i<data.length;i++){
+                            th += tr+ data[i].name+ td;
+                        }
+
+                       // alert(th);
+                      $("#positionType").html(th);
+                    },
+
+
+                })
+            }
+
+            //查看工作地点
+            function findArea() {
+                $.ajax({
+                    url: "../findArea",
+                    success:function (data) {
+                        var tr = "<a href=\"javascript:void(0);\" onclick=\"jobCity(this);\">";
+                        var td = "</a>";
+                        var th = "";
+                        for(var i=0;i<data.length;i++){
+                            th += tr+ data[i].areaname+ td;
+                        }
+
+                         //alert(th);
+                        $("#city").html(th);
+                    },
+
+
+                })
+            }
+
+            //查看职位
+            function findJob() {
+
+            $.ajax({
+                   url: "../findJob",
+                    success:function (data) {
+                        $("#jobnamee").html(data);
+                   }
+                })
+            }
+
+        // $('.date').datetimepicker({
+        //     language: 'zh-CN',//显示中文
+        //     format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        //     minView: "month",//设置只显示到月份
+        //     initialDate: new Date(),//初始化当前日期
+        //     autoclose: true,//选中自动关闭
+        //     todayBtn: true//显示今日按钮
+        // });
+
+
+        //查询相关职位个数
+        function findJobCount() {
+
+            $.ajax({
+                url: "../countjob",
+                success:function (data) {
+
+                            $("#countjob").html(data);
+                }
+            })
+        }
     </script>
 
 

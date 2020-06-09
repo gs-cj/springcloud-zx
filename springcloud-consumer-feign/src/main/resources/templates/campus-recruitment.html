@@ -748,28 +748,30 @@
 
         })
     </script>
-    <script type="text/javascript" src="jquery.mousewheel.js" tppabs="http://job.zte.com.cn/Asserts/JobOffers/js/jquery.mousewheel.js"></script>
-<link rel="stylesheet" href="jquery.mCustomScrollbar.css" tppabs="http://job.zte.com.cn/Asserts/JobOffers/css/jquery.mCustomScrollbar.css">
-<script type="text/javascript" src="jquery.mCustomScrollbar.js" tppabs="http://job.zte.com.cn/Asserts/JobOffers/js/jquery.mCustomScrollbar.js"></script>  
-<script>
+<!--    <script type="text/javascript" src="jquery.mousewheel.js" tppabs="http://job.zte.com.cn/Asserts/JobOffers/js/jquery.mousewheel.js"></script>-->
+<!--<link rel="stylesheet" href="jquery.mCustomScrollbar.css" tppabs="http://job.zte.com.cn/Asserts/JobOffers/css/jquery.mCustomScrollbar.css">-->
+<!--<script type="text/javascript" src="jquery.mCustomScrollbar.js" tppabs="http://job.zte.com.cn/Asserts/JobOffers/js/jquery.mCustomScrollbar.js"></script>-->
+    <script type="text/javascript" src="jquery-1.8.0.js"></script>
+    <script>
         $(function(){
+
             // 宣讲会信息 显示详情
-            $('http://job.zte.com.cn/.boxp-map .pos').click(function(event) {
-                $('.pop_cont').fadeIn();
-            });
-            // 添加滚动条插件
-            $(window).on('load',function(event) {
-                event.preventDefault();
-                $('http://job.zte.com.cn/.pop_cont .cont').mCustomScrollbar({
-                    theme: 'light-3',
-                    scrollbarPosition: 'outside'
-                });
-            });
-            // 招聘流程
-            $('.boxp-row-flow .title h6').click(function(event) {
-                var ind = $(this).index();
-                $('http://job.zte.com.cn/.boxp-row-flow .list').eq(ind).show().siblings('http://job.zte.com.cn/.boxp-row-flow .list').hide();
-            });
+            // $('http://job.zte.com.cn/.boxp-map .pos').click(function(event) {
+            //     $('.pop_cont').fadeIn();
+            // });
+            // // 添加滚动条插件
+            // $(window).on('load',function(event) {
+            //     event.preventDefault();
+            //     $('http://job.zte.com.cn/.pop_cont .cont').mCustomScrollbar({
+            //         theme: 'light-3',
+            //         scrollbarPosition: 'outside'
+            //     });
+            // });
+            // // 招聘流程
+            // $('.boxp-row-flow .title h6').click(function(event) {
+            //     var ind = $(this).index();
+            //     $('http://job.zte.com.cn/.boxp-row-flow .list').eq(ind).show().siblings('http://job.zte.com.cn/.boxp-row-flow .list').hide();
+            // });
         })
     </script>
 

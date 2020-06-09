@@ -1,22 +1,23 @@
 package com.jk.controller;
 
-import com.jk.model.MessageBean;
-import com.jk.service.glService;
+import com.jk.model.*;
+import com.jk.service.GlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 public class ZXController {
     @Autowired
-    private glService glService;
-    //测试
-    @GetMapping("/hello")
-    public String hello(){
-        return glService.hello();
-    }
+    private GlService glService;
 
     //跳转首页
     @RequestMapping("/toMainn")
@@ -114,31 +115,129 @@ public class ZXController {
     }
 
 
-    @RequestMapping("savaMessage")
+
+   @RequestMapping("toSelect")
+    public String toSelect(Integer id,HttpSession session){
+
+        session.setAttribute("oid",id);
+
+        return "toSelect";
+
+    }
+
+    //查看相关职位个数findRelevantCount
+    @RequestMapping("/findRelevantCount")
     @ResponseBody
-    public void savaMessage(MessageBean messageBean){
-        glService.savaMessage(messageBean);
+    public String findRelevantCount(){
+        return glService.findRelevantCount();
     }
 
 
-    @RequestMapping("/tolvli")
-    public String tolvli(){
-        return "lvli";
+    //查看相关职位
+    @RequestMapping("/findRelevant")
+    @ResponseBody
+    public List<RelevantBean> findRelevantww(){
+        return glService.findRelevant();
+
     }
 
-    @RequestMapping("/tonydq")
-    public String tonydq(){
-        return "zhiwei";
+    //查看职位分类
+    @RequestMapping("/findProfession")
+    @ResponseBody
+    public List<ProfeBean>findProfession(){
+        return glService.findProfession();
     }
 
+    //社会招聘查看职位分类
+    @RequestMapping("/findProfessionn")
+    @ResponseBody
+    public List<ProfeBean>findProfessionn(){
+        return glService.findProfessionn();
+    }
 
+    //查看工作地点
+    @RequestMapping("/findArea")
+    @ResponseBody
+    public List<AreaBean>findArea(){
 
-    //求span个数
-    @RequestMapping("/span")
-    public String spancount(){
-        System.out.println("555");
-        String ddd =  glService.spancount();
-        System.out.println(ddd);
-        return null;
+        return glService.findArea();
+    }
+
+    //查看职位
+    @RequestMapping("/findJob")
+    public ModelAndView findJob(){
+       List<JobbBean>list = glService.findJob();
+
+        ModelAndView show = new ModelAndView();
+        show.addObject("list",list);
+        show.setViewName("show");
+        return show;
+    }
+
+    @RequestMapping("findNameList")
+    @ResponseBody
+    public List<MessageBean> findNameList(){
+        return glService.findNameList();
+    }
+    //查看职位个数
+    @RequestMapping("countjob")
+    @ResponseBody
+    public String countjob(){
+        return glService.countjob();
+    }
+
+    //查看社会招聘职位
+    @RequestMapping("findSheJobName")
+    @ResponseBody
+    public ModelAndView findSheJobName(){
+     //   ModelAndView model = new ModelAndView("sheJob");
+        ModelAndView model = new ModelAndView("sheJob");
+        List<ReceuBean>list =   glService.findSheJobName();
+
+        model.addObject("list",list);
+        return model;
+
+    }
+
+    //查看职位详情
+    @RequestMapping("/findjobbid")
+    @ResponseBody
+    public ModelAndView findjobbid(@RequestParam Integer id){
+        ModelAndView details = new ModelAndView("details");
+        ReceuBean receu = glService.findSheJobNamee(id);
+        details.addObject("receu",receu);
+
+        return details;
+    }
+
+    //职位名称条查
+    @RequestMapping("/finareaid")
+    @ResponseBody
+    public ModelAndView finareaid(@RequestParam("id")Integer id){
+
+        ModelAndView view = new ModelAndView();
+        List<ReceuBean>list = glService.finareaid(id);
+        view.addObject("list", list);
+        view.setViewName("sheJobb");
+        return view;
+    }
+    @RequestMapping("/finareaidd")
+    @ResponseBody
+    public ModelAndView finareaidd(@RequestParam("proid")Integer proid){
+
+        System.out.println(proid + "---------------");
+        ModelAndView view = new ModelAndView();
+        List<ReceuBean>list = glService.finareaidd(proid);
+        view.addObject("list", list);
+        view.setViewName("sheJobb");
+        return view;
+    }
+
+    @RequestMapping("/savammeoid")
+    @ResponseBody
+    public void savammeoid(@RequestParam("mid") Integer mid,HttpSession session){
+        Object obj=session.getAttribute("oid");
+        Integer oid=(Integer) obj;
+        glService.savammeoid(mid,oid);
     }
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <script th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js"></script>
+    <script th:src="@{/js/bootstrap3/js/bootstrap.js}" src="../static/js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" th:href="@{/js/bootstrap3/css/bootstrap.css}" href="../static/js/bootstrap3/css/bootstrap.css"/>
+    <link rel="stylesheet" th:href="@{/js/bootstrap-treeview/bootstrap-treeview.min.css}" href="../static/js/bootstrap-treeview/bootstrap-treeview.min.css"/>
+    <script th:src="@{/js/bootstrap-treeview/bootstrap-treeview.min.js}" src="../static/js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <link rel="stylesheet" th:href="@{/js/bootStrap-addTabs/bootstrap.addtabs.css}" href="../static/js/bootStrap-addTabs/bootstrap.addtabs.css"/>
+    <script th:src="@{/js/bootStrap-addTabs/bootstrap.addtabs.js}" src="../static/js/bootStrap-addTabs/bootstrap.addtabs.js"></script>
+    <link th:href="@{/js/bootstrap-table/bootstrap-table.css}" rel="stylesheet" href="../static/js/bootstrap-table/bootstrap-table.css"/>
+    <script th:src="@{/js/bootstrap-table/bootstrap-table.js}" src="../static/js/bootstrap-table/bootstrap-table.js"></script>
+    <script th:src="@{/js/bootstrap-table/locale/bootstrap-table-zh-CN.js}" src="../static/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script th:src="@{/js/bootstrap-bootbox/bootbox.min.js}" src="../static/js/bootstrap-bootbox/bootbox.min.js"></script>
+    <script th:src="@{/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js}" src="../static/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script th:src="@{/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js}" src="../static/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link th:href="@{/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css}" rel="stylesheet" href="../static/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+</head>
+<body>
+
+
+
+<!--<div class="form-group">
+    <label for="inputMusicType" class="col-sm-4 control-label">导入简历</label>
+    <div class="col-sm-8">
+        <input type="radio" class="form-control">
+    </div>
+</div>-->
+
+<form id="xinzeng" method="post">
+    <div class="form-group">
+    <label for="inputNameType" class="col-sm-4 control-label">姓名</label>
+    <div class="col-sm-8">
+        <select  id="inputNameType" class="form-control">
+        </select>
+    </div>
+    </div>
+</form>
+<input type="button" value="保存" class="btn btn-info" onclick="savaMo()">
+</body>
+<script>
+
+  /* var mid =  $("#inputNameType").find("option:selected").val();*/
+
+
+
+
+function savaMo(){
+     var mid =  $("#inputNameType").find("option:selected").val();
+    /*var mid = $("#inputNameType").find("option:selected").attr("value")*/
+    alert(mid);
+    $.ajax({
+        url:'../savammeoid?mid='+mid,
+        data:$("#xinzeng").serialize(),
+        success:function () {
+            alert(123);
+        }
+
+    })
+}
+
+
+
+    $(function(){
+        initNameSelect2();
+
+    })
+
+
+    function initNameSelect2(){
+        $.post('../findNameList',{},function(data){
+            var html = "<option value='-1'>请选择</option>";
+            for (var i = 0; i < data.length; i++) {
+                html += "<option value='"+data[i].id+"'>"+data[i].name+"</option>"
+            }
+            $("#inputNameType").html(html);
+        })
+    }
+</script>
+</html>
