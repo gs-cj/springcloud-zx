@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://www.imooc.com/user/newlogin -->
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Document Title -->
+    <meta charset="utf-8">
+    <title>登录</title>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/common-less.css" type="text/css">
+    <link rel="stylesheet" href="css/moco.min.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/loginsign-less.css">
+    <link rel="stylesheet" href="css/poplogin-less.css" type="text/css">
+    <style type="text/css">
+        #main{
+            margin-top: 140px;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap3/css/bootstrap.css">
+    <script src="../js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap-treeview/bootstrap-treeview.min.css">
+    <script src="../js/bootStrap-addTabs/bootstrap.addtabs.js"></script>
+    <link rel="stylesheet" href="../js/bootStrap-addTabs/bootstrap.addtabs.css">
+
+    <link rel="stylesheet" href="../js/bootstrap-table/bootstrap-table.css">
+    <script src="../js/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+</head>
+<body>
+
+<div id="main">
+    <div class="login-wrap">
+        <div id="signin" class="rl-modal">
+            <div class="rl-modal-header">
+                <!--选项卡切换-->
+                <h1>
+                    <span class="active-title">手机登录</span>
+
+                </h1>
+            </div>
+            <div class="rl-modal-body js-loginWrap">
+                <div class="clearfix">
+                    <form id="loginFormId" autocomplete="off">
+                        <div class="rlf-group pr">
+                            <input type="text" value="" id="phone" maxlength="37" name="phone" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入手机号">
+                            <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确手机号"></p>
+                        </div>
+
+                        <div class="rlf-group pr">
+
+                            <input type="text" value="" id="phoneCode" maxlength="37" name="Code" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入验证码">
+                            <p></p>
+                            <input type="button" onclick="yzm()" width="600" height="1000"  value="获取验证码" hidefocus="true" >
+
+
+                        </div>
+
+
+                        <div class="rlf-group clearfix">
+                            <input type="button" onclick="phoneLogin()" value="登录" hidefocus="true" class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function yzm() {
+        $.ajax({
+            url:'../getphoneCode',
+            type:'post',
+            data:{phone:$("#phone").val()},
+            success:function (data) {
+
+            if (data.code==0){
+                alert(data.msg);
+
+            }else {
+                alert(data.msg);
+            }
+            }
+        })
+
+    }
+    
+    function phoneLogin() {
+        $.ajax({
+            url:'../phoneLogin',
+            type:'post',
+            data:{phoneCode:$("#phoneCode").val(),phone:$("#phone").val()},
+            success:function (data) {
+                if(data.code==0){
+                    location.href="/toMainn";
+                }else{
+                   alert(data.msg);
+                }
+
+
+        }
+        
+    })
+    }
+</script>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://www.imooc.com/user/newlogin -->
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Document Title -->
+    <meta charset="utf-8">
+    <title>登录</title>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/common-less.css" type="text/css">
+    <link rel="stylesheet" href="css/moco.min.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/loginsign-less.css">
+    <link rel="stylesheet" href="css/poplogin-less.css" type="text/css">
+    <style type="text/css">
+        #main{
+            margin-top: 140px;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap3/css/bootstrap.css">
+    <script src="../js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap-treeview/bootstrap-treeview.min.css">
+    <script src="../js/bootStrap-addTabs/bootstrap.addtabs.js"></script>
+    <link rel="stylesheet" href="../js/bootStrap-addTabs/bootstrap.addtabs.css">
+
+    <link rel="stylesheet" href="../js/bootstrap-table/bootstrap-table.css">
+    <script src="../js/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+</head>
+<body>
+
+<div id="main">
+    <div class="login-wrap">
+        <div id="signin" class="rl-modal">
+            <div class="rl-modal-header">
+                <!--选项卡切换-->
+                <h1>
+                    <span class="active-title">登录</span>
+                    <span data-fromto="signin:signup" class="xa-showSignup"><a href="/toRegister">注册</a></span>
+                </h1>
+            </div>
+            <div class="rl-modal-body js-loginWrap">
+                <div class="clearfix">
+                    <form id="loginFormId" autocomplete="off">
+                        <div class="rlf-group pr">
+                            <input type="text" value="" id="username" maxlength="37" name="username" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入用户名">
+                            <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确用户名"></p>
+                        </div>
+                        <div class="rlf-group  pr">
+                            <!--密码可见或隐藏-->
+                            <!--<a href="javascript:void(0)" hidefocus="true" class="proclaim-btn js-proclaim imv2-visibility_off is-pwd" tabindex="-1"></a>-->
+                            <input type="password" id="userpassword" name="userpassword" data-validate="require-password" class="ipt ipt-pwd js-loginPassword js-pass-pwd" placeholder="请输入密码" maxlength="20" autocomplete="off">
+                            <p class="rlf-tip-wrap errorHint color-red "></p>
+                        </div>
+                        <div class="rlf-group pr">
+                            <input type="text" value="" id="code" maxlength="37" name="code" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入验证码">
+                            <img src="../getCode"  onclick="ChangeCode(this)">
+                        </div>
+
+
+                        <div class="rlf-group clearfix">
+                            <input type="button" onclick="userLogin()" value="登录" hidefocus="true" class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login">
+                        </div>
+                        <a href="/shoujidenglu"><font color="blue">忘记密码？手机号登录</font></a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function ChangeCode(img) {
+        $(img).attr("src",$(img).attr("src")+"?"+ new Date());
+    }
+    function userLogin(){
+
+        $.ajax({
+            url: "../success",
+            type: "post",
+            data:{username:$("#username").val(),userpassword: $("#userpassword").val(),code:$("#code").val()},
+
+            success:function(data){
+
+
+                if(data.cd==2 | data.cd==3){
+                    alert(data.msg);
+                    location.href="../toLogin";
+                }else if (data.cd==4){
+                    alert(data.msg);
+                    location.href="../toLogin";
+                }else {
+                    location.href="../shenqing";
+
+                }
+            }
+        })
+    }
+
+</script>

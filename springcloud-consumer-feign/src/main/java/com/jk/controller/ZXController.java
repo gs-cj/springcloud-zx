@@ -1,23 +1,46 @@
 package com.jk.controller;
 
 import com.jk.model.*;
+<<<<<<< HEAD
 import com.jk.service.GlService;
+=======
+import com.jk.service.glService;
+import com.jk.util.CheckImgUtil;
+>>>>>>> cd8e8489ebd845515e0c0feb49d530ee9e0d0578
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+<<<<<<< HEAD
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
+=======
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+>>>>>>> cd8e8489ebd845515e0c0feb49d530ee9e0d0578
 
 @Controller
 public class ZXController {
     @Autowired
+<<<<<<< HEAD
     private GlService glService;
+=======
+    private glService glService;
+    //测试
+    @GetMapping("/hello")
+    public String hello(){
+        return glService.hello();
+    }
+>>>>>>> cd8e8489ebd845515e0c0feb49d530ee9e0d0578
 
     //跳转首页
     @RequestMapping("/toMainn")
@@ -116,6 +139,7 @@ public class ZXController {
 
 
 
+<<<<<<< HEAD
    @RequestMapping("toSelect")
     public String toSelect(Integer id,HttpSession session){
 
@@ -127,6 +151,10 @@ public class ZXController {
 
     //查看相关职位个数findRelevantCount
     @RequestMapping("/findRelevantCount")
+=======
+    //查看相关职位个数findRelevantCount
+    @RequestMapping("findRelevantCount")
+>>>>>>> cd8e8489ebd845515e0c0feb49d530ee9e0d0578
     @ResponseBody
     public String findRelevantCount(){
         return glService.findRelevantCount();
@@ -138,7 +166,10 @@ public class ZXController {
     @ResponseBody
     public List<RelevantBean> findRelevantww(){
         return glService.findRelevant();
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd8e8489ebd845515e0c0feb49d530ee9e0d0578
     }
 
     //查看职位分类
@@ -174,11 +205,14 @@ public class ZXController {
         return show;
     }
 
+<<<<<<< HEAD
     @RequestMapping("findNameList")
     @ResponseBody
     public List<MessageBean> findNameList(){
         return glService.findNameList();
     }
+=======
+>>>>>>> cd8e8489ebd845515e0c0feb49d530ee9e0d0578
     //查看职位个数
     @RequestMapping("countjob")
     @ResponseBody
@@ -233,6 +267,7 @@ public class ZXController {
         return view;
     }
 
+<<<<<<< HEAD
     @RequestMapping("/savammeoid")
     @ResponseBody
     public void savammeoid(@RequestParam("mid") Integer mid,HttpSession session){
@@ -240,4 +275,90 @@ public class ZXController {
         Integer oid=(Integer) obj;
         glService.savammeoid(mid,oid);
     }
+=======
+    /*进入登录页面*/
+    @RequestMapping("/toLogin")
+    public String toLogin() {
+        return "login";
+    }
+
+    /*进入注册页面*/
+    @GetMapping("/toRegister")
+    public String toRegister() {
+
+        return "register";
+    }
+
+    /*登录成功进入主页*/
+    @GetMapping("/toMain")
+    public String toMain3() {
+
+        return "main";
+    }
+
+
+    @RequestMapping("getCode")
+    //验证码
+    public void getCode(HttpServletRequest request, HttpServletResponse response) {
+
+        CheckImgUtil.buildCheckImg(request, response);
+    }
+
+    //登录
+    @RequestMapping("/success")
+    @ResponseBody
+    public HashMap successful(String username, String userpassword, String code, HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        String realCode = request.getSession().getAttribute("checkcode").toString().toLowerCase();
+
+        HashMap<String, Object> mape = new HashMap<>();
+
+        UserModel loginName = glService.Succ(username);//userService.Succ(username);
+        if (realCode.equals(code.toLowerCase())) {
+            if (loginName != null) {
+                if (loginName.getUserpassword().equals(userpassword)) {
+                    mape.put("cd", 1);
+                    mape.put("msg", "登录成功");
+                    request.getSession().setAttribute("username", loginName.getUsername());
+
+                } else {
+                    mape.put("cd", 2);
+                    mape.put("msg", "密码错误");
+                }
+            } else {
+                mape.put("cd", 3);
+                mape.put("msg", "用户名错误");
+            }
+        } else {
+            mape.put("cd", 4);
+            mape.put("msg", "验证码错误");
+        }
+
+        return mape;
+    }
+
+    //注册
+    @RequestMapping(value = {"/reg","/reg1"})
+    @ResponseBody
+    public HashMap reg(UserModel user) {
+        UserModel reuser = glService.reg(user.getUsername());
+        HashMap<String, Object> msg = new HashMap<>();
+        if (reuser != null) {
+            msg.put("cod", 5);
+            msg.put("msg", "用户已存在");
+        } else {
+
+            glService.addUser(user);
+        }
+        return msg;
+    }
+
+    /*跳转到手机号验证*/
+    @RequestMapping("/shoujidenglu")
+    public String shoujidenglu() {
+        return "shoujidenglu";
+    }
+
+
+>>>>>>> cd8e8489ebd845515e0c0feb49d530ee9e0d0578
 }
