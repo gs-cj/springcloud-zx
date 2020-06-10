@@ -1,3 +1,4 @@
+
 package com.jk.mapper;
 
 import com.jk.model.*;
@@ -7,7 +8,6 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.SelectKey;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.HashMap;
 import java.util.List;
 
 @Mapper
@@ -73,9 +73,9 @@ public interface glMapper {
     @Insert("insert into t_user1 (username,userpassword,userimage,phone) values (#{username},#{userpassword},'123',#{phone})")
     @SelectKey( statement = "select last_insert_id()", keyProperty = "userid", before = false, resultType = Integer.class)
     void addUser(UserModel user);
-
     @Select("select * from t_user1 where phone=#{phone}")
     UserModel fingName(String phone);
+
 
 //    @Select("<script> " +
 //            "SELECT * FROM `1908_course`" +

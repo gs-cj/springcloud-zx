@@ -17,26 +17,26 @@
     $.fn.fileinputThemes.explorer = {
         layoutTemplates: {
             preview: '<div class="file-preview {class}">\n' +
-                '    {close}' +
-                '    <div class="{dropClass}">\n' +
-                '    <table class="table table-bordered table-hover"><tbody class="file-preview-thumbnails">\n' +
-                '    </tbody></table>\n' +
-                '    <div class="clearfix"></div>' +
-                '    <div class="file-preview-status text-center text-success"></div>\n' +
-                '    <div class="kv-fileinput-error"></div>\n' +
-                '    </div>\n' +
-                '</div>',
+            '    {close}' +
+            '    <div class="{dropClass}">\n' +
+            '    <table class="table table-bordered table-hover"><tbody class="file-preview-thumbnails">\n' +
+            '    </tbody></table>\n' +
+            '    <div class="clearfix"></div>' +
+            '    <div class="file-preview-status text-center text-success"></div>\n' +
+            '    <div class="kv-fileinput-error"></div>\n' +
+            '    </div>\n' +
+            '</div>',
             footer: '<td class="file-details-cell"><div class="explorer-caption" title="{caption}">{caption}</div> ' +
-                '{size}{progress}</td><td class="file-actions-cell">{actions}</td>',
+            '{size}{progress}</td><td class="file-actions-cell">{actions}</td>',
             actions: '<div class="file-upload-indicator" title="{indicatorTitle}">{indicator}</div>\n' +
-                '{drag}\n' +
-                '<div class="file-actions">\n' +
-                '    <div class="file-footer-buttons">\n' +
-                '        {upload} {delete} {zoom} {other} ' +
-                '    </div>\n' +
-                '</div>',
+            '{drag}\n' +
+            '<div class="file-actions">\n' +
+            '    <div class="file-footer-buttons">\n' +
+            '        {upload} {delete} {zoom} {other} ' +
+            '    </div>\n' +
+            '</div>',
             zoomCache: '<tr style="display:none" class="kv-zoom-cache-theme"><td>' +
-                '<table class="kv-zoom-cache">{zoomContent}</table></td></tr>'
+            '<table class="kv-zoom-cache">{zoomContent}</table></td></tr>'
         },
         previewMarkupTags: {
             tagBefore1: teTagBef + '>' + teContent,

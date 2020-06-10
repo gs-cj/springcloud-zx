@@ -39,14 +39,14 @@
         SORT_CSS: 'file-sortable',
         STYLE_SETTING: 'style="width:{width};height:{height};"',
         OBJECT_PARAMS: '<param name="controller" value="true" />\n' +
-            '<param name="allowFullScreen" value="true" />\n' +
-            '<param name="allowScriptAccess" value="always" />\n' +
-            '<param name="autoPlay" value="false" />\n' +
-            '<param name="autoStart" value="false" />\n' +
-            '<param name="quality" value="high" />\n',
+        '<param name="allowFullScreen" value="true" />\n' +
+        '<param name="allowScriptAccess" value="always" />\n' +
+        '<param name="autoPlay" value="false" />\n' +
+        '<param name="autoStart" value="false" />\n' +
+        '<param name="quality" value="high" />\n',
         DEFAULT_PREVIEW: '<div class="file-preview-other">\n' +
-            '<span class="{previewFileIconClass}">{previewFileIcon}</span>\n' +
-            '</div>',
+        '<span class="{previewFileIconClass}">{previewFileIcon}</span>\n' +
+        '</div>',
         MODAL_ID: 'kvFileinputModal',
         MODAL_EVENTS: ['show', 'shown', 'hide', 'hidden', 'loaded'],
         objUrl: window.URL || window.webkitURL,
@@ -762,8 +762,7 @@
                     var config = data.config[i], caption = $h.ifSet('caption', config), actions = '',
                         width = $h.ifSet('width', config, 'auto'), url = $h.ifSet('url', config, false),
                         key = $h.ifSet('key', config, null), fs = self.fileActionSettings,
-                        showDel = $h.ifSet('showDelete', config, true),
-                        showZoom = $h.ifSet('showZoom', config, fs.showZoom),
+                        showDel = $h.ifSet('showDelete', config, true), showZoom = $h.ifSet('showZoom', config, fs.showZoom),
                         showDrag = $h.ifSet('showDrag', config, fs.showDrag), disabled = (url === false) && isDisabled;
                     if (self.initialPreviewShowDelete) {
                         actions = self._renderFileActions(false, showDel, showZoom, showDrag, disabled, url, key, true);
@@ -861,7 +860,7 @@
         },
         _showUploadError: function (msg, params, event) {
             var self = this, $error = self.$errorContainer, ev = event || 'fileuploaderror', e = params && params.id ?
-                '<li data-file-id="' + params.id + '">' + msg + '</li>' : '<li>' + msg + '</li>';
+            '<li data-file-id="' + params.id + '">' + msg + '</li>' : '<li>' + msg + '</li>';
             if ($error.find('ul').length === 0) {
                 self._addError('<ul>' + e + '</ul>');
             } else {
@@ -1963,8 +1962,7 @@
             };
             fnSuccess = function (data, textStatus, jqXHR) {
                 /** @namespace data.errorkeys */
-                var outData = self._getOutData(jqXHR, data), $thumbs = self._getThumbs(':not(.file-preview-error)'),
-                    key = 0,
+                var outData = self._getOutData(jqXHR, data), $thumbs = self._getThumbs(':not(.file-preview-error)'), key = 0,
                     keys = $h.isEmpty(data) || $h.isEmpty(data.errorkeys) ? [] : data.errorkeys;
                 if ($h.isEmpty(data) || $h.isEmpty(data.error)) {
                     self._raise('filebatchuploadsuccess', [outData]);
@@ -2740,19 +2738,19 @@
                 }
                 self._raise('fileimageloaded', [previewId]);
                 self.loadedImages.push({
-                    ind: i,
-                    img: $img,
-                    thumb: $thumb,
-                    pid: previewId,
-                    typ: ftype,
-                    siz: fsize,
+                    ind: i, 
+                    img: $img, 
+                    thumb: $thumb, 
+                    pid: previewId, 
+                    typ: ftype, 
+                    siz: fsize, 
                     validated: false
                 });
                 self._validateAllImages();
             });
         },
         _validateAllImages: function () {
-            var self = this, i, counter = {val: 0}, numImgs = self.loadedImages.length, config,
+            var self = this, i, counter = {val: 0}, numImgs = self.loadedImages.length, config, 
                 fsize, minSize = self.resizeIfSizeMoreThan;
             if (numImgs !== self.totalImagesCount) {
                 return;
@@ -2898,8 +2896,7 @@
             self._initBrowse($container);
         },
         _renderMain: function () {
-            var self = this,
-                dropCss = (self.isUploadable && self.dropZoneEnabled) ? ' file-drop-zone' : 'file-drop-disabled',
+            var self = this, dropCss = (self.isUploadable && self.dropZoneEnabled) ? ' file-drop-zone' : 'file-drop-disabled',
                 close = !self.showClose ? '' : self._getLayoutTemplate('close'),
                 preview = !self.showPreview ? '' : self._getLayoutTemplate('preview')
                     .replace(/\{class}/g, self.previewClass)
@@ -2962,7 +2959,7 @@
         _renderThumbProgress: function () {
             var self = this;
             return '<div class="file-thumb-progress hide">' + self.progressTemplate.replace(/\{percent}/g, '0')
-                .replace(/\{status}/g, self.msgUploadBegin) + '</div>';
+                    .replace(/\{status}/g, self.msgUploadBegin) + '</div>';
         },
         _renderFileFooter: function (caption, size, width, isError) {
             var self = this, config = self.fileActionSettings, rem = config.showRemove, drg = config.showDrag,

@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap.css}">
-    <link rel="stylesheet" th:href="@{/js/bootstrap/bootstrap-table.css}">
-    <link rel="stylesheet" th:href="@{/js/bootstrap.css}">
-    <link rel="stylesheet" th:href="@{/js/bootstrap-table.css}">
-</head>
+<!--    <script th:src="@{/easyui/jquery.min.js}" src="../static/easyui/jquery.min.js"></script>
+    <script th:src="@{/easyui/jquery.easyui.min.js}" src="../static/easyui/jquery.easyui.min.js"></script>
+    <script th:src="@{/easyui/locale/easyui-lang-zh_CN.js}" src="../static/easyui/locale/easyui-lang-zh_CN.js"></script>
+    <script th:src="@{/easyui/util-js.js}" src="../static/easyui/util-js.js"></script>-->
+    <script th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js"></script>
+    <script th:src="@{/js/bootstrap3/js/bootstrap.js}" src="../static/js/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" th:href="@{/js/bootstrap3/css/bootstrap.css}" href="../static/js/bootstrap3/css/bootstrap.css"/>
+    <link rel="stylesheet" th:href="@{/js/bootstrap-treeview/bootstrap-treeview.min.css}" href="../static/js/bootstrap-treeview/bootstrap-treeview.min.css"/>
+    <script th:src="@{/js/bootstrap-treeview/bootstrap-treeview.min.js}" src="../static/js/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+    <link rel="stylesheet" th:href="@{/js/bootStrap-addTabs/bootstrap.addtabs.css}" href="../static/js/bootStrap-addTabs/bootstrap.addtabs.css"/>
+    <script th:src="@{/js/bootStrap-addTabs/bootstrap.addtabs.js}" src="../static/js/bootStrap-addTabs/bootstrap.addtabs.js"></script>
+    <link th:href="@{/js/bootstrap-table/bootstrap-table.css}" rel="stylesheet" href="../static/js/bootstrap-table/bootstrap-table.css"/>
+    <script th:src="@{/js/bootstrap-table/bootstrap-table.js}" src="../static/js/bootstrap-table/bootstrap-table.js"></script>
+    <script th:src="@{/js/bootstrap-table/locale/bootstrap-table-zh-CN.js}" src="../static/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script th:src="@{/js/bootstrap-bootbox/bootbox.min.js}" src="../static/js/bootstrap-bootbox/bootbox.min.js"></script>
+    <script th:src="@{/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js}" src="../static/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script th:src="@{/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js}" src="../static/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link th:href="@{/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css}" rel="stylesheet" href="../static/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <!--<link rel="stylesheet" th:href="@{/easyui/themes/bootstrap/easyui.css}" href="../static/easyui/themes/bootstrap/easyui.css"/>
+    <link rel="stylesheet" th:href="@{/easyui/themes/icon.css}" href="../static/easyui/themes/icon.css"/>-->
+
+
+
 <body>
 
 <div class="table-responsive">
@@ -16,7 +34,7 @@
     <table class="table text-nowrap">
         <thead>
 
-        <tr th:each="list:${receu}">
+       <tr th:each="list:${receu}">
             <td>招聘职位</td>
             <td th:text="${list.jobtitle}"></td>
         </tr>
@@ -45,12 +63,11 @@
             <td th:text="${list.claim}"></td>
         </tr>
 
+
         <tr>
-            <td >
-                <button onclick="jobApplication()" type="button" class="btn btn-info">
-                    <i class="glyphicon glyphicon-plus"></i>
-                    申请职位
-                </button>
+            <td>
+                <input id="mess" th:value="${receu.id}" type="hidden">
+     <input type="button" onclick="jobApplication()" class="btn btn-info" value="申请职位">
             </td>
 <!--            <td >-->
 <!--                <button onclick="closee()" type="button" class="btn btn-info">-->
@@ -59,16 +76,60 @@
 <!--                </button>-->
 <!--            </td>-->
         </tr>
-
+        </thead>
 
     </table>
 </div>
 </body>
-<script>
+<script type="text/javascript" th:inline="javascript">
+
+
 
     function jobApplication() {
-        alert(555);
+
+       var id = $("#mess").val();
+
+        window.location.href="../toSelect?id="+id;
+/*        bootbox.dialog({
+            title:'简历选择',
+            closeButton: true,
+            size: 'large',
+            message:createAddContent(../),
+            buttons:{
+                success:{
+                    "label" : "<i class='icon-ok'></i> 保存",
+                    "className" : "btn-sm btn-success",
+                    "callback":function(){
+                       saveMessOsd();
+                    }
+                }
+            }
+        })*/
     }
+
+/*    function saveMessOsd(id){
+        $.ajax({
+            url:"../savammeoid?mid="+id,
+            success:function () {
+                alert("success")
+            }
+        })
+    }*/
+
+
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+
+
     function closee() {
        $.ajax({
             url:"../toSocial",
@@ -76,7 +137,7 @@
                alert("返回成功")
            }
         })
-    }//    @Select("<script> " +
+    }
 
 </script>
 

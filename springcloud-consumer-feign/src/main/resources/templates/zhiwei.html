@@ -47,6 +47,22 @@
     <!--产品头部CSS和脚本-->
     <script src="./shenqingzhiwei/wdatepicker.js.ia"></script>
     <link href="./shenqingzhiwei/wdatepicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../files/require.js.ia"></script>
+    <!--引用静态文件:skin_default-->
+<link href="../files/common.css" rel="stylesheet" type="text/css"><link href="../files/templateform.css" rel="stylesheet" type="text/css"><link href="../files/controls.css" rel="stylesheet" type="text/css"><link href="../files/default.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="../files/base_new.js.ia"></script><script type="text/javascript" src="../files/widgetnew.js.ia"></script><script type="text/javascript" src="../files/common.js.ia"></script><script type="text/javascript" src="../files/bsdialog.js.ia"></script><script type="text/javascript" src="../files/common.js(1).ia"></script><script type="text/javascript" src="../files/controls.js.ia"></script><script type="text/javascript" src="../files/underscore.js.ia"></script><script type="text/javascript" src="../files/school-select-v2.js.ia"></script><link href="../files/school-select-v2.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="../files/structured-data-select.js.ia"></script><link href="../files/structured-data-select.css" rel="stylesheet" type="text/css">
+    <!--引用静态文件:skin_new_css-->
+<link href="../files/main.css" rel="stylesheet" type="text/css">
+    <!--引用静态文件:new_dialog_js-->
+<script type="text/javascript" src="../files/dialog_js.js.ia"></script>
+    <!--引用静态文件:tripledesjs-->
+<script type="text/javascript" src="../files/tripledes.js.ia"></script>
+    <!--引用静态文件:control_js-->
+<script type="text/javascript" src="../files/industry-select.js.ia"></script>
+    <!--引用静态文件:control_css-->
+<link href="../files/industrySelect.css" rel="stylesheet" type="text/css">
+    <!--产品头部CSS和脚本-->
+    <script src="../files/wdatepicker.js.ia"></script>
+    <link href="../files/wdatepicker.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
        //mobileUrl rewrite
        function goPAGE() {
@@ -76,6 +92,7 @@
     </script>
     <!--引用静态文件:front_css-->
 <link href="./shenqingzhiwei/front.css" rel="stylesheet" type="text/css">
+<link href="../files/front.css" rel="stylesheet" type="text/css">
 
 
     <style type="text/css">
@@ -256,16 +273,25 @@
         <div class="dl_header_border">
             <div class="dl_header clearfix">
                 <div class="dl_logo">
+
                     <img id="logoImg" class="header-logo-img" src="./shenqingzhiwei/22371900_medias_logo.png" style="width: 282.027px; height: 80px;">
+
+                    <img id="logoImg" class="header-logo-img" src="../files/22371900_medias_logo.png" style="width: 282.027px; height: 80px;">
+
                 </div>
                 <div class="dl_rightit">
 
                     <div class="isApplyDetail" style="">
 
                         <div class="isLogin" style="">
+
                             <span id="topUserEmail" class="pad3" title="d019b442-f557-44ab-bfd2-d7b3e5b80d5c@zhiye.com"><span class="userShortName"></span><span class="i18n">欢迎您！</span></span>
                             <span id="topUserMbToken" class="pad3" title="CFEGKLHJMLN" style="display: none"></span>
                             <span class="pad3"><a href="/toMainn" class="i18n">招聘首页</a></span>
+
+                            <span id="topUserEmail" class="pad3" title="d019b442-f557-44ab-bfd2-d7b3e5b80d5c@zhiye.com"><span class="userShortName">131****1312</span><span class="i18n">，欢迎您！</span></span>
+                            <span id="topUserMbToken" class="pad3" title="CFEGKLHJMLN" style="display: none"></span>
+                            <span class="pad3"><a href="http://job.zte.com.cn/" class="i18n">招聘首页</a></span>
                             <em class="dl_header_line dl_padtb05">|</em>
                             <span class="isUserCenter" style="display: none">
 
@@ -274,12 +300,13 @@
 
                             </span>
                             <span class="pad3"><a href="/toLogin" class="i18n">退出</a></span>
+                            <span class="pad3"><a href="http://zte.zhiye.com/Portal/Account/Logout" class="i18n">退出</a></span>
                         </div>
 
                         <div class="unLogin" style="display: none">
                             <span class="pad3"><a href="http://job.zte.com.cn/" class="i18n">招聘首页</a></span>
                             <em class="dl_header_line dl_padtb05">|</em>
-                            <span class="pad3"><a href="http://zte.zhiye.com/Portal/Account/Login" class="i18n">登录</a></span>
+                            <span class="pad3"><a href="/toLogin" class="i18n">登录</a></span>
                             <em class="dl_header_line dl_padtb05">|</em>
                             <span class="pad3"><a href="http://zte.zhiye.com/Portal/Account/Register" class="i18n">注册</a></span>
                         </div>
@@ -528,6 +555,7 @@
 
         .phone_error {
             background: url("shenqingzhiwei/err.png") no-repeat 0 1px;
+            background: url("files/err.png") no-repeat 0 1px;
             padding-left: 18px;
             color: #000;
             font-size: 12px;
@@ -588,6 +616,7 @@
     }
     .phone_error{
     background: url("/shenqingzhiwei/err.png") no-repeat 0 1px;
+    background: url("/files/err.png") no-repeat 0 1px;
     padding-left: 18px;
     color: #000;
     font-size: 12px;
@@ -689,7 +718,8 @@
                 
                 <div id="imgContainer" class="dl_myrightfile" style="display: none;">
                     <img id="idPhoto" style="width:120px;height:140px;" src="./shenqingzhiwei/upfile.jpg">
-                    
+                    <img id="idPhoto" style="width:120px;height:140px;" src="../shenqingzhiwei/upfile.jpg">
+
                     <br>
                     
                     <a class="blue i18n" id="idPhotoUploadBtn" href="http://zte.zhiye.com/Portal/Resume/ResumeItem?jid=350345684###">上传照片</a>
@@ -810,7 +840,7 @@
         <div class="dl_bd_btm"></div>
         <div class="dl_subbtn dl_htline32">
             <span class="dl_btn_lev dl_ft14_grey dl_padr10"><a name="btnCancel" href="/quxiao"><b class="i18n">取消</b></a></span>
-            <a href="javaScript:sava()" class="dl_btn_grey1"><span class="i18n">保存并下一步</span></a>
+            <a href="javaScript:sava()" class="dl_btn_grey1"><span class="i18n">保存</span></a>
            
         </div>
           <div class="error_show" style="text-align:center;padding-top:10px;display:none"><span class="new_pop_error i18n" style="width:auto;font-weight:bold">部分内容未填写完整，请完善。</span></div>
@@ -826,13 +856,14 @@
 <script type="text/javascript">
 
     function sava(){
+        alert(123)
 
         $.ajax({
             url:'../savaMessage',
             type:'post',
             data:$("#formadd").serialize(),
             success:function(data){
-               location.href="../tolvli";
+               location.href="../toMainn";
             }
         })
 
@@ -879,6 +910,7 @@
 
    <script type="text/javascript"> function setAJson(data){ window.Ajson=data; } function setNewAJson(data){ window.NewAjson=data; } function setMJson(data){ window.Mjson=data; } </script>
    <script type="text/javascript" src="./shenqingzhiwei/hangye"></script><script type="text/javascript" src="./shenqingzhiwei/Areas"></script><script type="text/javascript" src="./shenqingzhiwei/AreasValueFormat"></script><script type="text/javascript" src="./shenqingzhiwei/Areas(1)"></script><script type="text/javascript" src="./shenqingzhiwei/JobCategory"></script>
+   <script type="text/javascript" src="../files/hangye"></script><script type="text/javascript" src="../files/Areas"></script><script type="text/javascript" src="../files/AreasValueFormat"></script><script type="text/javascript" src="../files/Areas(1)"></script><script type="text/javascript" src="../files/JobCategory"></script>
     </div>
     
     <div class="modal-pop" style="display: none;">
@@ -992,8 +1024,8 @@
         </div>
         <div class="dl_footer">
             
-
 <p>©2020&nbsp;中兴通讯&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.beian.miit.gov.cn/" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; color: #AAAAAA;">京ICP备05051632号-16</a>&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020454" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; color: #AAAAAA;"><img src="./shenqingzhiwei/beian.png" style="float: left;">京公网安备 11010802020454号</a> &nbsp;&nbsp;帮助热线：4006506886</p>
+<p>©2020&nbsp;中兴通讯&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.beian.miit.gov.cn/" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; color: #AAAAAA;">京ICP备05051632号-16</a>&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020454" style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; color: #AAAAAA;"><img src="../files/beian.png" style="float: left;">京公网安备 11010802020454号</a> &nbsp;&nbsp;帮助热线：4006506886</p>
         </div>
     </div>
 

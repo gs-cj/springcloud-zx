@@ -5,7 +5,7 @@
 
 .close-tab {
     font-size: 10px;
-    position: absolute;
+    position:absolute;
     right: 5px;
     top: 5px;
     padding-left: 25px;
@@ -15,13 +15,8 @@
     color: #94A6B0;
 }
 
-.nav-tabs {
-    position: relative;
-}
-
-.nav-tabs li {
-    position: relative;
-}
+.nav-tabs {position: relative;}
+.nav-tabs li{position: relative;}
 
 .iframeClass {
     z-index: 1;

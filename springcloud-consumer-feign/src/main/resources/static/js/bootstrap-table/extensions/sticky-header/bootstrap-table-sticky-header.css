@@ -9,7 +9,6 @@
     position: fixed;
     z-index: 100;
 }
-
 .fix-sticky thead {
     background: #fff;
 }

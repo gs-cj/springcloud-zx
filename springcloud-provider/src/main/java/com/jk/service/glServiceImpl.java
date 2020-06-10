@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
+
+
 @Controller
 public class glServiceImpl implements glService {
     @Autowired
@@ -15,11 +18,6 @@ public class glServiceImpl implements glService {
 
 
 
-    @GetMapping("/hello")
-    @Override
-    public String hello() {
-        return "访问";
-    }
 
     @RequestMapping("/findRelevantCount")
     @ResponseBody
@@ -90,6 +88,7 @@ public class glServiceImpl implements glService {
         return glMapper.finareaid(id);
     }
 
+
     @RequestMapping("/finareaidd")
     @ResponseBody
     @Override
@@ -100,7 +99,7 @@ public class glServiceImpl implements glService {
     @Override
     @RequestMapping("/success")
     @ResponseBody
-    public UserModel Succ(@RequestParam("username") String username) {
+    public UserModel Succ( @RequestParam("username")  String username) {
         return glMapper.Succ(username);
     }
 
@@ -110,11 +109,10 @@ public class glServiceImpl implements glService {
     public UserModel reg( @RequestParam("username") String username) {
         return glMapper.reg(username);
     }
-
     @RequestMapping("/reg1")
     @ResponseBody
-    public void addUser(@RequestBody UserModel user) {
-glMapper.addUser(user);
+    public void addUser  (@RequestBody UserModel user) {
+        glMapper.addUser(user);
     }
 
     @Override
@@ -126,3 +124,4 @@ glMapper.addUser(user);
 
 
 }
+

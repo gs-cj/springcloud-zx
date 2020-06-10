@@ -2,16 +2,17 @@ package com.jk.service;
 
 import com.jk.model.*;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+
 
 @FeignClient(value = "glhtprovider")
 public interface glService {
 
-
-    @GetMapping("/hello")
-    String hello();
 
     @RequestMapping("/findRelevantCount")
     @ResponseBody
@@ -62,6 +63,7 @@ public interface glService {
     @ResponseBody
     List<ReceuBean> finareaidd(@RequestParam("proid") Integer proid);
 
+
     @RequestMapping("/success")
     @ResponseBody
     UserModel Succ(@RequestParam("username") String username);
@@ -77,4 +79,14 @@ public interface glService {
     @RequestMapping("/phoneLogin")
     @ResponseBody
     UserModel fingName(@RequestParam String phone);
+
+
+
+
+/*
+   @RequestMapping("/savaMessage")
+   @ResponseBody
+   void savaMessage(MessageBean messageBean);
+*/
+
 }

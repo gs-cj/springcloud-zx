@@ -3,11 +3,15 @@ package com.jk.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.jk.common.CommonConf;
 import com.jk.model.*;
+
+
 import com.jk.service.glService;
 import com.jk.util.CheckImgUtil;
+
 import com.jk.util.CheckSumBuilder;
 import com.jk.util.HttpClientUtil;
 import com.jk.util.RedisUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -15,11 +19,24 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 @Controller
 public class ZXController {
@@ -31,11 +48,6 @@ public class ZXController {
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
-    //测试
-    @GetMapping("/hello")
-    public String hello(){
-        return glService.hello();
-    }
 
     //跳转首页
     @RequestMapping("/toMainn")
@@ -134,6 +146,16 @@ public class ZXController {
 
 
 
+   @RequestMapping("toSelect")
+    public String toSelect(Integer id,HttpSession session){
+
+        session.setAttribute("oid",id);
+
+        return "toSelect";
+
+    }
+
+
     //查看相关职位个数findRelevantCount
     @RequestMapping("findRelevantCount")
     @ResponseBody
@@ -147,6 +169,7 @@ public class ZXController {
     @ResponseBody
     public List<RelevantBean> findRelevantww(){
         return glService.findRelevant();
+
     }
 
     //查看职位分类
@@ -181,6 +204,13 @@ public class ZXController {
         show.setViewName("show");
         return show;
     }
+
+
+  /*  @RequestMapping("findNameList")
+    @ResponseBody
+    public List<MessageBean> findNameList(){
+        return glService.findNameList();
+    }*/
 
     //查看职位个数
     @RequestMapping("countjob")
@@ -235,6 +265,15 @@ public class ZXController {
         view.setViewName("sheJobb");
         return view;
     }
+
+
+  /*  @RequestMapping("/savammeoid")
+    @ResponseBody
+    public void savammeoid(@RequestParam("mid") Integer mid,HttpSession session){
+        Object obj=session.getAttribute("oid");
+        Integer oid=(Integer) obj;
+        glService.savammeoid(mid,oid);
+    }*/
 
     /*进入登录页面*/
     @RequestMapping("/toLogin")
@@ -340,6 +379,7 @@ public class ZXController {
     }
 
 
+
     @RequestMapping("/getphoneCode")
     @ResponseBody
     public Map getphoneCode(String phone) {
@@ -417,15 +457,7 @@ public class ZXController {
         return result;
     }
 
-    /*注销*/
-  /*  @RequestMapping("/logout")
-    public String logout(HttpServletRequest request, HttpServletResponse response) {
-        String username = (String) request.getSession().getAttribute("username");
 
-        if (username != null) {
-            request.getSession().removeAttribute("username");
-        }
-        return "login";
-    }*/
+
 
 }

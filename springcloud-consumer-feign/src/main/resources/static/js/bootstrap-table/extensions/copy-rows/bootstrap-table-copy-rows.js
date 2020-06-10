@@ -3,7 +3,7 @@
  * @version: v1.0.0
  */
 
-!function ($) {
+ !function ($) {
     "use strict";
 
     var calculateObjectValue = $.fn.bootstrapTable.utils.calculateObjectValue,
@@ -47,17 +47,13 @@
             if (this.options.copyBtn) {
                 var copybtn = "<button class='btn btn-default' id='copyBtn'><span class='glyphicon glyphicon-copy icon-pencil'></span></button>";
                 $btnGroup.append(copybtn);
-                $btnGroup.find('#copyBtn').click(function () {
-                    that.copyColumnsToClipboard();
-                });
+                $btnGroup.find('#copyBtn').click(function () { that.copyColumnsToClipboard(); });
             }
 
             if (this.options.copyWHiddenBtn) {
                 var copyhiddenbtn = "<button class='btn btn-default' id='copyWHiddenBtn'><span class='badge'><span class='glyphicon glyphicon-copy icon-pencil'></span></span></button>";
                 $btnGroup.append(copyhiddenbtn);
-                $btnGroup.find('#copyWHiddenBtn').click(function () {
-                    that.copyColumnsToClipboardWithHidden();
-                });
+                $btnGroup.find('#copyWHiddenBtn').click(function () { that.copyColumnsToClipboardWithHidden(); });
             }
         }
     };
